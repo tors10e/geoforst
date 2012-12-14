@@ -1,0 +1,9 @@
+Design Standards.
+
+Field Lengths:
+ -Ids 40
+ - Text box 250
+ - Text box, multiline 250x60
+
+Date Fields:
+- mm/dd/yyyy

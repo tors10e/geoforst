@@ -1,0 +1,45 @@
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (1, "Brush Pile");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (2, "Oak Early Successional");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (3, "Planting");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (4, "Soft Edge");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (5, "Fallow Field");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (6, "Shrub Thicket");
+INSERT INTO HabitatEnhancementType(HabEnhTypeID, HabEnhTypeDesc) VALUES (7, "Duck Nest Box");
+
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (1, "Primary");
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (2, "Secondary");
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (3, "Two Track");
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (4, "ATV Track");
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (5, "Abandoned");
+INSERT INTO RoadType(RoadTypeID, RoadTypeDesc) VALUES (6, "Obliterated");
+
+INSERT INTO WaterType(WaterTypeID, WaterTypeDesc) VALUES (1, "Spring");
+
+INSERT INTO RoadLine(RoadTypeID, Geometry, AccessStatus, Surface, Name)
+SELECT RoadType_ID, Geometry, AccessStatus, Surface, Name FROM Road
+
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (1,"Thinning");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (2,"Planting");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (3,"Crop Tree Release");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (4,"Complete Harvest");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (5, "Controlled Burn");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (6, "Stump Shoot Thinning");
+INSERT INTO ActivityType(ActTypeID,ActTypeDesc) VALUES (7, "Pruning");
+
+
+INSERT INTO StockingType(StockingTypeID,StockingTypeDesc) VALUES (1, "Understocked");
+INSERT INTO StockingType(StockingTypeID,StockingTypeDesc) VALUES (2, "Fully Stocked");
+INSERT INTO StockingType(StockingTypeID,StockingTypeDesc) VALUES (3 , "Mildly Overstocked");
+INSERT INTO StockingType(StockingTypeID,StockingTypeDesc) VALUES (4, "Overstocked");
+
+INSERT INTO AgeType(AgeTypeID,AgeTypeDesc) VALUES (1, "Juvenile");
+INSERT INTO AgeType(AgeTypeID,AgeTypeDesc) VALUES (2, "Medium");
+INSERT INTO AgeType(AgeTypeID,AgeTypeDesc) VALUES (3, "Mixed");
+INSERT INTO AgeType(AgeTypeID,AgeTypeDesc) VALUES (4, "Early Mature");
+INSERT INTO AgeType(AgeTypeID,AgeTypeDesc) VALUES (5, "Mature");
+
+INSERT INTO RecreationType(RecTypeID,RecTypeDesc) VALUES (1, "Fire Ring");
+INSERT INTO RecreationType(RecTypeID,RecTypeDesc) VALUES (2, "Camp Site");
+
+INSERT INTO CulturalType(CultTypeID,CultTypeDesc) VALUES (1, "Abandoned Well");
+INSERT INTO CulturalType(CultTypeID,CultTypeDesc) VALUES (2, "Homesite");
