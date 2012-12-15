@@ -71,3 +71,29 @@ s/'watertypeid'/'watertype_id'/g
 s/landareadesc/description/g
 s/roadtypedesc/description/g
 s/\(Geometry\)/\(geometry\)/g
+
+# Rename layers
+s/ActivityArea/Activity Areas/g
+s/FireBreakLine/Firebreaks/g
+s/activitytype/Activity Types/g
+s/culturalpoint/Cultural Features/g
+s/habitatenhancementarea/Habitat Enhancement Areas/g
+s/habitatenhancementpoint/Habitat Enhancement Points/g
+s/habitatenhancementtype/Habitat Enhancement Types/g
+s/harvestarea/Harvest Areas/g
+s/harvesttype/Harvest Types/g
+s/firebreakline/Firebreaks/g
+s/landarea/Land Areas/g
+s/recreationpoint/Recreation/g
+s/recreationtype/Recreation Types/g
+s/roadline/Roads/g
+s/roadtype/Road Types/g
+s/standactivity/Stand Activities/g
+s/standarea/Stands/g
+s/stockingtype/Stocking Types/g
+s/streams/Streams/g
+s/treepoint/Trees/g
+s/waterpoint/Water Point Features/g
+s/watertype/Water Feature Types/g
+
+

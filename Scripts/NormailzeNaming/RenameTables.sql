@@ -266,7 +266,7 @@ select count(*) from public.recreation_type;
 CREATE TABLE public.road_line
 (
   roadln_id serial,
-  geometry geometry(LineString,26917),
+  geometry geometry(MultiLineString,26917),
   roadtype_id integer,
   description varchar(255),
   access_status varchar(50),
@@ -492,6 +492,23 @@ ALTER TABLE public.water_type
 insert into public.water_type(select * from public.watertype);
 select count(*) from public.watertype;
 select count(*) from public.water_type;
+
+-- Table: CulturalType
+CREATE TABLE cultural_type ( 
+   culttype_id serial,
+   culttype_cd char(3),
+   description varchar(50) 
+);
+ALTER TABLE public.cultural_type
+  ADD CONSTRAINT pk_cultural_type_id PRIMARY KEY (culttype_id);
+
+
+INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (1, 'abw', 'Abandoned Well');
+INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (2,'hms', 'Historic Homesite (Abandoned)');
+INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (3, 'bdg','Building');
+
+
+
 
 
 -- Drop old tables
