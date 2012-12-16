@@ -1,2 +1,4 @@
 syntax: glob
 .DS_Store
+Documentation/\.~lock\.DB_Development\.doc\#
+\.hgignore
