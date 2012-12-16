@@ -5,3 +5,5 @@ Documentation/\.~lock\.DB_Development\.doc\#
 Documentation/FSP\.dia\.autosave
 Documentation/FSP\.dia~
 Forms/FormDesignStandards\.txt~
+Maps/FSP_PGLocal\.qgs\.bak
+Scripts/DevToProd/sed_qgsDevToProd\.sh~
