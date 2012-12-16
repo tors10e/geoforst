@@ -263,7 +263,7 @@
                     <valuepair key="Old Homesite" value="2"/>
                 </edittype>
             </edittypes>
-            <editform>/home/torsten/Documents/Forms/CulturalPoint.ui</editform>
+            <editform>../Forms/CulturalPoint.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -626,7 +626,7 @@
                     <valuepair key="Wood Duck Nest Box" value="7"/>
                 </edittype>
             </edittypes>
-            <editform>/Users/torsten/Workspace/FSP/Forms/HabitatEnhancementsArea.ui</editform>
+            <editform>../Forms/HabitatEnhancementsArea.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -792,7 +792,7 @@
                 </edittype>
                 <edittype type="0" name="ogc_fid"/>
             </edittypes>
-            <editform>/Users/torsten/Workspace/FSP/Forms/HabitatEnhancements.ui</editform>
+            <editform>../Forms/HabitatEnhancements.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -903,7 +903,7 @@
                     <valuepair key="Total Harvest" value="2"/>
                 </edittype>
             </edittypes>
-            <editform>/home/torsten/Documents/Forms/HarvestArea.ui</editform>
+            <editform>../Forms/HarvestArea.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -1198,7 +1198,7 @@
                     <valuepair key="Fire Ring" value="Fire Ring"/>
                 </edittype>
             </edittypes>
-            <editform>/home/torsten/Documents/Forms/Recreation.ui</editform>
+            <editform>../Forms/Recreation.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -1484,7 +1484,7 @@
                 <edittype type="0" name="roadtype_id"/>
                 <edittype type="0" name="surface"/>
             </edittypes>
-            <editform>/home/torsten/Documents/Forms/Road.ui</editform>
+            <editform>../Forms/Road.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -1760,7 +1760,7 @@
                 <edittype type="0" name="stockingtype_id"/>
                 <edittype type="0" name="year"/>
             </edittypes>
-            <editform>/home/torsten/Documents/Forms/StandArea.ui</editform>
+            <editform>../Forms/StandArea.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
@@ -2097,7 +2097,7 @@
                 <edittype type="0" name="watertype_dsc"/>
                 <edittype type="0" name="watertype_id"/>
             </edittypes>
-            <editform>/Users/torsten/Workspace/FSP/Forms/WaterPoint.ui</editform>
+            <editform>../Forms/WaterPoint.ui</editform>
             <editforminit></editforminit>
             <annotationform></annotationform>
             <attributeactions/>
