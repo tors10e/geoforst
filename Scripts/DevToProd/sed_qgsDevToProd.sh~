@@ -1,0 +1,2 @@
+#!/bin/sh
+sed -E -f Scripts/DevToProd/sedrules_qgsDevToProd.txt Maps/FSP_PGLocal.qgs > Maps/FSP_PG.qgs
