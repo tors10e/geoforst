@@ -2,7 +2,7 @@
 CREATE TABLE public.activity_type
 (
   acttype_id integer NOT NULL,
-  description text,
+  acttype_dsc varchar(50),
   CONSTRAINT activity_type_pkey PRIMARY KEY (acttype_id)
 )
 WITH (
@@ -87,9 +87,10 @@ CREATE INDEX firebreak_line_geom_idx
   USING gist
   (geometry);
 
-insert into public.firebreak_line (select * from public.firebreakline);
-select count(*) from public.firebreakline;
-select count(*) from public.firebreak_line;
+-- firebreakline does not exist in prod.
+--insert into public.firebreak_line (select * from public.firebreakline);
+--select count(*) from public.firebreakline;
+--select count(*) from public.firebreak_line;
 
 -- Table: public.habitatenhancementarea
 CREATE TABLE public.habitat_enhancement_area
@@ -143,7 +144,7 @@ select count(*) from public.habitat_enhancement_point;
 CREATE TABLE public.habitat_enhancement_type
 (
   habenhtype_id integer NOT NULL,
-  description varchar(255) NULL,
+  habenhtype_dsc varchar(50),
   CONSTRAINT habitat_enhancement_type_pkey PRIMARY KEY (habenhtype_id)
 )
 WITH (
@@ -177,7 +178,7 @@ CREATE INDEX harvest_area_geom_idx
   USING gist
   (geometry);
 
-insert into public.harvest_area (select * from public.harvestarea);
+insert into public.harvest_area (select ogc_fid, "Geometry", activity_date, cast(harvesttypeid as integer), description from public.harvestarea);
 select count(*) from public.harvestarea;
 select count(*) from public.harvest_area;
 
@@ -185,7 +186,7 @@ select count(*) from public.harvest_area;
 CREATE TABLE public.harvest_type
 (
   harvesttype_id integer NOT NULL,
-  description varchar(255), 
+  harvesttype_dsc varchar(50), 
   CONSTRAINT harvest_type_pkey PRIMARY KEY (harvesttype_id)
 )
 WITH (
@@ -249,7 +250,7 @@ select count(*) from public.recreation_point;
 CREATE TABLE public.recreation_type
 (
   rectype_id integer NOT NULL,
-  description varchar(255) NULL,
+  rectype_dsc varchar(50) NULL,
   CONSTRAINT recreation_type_pkey PRIMARY KEY (rectype_id)
 )
 WITH (
@@ -293,7 +294,7 @@ select count(*) from public.road_line;
 CREATE TABLE public.road_type
 (
   roadtype_id integer NOT NULL,
-  description varchar(255) NULL,
+  roadtype_dsc varchar(50) NULL,
   CONSTRAINT road_type_pkey PRIMARY KEY (roadtype_id)
 )
 WITH (
@@ -357,9 +358,10 @@ WITH (
 ALTER TABLE public.stand_activity
   OWNER TO postgres;
 
-insert into public.stand_activity(select * from public.standactivity);
-select count(*) from public.standactivity;
-select count(*) from public.stand_activity;
+--standactivity does  not exist in production.
+--insert into public.stand_activity(select * from public.standactivity);
+--select count(*) from public.standactivity;
+--select count(*) from public.stand_activity;
 
 -- Table: public.stand_area
 
@@ -390,7 +392,7 @@ select count(*) from public.stand_area;
 CREATE TABLE public.stocking_type
 (
   stockingtype_id integer NOT NULL,
-  description varchar(255),
+  stockingtype_dsc varchar(50),
   CONSTRAINT stocking_type_pkey PRIMARY KEY (stockingtype_id)
 )
 WITH (
@@ -480,7 +482,7 @@ select count(*) from public.water_point;
 CREATE TABLE public.water_type
 (
   watertype_id integer NOT NULL,
-  description varchar(255),
+  watertype_dsc varchar(50),
   CONSTRAINT water_type_pkey PRIMARY KEY (watertype_id)
 )
 WITH (
@@ -497,18 +499,31 @@ select count(*) from public.water_type;
 CREATE TABLE cultural_type ( 
    culttype_id serial,
    culttype_cd char(3),
-   description varchar(50) 
+   culttype_dsc varchar(50) 
 );
 ALTER TABLE public.cultural_type
   ADD CONSTRAINT pk_cultural_type_id PRIMARY KEY (culttype_id);
 
+-- cultural type does not exist in production.
+--INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (1, 'abw', 'Abandoned Well');
+--INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (2,'hms', 'Historic Homesite (Abandoned)');
+--INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (3, 'bdg','Building');
 
-INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (1, 'abw', 'Abandoned Well');
-INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (2,'hms', 'Historic Homesite (Abandoned)');
-INSERT INTO cultural_type (culttype_id, culttype_cd, description) VALUES (3, 'bdg','Building');
-
-
-
+CREATE TABLE stand_status ( 
+    standstatus_id       SERIAL,
+    standarea_id         INTEGER,
+    year                 numeric(4,0),
+    age                  varchar(25),
+    stocking             VARCHAR(25),
+    stockingtype_id	INTEGER,	
+    damaged              CHAR(3),
+    recommended_treatment VARCHAR(255),
+    description          VARCHAR(255),
+    notes                VARCHAR(255),
+    CONSTRAINT fk_stand_status_stand_area FOREIGN KEY (standarea_id) REFERENCES stand_area (standarea_id) 
+);
+ALTER TABLE public.stand_status
+  ADD CONSTRAINT pk_stand_status PRIMARY KEY (standstatus_id);
 
 
 -- Drop old tables
