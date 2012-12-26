@@ -1,0 +1,12 @@
+Design Standards.
+
+Title:
+- 18pt 
+
+Field Lengths:
+ -Ids 40x27
+ - Text box 250x27
+ - Text box, multiline 250x60
+
+Date Fields:
+- mm/dd/yyyy

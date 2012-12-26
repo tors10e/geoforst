@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>HabitatEnhancement</class>
- <widget class="QDialog" name="HabitatEnhancement">
+ <class>habitat_enhancement_area</class>
+ <widget class="QDialog" name="habitat_enhancement_area">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -32,20 +32,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>23</y>
-     <width>171</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Habitat Enhancement Id:</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="habenhtypeid">
+  <widget class="QComboBox" name="habenhtype_id">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -108,7 +95,7 @@
       <height>58</height>
      </rect>
     </property>
-    <widget class="QPlainTextEdit" name="HabEnhPtDesc">
+    <widget class="QPlainTextEdit" name="description">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -126,13 +113,31 @@
     </widget>
    </widget>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Habitat Enhancement Area</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>HabitatEnhancement</receiver>
+   <receiver>habitat_enhancement_area</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -148,7 +153,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>HabitatEnhancement</receiver>
+   <receiver>habitat_enhancement_area</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>StandArea</class>
- <widget class="QDialog" name="StandArea">
+ <class>stand_area</class>
+ <widget class="QDialog" name="stand_area">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -19,7 +19,7 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>9</x>
+     <x>290</x>
      <y>180</y>
      <width>176</width>
      <height>27</height>
@@ -32,57 +32,12 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="StandAreaID">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>20</y>
-     <width>40</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>This field is read only.</string>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>23</y>
-     <width>171</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stand Area Id:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>191</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stand Age:</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>140</y>
-     <width>151</width>
+     <x>80</x>
+     <y>110</y>
+     <width>121</width>
      <height>17</height>
     </rect>
    </property>
@@ -94,7 +49,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>140</y>
+     <y>100</y>
      <width>250</width>
      <height>60</height>
     </rect>
@@ -111,7 +66,7 @@
       <height>58</height>
      </rect>
     </property>
-    <widget class="QPlainTextEdit" name="StandDesc">
+    <widget class="QPlainTextEdit" name="description">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -132,9 +87,9 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>60</y>
-     <width>171</width>
+     <x>80</x>
+     <y>50</y>
+     <width>101</width>
      <height>17</height>
     </rect>
    </property>
@@ -142,17 +97,7 @@
     <string>Stand Number:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Age">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>90</y>
-     <width>250</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Stand_No">
+  <widget class="QLineEdit" name="stand_no">
    <property name="geometry">
     <rect>
      <x>210</x>
@@ -162,13 +107,31 @@
     </rect>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>10</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Stand Area</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>StandArea</receiver>
+   <receiver>stand_area</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -184,7 +147,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>StandArea</receiver>
+   <receiver>stand_area</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

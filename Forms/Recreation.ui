@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>228</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>240</y>
+     <x>50</x>
+     <y>180</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -29,21 +29,11 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="RecPtID">
+  <widget class="QComboBox" name="rectype_id">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>30</y>
-     <width>40</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="RecTypeID">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>80</y>
+     <y>40</y>
      <width>250</width>
      <height>27</height>
     </rect>
@@ -53,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>150</y>
+     <y>110</y>
      <width>250</width>
      <height>60</height>
     </rect>
@@ -70,36 +60,23 @@
       <height>58</height>
      </rect>
     </property>
-    <widget class="QPlainTextEdit" name="RecPtDesc">
+    <widget class="QPlainTextEdit" name="description">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>250</width>
-       <height>60</height>
+       <width>251</width>
+       <height>61</height>
       </rect>
      </property>
     </widget>
    </widget>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>30</y>
-     <width>91</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Rec Point Id: </string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
+     <y>40</y>
      <width>121</width>
      <height>17</height>
     </rect>
@@ -112,13 +89,31 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>150</y>
+     <y>110</y>
      <width>91</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
     <string>Description:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Recreation Feature</string>
    </property>
   </widget>
  </widget>

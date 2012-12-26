@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>road_line</class>
+ <widget class="QDialog" name="road_line">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -29,19 +29,6 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>67</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>RoadLnID:</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -52,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>RoadTypeID:</string>
+    <string>Road Type:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -65,7 +52,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>RoadLnDesc:</string>
+    <string>Description:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -78,7 +65,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>AccessStatus:</string>
+    <string>Access Status:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -107,17 +94,7 @@
     <string>Name:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="RoadLnID">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>20</y>
-     <width>40</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="RoadTypeID">
+  <widget class="QComboBox" name="roadtype_id">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -148,7 +125,7 @@
       <height>78</height>
      </rect>
     </property>
-    <widget class="QPlainTextEdit" name="RoadLnDesc">
+    <widget class="QPlainTextEdit" name="description">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -160,7 +137,7 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QComboBox" name="AccessStatus">
+  <widget class="QComboBox" name="access_status">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -170,7 +147,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QComboBox" name="Surface">
+  <widget class="QComboBox" name="surface">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -180,7 +157,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Road">
+  <widget class="QLineEdit" name="road_name">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -190,13 +167,31 @@
     </rect>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Road Feature</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>road_line</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -212,7 +207,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>Dialog</receiver>
+   <receiver>road_line</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
