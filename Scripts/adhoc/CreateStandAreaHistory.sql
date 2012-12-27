@@ -1,4 +1,10 @@
-﻿CREATE TABLE stand_area_history
+﻿ALTER TABLE public.stand_area
+  ADD COLUMN start_date timestamp default current_timestamp;
+ALTER TABLE public.stand_area
+  ADD COLUMN end_date timestamp;
+
+
+CREATE TABLE stand_area_history
 (
   standareahist_id serial,
   standarea_id integer,
