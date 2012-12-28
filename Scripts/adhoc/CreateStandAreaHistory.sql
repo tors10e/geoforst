@@ -1,7 +1,5 @@
 ﻿ALTER TABLE public.stand_area
   ADD COLUMN start_date timestamp default current_timestamp;
-ALTER TABLE public.stand_area
-  ADD COLUMN end_date timestamp;
 
 
 CREATE TABLE stand_area_history
@@ -11,8 +9,8 @@ CREATE TABLE stand_area_history
   geometry geometry(Polygon,26917),
   stand_no integer,
   description character varying(255),
-  end_date timestamp without time zone,
-  start_date timestamp without time zone DEFAULT now(),
+  end_date timestamp with time zone,
+  start_date timestamp with time zone DEFAULT now(),
   CONSTRAINT stand_area_hist_pk PRIMARY KEY (standareahist_id)
 )
 WITH (
@@ -67,3 +65,7 @@ CREATE TRIGGER trg_truncate_stand_area_history
     BEFORE TRUNCATE ON stand_area
     FOR EACH STATEMENT
     EXECUTE PROCEDURE update_stand_area_history();
+
+GRANT SELECT, UPDATE ON TABLE public.stand_area_history_standareahist_id_seq TO GROUP fsp_admin;
+GRANT SELECT, UPDATE ON TABLE public.stand_area_history_standareahist_id_seq TO GROUP fsp_edit;
+

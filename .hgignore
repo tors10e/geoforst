@@ -7,3 +7,9 @@ Documentation/FSP\.dia~
 Forms/FormDesignStandards\.txt~
 Maps/FSP_PGLocal\.qgs\.bak
 Scripts/DevToProd/sed_qgsDevToProd\.sh~
+\.metadata
+\.metadata/\.lock
+\.metadata/\.log
+\.metadata/\.mylyn
+\.metadata/\.plugins
+\.metadata/version\.ini
