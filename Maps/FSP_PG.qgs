@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9313000.868737</xmin>
-            <ymin>4090329.129646</ymin>
-            <xmax>-9309753.663922</xmax>
-            <ymax>4092023.616982</ymax>
+            <xmin>-9313663.423215</xmin>
+            <ymin>4089982.325248</ymin>
+            <xmax>-9309116.509157</xmax>
+            <ymax>4092355.039237</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -69,14 +69,14 @@
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stand Activity" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Activity" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="vw_stand_activity20121215220552226" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="vw_stand_activity20121215220552226" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stands" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
@@ -143,7 +143,7 @@
     <projectlayers layercount="23">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Activity Types</layername>
@@ -170,7 +170,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Cultural Features</layername>
@@ -209,7 +209,7 @@
                     <outlinewidth>0.26</outlinewidth>
                     <fillcolor red="229" blue="156" green="15"/>
                     <fillpattern>SolidPattern</fillpattern>
-                    <texturepath null="1"></texturepath>
+                    <texturepath>.</texturepath>
                 </symbol>
                 <symbol>
                     <lowervalue>2</lowervalue>
@@ -226,7 +226,7 @@
                     <outlinewidth>0.26</outlinewidth>
                     <fillcolor red="139" blue="55" green="150"/>
                     <fillpattern>SolidPattern</fillpattern>
-                    <texturepath null="1"></texturepath>
+                    <texturepath>.</texturepath>
                 </symbol>
                 <symbol>
                     <lowervalue>3</lowervalue>
@@ -243,7 +243,7 @@
                     <outlinewidth>0.26</outlinewidth>
                     <fillcolor red="138" blue="198" green="246"/>
                     <fillpattern>SolidPattern</fillpattern>
-                    <texturepath null="1"></texturepath>
+                    <texturepath>.</texturepath>
                 </symbol>
             </uniquevalue>
             <customproperties/>
@@ -289,7 +289,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Firebreaks20121204132835298</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Firebreaks</layername>
@@ -373,7 +373,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Areas20121204131751547</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Areas</layername>
@@ -682,7 +682,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Points</layername>
@@ -847,7 +847,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Types20121204111631376</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='habenhtype_id' table="habitat_enhancement_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhtype_id' table="habitat_enhancement_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Types</layername>
@@ -874,7 +874,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Harvest Types20121204111631358</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='harvesttype_id' table="harvest_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='harvesttype_id' table="harvest_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Harvest Types</layername>
@@ -901,7 +901,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Land Areas20121204131751632</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Land Areas</layername>
@@ -1014,7 +1014,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation Types20121204111631341</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Recreation Types</layername>
@@ -1041,7 +1041,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Recreation</layername>
@@ -1169,7 +1169,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Road Types20121204111443350</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='roadtype_id' table="road_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadtype_id' table="road_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Road Types</layername>
@@ -1196,7 +1196,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Roads20121204131751607</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='roadln_id' srid=26917 type=LINESTRING table="road_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadln_id' srid=26917 type=LINESTRING table="road_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Roads</layername>
@@ -1462,7 +1462,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Stand Activities20121204135239560</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='standact_id' table="stand_activity" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standact_id' table="stand_activity" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stand Activities</layername>
@@ -1489,7 +1489,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Stands20121204133323889</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stands</layername>
@@ -1738,7 +1738,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Stocking Types20121204111631323</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='stockingtype_id' table="stocking_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='stockingtype_id' table="stocking_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stocking Types</layername>
@@ -1765,7 +1765,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Trees</layername>
@@ -1841,7 +1841,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Water Feature Types20121204111631302</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='watertype_id' table="water_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='watertype_id' table="water_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Water Feature Types</layername>
@@ -1868,7 +1868,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Water Point Features</layername>
@@ -1949,7 +1949,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>cultural_type20121216225244192</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>cultural_type</layername>
@@ -1976,7 +1976,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>stand_status20121215085843270</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='standstatus_id' table="stand_status" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standstatus_id' table="stand_status" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stand Status</layername>
@@ -2018,7 +2018,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>vw_stand_activity20121215220552226</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='standact_id' srid=26917 type=POLYGON table="vw_stand_activity" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standact_id' srid=26917 type=POLYGON table="vw_stand_activity" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stand Activity</layername>
@@ -2241,37 +2241,25 @@
         <WFSLayers type="QStringList"/>
         <Digitizing>
             <LayerSnappingList type="QStringList">
-                <value>Activity Areas20110501190657109</value>
-                <value>Activity Areas20110501192403828</value>
-                <value>Activity Areas20111019101446296</value>
-                <value>CulturalPoint20110501190657937</value>
-                <value>Firebreaks20110911194611421</value>
-                <value>Firebreaks20110911195256906</value>
-                <value>HabitatEnhancementArea20110501190700531</value>
-                <value>HabitatEnhancementPoint20110501190657953</value>
-                <value>LandArea20110501193251546</value>
-                <value>RecreationPoint20110501190657968</value>
-                <value>RoadLine20110501193229500</value>
-                <value>Stand20110501190832703</value>
-                <value>Streams20110501190657046</value>
-                <value>TreePoint20110501190657125</value>
-                <value>WaterPoint20110501190657984</value>
-                <value>tracks20111013183706812</value>
-                <value>tracks20111013183720656</value>
+                <value>Cultural Features20121204131751585</value>
+                <value>Firebreaks20121204132835298</value>
+                <value>Habitat Enhancement Areas20121204131751547</value>
+                <value>Habitat Enhancement Points20121204131751561</value>
+                <value>Land Areas20121204131751632</value>
+                <value>Recreation20121204131623145</value>
+                <value>Roads20121204131751607</value>
+                <value>Stands20121204133323889</value>
+                <value>Trees20121204131751596</value>
+                <value>Water Point Features20121204131510425</value>
+                <value>vw_stand_activity20121215220552226</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>disabled</value>
                 <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
                 <value>enabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>enabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
@@ -2291,23 +2279,11 @@
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
             </LayerSnappingToleranceUnitList>
             <LayerSnapToList type="QStringList">
                 <value>to_vertex</value>
                 <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
                 <value>to_vertex</value>
                 <value>to_vertex</value>
                 <value>to_vertex</value>
@@ -2317,20 +2293,14 @@
                 <value>to_vertex</value>
                 <value>to_vertex</value>
             </LayerSnapToList>
-            <TopologicalEditing type="int">1</TopologicalEditing>
+            <TopologicalEditing type="int">0</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
                 <value>0.000000</value>
                 <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>5.000000</value>
-                <value>0.000000</value>
                 <value>5.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
-                <value>0.000000</value>
-                <value>5.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
