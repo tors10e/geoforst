@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>255243.644531</xmin>
-            <ymin>3816040.158391</ymin>
-            <xmax>258045.836389</xmax>
-            <ymax>3817502.424828</ymax>
+            <xmin>256045.195597</xmin>
+            <ymin>3816094.394909</ymin>
+            <xmax>257827.878982</xmax>
+            <ymax>3817295.204508</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -59,24 +59,24 @@
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
-            </filegroup>
-        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Stand Activity" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Activities" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="vw_stand_activity20121215220552226" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="activity_area20130101221154986" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
             <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
@@ -109,6 +109,11 @@
                 <legendlayerfile isInOverview="0" layerid="Harvest Types20121204111631358" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="planned_activity" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="planned_activity20130101221155111" visible="1"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation Types20121204111631341" visible="0"/>
@@ -117,11 +122,6 @@
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Road Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Road Types20121204111443350" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Stand Activities" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Stand Activities20121204135239560" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Status" showFeatureCount="0">
@@ -1460,33 +1460,6 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>Stand Activities20121204135239560</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='standact_id' table="stand_activity" sql=</datasource>
-            <title></title>
-            <abstract></abstract>
-            <layername>Stand Activities</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <transparencyLevelInt>255</transparencyLevelInt>
-            <customproperties/>
-            <provider encoding="System">postgres</provider>
-            <vectorjoins/>
-            <editform>.</editform>
-            <editforminit></editforminit>
-            <annotationform>.</annotationform>
-            <attributeactions/>
-        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Stands20121204133323889</id>
             <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
@@ -1947,6 +1920,91 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>activity_area20130101221154986</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Activities</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="3" joinField="0" memoryCache="1" joinLayerId="Activity Types20121204111631394"/>
+                <join targetField="6" joinField="0" memoryCache="1" joinLayerId="planned_activity20130101221155111"/>
+            </vectorjoins>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="233" blue="172" green="14"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="activity_date"/>
+                <edittype type="0" name="activityarea_id"/>
+                <edittype type="0" name="acttype_dsc"/>
+                <edittype type="0" name="acttype_id"/>
+                <edittype type="0" name="completed_date"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="planned_date"/>
+                <edittype type="0" name="plannedact_id"/>
+                <edittype type="0" name="revenue"/>
+                <edittype type="0" name="standact_id"/>
+                <edittype type="0" name="standarea_id"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>cultural_type20121216225244192</id>
             <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
@@ -1972,6 +2030,33 @@
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>planned_activity20130101221155111</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>planned_activity</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -2010,201 +2095,6 @@
                 <edittype type="0" name="stocking"/>
                 <edittype type="0" name="stockingtype_id"/>
                 <edittype type="0" name="year"/>
-            </edittypes>
-            <editform>.</editform>
-            <editforminit></editforminit>
-            <annotationform>.</annotationform>
-            <attributeactions/>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>vw_stand_activity20121215220552226</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='standact_id' srid=26917 type=POLYGON table="vw_stand_activity" (geometry) sql=</datasource>
-            <title></title>
-            <abstract></abstract>
-            <layername>Stand Activity</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <transparencyLevelInt>255</transparencyLevelInt>
-            <provider encoding="System">postgres</provider>
-            <vectorjoins/>
-            <renderer-v2 attr="stand_no" symbollevels="0" type="categorizedSymbol">
-                <categories>
-                    <category symbol="0" value="1" label="1"/>
-                    <category symbol="1" value="2" label="2"/>
-                    <category symbol="2" value="3" label="3"/>
-                    <category symbol="3" value="4" label="4"/>
-                    <category symbol="4" value="5" label="5"/>
-                    <category symbol="5" value="6" label="6"/>
-                    <category symbol="6" value="7" label="7"/>
-                    <category symbol="7" value="8" label="8"/>
-                    <category symbol="8" value="9" label="9"/>
-                    <category symbol="9" value="" label=""/>
-                </categories>
-                <symbols>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="0">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="213,62,79,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="1">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="244,109,67,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="2">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="253,174,97,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="3">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="254,224,139,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="4">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="255,255,191,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="5">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="230,245,152,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="6">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="171,221,164,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="7">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="102,194,165,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="8">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="50,136,189,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="9">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="50,136,189,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </symbols>
-                <source-symbol>
-                    <symbol outputUnit="MM" alpha="0.109804" type="fill" name="0">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="53,221,44,28"/>
-                            <prop k="color_border" v="0,0,0,28"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </source-symbol>
-                <colorramp type="colorbrewer" name="[source]">
-                    <prop k="colors" v="9"/>
-                    <prop k="schemeName" v="Spectral"/>
-                </colorramp>
-                <rotation field=""/>
-                <sizescale field=""/>
-            </renderer-v2>
-            <customproperties/>
-            <displayfield>description</displayfield>
-            <label>0</label>
-            <labelattributes>
-                <label fieldname="" text="Label"/>
-                <family fieldname="" name="Lucida Grande"/>
-                <size fieldname="" units="pt" value="12"/>
-                <bold fieldname="" on="0"/>
-                <italic fieldname="" on="0"/>
-                <underline fieldname="" on="0"/>
-                <strikeout fieldname="" on="0"/>
-                <color fieldname="" red="0" blue="0" green="0"/>
-                <x fieldname=""/>
-                <y fieldname=""/>
-                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-                <angle fieldname="" value="0" auto="0"/>
-                <alignment fieldname="" value="center"/>
-                <buffercolor fieldname="" red="255" blue="255" green="255"/>
-                <buffersize fieldname="" units="pt" value="1"/>
-                <bufferenabled fieldname="" on=""/>
-                <multilineenabled fieldname="" on=""/>
-                <selectedonly on=""/>
-            </labelattributes>
-            <edittypes>
-                <edittype type="0" name="activity_description"/>
-                <edittype type="0" name="acttype_dsc"/>
-                <edittype type="0" name="completed_date"/>
-                <edittype type="0" name="description"/>
-                <edittype type="0" name="notes"/>
-                <edittype type="0" name="planned_date"/>
-                <edittype type="0" name="revenue"/>
-                <edittype type="0" name="stand_no"/>
-                <edittype type="0" name="standact_id"/>
-                <edittype type="0" name="standarea_id"/>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
