@@ -6,5 +6,5 @@ s/user\=\'ternst\'//g
 s/user\=\'cernst\'//g 
 
 # Change database from localhost to geo.
-s/localhost/geo.torstenernst.com/g 
+s/geo.torstenernst.com/localhost/g 
 

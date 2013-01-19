@@ -4,21 +4,21 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>256045.195597</xmin>
-            <ymin>3816094.394909</ymin>
-            <xmax>257827.878982</xmax>
-            <ymax>3817295.204508</ymax>
+            <xmin>-9312944.115249</xmin>
+            <ymin>4090532.015324</ymin>
+            <xmax>-9310181.982022</xmax>
+            <ymax>4091887.431629</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
             <spatialrefsys>
-                <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                <srsid>2294</srsid>
-                <srid>26917</srid>
-                <authid>EPSG:26917</authid>
-                <description>NAD83 / UTM zone 17N</description>
-                <projectionacronym>utm</projectionacronym>
-                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                <srsid>3857</srsid>
+                <srid>3857</srid>
+                <authid>EPSG:3857</authid>
+                <description>WGS 84 / Pseudo Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>WGS84</ellipsoidacronym>
                 <geographicflag>false</geographicflag>
             </spatialrefsys>
         </destinationsrs>
@@ -51,7 +51,7 @@
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Roads" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Roads20121204131751607" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
@@ -59,14 +59,19 @@
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Activities" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="activity_area20130101221154986" visible="1"/>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="activity_area20130101231920603" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
@@ -74,19 +79,14 @@
                 <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20121215213712614" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Physical" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20121215213712614" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20121215213538738" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20121215213538738" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
@@ -104,14 +104,9 @@
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Types20121204111631376" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Harvest Types" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Harvest Types20121204111631358" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="planned_activity" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="planned_activity20130101221155111" visible="1"/>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="planned_activity20130101231922171" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation Types" showFeatureCount="0">
@@ -140,10 +135,10 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="23">
+    <projectlayers layercount="22">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Activity Types</layername>
@@ -170,7 +165,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Cultural Features</layername>
@@ -289,7 +284,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Firebreaks20121204132835298</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Firebreaks</layername>
@@ -373,7 +368,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Areas20121204131751547</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Areas</layername>
@@ -682,7 +677,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Points</layername>
@@ -847,7 +842,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Habitat Enhancement Types20121204111631376</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='habenhtype_id' table="habitat_enhancement_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='habenhtype_id' table="habitat_enhancement_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Habitat Enhancement Types</layername>
@@ -872,36 +867,9 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>Harvest Types20121204111631358</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='harvesttype_id' table="harvest_type" sql=</datasource>
-            <title></title>
-            <abstract></abstract>
-            <layername>Harvest Types</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <transparencyLevelInt>255</transparencyLevelInt>
-            <customproperties/>
-            <provider encoding="System">postgres</provider>
-            <vectorjoins/>
-            <editform>.</editform>
-            <editforminit></editforminit>
-            <annotationform>.</annotationform>
-            <attributeactions/>
-        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Land Areas20121204131751632</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Land Areas</layername>
@@ -1014,7 +982,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation Types20121204111631341</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Recreation Types</layername>
@@ -1041,7 +1009,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Recreation</layername>
@@ -1169,7 +1137,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Road Types20121204111443350</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='roadtype_id' table="road_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='roadtype_id' table="road_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Road Types</layername>
@@ -1194,275 +1162,9 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>Roads20121204131751607</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='roadln_id' srid=26917 type=LINESTRING table="road_line" (geometry) sql=</datasource>
-            <title></title>
-            <abstract></abstract>
-            <layername>Roads</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <transparencyLevelInt>255</transparencyLevelInt>
-            <provider encoding="System">postgres</provider>
-            <vectorjoins>
-                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Road Types20121204111443350"/>
-            </vectorjoins>
-            <renderer-v2 attr="roadtype_dsc" symbollevels="0" type="categorizedSymbol">
-                <categories>
-                    <category symbol="0" value="Abandoned" label="Abandoned"/>
-                    <category symbol="1" value="ATV Track" label="ATV Track"/>
-                    <category symbol="2" value="Obliterated" label="Obliterated"/>
-                    <category symbol="3" value="Primary" label="Primary"/>
-                    <category symbol="4" value="Secondary" label="Secondary"/>
-                    <category symbol="5" value="Two Track" label="Two Track"/>
-                    <category symbol="6" value="" label=""/>
-                </categories>
-                <symbols>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="round"/>
-                            <prop k="color" v="192,223,255,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1.86"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="1">
-                        <layer pass="2" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="191,191,191,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="bevel"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="2">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="149,149,112,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="-1"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.26"/>
-                        </layer>
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="144,144,108,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="bevel"/>
-                            <prop k="offset" v="2"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.26"/>
-                        </layer>
-                        <layer pass="0" class="MarkerLine" locked="0">
-                            <prop k="interval" v="1.5"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="placement" v="interval"/>
-                            <prop k="rotate" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="3">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="round"/>
-                            <prop k="color" v="100,100,80,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1.96"/>
-                        </layer>
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="round"/>
-                            <prop k="color" v="244,244,119,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1.5"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="4">
-                        <layer pass="0" class="SimpleLine" locked="1">
-                            <prop k="capstyle" v="round"/>
-                            <prop k="color" v="171,171,171,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1.5"/>
-                        </layer>
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="round"/>
-                            <prop k="color" v="255,255,255,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.836283"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="5">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="134,67,0,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="bevel"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="1"/>
-                        </layer>
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="192,223,255,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="round"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.589041"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="6">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="8,48,107,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="bevel"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.26"/>
-                        </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="marker" name="@2@2">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="255,0,0,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="name" v="line"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="size" v="0.5"/>
-                        </layer>
-                    </symbol>
-                </symbols>
-                <source-symbol>
-                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
-                        <layer pass="0" class="SimpleLine" locked="0">
-                            <prop k="capstyle" v="square"/>
-                            <prop k="color" v="134,50,162,255"/>
-                            <prop k="customdash" v="5;2"/>
-                            <prop k="joinstyle" v="bevel"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="penstyle" v="solid"/>
-                            <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </source-symbol>
-                <colorramp type="gradient" name="[source]">
-                    <prop k="color1" v="247,251,255,255"/>
-                    <prop k="color2" v="8,48,107,255"/>
-                    <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
-                </colorramp>
-                <rotation field=""/>
-                <sizescale field=""/>
-            </renderer-v2>
-            <customproperties/>
-            <displayfield>description</displayfield>
-            <label>0</label>
-            <labelattributes>
-                <label fieldname="" text="Label"/>
-                <family fieldname="" name="MS Shell Dlg 2"/>
-                <size fieldname="" units="pt" value="12"/>
-                <bold fieldname="" on="0"/>
-                <italic fieldname="" on="0"/>
-                <underline fieldname="" on="0"/>
-                <strikeout fieldname="" on="0"/>
-                <color fieldname="" red="0" blue="0" green="0"/>
-                <x fieldname=""/>
-                <y fieldname=""/>
-                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-                <angle fieldname="" value="0" auto="0"/>
-                <alignment fieldname="" value="center"/>
-                <buffercolor fieldname="" red="255" blue="255" green="255"/>
-                <buffersize fieldname="" units="pt" value="1"/>
-                <bufferenabled fieldname="" on=""/>
-                <multilineenabled fieldname="" on=""/>
-                <selectedonly on=""/>
-            </labelattributes>
-            <edittypes>
-                <edittype type="0" name="AccessStatus"/>
-                <edittype type="0" name="Name"/>
-                <edittype type="3" name="Road Typesid">
-                    <valuepair key="ATV Track" value="4"/>
-                    <valuepair key="Abandoned" value="5"/>
-                    <valuepair key="Obliterated" value="6"/>
-                    <valuepair key="Primary" value="1"/>
-                    <valuepair key="Secondary" value="2"/>
-                    <valuepair key="Two Track" value="3"/>
-                </edittype>
-                <edittype type="0" name="RoadLnDesc"/>
-                <edittype type="0" name="RoadLnID"/>
-                <edittype type="0" name="RoadTypeDesc"/>
-                <edittype type="3" name="RoadTypeID">
-                    <valuepair key="ATV Track" value="4"/>
-                    <valuepair key="Abandoned" value="5"/>
-                    <valuepair key="Obliterated" value="6"/>
-                    <valuepair key="Primary" value="1"/>
-                    <valuepair key="Secondary" value="2"/>
-                    <valuepair key="Two Track" value="3"/>
-                </edittype>
-                <edittype type="0" name="Surface"/>
-                <edittype type="0" name="access_status"/>
-                <edittype type="0" name="accessstatus"/>
-                <edittype type="0" name="description"/>
-                <edittype type="0" name="name"/>
-                <edittype type="0" name="road_name"/>
-                <edittype type="0" name="roadln_id"/>
-                <edittype type="0" name="roadlndesc"/>
-                <edittype type="0" name="roadtype_dsc"/>
-                <edittype type="3" name="roadtype_id">
-                    <valuepair key="ATV Track" value="4"/>
-                    <valuepair key="Abandoned" value="5"/>
-                    <valuepair key="Obliterated" value="6"/>
-                    <valuepair key="Primary" value="1"/>
-                    <valuepair key="Secondary" value="2"/>
-                    <valuepair key="Two Track" value="3"/>
-                </edittype>
-                <edittype type="0" name="surface"/>
-            </edittypes>
-            <editform>../Forms/Road.ui</editform>
-            <editforminit></editforminit>
-            <annotationform>.</annotationform>
-            <attributeactions/>
-        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Stands20121204133323889</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stands</layername>
@@ -1478,7 +1180,7 @@
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
-            <transparencyLevelInt>126</transparencyLevelInt>
+            <transparencyLevelInt>60</transparencyLevelInt>
             <provider encoding="System">postgres</provider>
             <vectorjoins/>
             <classificationattribute>stand_no</classificationattribute>
@@ -1658,9 +1360,9 @@
             <customproperties/>
             <displayfield>description</displayfield>
             <label>1</label>
-            <labelfield>stand_no</labelfield>
+            <labelfield>standarea_id</labelfield>
             <labelattributes>
-                <label fieldname="stand_no" text=""/>
+                <label fieldname="standarea_id" text=""/>
                 <family fieldname="" name="MS Shell Dlg 2"/>
                 <size fieldname="" units="pt" value="12"/>
                 <bold fieldname="" on="0"/>
@@ -1700,6 +1402,7 @@
                 <edittype type="0" name="standarea_id"/>
                 <edittype type="0" name="standno"/>
                 <edittype type="0" name="standstatus_id"/>
+                <edittype type="0" name="start_date"/>
                 <edittype type="0" name="stocking"/>
                 <edittype type="0" name="stockingtype_id"/>
                 <edittype type="0" name="year"/>
@@ -1711,7 +1414,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Stocking Types20121204111631323</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='stockingtype_id' table="stocking_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='stockingtype_id' table="stocking_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stocking Types</layername>
@@ -1738,7 +1441,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Trees</layername>
@@ -1814,7 +1517,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Water Feature Types20121204111631302</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='watertype_id' table="water_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='watertype_id' table="water_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Water Feature Types</layername>
@@ -1841,7 +1544,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Water Point Features</layername>
@@ -1921,8 +1624,8 @@
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
-            <id>activity_area20130101221154986</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <id>activity_area20130101231920603</id>
+            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Activities</layername>
@@ -1940,10 +1643,7 @@
             </srs>
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="System">postgres</provider>
-            <vectorjoins>
-                <join targetField="3" joinField="0" memoryCache="1" joinLayerId="Activity Types20121204111631394"/>
-                <join targetField="6" joinField="0" memoryCache="1" joinLayerId="planned_activity20130101221155111"/>
-            </vectorjoins>
+            <vectorjoins/>
             <singlesymbol>
                 <symbol>
                     <lowervalue></lowervalue>
@@ -1958,9 +1658,9 @@
                     <outlinecolor red="0" blue="0" green="0"/>
                     <outlinestyle>SolidLine</outlinestyle>
                     <outlinewidth>0.26</outlinewidth>
-                    <fillcolor red="233" blue="172" green="14"/>
-                    <fillpattern>NoBrush</fillpattern>
-                    <texturepath null="1"></texturepath>
+                    <fillcolor red="0" blue="255" green="0"/>
+                    <fillpattern>Dense7Pattern</fillpattern>
+                    <texturepath>.</texturepath>
                 </symbol>
             </singlesymbol>
             <customproperties/>
@@ -1987,27 +1687,95 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype type="0" name="activity_date"/>
+                <edittype type="13" name="activity_date"/>
                 <edittype type="0" name="activityarea_id"/>
                 <edittype type="0" name="acttype_dsc"/>
-                <edittype type="0" name="acttype_id"/>
+                <edittype type="3" name="acttype_id">
+                    <valuepair key="Complete Harvest" value="4"/>
+                    <valuepair key="Controlled Burn" value="5"/>
+                    <valuepair key="Crop Tree Release" value="3"/>
+                    <valuepair key="Not Defined" value="8"/>
+                    <valuepair key="Planting" value="2"/>
+                    <valuepair key="Pruning" value="7"/>
+                    <valuepair key="Stump Shoot Thinning" value="6"/>
+                    <valuepair key="Thinning" value="1"/>
+                </edittype>
                 <edittype type="0" name="completed_date"/>
                 <edittype type="0" name="description"/>
                 <edittype type="0" name="notes"/>
                 <edittype type="0" name="planned_date"/>
-                <edittype type="0" name="plannedact_id"/>
+                <edittype type="3" name="plannedact_id">
+                    <valuepair key=" Install nest/brood structures, evaluate fuel loading in interface, initiate fuel reduction burning if necessary" value="24"/>
+                    <valuepair key="At low water levels, install regulation structure(s), raise level in dormant season, evaluate" value="25"/>
+                    <valuepair key="Burn in Feb-March, retreat sod-grass if necessary, establish interior food plots, divide into 3 sections" value="23"/>
+                    <valuepair key="Burn section 1 in late&#xa;Feb., maintain food&#xa;plots, control remaining&#xa;sod grasses, seed in&#xa;wildflower mix" value="45"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, continue&#xa;thinning" value="77"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, maintain&#xa;foodplot" value="76"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, maintain&#xa;foodplots" value="84"/>
+                    <valuepair key="Burn section 2 in late&#xa;Feb., maintain food&#xa;plots, evaluate species&#xa;mix, maintain&#xa;wildflowers" value="66"/>
+                    <valuepair key="Burn section 3&#xa;companion&#xa;compartments" value="106"/>
+                    <valuepair key="Burn section 3&#xa;companion&#xa;compartments, exclude&#xa;brush patch" value="98"/>
+                    <valuepair key="Burn section 3 in late&#xa;Feb., maintain food&#xa;plots, evaluate species&#xa;mix, maintain&#xa;wildflowers" value="88"/>
+                    <valuepair key="Burned" value="116"/>
+                    <valuepair key="Conduct harvest, establish fallow clearings, foodplot, brush patch, maintain/reroute trails" value="35"/>
+                    <valuepair key="Conduct harvest, establish oak/ec areas, fallow openings, foodplot (1)" value="41"/>
+                    <valuepair key="Conduct harvest, plant oak seedlings, reinforce or reroute trails sections with erosion problems" value="44"/>
+                    <valuepair key="Continue enhancement,&#xa;water regulation, refine&#xa;seasonal manipulation&#xa;of water levels" value="68"/>
+                    <valuepair key="Continue oak release,&#xa;maintain recreation&#xa;features" value="92"/>
+                    <valuepair key="Continue thinning if&#xa;necessary, maintain&#xa;recreation features" value="99"/>
+                    <valuepair key="Continue trail work, disk&#xa;section 1 companion&#xa;compartment, maintain&#xa;foodplots" value="56"/>
+                    <valuepair key="Develop trail and/or campsite, access from north highway," value="55"/>
+                    <valuepair key="Disk or burn (if possible)&#xa;section 1 companion&#xa;compartments, continue&#xa;oak crown release,&#xa;maintain foodplot" value="54"/>
+                    <valuepair key="Disk section 1&#xa;companion&#xa;compartments, maintain&#xa;foodplot, improve or&#xa;reroute trails sections" value="62"/>
+                    <valuepair key="Establish opening, continue non-comm thinning," value="34"/>
+                    <valuepair key="Establish openings (during harvest if possible) divide each into sections, delineate brush/foodplot inclusions" value="33"/>
+                    <valuepair key="Evaluate and Monitor&#xa;planting, control&#xa;herbivory, continue trail&#xa;work" value="87"/>
+                    <valuepair key="Evaluate fuel loading,&#xa;conduct prescribed burn&#xa;if necessary" value="67"/>
+                    <valuepair key="Evaluate harvest roads&#xa;for trail development,&#xa;decks for campsite,&#xa;continue oak release, pile&#xa;+ burn debris if feasible" value="48"/>
+                    <valuepair key="Evaluate residual pine for harvest, hardwood regeneration for hard mast potential, mark harvest/release areas in early fall" value="5"/>
+                    <valuepair key="Evaluate residual pine for harvest, mast trees for crown release, delineate fallow openings" value="9"/>
+                    <valuepair key="Identify cull and crop species, mark for selective thinning, delineate fallow field opening" value="12"/>
+                    <valuepair key="Identify potential interface point source hazards, mitigate as necessary" value="2"/>
+                    <valuepair key="Install habitat&#xa;enhancements (duck&#xa;boxes, etc.) control&#xa;beaver activity, clear&#xa;viewing/shooting lanes if&#xa;desired, evaluate water&#xa;regulation" value="46"/>
+                    <valuepair key="Monitor (no activity)" value="109"/>
+                    <valuepair key="Monitor and evaluate&#xa;water level&#xa;manipulation, control&#xa;beaver activity" value="90"/>
+                    <valuepair key="Monitor water levels and access through growing season" value="3"/>
+                    <valuepair key="Mow in July-August, treat sod grasses September" value="1"/>
+                    <valuepair key="No activity" value="89"/>
+                    <valuepair key="Plan and schedule harvest if feasible, release oak regeneration in selected areas, identify viewshed features" value="27"/>
+                    <valuepair key="Plan for commercial harvest and reforestation with oak species, identify erosion sites" value="22"/>
+                    <valuepair key="Plan for commercial harvest of mature pine and selected hardwoods, delineate fallow opening areas (4)" value="13"/>
+                    <valuepair key="Plan for commercial harvest of mature pine and selected hardwoods, delineate oak/early succession areas (7), fallow openings (3)" value="19"/>
+                    <valuepair key="Planted wheat 50, crimson clover 10 in interior of wildlife openings." value="110"/>
+                    <valuepair key="Planted wheat 50, white dutch 3, and white ladino 6 on firebreaks." value="111"/>
+                    <valuepair key="Pruned poplar and black cherry stump sprouts to single stem." value="112"/>
+                    <valuepair key="Reduced stump shoot stems to one per stump of poplar and black cherry." value="113"/>
+                    <valuepair key="Thinned poplar and black cherry root sprouts." value="114"/>
+                </edittype>
                 <edittype type="0" name="revenue"/>
                 <edittype type="0" name="standact_id"/>
-                <edittype type="0" name="standarea_id"/>
+                <edittype type="3" name="standarea_id">
+                    <valuepair key="Fallow field opening." value="25"/>
+                    <valuepair key="Forested wetland" value="11"/>
+                    <valuepair key="Improved forage grass field" value="12"/>
+                    <valuepair key="Logging deck turned  into wildlife opening." value="26"/>
+                    <valuepair key="Mesic hardwood, yng. age, overstocked" value="15"/>
+                    <valuepair key="Mixed yellow pine, early mature, overstocked" value="8"/>
+                    <valuepair key="Pine/Hardwood, med. age, mildly overstocked" value="7"/>
+                    <valuepair key="Pine/Hardwood, mxd. age, (beetle damage)" value="1"/>
+                    <valuepair key="Residential area" value="16"/>
+                    <valuepair key="Upland hardwood/pine (beetle damage)" value="21"/>
+                    <valuepair key="Upland hardwood/pine, med. age, fully stocked" value="6"/>
+                </edittype>
             </edittypes>
-            <editform></editform>
+            <editform>../Forms/ActivityArea.ui</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>cultural_type20121216225244192</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>cultural_type</layername>
@@ -2033,11 +1801,11 @@
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>planned_activity20130101221155111</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
+            <id>planned_activity20130101231922171</id>
+            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
             <title></title>
             <abstract></abstract>
-            <layername>planned_activity</layername>
+            <layername>Planned Activities</layername>
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -2054,14 +1822,252 @@
             <customproperties/>
             <provider encoding="System">postgres</provider>
             <vectorjoins/>
-            <editform></editform>
+            <edittypes>
+                <edittype type="0" name="acttype_id"/>
+                <edittype type="0" name="completed_date"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="planned_date"/>
+                <edittype type="0" name="plannedact_id"/>
+                <edittype type="0" name="revenue"/>
+                <edittype type="0" name="standarea_id"/>
+            </edittypes>
+            <editform>.</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>road_line20130101154010851</id>
+            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Roads</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Road Types20121204111443350"/>
+            </vectorjoins>
+            <renderer-v2 attr="roadtype_id" symbollevels="0" type="categorizedSymbol">
+                <categories>
+                    <category symbol="0" value="1" label="Primary"/>
+                    <category symbol="1" value="2" label="Secondary"/>
+                    <category symbol="2" value="3" label="Two Track"/>
+                    <category symbol="3" value="4" label="ATV Track"/>
+                    <category symbol="4" value="5" label="Abandoned"/>
+                    <category symbol="5" value="6" label="Obliterated"/>
+                </categories>
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="round"/>
+                            <prop k="color" v="100,100,80,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.96"/>
+                        </layer>
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="round"/>
+                            <prop k="color" v="244,244,119,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.5"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="1">
+                        <layer pass="0" class="SimpleLine" locked="1">
+                            <prop k="capstyle" v="round"/>
+                            <prop k="color" v="171,171,171,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.5"/>
+                        </layer>
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="round"/>
+                            <prop k="color" v="255,255,255,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.836283"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="2">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="134,67,0,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1"/>
+                        </layer>
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="192,223,255,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.589041"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="3">
+                        <layer pass="2" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="191,191,191,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="4">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="round"/>
+                            <prop k="color" v="192,223,255,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="5">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="149,149,112,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="round"/>
+                            <prop k="offset" v="-1"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="144,144,108,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="1"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="MarkerLine" locked="0">
+                            <prop k="interval" v="1.5"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="placement" v="interval"/>
+                            <prop k="rotate" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="marker" name="@5@2">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="name" v="line"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="size" v="0.5"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <source-symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="76,65,128,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </source-symbol>
+                <colorramp type="gradient" name="[source]">
+                    <prop k="color1" v="247,251,255,255"/>
+                    <prop k="color2" v="8,48,107,255"/>
+                    <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
+                </colorramp>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="access_status"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="road_name"/>
+                <edittype type="0" name="roadln_id"/>
+                <edittype type="0" name="roadtype_dsc"/>
+                <edittype type="3" name="roadtype_id">
+                    <valuepair key="ATV Track" value="4"/>
+                    <valuepair key="Abandoned" value="5"/>
+                    <valuepair key="Obliterated" value="6"/>
+                    <valuepair key="Primary" value="1"/>
+                    <valuepair key="Secondary" value="2"/>
+                    <valuepair key="Two Track" value="3"/>
+                </edittype>
+                <edittype type="0" name="surface"/>
+            </edittypes>
+            <editform>../Forms/Road.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>stand_status20121215085843270</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='postgres' sslmode=disable key='standstatus_id' table="stand_status" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='standstatus_id' table="stand_status" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Stand Status</layername>
@@ -2111,8 +2117,8 @@
         </Identify>
         <WMSContactPhone type="QString"></WMSContactPhone>
         <SpatialRefSys>
-            <ProjectCRSProj4String type="QString">+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
-            <ProjectCRSID type="int">2294</ProjectCRSID>
+            <ProjectCRSProj4String type="QString">+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs</ProjectCRSProj4String>
+            <ProjectCRSID type="int">3857</ProjectCRSID>
             <ProjectionsEnabled type="int">1</ProjectionsEnabled>
         </SpatialRefSys>
         <Gui>
@@ -2131,51 +2137,33 @@
         <WFSLayers type="QStringList"/>
         <Digitizing>
             <LayerSnappingList type="QStringList">
-                <value>Activity Areas20110501190657109</value>
-                <value>Activity Areas20110501192403828</value>
-                <value>Activity Areas20111019101446296</value>
-                <value>CulturalPoint20110501190657937</value>
-                <value>Firebreaks20110911194611421</value>
-                <value>Firebreaks20110911195256906</value>
-                <value>HabitatEnhancementArea20110501190700531</value>
-                <value>HabitatEnhancementPoint20110501190657953</value>
-                <value>LandArea20110501193251546</value>
-                <value>RecreationPoint20110501190657968</value>
-                <value>RoadLine20110501193229500</value>
-                <value>Stand20110501190832703</value>
-                <value>Streams20110501190657046</value>
-                <value>TreePoint20110501190657125</value>
-                <value>WaterPoint20110501190657984</value>
-                <value>tracks20111013183706812</value>
-                <value>tracks20111013183720656</value>
+                <value>Cultural Features20121204131751585</value>
+                <value>Firebreaks20121204132835298</value>
+                <value>Habitat Enhancement Areas20121204131751547</value>
+                <value>Habitat Enhancement Points20121204131751561</value>
+                <value>Land Areas20121204131751632</value>
+                <value>Recreation20121204131623145</value>
+                <value>Stands20121204133323889</value>
+                <value>Trees20121204131751596</value>
+                <value>Water Point Features20121204131510425</value>
+                <value>activity_area20130101231920603</value>
+                <value>road_line20130101154010851</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>disabled</value>
+                <value>enabled</value>
+                <value>enabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>enabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
                 <value>enabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
+                <value>enabled</value>
             </LayerSnappingEnabledList>
             <AvoidIntersectionsList type="QStringList"/>
             <LayerSnappingToleranceUnitList type="QStringList">
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
@@ -2191,41 +2179,29 @@
             <LayerSnapToList type="QStringList">
                 <value>to_vertex</value>
                 <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
                 <value>to_vertex</value>
                 <value>to_vertex</value>
                 <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
                 <value>to_vertex</value>
                 <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
-                <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
             </LayerSnapToList>
             <TopologicalEditing type="int">1</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
                 <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
                 <value>5.000000</value>
-                <value>0.000000</value>
                 <value>5.000000</value>
-                <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>5.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
+                <value>5.000000</value>
+                <value>5.000000</value>
             </LayerSnappingToleranceList>
         </Digitizing>
         <PositionPrecision>
