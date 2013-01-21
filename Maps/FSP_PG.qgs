@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9313028.822427</xmin>
-            <ymin>4090544.748880</ymin>
-            <xmax>-9310134.060673</xmax>
-            <ymax>4091900.165185</ymax>
+            <xmin>-9312987.792080</xmin>
+            <ymin>4090515.037249</ymin>
+            <xmax>-9310093.030326</xmax>
+            <ymax>4091870.453554</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -1404,6 +1404,7 @@
                     <valuepair key="Lowland Hardwood" value="5"/>
                     <valuepair key="Mixed-Oak Pine" value="3"/>
                     <valuepair key="Natural Pine" value="2"/>
+                    <valuepair key="Non-Forested" value="6"/>
                     <valuepair key="Planted Pine" value="1"/>
                     <valuepair key="Upland Hardwood" value="4"/>
                 </edittype>
@@ -1843,9 +1844,9 @@
                 <edittype type="0" name="foresttype_dsc"/>
                 <edittype type="0" name="foresttype_id"/>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
