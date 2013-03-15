@@ -2,14 +2,14 @@
 drop view public.vw_stand_area_by_year;
 
 CREATE VIEW public.vw_stand_area_by_year AS 
-         SELECT cast(cast(s.standareahist_id as varchar) || cast(d.report_year as varchar) as int) as view_id, s.standarea_id, s.geometry, s.stand_no, s.description, 
+         SELECT (s.standareahist_id * 2^32) + d.report_year +2^31 as view_id, s.standarea_id, s.geometry, s.stand_no, s.description, 
             s.end_date, s.start_date, s.foresttype_id, d.reportdate_id, 
             d.report_year, d.report_timestamp, 'historic' as status
            FROM stand_area_history s
      CROSS JOIN dim_report_date d
      WHERE d.report_timestamp >= s.start_date AND d.report_timestamp <= s.end_date
 UNION 
-         SELECT 6000000 + cast(cast(s.standarea_id as varchar) || cast(d.report_year as varchar) as int) as view_id, s.standarea_id, s.geometry, s.stand_no, s.description, 
+         SELECT (s.standarea_id * 2^32) + d.report_year as view_id, s.standarea_id, s.geometry, s.stand_no, s.description, 
             now() AS end_date, s.start_date, s.foresttype_id, d.reportdate_id, 
             d.report_year, d.report_timestamp, 'current' as status
            FROM stand_area s
