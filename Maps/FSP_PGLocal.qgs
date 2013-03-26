@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312944.115249</xmin>
-            <ymin>4090532.015324</ymin>
-            <xmax>-9310181.982022</xmax>
-            <ymax>4091887.431629</ymax>
+            <xmin>-9311442.090352</xmin>
+            <ymin>4090857.501786</ymin>
+            <xmax>-9310064.213269</xmax>
+            <ymax>4091755.755659</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -59,9 +59,9 @@
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Land Areas" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
@@ -1625,7 +1625,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>activity_area20130101231920603</id>
-            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Activities</layername>
@@ -1802,7 +1802,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>planned_activity20130101231922171</id>
-            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Planned Activities</layername>
@@ -1839,7 +1839,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>road_line20130101154010851</id>
-            <datasource>dbname='fsp' host=localhost port=5432  sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Roads</layername>
@@ -2154,7 +2154,7 @@
                 <value>enabled</value>
                 <value>enabled</value>
                 <value>disabled</value>
-                <value>disabled</value>
+                <value>enabled</value>
                 <value>disabled</value>
                 <value>enabled</value>
                 <value>disabled</value>
@@ -2195,7 +2195,7 @@
                 <value>5.000000</value>
                 <value>5.000000</value>
                 <value>0.000000</value>
-                <value>0.000000</value>
+                <value>10.000000</value>
                 <value>0.000000</value>
                 <value>5.000000</value>
                 <value>0.000000</value>
