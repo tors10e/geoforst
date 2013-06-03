@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>stand_area</class>
- <widget class="QDialog" name="stand_area">
-  <property name="enabled">
-   <bool>true</bool>
-  </property>
+ <class>land_area</class>
+ <widget class="QDialog" name="land_area">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>359</height>
+    <width>411</width>
+    <height>232</height>
    </rect>
   </property>
-  <property name="cursor">
-   <cursorShape>IBeamCursor</cursorShape>
-  </property>
   <property name="windowTitle">
-   <string>Stand Area Editing</string>
+   <string>Cultural Point Editing</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>320</y>
-     <width>176</width>
-     <height>27</height>
+     <x>210</x>
+     <y>180</y>
+     <width>161</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="orientation">
@@ -35,121 +32,95 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>130</y>
-     <width>121</width>
+     <x>20</x>
+     <y>50</y>
+     <width>91</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
-    <string>Stand Description:</string>
+    <string>ID:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Property:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>80</y>
-     <width>101</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stand Number:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
+     <x>110</x>
      <y>10</y>
-     <width>101</width>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>17</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>Stand Area</string>
+    <string>Land Owner</string>
    </property>
   </widget>
-  <widget class="QLabel" name="lblStandAreaID">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
+  <widget class="QLineEdit" name="landowner_id">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>40</y>
-     <width>101</width>
-     <height>17</height>
+     <x>120</x>
+     <y>50</y>
+     <width>113</width>
+     <height>22</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Stand Area ID:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="standarea_id">
-   <property name="enabled">
+   <property name="autoFillBackground">
     <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>40</y>
-     <width>50</width>
-     <height>27</height>
-    </rect>
    </property>
    <property name="readOnly">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>170</y>
-     <width>121</width>
+     <x>20</x>
+     <y>140</y>
+     <width>91</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
-    <string>Start Date:</string>
+    <string>Owner:</string>
    </property>
   </widget>
-  <widget class="QDateEdit" name="start_date">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>170</y>
-     <width>110</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="stand_no">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>80</y>
-     <width>51</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="standdescription_id">
+  <widget class="QComboBox" name="landarea_id">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>120</y>
-     <width>321</width>
+     <y>90</y>
+     <width>211</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="person_id">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>211</width>
      <height>26</height>
     </rect>
    </property>
@@ -160,7 +131,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>stand_area</receiver>
+   <receiver>land_area</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -176,7 +147,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>stand_area</receiver>
+   <receiver>land_area</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

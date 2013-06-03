@@ -133,7 +133,7 @@
             </list-property>
             <list-property name="parameters">
                 <structure>
-                    <property name="name">param_1</property>
+                    <property name="name">pYear</property>
                     <property name="paramName">rpYear</property>
                     <property name="nativeName"></property>
                     <property name="dataType">integer</property>
@@ -145,7 +145,7 @@
                     <property name="isOutput">false</property>
                 </structure>
                 <structure>
-                    <property name="name">param_2</property>
+                    <property name="name">pTaskStatus</property>
                     <property name="paramName">rpTaskStatus</property>
                     <property name="nativeName"></property>
                     <property name="dataType">integer</property>

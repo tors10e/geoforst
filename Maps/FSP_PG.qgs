@@ -1694,7 +1694,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>activity_area20130101231920603</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Activities</layername>
@@ -1876,7 +1876,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>forest_type20130118212645702</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=disable key='foresttype_id' table="forest_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='foresttype_id' table="forest_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Forest Types</layername>
@@ -1907,7 +1907,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>planned_activity20130101231922171</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Planned Activities</layername>
@@ -1944,7 +1944,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>road_line20130101154010851</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Roads</layername>
@@ -2214,7 +2214,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>stand_type20130317153822193</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='standtype_id' table="stand_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='standtype_id' table="stand_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>stand_type</layername>
