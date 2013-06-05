@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312731.007596</xmin>
-            <ymin>4090047.300883</ymin>
-            <xmax>-9310149.872652</xmax>
-            <ymax>4092328.909573</ymax>
+            <xmin>-9312714.317598</xmin>
+            <ymin>4090540.194562</ymin>
+            <xmax>-9310401.411331</xmax>
+            <ymax>4091909.861500</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -34,14 +34,14 @@
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cultural Features" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="1"/>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Soil Tests" showFeatureCount="0">
@@ -54,14 +54,19 @@
                 <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Trees" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Trees" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
             <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Trails" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="trail20130604130606776" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Roads" showFeatureCount="0">
@@ -87,6 +92,11 @@
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
             <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="activity_area20130101231920603" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Burn Compartments" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="burn_compartment20130604140436276" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
@@ -204,6 +214,16 @@
                 <legendlayerfile isInOverview="0" layerid="Stocking Types20121204111631323" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Trail Status Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="trail_status_type20130604130617774" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Trail Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="trail_type20130604130618208" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Water Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="water_type20130603100649684" visible="0"/>
@@ -215,7 +235,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="38">
+    <projectlayers layercount="42">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
@@ -243,7 +263,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
             <title></title>
@@ -362,7 +382,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>Firebreaks20121204132835298</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
             <title></title>
@@ -747,7 +767,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>Habitat Enhancement Points20121204131751561</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
@@ -893,6 +913,7 @@
                 <edittype type="0" name="description"/>
                 <edittype type="10" name="habenhpt_id"/>
                 <edittype type="0" name="habenhptdesc"/>
+                <edittype type="0" name="habenhtype_cd"/>
                 <edittype type="0" name="habenhtype_dsc"/>
                 <edittype allowNull="true" orderByValue="true" key="habenhtype_id" layer="Habitat Enhancement Types20121204111631376" type="15" value="habenhtype_dsc" name="habenhtype_id"/>
                 <edittype type="0" name="habenhtypedesc"/>
@@ -1079,7 +1100,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -1195,6 +1216,7 @@
                 <edittype type="0" name="description"/>
                 <edittype type="10" name="recpt_id"/>
                 <edittype type="0" name="recptdesc"/>
+                <edittype type="0" name="rectype_cd"/>
                 <edittype type="0" name="rectype_dsc"/>
                 <edittype allowNull="true" orderByValue="true" key="rectype_id" layer="Recreation Types20121204111631341" type="15" value="rectype_dsc" name="rectype_id"/>
                 <edittype type="3" name="rectypeid">
@@ -1531,7 +1553,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
@@ -1557,8 +1579,8 @@
                     <lowervalue></lowervalue>
                     <uppervalue></uppervalue>
                     <label></label>
-                    <pointsymbol>svg:/biology/Coniferous.svg</pointsymbol>
-                    <pointsize>4</pointsize>
+                    <pointsymbol>svg:/gpsicons/city_small.svg</pointsymbol>
+                    <pointsize>6</pointsize>
                     <pointsizeunits>pixels</pointsizeunits>
                     <rotationclassificationfieldname></rotationclassificationfieldname>
                     <scaleclassificationfieldname></scaleclassificationfieldname>
@@ -1599,6 +1621,7 @@
                 <edittype type="0" name="StartYear"/>
                 <edittype type="0" name="TreePtID"/>
                 <edittype type="0" name="specie"/>
+                <edittype type="0" name="species"/>
                 <edittype type="0" name="start_year"/>
                 <edittype type="10" name="tree_id"/>
             </edittypes>
@@ -1634,7 +1657,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>Water Point Features20121204131510425</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
             <title></title>
@@ -1856,6 +1879,128 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>burn_compartment20130604140436276</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=allow key='burncompartment_id' srid=26917 type=POLYGON table="burn_compartment" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Burn Compartments</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <renderer-v2 attr="compartment_set" symbollevels="0" type="categorizedSymbol">
+                <categories>
+                    <category symbol="0" value="1" label="1"/>
+                    <category symbol="1" value="2" label="2"/>
+                    <category symbol="2" value="3" label="3"/>
+                    <category symbol="3" value="" label=""/>
+                </categories>
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="215,25,28,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="1">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="253,201,128,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="2">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="199,232,173,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="3">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="43,131,186,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <source-symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="141,254,120,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </source-symbol>
+                <colorramp type="gradient" name="[source]">
+                    <prop k="color1" v="215,25,28,255"/>
+                    <prop k="color2" v="43,131,186,255"/>
+                    <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
+                </colorramp>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>burncompartment_id</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="burncompartment_id"/>
+                <edittype type="0" name="compartment_set"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>cultural_type20121216225244192</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
@@ -2002,7 +2147,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>ordinal_magnitude_type20130603174613248</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='ordinalmag_id' table="ordinal_magnitude_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='ordinalmag_id' table="ordinal_magnitude_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Ordinal Magnitude Type</layername>
@@ -2029,7 +2174,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>ordinal_sufficiency_type20130603174613510</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='ordinalsuff_id' table="ordinal_sufficiency_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='ordinalsuff_id' table="ordinal_sufficiency_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Ordinal Sufficiency Type</layername>
@@ -2145,7 +2290,7 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1">
             <id>road_line20130101154010851</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
             <title></title>
@@ -2359,6 +2504,7 @@
                 <edittype type="0" name="road_name"/>
                 <edittype type="0" name="roadln_id"/>
                 <edittype allowNull="true" orderByValue="true" key="roadsurface_id" layer="road_surface_type20130603100643130" type="15" value="roadsurface_dsc" name="roadsurface_id"/>
+                <edittype type="0" name="roadtype_cd"/>
                 <edittype type="0" name="roadtype_dsc"/>
                 <edittype allowNull="true" orderByValue="true" key="roadtype_id" layer="Road Types20121204111443350" type="15" value="roadtype_dsc" name="roadtype_id"/>
                 <edittype type="0" name="surface"/>
@@ -2422,9 +2568,9 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25000" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>soil_test20130603122942351</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='soiltest_id' srid=26917 type=POINT table="soil_test" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='soiltest_id' srid=26917 type=POINT table="soil_test" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Soil Tests</layername>
@@ -2448,7 +2594,7 @@
                     <lowervalue></lowervalue>
                     <uppervalue></uppervalue>
                     <label></label>
-                    <pointsymbol>svg:/symbol/Cross1.svg</pointsymbol>
+                    <pointsymbol>svg:/symbol/Cross2.svg</pointsymbol>
                     <pointsize>4</pointsize>
                     <pointsizeunits>pixels</pointsizeunits>
                     <rotationclassificationfieldname></rotationclassificationfieldname>
@@ -2542,7 +2688,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>soil_test_recommendation20130603122843299</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='soiltestrec_id' table="soil_test_recommendation" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='soiltestrec_id' table="soil_test_recommendation" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Soil Test Recommendations</layername>
@@ -2693,9 +2839,136 @@
             <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="25000" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1">
+            <id>trail20130604130606776</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=allow key='trail_id' srid=26917 type=LINESTRING table="trail" (geom) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Trails</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="3" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="193,176,166,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.96"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>trail_name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="10" name="trail_id"/>
+                <edittype type="0" name="trail_name"/>
+                <edittype allowNull="true" orderByValue="true" key="trailstatus_id" layer="trail_status_type20130604130617774" type="15" value="trailstatus_dsc" name="trail_status"/>
+                <edittype allowNull="true" orderByValue="true" key="trailtype_id" layer="trail_type20130604130618208" type="15" value="trailtype_dsc" name="trail_type"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>trail_status_type20130604130617774</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=allow key='trailstatus_id' table="trail_status_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Trail Status Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>trail_type20130604130618208</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=allow key='trailtype_id' table="trail_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Trail Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>tree_status20130603213537490</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432  sslmode=disable key='treestatus_id' table="tree_status" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='treestatus_id' table="tree_status" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <layername>Tree Status</layername>
@@ -2723,9 +2996,9 @@
                 <edittype allowNull="false" orderByValue="true" key="tree_id" layer="Trees20121204131751596" type="15" value="tree_id" name="tree_id"/>
                 <edittype type="10" name="treestatus_id"/>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -2796,22 +3069,31 @@
                 <value>Water Point Features20121204131510425</value>
                 <value>activity_area20130101231920603</value>
                 <value>road_line20130101154010851</value>
+                <value>soil_test20130603122942351</value>
+                <value>trail20130604130606776</value>
+                <value>burn_compartment20130604140436276</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>disabled</value>
                 <value>enabled</value>
-                <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
                 <value>disabled</value>
                 <value>enabled</value>
                 <value>disabled</value>
-                <value>enabled</value>
                 <value>disabled</value>
-                <value>disabled</value>
-                <value>enabled</value>
                 <value>enabled</value>
             </LayerSnappingEnabledList>
             <AvoidIntersectionsList type="QStringList"/>
             <LayerSnappingToleranceUnitList type="QStringList">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
@@ -2836,6 +3118,9 @@
                 <value>to_vertex</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
             </LayerSnapToList>
             <TopologicalEditing type="int">1</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
@@ -2843,12 +3128,15 @@
                 <value>5.000000</value>
                 <value>5.000000</value>
                 <value>0.000000</value>
-                <value>10.000000</value>
+                <value>5.000000</value>
                 <value>0.000000</value>
-                <value>10.000000</value>
+                <value>5.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>5.000000</value>
+                <value>5.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
                 <value>5.000000</value>
             </LayerSnappingToleranceList>
         </Digitizing>
