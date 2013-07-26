@@ -5,23 +5,60 @@
 	<meta charset=UTF-8">
 	<script type="text/javascript" src="../../static/geoforst/javascript/OpenLayers.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script type="text/javascript">
+	<style type='text/css'> 
+	/*Navigation Control*/ 
+	.olControlNavigationItemActive { 
+	  background: #226699 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/theme/default/img/pan_on.png'); 
+	  width:  22px;  
+	  height: 22px; 
+	} 
+	.olControlNavigationItemInactive { 
+	  background: #996622 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/theme/default/img/pan_off.png'); 
+	  width:  22px;  
+	  height: 22px; 
+	} 
+
+	/*Zoom Box Control*/ 
+	.olControlZoomBoxItemInactive { 
+	  width:  22px;  
+	  height: 22px; 
+	  background:#999933 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/img/drag-rectangle-off.png'); 
+	} 
+	.olControlZoomBoxItemActive { 
+	  width:  22px;  
+	  height: 22px; 
+	  background:#999966 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/img/drag-rectangle-on.png'); 
+	} 
+
+	/*Zoom to Max Extent Control*/ 
+	.olControlZoomToMaxExtentItemInactive { 
+	  width:  18px;  
+	  height: 18px; 
+	  background:#333399 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/img/zoom-world-mini.png'); 
+	}
+	/*Pan Control Inactive*/ 
+	.olControlDragPanItemInactive { 
+	  width:  22px;  
+	  height: 22px; 
+	  background:#333399 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/img/panning-hand-off.png'); 
+	}  
+	/*Pan Control Active*/ 
+	.olControlDragPanItemActive { 
+	  width:  22px;  
+	  height: 22px; 
+	  background:#333399 url('http://dev.openlayers.org/releases/OpenLayers-2.9.1/img/panning-hand-on.png'); 
+	}  
+</style> 
+<script type="text/javascript">
 	
 var map;
 
-function init() {
-			var navigationControl = new OpenLayers.Control.Navigation({});
-			var controlsArray = [
-					navigationControl,
-					new OpenLayers.Control.PanZoomBar({}),
-					new OpenLayers.Control.LayerSwitcher({}),
-					new OpenLayers.Control.Permalink(),
-					new OpenLayers.Control.MousePosition({})
-	];
-			
+function init() {	
+
+// Create the map.			
 map = new OpenLayers.Map('map_element', 
 		{  
-			controls: controlsArray,
+			//controls: controlsArray,
 			projection: 'EPSG:4326',   
 			//maxExtent: new OpenLayers.Bounds(-83.66520467630417,34.45825690184,-83.48344212907318,34.73743345942654),
 			maxExtent: new OpenLayers.Bounds(-128 * 156543.0339,   -128 * 156543.0339,   128 * 156543.0339,   128 * 156543.0339),
@@ -29,8 +66,10 @@ map = new OpenLayers.Map('map_element',
 			units: 'm',
 			projection: new OpenLayers.Projection('EPSG:900913'),   
 			displayProjection: new OpenLayers.Projection("EPSG:4326")
-		});
-		
+		});		
+                          
+
+	
 // Add layers to the map.
  var google_physical = new OpenLayers.Layer.Google("Google Physical",     
 		{
@@ -79,15 +118,44 @@ map.addLayers([google_physical,
                google_hybrid,
                lyrLandArea,
                lyrStandArea]);
-               
+
+var navigation_control = new OpenLayers.Control.Navigation();
+
+var control_panel = new OpenLayers.Control.Panel({
+    div: document.getElementById('panel_div'),
+    defaultControl: navigation_control
+}); 
+
+//Add some controls to the map.
+
+	var panZoomBar = new OpenLayers.Control.PanZoomBar();
+	
+	var layerSwitcher = new OpenLayers.Control.LayerSwitcher();
+
+	map.addControls([
+		          	panZoomBar,
+		            layerSwitcher
+	])
+		                 
+control_panel.addControls([
+    new OpenLayers.Control.ZoomBox(),
+    new OpenLayers.Control.DragPan(),
+    new OpenLayers.Control.ZoomToMaxExtent(),
+    new OpenLayers.Control.MousePosition({})
+])
+
+//Add the Panel to the map
+map.addControl(control_panel);
                      
 // Set view to zoom maximum map extent
 map.zoomToMaxExtent();
+
 } //End of init.
 
 </script>
 </head>
 <body onload="init()">
 	<div id="map_element" style="width: 500px; height: 500px;"></div>
+	<div id="panel_div"></div>
 </body>
 </html>
