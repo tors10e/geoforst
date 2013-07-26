@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>GeoForst Web</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- Include OpenLayers library -->
-<!--  <script type="text/javascript" src="http://openlayers.org/api/2.11/OpenLayers.js"></script> -->
-<script type="text/javascript" 
-src="../../static/geoforst/javascript/OpenLayers.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<style type="text/css">
-html,body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-</style>
-<!-- The magic comes here -->
-<script type="text/javascript">
-function init() {
+	<title>GeoForst Web</title>
+	<meta charset=UTF-8">
+	<script type="text/javascript" src="../../static/geoforst/javascript/OpenLayers.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript">
 	
+var map;
+
+function init() {
+			var navigationControl = new OpenLayers.Control.Navigation({});
+			var controlsArray = [
+					navigationControl,
+					new OpenLayers.Control.PanZoomBar({}),
+					new OpenLayers.Control.LayerSwitcher({}),
+					new OpenLayers.Control.Permalink(),
+					new OpenLayers.Control.MousePosition({})
+	];
+			
 map = new OpenLayers.Map('map_element', 
 		{  
+			controls: controlsArray,
 			projection: 'EPSG:4326',   
 			//maxExtent: new OpenLayers.Bounds(-83.66520467630417,34.45825690184,-83.48344212907318,34.73743345942654),
 			maxExtent: new OpenLayers.Bounds(-128 * 156543.0339,   -128 * 156543.0339,   128 * 156543.0339,   128 * 156543.0339),
@@ -30,14 +30,20 @@ map = new OpenLayers.Map('map_element',
 			projection: new OpenLayers.Projection('EPSG:900913'),   
 			displayProjection: new OpenLayers.Projection("EPSG:4326")
 		});
-// Create an OpenStreeMap raster layer
-// and add to the map
-
- var google_physical = new OpenLayers.Layer.Google(     "Google Physical",     
+		
+// Add layers to the map.
+ var google_physical = new OpenLayers.Layer.Google("Google Physical",     
 		{
-			type: google.maps.MapTypeId.TERRAIN
+			type: google.maps.MapTypeId.TERRAIN,
+			epsg:'900913'
 		}); 
-			
+
+ var google_hybrid = new OpenLayers.Layer.Google("Google Hybrid",     
+			{
+				type: google.maps.MapTypeId.HYBRID,
+				epsg:'900913'
+			}); 
+
 var wms_layer_map = new OpenLayers.Layer.WMS('Base layer', 'http://vmap0.tiles.osgeo.org/wms/vmap0',  
 		{
 			layers: 'basic',
@@ -47,9 +53,9 @@ var wms_layer_map = new OpenLayers.Layer.WMS('Base layer', 'http://vmap0.tiles.o
 			isBaseLayer: true
 		});
 
-var layerLandArea = new OpenLayers.Layer.WMS("LandArea", "http://geo.torstenernst.com/geoserver/fsp/wms",
+var lyrLandArea = new OpenLayers.Layer.WMS("LandArea", "http://geo.torstenernst.com/geoserver/fsp/wms",
 		{
-			layers: "fsp:land_area",
+			layers: "fsp:land_area", 
 			version: '1.1.0',
 			epsg:'4326',
 			transparent:'true'
@@ -58,16 +64,30 @@ var layerLandArea = new OpenLayers.Layer.WMS("LandArea", "http://geo.torstenerns
 			isBaseLayer: false
 		});
 
-map.addLayers([wms_layer_map, 
-               google_physical,
-               layerLandArea]);
-map.addControl(new OpenLayers.Control.LayerSwitcher());
+var lyrStandArea = new OpenLayers.Layer.WMS("StandArea", "http://geo.torstenernst.com/geoserver/fsp/wms",
+		{
+			layers: "fsp:stand_area", 
+			version: '1.1.0',
+			epsg:'4326',
+			transparent:'true'
+		},
+		{
+			isBaseLayer: false
+		});
+
+map.addLayers([google_physical,
+               google_hybrid,
+               lyrLandArea,
+               lyrStandArea]);
+               
+                     
 // Set view to zoom maximum map extent
 map.zoomToMaxExtent();
-}
+} //End of init.
+
 </script>
 </head>
 <body onload="init()">
-	<div id="map_element" style="width: 100%; height: 100%;"></div>
+	<div id="map_element" style="width: 500px; height: 500px;"></div>
 </body>
 </html>
