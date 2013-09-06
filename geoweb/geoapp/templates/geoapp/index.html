@@ -1,0 +1,10 @@
+{% if latest_plot_list %}
+	<p>This is a list of plots</p>
+    <ul>
+    {% for plot in latest_plot_list %}
+        <li><a href="/inventory_plot/{{ plot.id }}/">{{ plot.position_description }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No plots are available.</p>
+{% endif %}

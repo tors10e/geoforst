@@ -1,0 +1,10 @@
+{% extends "geoapp/base_inventory.html" %}
+
+{% block content %}
+    <h2>Forest Inventory Plots</h2>
+    <ul>
+        {% for plot in inventory_plots %}
+           <li><a href="{{plot.forestinventoryplot_id }}/detail/">Plot ID = {{plot.forestinventoryplot_id}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
