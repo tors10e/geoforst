@@ -478,6 +478,7 @@ class ForestInventoryData(models.Model):
     collection_date = models.DateField(null=True, blank=True)
     species = models.CharField(max_length=30, null=True, blank=True)
     dbh_in = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    height_ft = models.DecimalField(max_digits=4, decimal_places=2, blank=True, null=True)
     class Meta:
         db_table = 'forest_inventory_data'
         ordering = ["forestinventorydata_id"]

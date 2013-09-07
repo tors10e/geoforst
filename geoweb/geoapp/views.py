@@ -5,6 +5,7 @@ from django.views.generic import ListView, DetailView
 from geoapp.models import ForestInventoryPlot
 from geoapp.forms import InventoryPlotForm
 from django.core.urlresolvers import reverse
+from django.http.response import HttpResponseRedirectBase
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -49,33 +50,9 @@ def InventoryPlotAdd(request):
     if request.method == 'POST': # If the form has been submitted...
         form = InventoryPlotForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
-            # Process the data in form.cleaned_data
-            # ...
+            form.save()
             return HttpResponseRedirect('/thanks/') # Redirect after POST
     else:
         form = InventoryPlotForm() # An unbound form
-
-    return render(request, 'geoapp/forestinventoryplot_add.html', {
-        'form': form,
-    })
+        return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
     
-def plotAdd(request, forestinventoryplot_id):
-    p = get_object_or_404(ForestInventoryPlot, pk=forestinventoryplot_id)
-    try:
-        elevation = p.get(pk=request.POST['elevation'])
-    except (KeyError, elevation.DoesNotExist):
-        # Redisplay the poll voting form.
-        return render(request, 'inventory_plot/detail.html', {
-            'poll': p,
-            'error_message': "You didn't select a choice.",
-        })
-    else:
-        
-        ForestInventoryPlot.elevation = elevation 
-        ForestInventoryPlot.save()
-        # Always return an HttpResponseRedirect after successfully dealing
-        # with POST data. This prevents data from being posted twice if a
-        # user hits the Back button.
-        return HttpResponseRedirect(reverse('geoapp:inventory_plot', args=(p.id,)))
-
-

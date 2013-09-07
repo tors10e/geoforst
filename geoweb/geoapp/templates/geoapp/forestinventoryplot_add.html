@@ -1,6 +1,6 @@
 <p>Add a new forest inventory plot</p>
-<form action="/InventoryPlotEdit/" method="post">{% csrf_token %}
-<form action="{% url 'geapp:addPlot' forestinventoryplot.id %}" method="post">
+<form action="/geoapp/inventory_plot/add/" method="post">{% csrf_token %}
 {{ form.as_p }}
 <input type="submit" value="Submit" />
 </form>
+
