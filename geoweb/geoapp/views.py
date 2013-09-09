@@ -1,9 +1,9 @@
-from django.shortcuts import get_object_or_404, render, render_to_response, get_object_or_404
+from django.shortcuts import get_object_or_404, render, render_to_response, Http404
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
 from django.views.generic import ListView, DetailView
-from geoapp.models import ForestInventoryPlot
-from geoapp.forms import InventoryPlotForm
+from geoapp.models import ForestInventoryPlot, ForestInventoryData
+from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirectBase
 
@@ -51,8 +51,41 @@ def InventoryPlotAdd(request):
         form = InventoryPlotForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
             form.save()
-            return HttpResponseRedirect('/thanks/') # Redirect after POST
-    else:
+        return HttpResponseRedirect('/geoapp/inventory_plot/') # Redirect after POST
+    else: 
         form = InventoryPlotForm() # An unbound form
         return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
+    
+def InventoryPlotEdit(request, forestinventoryplot_id=None):
+    plot = get_object_or_404(ForestInventoryPlot, pk=forestinventoryplot_id)
+    if request.method == 'POST':
+        form = InventoryPlotForm(request.POST or None, instance=plot)
+        if form.is_valid():
+            form.save()
+        return HttpResponseRedirect('/geoapp/inventory_plot/')
+    else:
+        form = InventoryPlotForm(instance=plot)
+        return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
+    
+def InventoryDataAdd(request, forestinventoryplot_id=None):
+    if request.method == 'POST': # If the form has been submitted...
+        form = InventoryDataForm(request.POST) # A form bound to the POST data
+        if form.is_valid(): # All validation rules pass
+            form.save()
+        return HttpResponseRedirect('/geoapp/inventory_plot/') # Redirect after POST
+    else: 
+        initial_data = {'forestinventoryplot' : forestinventoryplot_id}
+        form = InventoryDataForm(initial=initial_data) # An unbound form
+        return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
