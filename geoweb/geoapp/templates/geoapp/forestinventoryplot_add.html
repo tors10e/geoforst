@@ -1,6 +1,13 @@
+{% extends "geoapp/base_inventory.html" %}
+{% block content %} 
+<script>
+$(function() {
+  $( "#id_plot_create_date" ).datepicker();
+});
+</script>
 <p>Add a new forest inventory plot</p>
 <form action="/geoapp/inventory_plot/add/" method="post">{% csrf_token %}
 {{ form.as_p }}
 <input type="submit" value="Submit" />
 </form>
-
+{% endblock %}
