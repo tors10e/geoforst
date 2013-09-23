@@ -6,6 +6,7 @@ from geoapp.models import ForestInventoryPlot, ForestInventoryData
 from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirectBase
+from  django.db import models
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -77,6 +78,8 @@ def InventoryDataAdd(request, forestinventoryplot_id=None):
         initial_data = {'forestinventoryplot' : forestinventoryplot_id}
         form = InventoryDataForm(initial=initial_data) # An unbound form
         return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+    
+
     
     
     
