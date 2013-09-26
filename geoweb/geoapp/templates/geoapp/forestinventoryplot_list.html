@@ -27,7 +27,7 @@ $(function() {
     	</tr>
     	{% for plot in inventory_plots %}
     	<tr>
-    		<td><a href="{{plot.forestinventoryplot_id }}/detail/">{{plot.forestinventoryplot_id}}</a></td>
+	    	<td><a href="edit/{{plot.forestinventoryplot_id }}">{{plot.forestinventoryplot_id}}</a>
     		<td>{{plot.plot_area_ft2}}</td>
 	    	<td>{{plot.plot_radius_ft}}</td>
 	    	<td>{{plot.plot_length_x_ft}}</td>
@@ -36,6 +36,7 @@ $(function() {
 	    	<td>{{plot.elevation}}</td>
 	    	<td>{{plot.postion_description}}</td>
 	    	<td>{{plot.plot_create_date}}</td>
+			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.forestinventoryplot_id}} Data</a></td>
     	</tr>
     	{% endfor %}
     </table>
