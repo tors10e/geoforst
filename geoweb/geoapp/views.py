@@ -68,6 +68,10 @@ def InventoryPlotEdit(request, forestinventoryplot_id):
     else:
         form = InventoryPlotForm(instance=plot)
         return render(request, 'geoapp/forestinventoryplot_update.html', {'form': form})
+
+def InventoryPlotDelete(request, pk):
+    ForestInventoryPlot.objects.get(forestinventoryplot_id=pk).delete()
+    return HttpResponseRedirect('/geoapp/inventory_plot/')
     
 def InventoryDataAdd(request, forestinventoryplot_id):
     plot = get_object_or_404(ForestInventoryPlot, id=forestinventoryplot_id)
