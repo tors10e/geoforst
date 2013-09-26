@@ -6,7 +6,7 @@ from geoapp.models import ForestInventoryPlot, ForestInventoryData
 from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirectBase
-from  django.db import models
+from django.views.generic.edit import UpdateView
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -57,7 +57,8 @@ def InventoryPlotAdd(request):
         form = InventoryPlotForm() # An unbound form
         return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
     
-def InventoryPlotEdit(request, forestinventoryplot_id=None):
+def InventoryPlotEdit(request, forestinventoryplot_id):
+    #plot = get_object_or_404(ForestInventoryPlot, id=forestinventoryplot_id)
     plot = get_object_or_404(ForestInventoryPlot, pk=forestinventoryplot_id)
     if request.method == 'POST':
         form = InventoryPlotForm(request.POST or None, instance=plot)
@@ -66,14 +67,20 @@ def InventoryPlotEdit(request, forestinventoryplot_id=None):
         return HttpResponseRedirect('/geoapp/inventory_plot/')
     else:
         form = InventoryPlotForm(instance=plot)
-        return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
+        return render(request, 'geoapp/forestinventoryplot_update.html', {'form': form})
     
-def InventoryDataAdd(request, forestinventoryplot_id=None):
-    if request.method == 'POST': # If the form has been submitted...
+def InventoryDataAdd(request, forestinventoryplot_id):
+    plot = get_object_or_404(ForestInventoryPlot, id=forestinventoryplot_id)
+    if request.method == 'POST' and forestinventoryplot_id is None: # If the form has been submitted...
         form = InventoryDataForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
             form.save()
         return HttpResponseRedirect('/geoapp/inventory_plot/') # Redirect after POST
+    elif request.method == 'POST' and forestinventoryplot_id >0: 
+        form = InventoryPlotForm(request.POST or None, instance=plot)
+        if form.is_valid():
+            form.save()
+        return HttpResponseRedirect('/geoapp/inventory_plot/')
     else: 
         initial_data = {'forestinventoryplot' : forestinventoryplot_id}
         form = InventoryDataForm(initial=initial_data) # An unbound form
