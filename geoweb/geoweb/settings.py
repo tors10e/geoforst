@@ -13,9 +13,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'fsp',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
-        #'USER': 'django',
-        #'PASSWORD': '1_cornBread',
         'USER': 'postgres',
         'PASSWORD': 'post28#Inca',
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
@@ -69,6 +66,10 @@ STATIC_ROOT = '/Users/torsten/Workspaces/FSP/geoweb/geoweb/static'
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
+LOGIN_REDIRECT_URL = '/geoapp/home/'
+
+LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
                     ("assets", "/Users/torsten/Workspaces/FSP/geoweb/geoapp/static"),
@@ -102,8 +103,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'geoweb.urls'
@@ -124,10 +123,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'django.contrib.gis',
-    'geoapp'
+    'geoapp',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
