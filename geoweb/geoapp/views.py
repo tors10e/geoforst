@@ -7,6 +7,7 @@ from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirectBase
 from django.views.generic.edit import UpdateView
+from django.contrib import auth
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -14,6 +15,9 @@ class IndexView(ListView):
 
 def Index(request):
     return render_to_response('geoapp/index.html', {})
+
+def Home(request):
+    return render_to_response('geoapp/home.html', {})
 
 # def index(request):
 #     latest_plot_list = ForestInventoryPlot.objects.order_by('-plot_create_date')[:5] 
@@ -89,6 +93,10 @@ def InventoryDataAdd(request, forestinventoryplot_id):
         initial_data = {'forestinventoryplot' : forestinventoryplot_id}
         form = InventoryDataForm(initial=initial_data) # An unbound form
         return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+
+def logout_view(request):     
+    auth.logout(request)     # Redirect to a success page.     
+    return HttpResponseRedirect("/account/loggedout/")
     
 
     
