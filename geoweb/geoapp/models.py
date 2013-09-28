@@ -1,7 +1,6 @@
 from __future__ import unicode_literals 
 from django.contrib.gis.db import models
 
-
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #     * Rearrange models' order
@@ -17,8 +16,6 @@ mpoly = models.MultiPolygonField()
 objects = models.GeoManager()
 
 # Returns the string representation of the model.
-
-
 
 class ActivityArea(models.Model):
     activityarea_id = models.IntegerField(primary_key=True)
@@ -464,6 +461,7 @@ class ForestInventoryPlot(models.Model):
     elevation = models.IntegerField(null=True, blank=True)
     position_description = models.CharField(max_length=255, null=True, blank=True)
     plot_create_date = models.DateField(null=True, blank=True)
+    created_by = models.CharField(max_length = 100)
     objects = models.GeoManager()
     class Meta:
             db_table = 'forest_inventory_plot'
