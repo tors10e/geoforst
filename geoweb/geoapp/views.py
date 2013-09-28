@@ -8,6 +8,7 @@ from django.core.urlresolvers import reverse
 from django.http.response import HttpResponseRedirectBase
 from django.views.generic.edit import UpdateView
 from django.contrib import auth
+from django.contrib.auth.models import User
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -19,18 +20,6 @@ def Index(request):
 def Home(request):
     return render_to_response('geoapp/home.html', {})
 
-# def index(request):
-#     latest_plot_list = ForestInventoryPlot.objects.order_by('-plot_create_date')[:5] 
-#     output = ', '.join([p.position_description for p in latest_plot_list])
-#     return HttpResponse(output)
-
-
-# def index(request):
-#     latest_plot_list = ForestInventoryPlot.objects.order_by('-plot_create_date')[:5]
-#     template = loader.get_template('geoapp/inventory_plot.html')
-#     context = RequestContext(request, {'latest_plot_list': latest_plot_list})
-#     return HttpResponse(template.render(context))
-
 def test(request):
     return render_to_response('geoapp/test.html', {})
 
@@ -41,9 +30,12 @@ def map2_page(request):
     return render_to_response('geoapp/map2.html', {})
 
 class InventoryPlotListView(ListView):
-    model=ForestInventoryPlot
+    #model=ForestInventoryPlot
+    #queryset = ForestInventoryPlot.objects.filter(created_by='ternst')
     template='geoapp/forestinventoryplot_list.html'
     context_object_name='inventory_plots'
+    def get_queryset(self):
+        return ForestInventoryPlot.objects.filter(created_by=self.request.user)
 
 class InventoryPlotDetailView(DetailView):
     queryset = ForestInventoryPlot.objects.all()
@@ -62,7 +54,6 @@ def InventoryPlotAdd(request):
         return render(request, 'geoapp/forestinventoryplot_add.html', {'form': form})
     
 def InventoryPlotEdit(request, forestinventoryplot_id):
-    #plot = get_object_or_404(ForestInventoryPlot, id=forestinventoryplot_id)
     plot = get_object_or_404(ForestInventoryPlot, pk=forestinventoryplot_id)
     if request.method == 'POST':
         form = InventoryPlotForm(request.POST or None, instance=plot)
