@@ -1,14 +1,11 @@
-from django.shortcuts import get_object_or_404, render, render_to_response, Http404
-from django.http import HttpResponseRedirect, HttpResponse
-from django.views import generic
-from django.views.generic import ListView, DetailView
+from django.shortcuts import get_object_or_404, render, render_to_response, redirect
+from django.http import HttpResponseRedirect
+from django.views.generic import ListView, DetailView, TemplateView
 from geoapp.models import ForestInventoryPlot, ForestInventoryData
 from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
-from django.http.response import HttpResponseRedirectBase
-from django.views.generic.edit import UpdateView
 from django.contrib import auth
-from django.contrib.auth.models import User
+
 
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
@@ -18,7 +15,10 @@ def Index(request):
     return render_to_response('geoapp/index.html', {})
 
 def Home(request):
-    return render_to_response('geoapp/home.html', {})
+    if not request.user.is_authenticated():
+        return redirect('/geoapp/accounts/login/')
+    else:
+        return render_to_response('geoapp/home.html', {})
 
 def test(request):
     return render_to_response('geoapp/test.html', {})
@@ -42,6 +42,14 @@ class InventoryPlotDetailView(DetailView):
     #model = ForestInventoryPlot
     template_name = 'geoapp/forestinventoryplot_detail.html'
     context_object_name = 'plot_detail'
+    
+class PlotData(TemplateView):
+    template_name = 'geoapp/forestinventorydata_list.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super(PlotData, self).get_context_data(**kwargs)
+        context['ForestInventoryData'] = ForestInventoryData.objects(pk=self.kwargs.get('forestinventorydata_id', None))
+        return context
     
 def InventoryPlotAdd(request):
     if request.method == 'POST': # If the form has been submitted...
@@ -67,27 +75,23 @@ def InventoryPlotEdit(request, forestinventoryplot_id):
 def InventoryPlotDelete(request, pk):
     ForestInventoryPlot.objects.get(forestinventoryplot_id=pk).delete()
     return HttpResponseRedirect('/geoapp/inventory_plot/')
-    
-def InventoryDataAdd(request, forestinventoryplot_id):
-    plot = get_object_or_404(ForestInventoryPlot, id=forestinventoryplot_id)
-    if request.method == 'POST' and forestinventoryplot_id is None: # If the form has been submitted...
+     
+def InventoryDataAdd(request, forestinventoryplot_id=1):
+    if request.method == 'POST': # If the form has been submitted...
         form = InventoryDataForm(request.POST) # A form bound to the POST data
         if form.is_valid(): # All validation rules pass
-            form.save()
-        return HttpResponseRedirect('/geoapp/inventory_plot/') # Redirect after POST
-    elif request.method == 'POST' and forestinventoryplot_id >0: 
-        form = InventoryPlotForm(request.POST or None, instance=plot)
-        if form.is_valid():
-            form.save()
-        return HttpResponseRedirect('/geoapp/inventory_plot/')
+            new_data = form.save()
+            return HttpResponseRedirect(reverse('geoapp:plot_detail', kwargs={'pk':new_data.forestinventoryplot_id}))
     else: 
+        # Get a form and populate with forestinventoryplotid if it is given.
         initial_data = {'forestinventoryplot' : forestinventoryplot_id}
         form = InventoryDataForm(initial=initial_data) # An unbound form
-        return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+    #return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+    return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
 
 def logout_view(request):     
-    auth.logout(request)     # Redirect to a success page.     
-    return HttpResponseRedirect("/account/loggedout/")
+    auth.logout(request)     # Redirect to login page.     
+    return HttpResponseRedirect("/geoapp/accounts/login/")
     
 
     

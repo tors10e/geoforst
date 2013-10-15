@@ -7,10 +7,15 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 </head> 
 <body>       
-	{% block content %}{% endblock %}     
+	{% block header%} {% endblock %}
+	{% block content %}{% endblock %}   
+	<div></div> 
 	{% block footer %}     
-	<hr>     
-	<p>Geoapp loves you.</p>     
+		{% if user.is_authenticated %}
+    		<p>You are logged in as {{ user.username }}.</p>
+		{% else %}
+    		<a href = '/geoapp/accounts/login/'>Please log in to access your data.</a>
+		{% endif %}  
 	{% endblock %} 
 </body> 
 </html>

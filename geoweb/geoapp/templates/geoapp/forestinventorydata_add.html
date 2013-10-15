@@ -7,7 +7,6 @@ $(function() {
 </script>
 	<p>Add new forest inventory data</p>
 	<form action="/geoapp/inventory_data/add/" method="post">{% csrf_token %}
-	{{ form.as_p }}
-	<input type="submit" value="Submit" />
-	</form>
-{% endblock %}
+		{{ form.as_p }}
+	<input type="submit" value="Submit" />	
+	</form>{% endblock %}
