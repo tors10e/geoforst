@@ -6,7 +6,7 @@ from geoapp.forms import InventoryPlotForm, InventoryDataForm
 from django.core.urlresolvers import reverse
 from django.contrib import auth
 
-
+# Does not get referenced.
 class IndexView(ListView):
     template_name = 'geoapp/index.html'
     context_object_name = 'latest_geoapp_list'
@@ -19,16 +19,7 @@ def Home(request):
         return redirect('/geoapp/accounts/login/')
     else:
         return render_to_response('geoapp/home.html', {})
-
-def test(request):
-    return render_to_response('geoapp/test.html', {})
-
-def map_page(request):
-    return render_to_response('geoapp/map.html', {})
-
-def map2_page(request):
-    return render_to_response('geoapp/map2.html', {})
-
+ 
 class InventoryPlotListView(ListView):
     #model=ForestInventoryPlot
     #queryset = ForestInventoryPlot.objects.filter(created_by='ternst')
@@ -42,15 +33,7 @@ class InventoryPlotDetailView(DetailView):
     #model = ForestInventoryPlot
     template_name = 'geoapp/forestinventoryplot_detail.html'
     context_object_name = 'plot_detail'
-    
-class PlotData(TemplateView):
-    template_name = 'geoapp/forestinventorydata_list.html'
-    
-    def get_context_data(self, **kwargs):
-        context = super(PlotData, self).get_context_data(**kwargs)
-        context['ForestInventoryData'] = ForestInventoryData.objects(pk=self.kwargs.get('forestinventorydata_id', None))
-        return context
-    
+ 
 def InventoryPlotAdd(request):
     if request.method == 'POST': # If the form has been submitted...
         form = InventoryPlotForm(request.POST) # A form bound to the POST data
@@ -71,11 +54,11 @@ def InventoryPlotEdit(request, forestinventoryplot_id):
     else:
         form = InventoryPlotForm(instance=plot)
         return render(request, 'geoapp/forestinventoryplot_update.html', {'form': form})
-
+ 
 def InventoryPlotDelete(request, pk):
     ForestInventoryPlot.objects.get(forestinventoryplot_id=pk).delete()
     return HttpResponseRedirect('/geoapp/inventory_plot/')
-     
+         
 def InventoryDataAdd(request, forestinventoryplot_id=1):
     if request.method == 'POST': # If the form has been submitted...
         form = InventoryDataForm(request.POST) # A form bound to the POST data
@@ -86,9 +69,13 @@ def InventoryDataAdd(request, forestinventoryplot_id=1):
         # Get a form and populate with forestinventoryplotid if it is given.
         initial_data = {'forestinventoryplot' : forestinventoryplot_id}
         form = InventoryDataForm(initial=initial_data) # An unbound form
-    #return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
     return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
 
+def InventoryDataDelete(request, forestinventorydata_id):
+    data = ForestInventoryData.objects.get(pk=forestinventorydata_id);
+    ForestInventoryData.objects.get(pk=forestinventorydata_id).delete()
+    return HttpResponseRedirect(reverse('geoapp:plot_detail', kwargs={'pk':data.forestinventoryplot_id}))
+ 
 def logout_view(request):     
     auth.logout(request)     # Redirect to login page.     
     return HttpResponseRedirect("/geoapp/accounts/login/")
