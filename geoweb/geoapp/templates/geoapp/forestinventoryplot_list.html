@@ -8,18 +8,13 @@ $(function() {
 
 {% block content %}
     <h2>Forest Inventory Plots</h2>
-<!--     <ul>
-        {% for plot in inventory_plots %}
-           <li><a href="{{plot.forestinventoryplot_id }}/detail/">Plot ID = {{plot.forestinventoryplot_id}}</a></li>
-        {% endfor %}
-    </ul> -->
     <table>
     <tr>
     	<td>ID</td>
-    	<td>Area (ft2)</td>
-    	<td>Radius (ft)</td>
-    	<td>Length X-axis (ft)</td>
-    	<td>Length Y-axis (ft)</td>
+    	<td>Area</td>
+    	<td>Radius</td>
+    	<td>Length X-axis</td>
+    	<td>Length Y-axis</td>
     	<td>Geometry</td>
     	<td>Elevation</td>
     	<td>Position Description</td>
@@ -28,10 +23,10 @@ $(function() {
     	{% for plot in inventory_plots %}
     	<tr>
 	    	<td><a href="edit/{{plot.forestinventoryplot_id }}">{{plot.forestinventoryplot_id}}</a>
-    		<td>{{plot.plot_area_ft2}}</td>
-	    	<td>{{plot.plot_radius_ft}}</td>
-	    	<td>{{plot.plot_length_x_ft}}</td>
-	    	<td>{{plot.plot_length_y_ft}}</td>
+    		<td>{{plot.plot_area}}</td>
+	    	<td>{{plot.plot_radius}}</td>
+	    	<td>{{plot.plot_xlength}}</td>
+	    	<td>{{plot.plot_ylength}}</td>
 	    	<td>{{plot.plot_geometry}}</td>
 	    	<td>{{plot.elevation}}</td>
 	    	<td>{{plot.postion_description}}</td>
