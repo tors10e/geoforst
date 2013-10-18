@@ -1,5 +1,6 @@
 from __future__ import unicode_literals 
 from django.contrib.gis.db import models
+from django.contrib.auth.models import User
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
@@ -452,16 +453,21 @@ class LogData(models.Model):
     
 class ForestInventoryPlot(models.Model):
     forestinventoryplot_id = models.AutoField(primary_key=True)
-    plot_area_ft2 = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
-    plot_radius_ft = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
-    plot_length_x_ft = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
-    plot_length_y_ft = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
-    plot_geometry = models.CharField(max_length=30, null=True, blank=True)
+    plot_geometry = models.ForeignKey('PlotGeometryType', null=False)
+    plot_area = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
+    plot_area_unit = models.ForeignKey('UnitAreaType', related_name='plot_area_unit',null=True, blank=True)
+    plot_radius = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    radius_unit = models.ForeignKey('UnitLengthType', related_name='radius_unit',null=True, blank=True)
+    plot_xlength = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    plot_xlength_unit = models.ForeignKey('UnitLengthType', related_name='xlength_unit', null=True, blank=True)
+    plot_ylength = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    plot_ylength_unit = models.ForeignKey('UnitLengthType', related_name='ylength_unit', null=True, blank=True)
     geometry = models.PointField(srid=4326, null=True, blank=True)
     elevation = models.IntegerField(null=True, blank=True)
+    elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
     position_description = models.CharField(max_length=255, null=True, blank=True)
     plot_create_date = models.DateField(null=True, blank=True)
-    created_by = models.CharField(max_length = 100)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
             db_table = 'forest_inventory_plot'
@@ -474,14 +480,51 @@ class ForestInventoryData(models.Model):
     forestinventoryplot = models.ForeignKey('ForestInventoryPlot', null=True, blank=True)
     tree = models.ForeignKey('Tree', null=True, blank=True)
     collection_date = models.DateField(null=True, blank=True)
-    species = models.CharField(max_length=30, null=True, blank=True)
-    dbh_in = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
-    height_ft = models.DecimalField(max_digits=4, decimal_places=2, blank=True, null=True)
+    tree_species = models.ForeignKey('SpeciesTreeType', null=False)
+    dbh = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    dbh_unit = models.ForeignKey('UnitLengthType', related_name='dbh_unit', null=True)
+    height = models.DecimalField(max_digits=4, decimal_places=2, blank=True, null=True)
+    height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True)
+    created_by = models.CharField(max_length = 100)
     class Meta:
         db_table = 'forest_inventory_data'
         ordering = ["forestinventorydata_id"]
     def __unicode__(self):
         return unicode(self.forestinventorydata_id)
     
+class PlotGeometryType(models.Model):
+    plotgeomtype_id = models.IntegerField(primary_key=True)
+    plotgeomtype_cd = models.CharField(max_length=3, null=False)
+    plotgeomtype_dsc = models.CharField(max_length=50, null=False)
+    class Meta:
+        db_table = 'plot_geometry_type'
+    def __unicode__(self):
+        return unicode(self.plotgeomtype_dsc)
         
+class UnitLengthType(models.Model):
+    unitlengthtype_id = models.IntegerField(primary_key=True)
+    unitlengthtype_cd = models.CharField(max_length=3, null=False)
+    unitlengthtype_dsc = models.CharField(max_length=50, null=False)
+    class Meta:
+        db_table = 'unit_length_type'
+    def __unicode__(self):
+        return unicode(self.unitlengthtype_dsc)    
 
+class UnitAreaType(models.Model):
+    unitareatype_id = models.IntegerField(primary_key=True)
+    unitareatype_cd = models.CharField(max_length=3, null=False)
+    unitareatype_dsc = models.CharField(max_length=50, null=False)
+    class Meta:
+        db_table = 'unit_area_type'
+    def __unicode__(self):        
+        return unicode(self.unitareatype_dsc)  
+    
+class SpeciesTreeType(models.Model):
+    speciestreetype_id = models.IntegerField(primary_key=True)
+    speciestreetype_cd = models.CharField(max_length=3, null=False)
+    speciestreetype_dsc = models.CharField(max_length=50, null=False)
+    speciestreetype_bn = models.CharField(max_length=50, null=False)
+    class Meta:
+        db_table='species_tree_type'
+    def __unicode__(self):
+        return unicode(self.speciestreetype_dsc)
