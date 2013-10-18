@@ -15,17 +15,20 @@ $(function() {
 						<td>Tree ID</td>
 						<td>Species</td>
 						<td>Collection Date</td>
-						<td>DBH (in)</td> 
-						<td>Height (ft)</td>
+						<td>DBH</td> 
+						<td>Height</td>
 					</tr>
 					{% for data in plot_detail.forestinventorydata_set.all %}
 					<tr>
 						<td> {{ data.forestinventorydata_id}} </td>
 						<td> {{ data.tree }} </td>
-						<td> {{ data.species }}</td>
+						<td> {{ data.tree_species }}</td>
 						<td> {{ data.collection_date }} </td>
-						<td> {{ data.dbh_in }}</td> 
-						<td> {{ data.height_ft }} </td>
+						<td> {{ data.dbh }}</td> 
+						<td> {{ data.height }} </td>
+						<td>
+							<a href="/geoapp/inventory_plot/detail/delete/{{data.forestinventorydata_id}}">Delete</a>
+						</td>
 					</tr>
 					{% endfor %}
 				</table>
