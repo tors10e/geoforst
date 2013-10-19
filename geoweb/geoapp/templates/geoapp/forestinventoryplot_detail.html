@@ -11,12 +11,14 @@ $(function() {
 		{% if plot_detail.forestinventorydata_set.all %}
 				<table>
 					<tr>
-						<td>ID</td>
-						<td>Tree ID</td>
-						<td>Species</td>
-						<td>Collection Date</td>
-						<td>DBH</td> 
-						<td>Height</td>
+						<th>ID</th>
+						<th>Tree ID</th>
+						<th>Species</th>
+						<th>Collection Date</th>
+						<th>Diameter</th> 
+						<th>Diameter Units</th>
+						<th>Height</th>
+						<th>Height Units</th>
 					</tr>
 					{% for data in plot_detail.forestinventorydata_set.all %}
 					<tr>
@@ -25,9 +27,11 @@ $(function() {
 						<td> {{ data.tree_species }}</td>
 						<td> {{ data.collection_date }} </td>
 						<td> {{ data.dbh }}</td> 
+						<td> {{ data.dbh_unit }}</td> 
 						<td> {{ data.height }} </td>
+						<td> {{ data.height_unit }}</td> 
 						<td>
-							<a href="/geoapp/inventory_plot/detail/delete/{{data.forestinventorydata_id}}">Delete</a>
+							<a href="/geoapp/inventory_data/{{data.forestinventorydata_id}}/delete">Delete</a>
 						</td>
 					</tr>
 					{% endfor %}
@@ -35,6 +39,6 @@ $(function() {
 		{% else %}
 			<p>No data has been entered for this plot.</p>
 		{% endif %}
-		<a href="/geoapp/inventory_plot/edit/{{plot_detail.forestinventoryplot_id}}">Edit this plot.</a>
-		<a href="/geoapp/inventory_data/add/{{plot_detail.forestinventoryplot_id}}/">Add a new data point.</a>
+		<a href="/geoapp/inventory_plot">Return to plot overview.</a>
+		<a href="/geoapp/inventory_data/{{plot_detail.forestinventoryplot_id}}/add">Add a new data point.</a>
 {% endblock %}
