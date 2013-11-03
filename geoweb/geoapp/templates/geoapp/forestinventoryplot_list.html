@@ -11,36 +11,22 @@ $(function() {
     <table id="table">
     <tr id="header_row">
     	<th>ID</th>
-    	<th>Area</th>
-    	<th>Area Unit</th>
-    	<th>Radius</th>
-    	<th>Radius Unit</th>
-    	<th>Length X-axis</th>
-    	<th>Length Y-axis</th>
-    	<th>Length Unit</th>
-    	<th>Geometry</th>
-    	<th>Elevation</th>
-    	<th>Elevation Unit </th>
+    	<th>Plot Number</th>
     	<th>Position Description</th>
+    	<th>Elevation</th>
     	<th>Create Date</th>
+    	<th>Data</th>
+    	<th>Action</th>
     	</tr>
     	{% for plot in inventory_plots %}
     	<tr>
-	    	<td><a href="{{plot.forestinventoryplot_id }}/edit">{{plot.forestinventoryplot_id}}</a></td>
-    		<td>{{plot.plot_area}}</td>
-    		<td>{{plot.plot_area_unit}}</td>
-	    	<td>{{plot.plot_radius}}</td>
-	    	<td>{{plot.plot_radius_unit}}</td>
-	    	<td>{{plot.plot_xlength}}</td>
-	    	<td>{{plot.plot_ylength}}</td>
-	    	<td>{{plot.plot_length_unit.unitlengthtype_dsc}}</td>
-	    	<td>{{plot.plot_geometry}}</td>
-	    	<td>{{plot.elevation}}</td>
-	    	<td>{{plot.elevation_unit}}</td>
-	    	<td>{{plot.postion_description}}</td>
+	    	<td>{{plot.forestinventoryplot_id}}</td>
+	    	<td>{{plot.plot_number}}</td>
+	    	<td>{{plot.position_description}}</td>
+	    	<td>{{plot.elevation}} {{plot.elevation_unit}}</td>
 	    	<td>{{plot.plot_create_date}}</td>
 			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.forestinventoryplot_id}} Data</a></td>
-			<td><a href="{{plot.forestinventoryplot_id }}/delete/">Delete</a></td>
+			<td><a href="{{plot.forestinventoryplot_id }}/edit/">Edit</a> <a href="{{plot.forestinventoryplot_id }}/delete/">Delete</a></td>
     	</tr>
     	{% endfor %}
     </table>
