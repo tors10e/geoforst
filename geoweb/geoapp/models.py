@@ -453,6 +453,7 @@ class LogData(models.Model):
     
 class ForestInventoryPlot(models.Model):
     forestinventoryplot_id = models.AutoField(primary_key=True)
+    plot_number = models.IntegerField(null=False, unique=True)
     plot_geometry = models.ForeignKey('PlotGeometryType', null=False)
     plot_area = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
     plot_area_unit = models.ForeignKey('UnitAreaType',null=True)
@@ -461,7 +462,10 @@ class ForestInventoryPlot(models.Model):
     plot_xlength = models.IntegerField(blank=True, null=True)
     plot_ylength = models.IntegerField(blank=True, null=True)
     plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
-    geometry = models.PointField(srid=9820, null=True, blank=True)
+    geometry = models.PointField(srid=7314, null=True, blank=True) # This is the correct srid!
+#    geometry = models.PointField(srid=9820, null=True, blank=True)
+    longitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
+    latitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
     elevation = models.IntegerField(null=True, blank=True)
     elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
     position_description = models.CharField(max_length=255, null=True, blank=True)
@@ -483,7 +487,7 @@ class ForestInventoryData(models.Model):
     dbh = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
     dbh_unit = models.ForeignKey('UnitLengthType', related_name='dbh_unit', null=True)
     height = models.IntegerField(blank=True, null=True)
-    height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True)
+    height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True, blank=True)
     created_by = models.CharField(max_length = 100)
     class Meta:
         db_table = 'forest_inventory_data'
