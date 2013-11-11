@@ -14,15 +14,15 @@ SET search_path = public, pg_catalog;
 -- Data for Name: activity_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (1, 'Thinning', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (2, 'Planting', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (3, 'Crop Tree Release', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (4, 'Complete Harvest', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (5, 'Controlled Burn', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (6, 'Stump Shoot Thinning', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (7, 'Pruning', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (8, 'Undefined', NULL);
-INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (9, 'Habitat Enhancement', NULL);
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (1, 'Thinning', 'thn');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (2, 'Planting', 'plt');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (3, 'Crop Tree Release', 'ctr');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (4, 'Complete Harvest', 'ch');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (5, 'Controlled Burn', 'cb');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (6, 'Stump Shoot Thinning', 'sst');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (7, 'Pruning', 'prn');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (8, 'Undefined', 'udf');
+INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (9, 'Habitat Enhancement', 'he');
 
 
 --
@@ -61,13 +61,13 @@ INSERT INTO forest_type (foresttype_id, foresttype_dsc, foresttype_cd) VALUES (6
 -- Data for Name: habitat_enhancement_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (1, 'Brush Pile', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (2, 'Oak Early Successional', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (3, 'Planting', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (4, 'Soft Edge', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (5, 'Fallow Field', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (6, 'Shrub Thicket', NULL);
-INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (7, 'Wood Duck Nest Box', NULL);
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (1, 'Brush Pile', 'bp');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (2, 'Oak Early Successional', 'oes');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (3, 'Planting', 'plt');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (4, 'Soft Edge', 'se');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (5, 'Fallow Field', 'ff');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (6, 'Shrub Thicket', 'st');
+INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (7, 'Wood Duck Nest Box', 'nb');
 
 
 --
@@ -102,10 +102,10 @@ INSERT INTO ordinal_sufficiency_type (ordinalsuff_id, ordinalsuff_cd, ordinalsuf
 -- Data for Name: recreation_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (1, 'Fire Ring', NULL);
-INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (2, 'Camp Site', NULL);
-INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (3, 'Picnic Area', 'pcn');
-
+INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (1, 'Fire Ring', 'fr');
+INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (2, 'Camp Site', 'cs');
+INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (3, 'Picnic Area', 'pa');
+INSERT INTO recreation_type (rectype_id, rectype_dsc, rectype_cd) VALUES (4, 'Hunting Stand', 'hs');
 
 --
 -- Data for Name: road_access_status_type; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -129,12 +129,12 @@ INSERT INTO road_surface_type (roadsurface_id, roadsurface_cd, roadsurface_dsc) 
 -- Data for Name: road_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (1, 'Primary', NULL);
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (2, 'Secondary', NULL);
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (3, 'Two Track', NULL);
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (4, 'ATV Track', NULL);
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (5, 'Abandoned', NULL);
-INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (6, 'Obliterated', NULL);
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (1, 'Primary', 'pr');
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (2, 'Secondary', 'sc');
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (3, 'Two Track', 'tt');
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (4, 'ATV Track', 'at');
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (5, 'Abandoned', 'ab');
+INSERT INTO road_type (roadtype_id, roadtype_dsc, roadtype_cd) VALUES (6, 'Obliterated', 'ob');
 
 
 --
