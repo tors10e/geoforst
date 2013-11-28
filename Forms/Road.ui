@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>536</width>
+    <width>438</width>
     <height>371</height>
    </rect>
   </property>
@@ -16,9 +16,9 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>320</y>
-     <width>341</width>
+     <x>150</x>
+     <y>330</y>
+     <width>171</width>
      <height>32</height>
     </rect>
    </property>
@@ -32,9 +32,9 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>91</width>
+     <x>40</x>
+     <y>100</y>
+     <width>71</width>
      <height>17</height>
     </rect>
    </property>
@@ -45,8 +45,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>80</y>
+     <x>40</x>
+     <y>140</y>
      <width>91</width>
      <height>17</height>
     </rect>
@@ -58,8 +58,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>190</y>
+     <x>20</x>
+     <y>240</y>
      <width>101</width>
      <height>17</height>
     </rect>
@@ -71,8 +71,8 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>240</y>
+     <x>60</x>
+     <y>290</y>
      <width>67</width>
      <height>17</height>
     </rect>
@@ -81,24 +81,11 @@
     <string>Surface:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>270</y>
-     <width>67</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Name:</string>
-   </property>
-  </widget>
   <widget class="QComboBox" name="roadtype_id">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>60</y>
+     <x>120</x>
+     <y>100</y>
      <width>250</width>
      <height>27</height>
     </rect>
@@ -107,8 +94,8 @@
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>90</y>
+     <x>120</x>
+     <y>140</y>
      <width>250</width>
      <height>80</height>
     </rect>
@@ -140,8 +127,8 @@
   <widget class="QComboBox" name="accessstatus_id">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>190</y>
+     <x>120</x>
+     <y>240</y>
      <width>250</width>
      <height>27</height>
     </rect>
@@ -150,18 +137,8 @@
   <widget class="QComboBox" name="roadsurface_id">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>230</y>
-     <width>250</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="road_name">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>270</y>
+     <x>120</x>
+     <y>280</y>
      <width>250</width>
      <height>27</height>
     </rect>
@@ -170,7 +147,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>190</x>
      <y>20</y>
      <width>111</width>
      <height>16</height>
@@ -183,6 +160,29 @@
    </property>
    <property name="text">
     <string>Road Feature</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="road_name">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>250</width>
+     <height>27</height>
+    </rect>
    </property>
   </widget>
  </widget>
