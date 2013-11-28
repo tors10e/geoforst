@@ -1,16 +1,4 @@
---
--- PostgreSQL database dump
---
-
-SET statement_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-
-SET search_path = public, pg_catalog;
-
---
+﻿--
 -- Data for Name: activity_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -191,6 +179,12 @@ INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) 
 INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (2, 'cls ', 'Closed');
 INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (3, 'prp ', 'Proposed');
 
+--
+-- Data for Name: trail_type; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO trail_type (trailtype_id, trailtype_cd, trailtype_dsc) VALUES (1, 'hk', 'Hiking');
+INSERT INTO trail_type (trailtype_id, trailtype_cd, trailtype_dsc) VALUES (2, 'mb', 'Mountain Biking');
 
 --
 -- Data for Name: unit_type; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -244,6 +238,7 @@ INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestr
 INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestreetype_dsc, speciestreetype_bn) VALUES (3, 'pv', 'Virginia Pine', 'Pinus virginiana');
 INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestreetype_dsc, speciestreetype_bn) VALUES (4, 'pv', 'Loblolly Pine', 'Pinus taeda');
 INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestreetype_dsc, speciestreetype_bn) VALUES (5, 'qa', 'White Oak', 'Quercus alaba');
+
 
 
 
