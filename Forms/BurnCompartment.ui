@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>form</class>
- <widget class="QDialog" name="form">
+ <class>water_point</class>
+ <widget class="QDialog" name="water_point">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>236</height>
+    <width>413</width>
+    <height>181</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Water Point Editing</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>180</y>
-     <width>341</width>
+     <x>140</x>
+     <y>120</y>
+     <width>161</width>
      <height>32</height>
     </rect>
    </property>
@@ -29,67 +29,44 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="tree_id">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>50</y>
-     <width>250</width>
-     <height>27</height>
+     <x>120</x>
+     <y>70</y>
+     <width>121</width>
+     <height>17</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>Compartment Set:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>60</y>
-     <width>51</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Tree ID</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>10</y>
-     <width>121</width>
-     <height>16</height>
+     <x>110</x>
+     <y>20</y>
+     <width>171</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>17</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>Tree Features</string>
+    <string>Burn Compartment</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QSpinBox" name="compartment_set">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>100</y>
-     <width>51</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Species</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="speciestreetype_id">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>100</y>
-     <width>251</width>
-     <height>26</height>
+     <x>250</x>
+     <y>70</y>
+     <width>57</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>
@@ -99,7 +76,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>form</receiver>
+   <receiver>water_point</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -115,7 +92,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>form</receiver>
+   <receiver>water_point</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
