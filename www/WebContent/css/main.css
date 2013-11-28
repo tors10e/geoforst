@@ -5,7 +5,6 @@ body {
 	padding-top: 35px;
 }
 
-
 #menus {
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-weight: bold;
@@ -154,7 +153,7 @@ a#menu4:hover,a#menu4.on {
 	text-decoration: none;
 	border-bottom: 1px dotted #999;
 	color: #555;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #content a:hover {
@@ -177,11 +176,6 @@ a#menu4:hover,a#menu4.on {
 	padding-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-}
-
-#release {
-	width: 100%;
-	text-align: center;
 }
 
 #content .warning {
@@ -316,158 +310,13 @@ table#downloadchoices td.style2 {
 	padding-left: 0.5em;
 }
 
-.releasenotes {
-	font-size: 12pt;
-	font-weight: bold;
-}
-
-.releasenotesdesc {
-	font-size: 10pt;
-	font-weight: normal;
-	display: none;
-	line-height: 1.15em;
-	margin-left: 2em;
-	width: 100%;
-	text-align: justify;
-}
-
-.releasenotesdesc ul {
-	margin-top: 0px;
-}
-
-.releasenotesdesc .download {
-	width: 200px;
-	height: 15px;
-	clear: none; 
-	display: inline;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.releasenotesdesc table.downloadButtons {
-	margin-top: 1em;
-}
-
-.releasenotesdesc table.downloadButtons td {
-	text-align: center;
-	vertical-align: top;
-	padding: 0px;
-}
-
 div.downloadCount {
 	font-size: 85%;
 	color: #666;
 	margin-top: -0.5em;
 }
 
-.current {
-	display: block;
-}
 
-a#pitch {
-	padding-top: 0.8em;
-	padding-bottom: 0.5em;
-	margin-top: 0.5em;
-	clear: both;
-	display: block;
-	text-decoration: none;
-	border: 0px;
-	font-weight: normal;
-	padding-left: 1em;
-	padding-right: 1em;
-	min-height: 117px;
-	margin-bottom: 0px;
-	background-color: #eee;
-	border-radius: 10px;
-}
 
-a#pitch img {
-	margin-left: -5px;
-	margin-right: 0.7em;
-	margin-top: -1px;
-	margin-bottom: -5px;
-	float: left;
-}
 
-a#pitch:hover {
-	color: #000;
-	border: 0px;
-	background-image: url(images/bg_head.jpg);
-	background-position: -350px -270px;
-}
-
-#features {
-	width: 100%;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-#features td {
-	vertical-align: top;
-}
-
-#features .anImg {
-	width: 150px;
-	text-align: right;
-	vertical-align: top;
-}
-
-#features .anImg img {
-	width: 100px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-#features .anTxt {
-	width: 35%;
-	font-size: 11pt;
-	line-height: 1.2em;
-	text-align: left;
-	vertical-align: top;
-}
-
-#features .anTxt h3 {
-	margin: 0px;
-	padding: 0px;
-	margin-bottom: 0.1em;
-	font-size: 16pt;
-	font-weight: bold;
-	line-height: 1.2em;
-}
-
-#sidebar div.minor {
-	font-size: 80%;
-	color: #888;
-	line-height: 1em;
-	padding-left: 1em;
-	margin-bottom: 0.75em;
-	padding-bottom: 0px;
-}
-
-footer {
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	margin-top: 1em;
-	font-size: 10pt;
-	color: #aaa;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	vertical-align: center;
-	padding-bottom: 40px;
-	clear: both;
-}
-
-footer .right {
-	float: right;
-	vertical-align: middle;
-}
-
-footer a {
-	color: #aaa;
-	text-decoration: none;
-}
-
-footer a:hover {
-	color: #555;
-}
 
