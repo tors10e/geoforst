@@ -20,13 +20,13 @@ objects = models.GeoManager()
 
 class ActivityArea(models.Model):
     activityarea_id = models.IntegerField(primary_key=True)
-    geometry = models.MultiPolygonField(srid=26917, null=True, blank=True)
-    activity_date = models.CharField(max_length=25, blank=True)
+    geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
+    activity_date = models.DateField    (blank=True)
     acttype = models.ForeignKey('ActivityType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
-    revenue = models.TextField(blank=True) # This field type is a guess.
-    plannedact_id = models.IntegerField(null=True, blank=True)
-    standact = models.ForeignKey('PlannedActivity', null=True, blank=True)
+    revenue = models.DecimalField(max_digits=8, decimal_places=2, blank=True) # This field type is a guess.
+    plannedact_id = models.ForeignKey('PlannedActivity', null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'activity_area'
@@ -34,6 +34,7 @@ class ActivityArea(models.Model):
 class ActivityType(models.Model):
     acttype_id = models.IntegerField(primary_key=True)
     acttype_dsc = models.CharField(max_length=50, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'activity_type'
     def __unicode__(self):
@@ -44,12 +45,13 @@ class BurnCompartment(models.Model):
     burncompartment_id = models.IntegerField(primary_key=True)
     geometry = models.TextField(blank=True) # This field type is a guess.
     compartment_set = models.IntegerField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'burn_compartment'
 
 class ControlPoint(models.Model):
     controlpt_id = models.IntegerField()
-    geometry = models.PointField(srid=26917, null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     x = models.FloatField(null=True, blank=True)
     y = models.FloatField(null=True, blank=True)
@@ -60,9 +62,10 @@ class ControlPoint(models.Model):
 
 class CulturalPoint(models.Model):
     cultpt_id = models.IntegerField()
-    geometry = models.PointField(srid=26917, null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
     culttype = models.ForeignKey('CulturalType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'cultural_point'
@@ -76,8 +79,9 @@ class CulturalType(models.Model):
         
 class FirebreakLine(models.Model):
     fbkln_id = models.IntegerField()
-    geometry = models.LineStringField(srid=26917, null=True, blank=True)
+    geometry = models.LineStringField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     length_meters = models.FloatField(null=True, blank=True)
     objects = models.GeoManager()
     class Meta:
@@ -98,18 +102,20 @@ class ForestType(models.Model):
 
 class HabitatEnhancementArea(models.Model):
     habenharea_id = models.IntegerField(primary_key=True)
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'habitat_enhancement_area'
 
 class HabitatEnhancementPoint(models.Model):
     habenhpt_id = models.IntegerField(primary_key=True)
-    geometry = models.PointField(srid=26917, null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
     habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'habitat_enhancement_point'
@@ -128,10 +134,12 @@ class HarvestType(models.Model):
 
 class LandArea(models.Model):
     landarea_id = models.IntegerField()
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    name = models.CharField(max_length=30, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateField(null=True, blank=True)
     transaction_start_date = models.DateField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'land_area'
@@ -139,12 +147,13 @@ class LandArea(models.Model):
 class LandAreaHistory(models.Model):
     landareahist_id = models.IntegerField()
     landarea_id = models.IntegerField(null=True, blank=True)
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
     transaction_start_date = models.DateField(null=True, blank=True)
     transaction_end_date = models.DateField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'land_area_history'
@@ -153,6 +162,7 @@ class LandOwner(models.Model):
     landowner_id = models.IntegerField(primary_key=True)
     landarea = models.ForeignKey(LandArea, null=True, blank=True)
     person = models.ForeignKey('Person', null=True, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'land_owner'
 
@@ -166,6 +176,7 @@ class Person(models.Model):
     state = models.CharField(max_length=2, blank=True)
     zip_code = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
     phone = models.CharField(max_length=12, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'person'
 
@@ -179,14 +190,16 @@ class PlannedActivity(models.Model):
     revenue = models.FloatField(null=True, blank=True)
     taskstatus = models.ForeignKey('TaskStatusType', null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'planned_activity'
 
 class RecreationPoint(models.Model):
     recpt_id = models.IntegerField(primary_key=True)
-    geometry = models.PointField(srid=26917, null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
     rectype = models.ForeignKey('RecreationType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'recreation_point'
@@ -206,12 +219,13 @@ class RoadAccessStatusType(models.Model):
 
 class RoadLine(models.Model):
     roadln_id = models.IntegerField(primary_key=True)
-    geometry = models.MultiLineStringField(srid=26917, null=True, blank=True)
+    geometry = models.MultiLineStringField(srid=2163, null=True, blank=True)
     roadtype = models.ForeignKey('RoadType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     road_name = models.CharField(max_length=25, blank=True)
     accessstatus = models.ForeignKey(RoadAccessStatusType, null=True, blank=True)
     roadsurface = models.ForeignKey('RoadSurfaceType', null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'road_line'
@@ -245,13 +259,14 @@ class SeverityType(models.Model):
 
 class StandArea(models.Model):
     standarea_id = models.AutoField(primary_key=True)
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateTimeField(null=True, blank=True)
     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
     transaction_start_date = models.DateTimeField(null=True, blank=True)
     standdescription = models.ForeignKey('StandDescription', null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'stand_area'
@@ -262,7 +277,7 @@ class StandArea(models.Model):
 class StandAreaHistory(models.Model):
     standareahist_id = models.AutoField(primary_key=True)
     standarea_id = models.IntegerField(null=True, blank=True)
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     end_date = models.DateTimeField(null=True, blank=True)
@@ -270,6 +285,7 @@ class StandAreaHistory(models.Model):
     foresttype_id = models.IntegerField(null=True, blank=True)
     transaction_start_date = models.DateTimeField(null=True, blank=True)
     transaction_end_date = models.DateTimeField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'stand_area_history'
@@ -282,6 +298,7 @@ class StandDescription(models.Model):
     forestagetype = models.ForeignKey(ForestAgeType, null=True, blank=True)
     stand_description = models.CharField(max_length=255, blank=True)
     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'stand_description'
 
@@ -292,6 +309,7 @@ class StandStatus(models.Model):
     notes = models.CharField(max_length=255, blank=True)
     damage_severity = models.ForeignKey(SeverityType, null=True, db_column='damage_severity', blank=True)
     stand = models.ForeignKey(StandDescription, null=True, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'stand_status'
     def __unicode__(self):
@@ -317,10 +335,11 @@ class StockingType(models.Model):
 
 class Stream(models.Model):
     stream_id =  models.AutoField(primary_key=True)
-    geometry = models.LineStringField(srid=26917, null=True, blank=True)
+    geometry = models.LineStringField(srid=2163, null=True, blank=True)
     shape_leng = models.CharField(max_length=25, blank=True)
     stream_type = models.CharField(max_length=25, blank=True)
     stream_name = models.CharField(max_length=25, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'stream'
@@ -329,10 +348,11 @@ class Stream(models.Model):
 
 class StreamsideManagementZone(models.Model):
     smz_id =  models.AutoField(primary_key=True)
-    geometry = models.MultiPolygonField(srid=26917, null=True, blank=True)
+    geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
     shape_leng = models.FloatField(null=True, blank=True)
     et_id = models.CharField(max_length=255, blank=True)
     shape_area = models.FloatField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'streamside_management_zone'
@@ -350,9 +370,10 @@ class TaskStatusType(models.Model):
 
 class Tree(models.Model):
     tree_id = models.AutoField(primary_key=True)
-    geometry = models.PointField(srid=26917, null=True, blank=True)
-    species = models.CharField(max_length=50, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
+    speciestreetype =  models.ForeignKey('SpeciesTreeType', max_length=50, blank=True)
     start_year = models.CharField(max_length=4, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'tree'
@@ -369,7 +390,7 @@ class VwQcLandAreaByYear(models.Model):
         db_table = 'vw_qc_land_area_by_year'
 
 class VwStandAreaAll(models.Model):
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateTimeField(null=True, blank=True)
@@ -382,7 +403,7 @@ class VwStandAreaAll(models.Model):
 class VwStandAreaByYear(models.Model):
     view_id = models.FloatField(null=True, blank=True)
     standarea_id = models.IntegerField(null=True, blank=True)
-    geometry = models.PolygonField(srid=26917, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     end_date = models.DateTimeField(null=True, blank=True)
@@ -398,9 +419,10 @@ class VwStandAreaByYear(models.Model):
 
 class WaterPoint(models.Model):
     waterpoint_id = models.AutoField(primary_key=True)
-    geometry = models.PointField(srid=26917, null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True)
     watertype = models.ForeignKey('WaterType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'water_point'
@@ -425,6 +447,7 @@ class SawMill(models.Model):
     sawmill_phone = models.CharField(max_length=20, blank=True)
     sawmill_email = models.CharField(max_length=100, blank=True)
     sawmill_website = models.CharField(max_length=255, blank=True)
+    created_by =  models.ForeignKey(User)
     class Meta:
         db_table = 'sawmill'
     def __unicode__(self):
@@ -432,22 +455,41 @@ class SawMill(models.Model):
     
 class ScalingTicket(models.Model):
     scalingticket_id = models.AutoField(primary_key=True)
-    sawmill_id = models.ForeignKey('SawMill', null=True, blank=True)
+    sawmill = models.ForeignKey('SawMill', null=True, blank=True)
     date = models.DateField(null=True, blank=True)
     weight = models.DecimalField(null=True, max_digits=12, decimal_places=2, blank=True)
+    ticket_date = models.DateField(blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'scaling_ticket'
     def __unicode__(self):
         return unicode(self.scalingticket_id)
+    
+class LumberLoad(models.Model):
+    lumberload_id = models.AutoField(primary_key=True)
+    scalingticket = models.ForeignKey('ScalingTicket', blank=True, null=True)
+    load_date = models.DateField(blank=True)
+    load_comments = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
+    class Meta:
+        db_table = 'lumber_load'
+        ordering = ["lumberload_id"]
+    def __unicode__(self):
+        return unicode(self.lumberload_id)
         
 class LogData(models.Model):
     logdata_id = models.AutoField(primary_key=True)
-    scalingticket = models.ForeignKey('ScalingTicket', null=True, blank=True)
+    lumberload = models.ForeignKey('LumberLoad', blank=True, null=True)
     butt_diameter = models.DecimalField(null=True, max_digits=4, decimal_places=1, blank=True)
-    length = models.DecimalField(null=True, max_digits=3, decimal_places=1, blank=True)
-    species_id = models.IntegerField(null=True, blank=True)
+    diameter_unit = models.ForeignKey('UnitLengthType', related_name='diameter_unit', null=True)
+    log_length = models.DecimalField(null=True, max_digits=3, decimal_places=1, blank=True)
+    length_unit = models.ForeignKey('UnitLengthType', related_name='length_unit', null=True)
+    speciestreetype = models.ForeignKey('SpeciesTreeType', blank=True, null=True)
+    recorded_date = models.DateField(blank=True, null=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'log_data'
+        ordering = ["logdata_id"]
     def __unicode__(self):
         return unicode(self.logdata_id)
     
@@ -462,7 +504,7 @@ class ForestInventoryPlot(models.Model):
     plot_xlength = models.IntegerField(blank=True, null=True)
     plot_ylength = models.IntegerField(blank=True, null=True)
     plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
-    geometry = models.PointField(srid=7314, null=True, blank=True) # This is the correct srid!
+    geometry = models.PointField(srid=2163, null=True, blank=True) # This is the correct srid!
 #    geometry = models.PointField(srid=9820, null=True, blank=True)
     longitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
     latitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
@@ -483,12 +525,13 @@ class ForestInventoryData(models.Model):
     forestinventoryplot = models.ForeignKey('ForestInventoryPlot', null=True, blank=True)
     tree = models.ForeignKey('Tree', null=True, blank=True)
     collection_date = models.DateField(null=True, blank=True)
-    tree_species = models.ForeignKey('SpeciesTreeType', null=False)
+    speciestreetype = models.ForeignKey('SpeciesTreeType', null=False)
     dbh = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
     dbh_unit = models.ForeignKey('UnitLengthType', related_name='dbh_unit', null=True)
     height = models.IntegerField(blank=True, null=True)
     height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True, blank=True)
-    created_by = models.CharField(max_length = 100)
+    age = models.IntegerField(blank=True)
+    created_by =  models.ForeignKey(User)
     class Meta:
         db_table = 'forest_inventory_data'
         ordering = ["forestinventorydata_id"]

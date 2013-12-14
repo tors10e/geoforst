@@ -26,7 +26,10 @@ $(function() {
 	    	<td>{{plot.elevation}} {{plot.elevation_unit}}</td>
 	    	<td>{{plot.plot_create_date}}</td>
 			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.forestinventoryplot_id}} Data</a></td>
-			<td><a href="{{plot.forestinventoryplot_id }}/edit/">Edit</a> <a href="{{plot.forestinventoryplot_id }}/delete/">Delete</a></td>
+			<td>
+				<a href="{{plot.forestinventoryplot_id }}/edit/">Edit</a> 
+				<a href="{{plot.forestinventoryplot_id }}/delete/">Delete</a>
+			</td>
     	</tr>
     	{% endfor %}
     </table>
