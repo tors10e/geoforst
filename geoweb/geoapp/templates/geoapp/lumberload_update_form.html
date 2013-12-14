@@ -2,12 +2,12 @@
 {% block content %} 
 <script>
 $(function() {
-  $( "#id_plot_create_date" ).datepicker();
+  $( "#id_load_date" ).datepicker();
 });
 </script>
-<p>Edit a forest inventory plot</p>
+<p>Edit a lumber load</p>
 <form action="" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Update" />
+	{{ form.as_p }}
+	<input type="submit" value="Update" />
 </form>
 {% endblock %}

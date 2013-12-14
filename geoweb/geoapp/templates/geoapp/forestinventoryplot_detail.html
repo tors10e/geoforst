@@ -19,18 +19,22 @@ $(function() {
 						<th>Diameter Units</th>
 						<th>Height</th>
 						<th>Height Units</th>
+						<th>Age</th>
+						<th>Actions</th>
 					</tr>
 					{% for data in plot_detail.forestinventorydata_set.all %}
 					<tr>
 						<td> {{ data.forestinventorydata_id}} </td>
 						<td> {{ data.tree }} </td>
-						<td> {{ data.tree_species }}</td>
+						<td> {{ data.speciestreetype }}</td>
 						<td> {{ data.collection_date }} </td>
 						<td> {{ data.dbh }}</td> 
 						<td> {{ data.dbh_unit }}</td> 
 						<td> {{ data.height }} </td>
 						<td> {{ data.height_unit }}</td> 
+						<td> {{ data.age}}</td>
 						<td>
+							<a href="/geoapp/inventory_data/{{data.forestinventorydata_id}}/edit">Edit</a>
 							<a href="/geoapp/inventory_data/{{data.forestinventorydata_id}}/delete">Delete</a>
 						</td>
 					</tr>

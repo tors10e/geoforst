@@ -1,0 +1,37 @@
+<script>
+$(function() {
+  $( "#id_form_date_field" ).datepicker();
+});
+</script>
+
+{% extends "geoapp/base_inventory.html" %}
+
+{% block content %}
+    <h2>Lumber Loads</h2>
+    <table id="table">
+	    <tr id="header_row">
+	    	<th>ID</th>
+	    	<th>Scaling Ticket</th>
+	    	<th>Load Date</th>
+	    	<th>Load Comments</th>
+	    	<th>Data</th>
+	    	<th>Actions</th>
+	    </tr>
+	    {% for load in lumber_load %}
+	    <tr>
+		    <td>{{load.lumberload_id}}</td>
+		   	<td>{{load.scalingticket}}</td>
+		   	<td>{{load.load_date}}</td>
+		   	<td>{{load.load_comments}}</td>
+		   	<td>
+		   		<a href="{{ load.lumberload_id }}/detail/">Load {{ load.lumberload_id }} Data</a>
+		   	</td>
+			<td>
+				<a href="{{ load.lumberload_id }}/edit/">Edit</a> 					
+				<a href="{{ load.lumberload_id }}/delete/">Delete</a>
+			</td>
+	    </tr>
+    	{% endfor %}  
+    </table>
+    <a href="add/">Add new load</a>    
+{% endblock %}

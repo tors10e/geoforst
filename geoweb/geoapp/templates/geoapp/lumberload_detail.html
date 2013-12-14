@@ -1,0 +1,41 @@
+<script>
+$(function() {
+  $( "#id_form_date_field" ).datepicker();
+});
+</script>
+
+{% extends "geoapp/base_inventory.html" %}
+
+{% block content %}    
+		<h2>Load {{ lumber_load_detail.lumberload_id }}</h2>
+		{% if lumber_load_detail.logdata_set.all %}
+				<table>
+					<tr>
+						<th>Log ID</th>
+						<th>Butt Diameter</th>
+						<th>Log Length</th>
+						<th>Species</th> 
+						<th>Recorded Date</th>
+						<th>Actions</th>
+					</tr>
+					{% for log in lumber_load_detail.logdata_set.all %}
+					<tr>
+						<td>{{ log.logdata_id }} </td>
+		    			<td>{{ log.butt_diameter }} {{ log.diameter_unit }}</td>
+		    			<td>{{ log.log_length }} {{ log.length_unit }}</td>
+		    			<td>{{ log.speciestreetype }} </td>
+		    			<td>{{ log.recorded_date }} </td>
+						<td>
+							<a href="/geoapp/log_data/{{ log.logdata_id }}/edit/">Edit</a> 					
+							<a href="/geoapp/log_data/{{ log.logdata_id }}/delete/">Delete</a>
+							<a href="{% url 'geoapp:log-data-add' lumber_load_detail.lumberload_id %}"> Add log</a>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+		{% else %}
+			<p>No data has been entered for this plot.</p>
+		{% endif %}
+		<a href="/geoapp/lumber_load">Return to load overview</a>
+		<a href="/geoapp/lumber_load/{{ lumber_load_detail.lumberload_id }}/detail/add">Add a new log</a>
+{% endblock %}
