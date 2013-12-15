@@ -26,9 +26,8 @@ $(function() {
 		    			<td>{{ log.speciestreetype }} </td>
 		    			<td>{{ log.recorded_date }} </td>
 						<td>
-							<a href="/geoapp/log_data/{{ log.logdata_id }}/edit/">Edit</a> 					
-							<a href="/geoapp/log_data/{{ log.logdata_id }}/delete/">Delete</a>
-							<a href="{% url 'geoapp:log-data-add' lumber_load_detail.lumberload_id %}"> Add log</a>
+							<button type="button"><a href="{% url 'geoapp:log-data-edit' log.logdata_id %}">Edit Log</a></button> 					
+							<button type="button"><a href="{% url 'geoapp:log-data-delete' log.logdata_id %}">Delete Log</a></button>
 						</td>
 					</tr>
 					{% endfor %}
@@ -36,6 +35,6 @@ $(function() {
 		{% else %}
 			<p>No data has been entered for this plot.</p>
 		{% endif %}
-		<a href="/geoapp/lumber_load">Return to load overview</a>
-		<a href="/geoapp/lumber_load/{{ lumber_load_detail.lumberload_id }}/detail/add">Add a new log</a>
+		<a href="{% url 'geoapp:lumber-load-list' %}">Return to load overview</a>
+		<a href="{% url 'geoapp:log-data-add' lumber_load_detail.lumberload_id %}"> Add a new log</a>
 {% endblock %}
