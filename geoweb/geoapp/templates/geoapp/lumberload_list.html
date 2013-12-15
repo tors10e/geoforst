@@ -24,14 +24,14 @@ $(function() {
 		   	<td>{{load.load_date}}</td>
 		   	<td>{{load.load_comments}}</td>
 		   	<td>
-		   		<a href="{{ load.lumberload_id }}/detail/">Load {{ load.lumberload_id }} Data</a>
+		  		<a href="{% url 'geoapp:lumber-load-detail' load.lumberload_id %}">Load {{ load.lumberload_id }} Data</a>
 		   	</td>
 			<td>
-				<a href="{{ load.lumberload_id }}/edit/">Edit</a> 					
-				<a href="{{ load.lumberload_id }}/delete/">Delete</a>
+				<button><a href="{% url 'geoapp:lumber-load-edit' load.lumberload_id %}">Edit</a> </button>				
+				<button><a href="{% url 'geoapp:lumber-load-delete' load.lumberload_id %}">Delete</a></button>
 			</td>
 	    </tr>
     	{% endfor %}  
     </table>
-    <a href="add/">Add new load</a>    
+    <a href="{% url 'geoapp:lumber-load-add' %}">Add new load</a>    
 {% endblock %}

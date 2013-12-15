@@ -15,6 +15,7 @@ def Home(request):
     else:
         return render_to_response('geoapp/home.html', {})
 
+
 class LumberLoadListView(ListView):
     template='geoapp/lumberload_list.html'
     context_object_name='lumber_load'
@@ -33,19 +34,20 @@ class LumberLoadCreate(CreateView):
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        return reverse('geoapp:lumber_load_list')
+        return reverse('geoapp:lumber-load-list')
     
 class LumberLoadUpdate(UpdateView):
     model = LumberLoad
+    form_class = LumberLoadForm
     template_name_suffix = '_update_form'
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        return reverse('geoapp:lumber_load_list') 
+        return reverse('geoapp:lumber-load-list') 
     
 class LumberLoadDelete(DeleteView):
     model = LumberLoad
-    success_url = reverse_lazy('geoapp:lumber_load_list')
+    success_url = reverse_lazy('geoapp:lumber-load-list')
     
 class LumberLoadDetailView(DetailView):
     queryset = LumberLoad.objects.all()
@@ -74,26 +76,37 @@ class LogDataCreate(CreateView):
     # Set initial values of unit fields.
     def get_initial(self):
          if self.request.method == 'GET':
-             return { 'lumberload': self.kwargs['lumberload_id'],'diameter_unit': '3', 'length_unit': '1' }
+             return { 'lumberload': self.kwargs['pk'],'diameter_unit': '3', 'length_unit': '1' }
   
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        return reverse('geoapp:lumber_load_list')
-#    def get_success_url(self): 
-#        return reverse('geoapp:lumber_load_list',args=(self.object.id,))
-#        return HttpResponseRedirect(reverse('geoapp:log_data_detail', kwargs={'pk':log.lumberload_id}))
+        #self.lumberLoadID = self.request.POST['lumberload']
+        lumberLoadID = self.kwargs['pk']
+        return reverse('geoapp:lumber-load-detail', kwargs={'pk': lumberLoadID})
+
     
 class LogDataUpdate(UpdateView):
     model = LogData
+    form_class = LogDataForm
     template_name_suffix = '_update_form'
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        return reverse('geoapp:lumber_load_list') 
+        logID = self.kwargs['pk'] # Get the log id.
+        log = LogData.objects.get(logdata_id=logID) # Then get the log object.
+        loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
+        return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
+    
     
 class LogDataDelete(DeleteView):
     model = LogData
-    success_url = reverse_lazy('geoapp:log_data_list')
+    
+    # Return to the load list when done creating a plot.
+    def get_success_url(self):
+        logID = self.kwargs['pk'] # Get the log id.
+        log = LogData.objects.get(logdata_id=logID) # Then get the log object.
+        loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
+        return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
     
 class InventoryPlotListView(ListView):
     template='geoapp/forestinventoryplot_list.html'
