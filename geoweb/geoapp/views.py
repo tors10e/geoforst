@@ -15,14 +15,9 @@ def Home(request):
     else:
         return render_to_response('geoapp/home.html', {})
 
-
-class LumberLoadListView(ListView):
-    template='geoapp/lumberload_list.html'
-    context_object_name='lumber_load'
-    
-    def get_queryset(self):
-        return LumberLoad.objects.filter(created_by=self.request.user)
-    
+#************************************************************
+# Lumber scaling classes.
+#************************************************************
 class LumberLoadCreate(CreateView):
     form_class = LumberLoadForm
     model = LumberLoad
@@ -35,6 +30,21 @@ class LumberLoadCreate(CreateView):
     # Return to the load list when done creating a plot.
     def get_success_url(self):
         return reverse('geoapp:lumber-load-list')
+
+class LumberLoadList(ListView):
+    template='geoapp/lumberload_list.html'
+    context_object_name='lumber_load'
+    
+    def get_queryset(self):
+        return LumberLoad.objects.filter(created_by=self.request.user)
+    
+class LumberLoadDetail(DetailView):
+    queryset = LumberLoad.objects.all()
+    template_name = 'geoapp/lumberload_detail.html'
+    context_object_name = 'lumber_load_detail'
+    
+    def get_queryset(self):
+        return LumberLoad.objects.filter(created_by=self.request.user)
     
 class LumberLoadUpdate(UpdateView):
     model = LumberLoad
@@ -49,21 +59,11 @@ class LumberLoadDelete(DeleteView):
     model = LumberLoad
     success_url = reverse_lazy('geoapp:lumber-load-list')
     
-class LumberLoadDetailView(DetailView):
-    queryset = LumberLoad.objects.all()
-    template_name = 'geoapp/lumberload_detail.html'
-    context_object_name = 'lumber_load_detail'
     
-    def get_queryset(self):
-        return LumberLoad.objects.filter(created_by=self.request.user)
+#************************************************************
+# Log Data classes.
+#************************************************************
 
-class LogDataListView(ListView):
-    template='geoapp/logdata_list.html'
-    context_object_name='log_data'
-    
-    def get_queryset(self):
-        return LogData.objects.filter(created_by=self.request.user)
-    
 class LogDataCreate(CreateView):
     form_class = LogDataForm
     model = LogData
@@ -83,7 +83,13 @@ class LogDataCreate(CreateView):
         #self.lumberLoadID = self.request.POST['lumberload']
         lumberLoadID = self.kwargs['pk']
         return reverse('geoapp:lumber-load-detail', kwargs={'pk': lumberLoadID})
-
+   
+class LogDataList(ListView):
+    template='geoapp/logdata_list.html'
+    context_object_name='log_data'
+    
+    def get_queryset(self):
+        return LogData.objects.filter(created_by=self.request.user)
     
 class LogDataUpdate(UpdateView):
     model = LogData
@@ -93,11 +99,10 @@ class LogDataUpdate(UpdateView):
     # Return to the load list when done creating a plot.
     def get_success_url(self):
         logID = self.kwargs['pk'] # Get the log id.
-        log = LogData.objects.get(logdata_id=logID) # Then get the log object.
+        log = get_object_or_404(LogData, logdata_id=logID) # Then get the log object.
         loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
         return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
-    
-    
+     
 class LogDataDelete(DeleteView):
     model = LogData
     
@@ -108,14 +113,36 @@ class LogDataDelete(DeleteView):
         loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
         return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
     
-class InventoryPlotListView(ListView):
+#************************************************************
+# Forest inventory classes.
+#************************************************************
+
+class InventoryPlotCreate(CreateView):
+    form_class = InventoryPlotForm
+    model = ForestInventoryPlot
+    
+    # Return to the inventory plot list when done creating a plot.
+    def get_success_url(self):
+        return reverse('geoapp:inventory-plot-list')
+    
+    # Set created_by to the current user.
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super(InventoryPlotCreate, self).form_valid(form)
+    
+    # Set default form values.
+    def get_initial(self):
+        if self.request.method == 'GET':
+            return {'plot_geometry':1, 'plot_area_unit':1, 'plot_radius_unit':1}
+
+class InventoryPlotList(ListView):
     template='geoapp/forestinventoryplot_list.html'
     context_object_name='inventory_plots'
     
     def get_queryset(self):
         return ForestInventoryPlot.objects.filter(created_by=self.request.user)
 
-class InventoryPlotDetailView(DetailView):
+class InventoryPlotDetail(DetailView):
     queryset = ForestInventoryPlot.objects.all()
     template_name = 'geoapp/forestinventoryplot_detail.html'
     context_object_name = 'plot_detail'
@@ -123,72 +150,54 @@ class InventoryPlotDetailView(DetailView):
     def get_queryset(self):
         return ForestInventoryPlot.objects.filter(created_by=self.request.user)
     
-class ForestInventoryPlotCreate(CreateView):
-    form_class = InventoryPlotForm
+class InventoryPlotUpdate(UpdateView):
     model = ForestInventoryPlot
+    form_class = InventoryPlotForm
+    template_name_suffix = '_update_form'
     
-    # Return to the inventory plot list when done creating a plot.
+   # Return to the load list when done creating a plot.
     def get_success_url(self):
-        return reverse('geoapp:inventory_plot_list')
+        return reverse('geoapp:inventory-plot-list')
+ 
+class InventoryPlotDelete(DeleteView):
+    model = ForestInventoryPlot
+    success_url = reverse_lazy('geoapp:inventory-plot-list')
+
+class InventoryDataCreate(CreateView):
+    model = ForestInventoryData
+    form_class = InventoryDataForm
     
-    # Set created_by to the current user.
+    # Set created by to current user.
     def form_valid(self, form):
         form.instance.created_by = self.request.user
-        return super(ForestInventoryPlotCreate, self).form_valid(form)
+        return super(InventoryDataCreate, self).form_valid(form)
     
-    # Set default form values.
+    # Set default field values.
     def get_initial(self):
-        return {'plot_geometry':1, 'plot_area_unit':1, 'plot_radius_unit':1}
+        if self.request.method == 'GET':
+            return {'forestinventoryplot':self.kwargs['pk'], 'dbh_unit':3}
+        
+    # Return to inventory data list for the plot.
+    def get_success_url(self):
+        return reverse('geoapp:inventory-plot-detail', kwargs={'pk':self.kwargs['pk']})
+        
 
-def InventoryPlotEdit(request, forestinventoryplot_id):
-    plot = get_object_or_404(ForestInventoryPlot, pk=forestinventoryplot_id)
-    if request.method == 'POST':
-        form = InventoryPlotForm(request.POST or None, instance=plot)
-        if form.is_valid():
-            form.save()
-        return HttpResponseRedirect('/geoapp/inventory_plot/')
-    else:
-        form = InventoryPlotForm(instance=plot)
-        return render(request, 'geoapp/forestinventoryplot_update.html', {'form': form})
- 
-def InventoryPlotDelete(request, pk):
-    ForestInventoryPlot.objects.get(forestinventoryplot_id=pk).delete()
-    return HttpResponseRedirect('/geoapp/inventory_plot/')
+class InventoryDataUpdate(UpdateView):
+    model = ForestInventoryData
+    form_class = InventoryDataForm
+    template_name_suffix = '_update_form'
 
-def InventoryDataAdd(request, forestinventoryplot_id=1):
-    if request.method == 'POST': 
-        form = InventoryDataForm(request.POST) 
-        if form.is_valid(): 
-            new_data = form.save()
-            return HttpResponseRedirect(reverse('geoapp:plot_detail', kwargs={'pk':new_data.forestinventoryplot_id}))
-    else: 
-        # Get a form and populate with forestinventoryplotid and default units.
-        initial_data = {'forestinventoryplot' : forestinventoryplot_id, 'dbh_unit':3}
-        form = InventoryDataForm(initial=initial_data) 
-    return render(request, 'geoapp/forestinventorydata_add.html', {'form': form})
+    def get_success_url(self):
+        plotID = self.object.forestinventoryplot
+        return reverse('geoapp:inventory-plot-detail', kwargs={'pk':plotID})
     
-    # Set created_by to the current user.
-    def form_valid(self, form):
-        form.instance.created_by = self.request.user
-        return super(ForestInventoryPlotCreate, self).form_valid(form)
+class InventoryDataDelete(DeleteView):
+    model = ForestInventoryData
+    
+    def get_success_url(self):
+        plotID = self.object.forestinventoryplot
+        return reverse('geoapp:inventory-plot-detail', kwargs={'pk':plotID})
 
-def InventoryDataDelete(request, forestinventorydata_id):
-    data = ForestInventoryData.objects.get(pk=forestinventorydata_id);
-    ForestInventoryData.objects.get(pk=forestinventorydata_id).delete()
-    return HttpResponseRedirect(reverse('geoapp:plot_detail', kwargs={'pk':data.forestinventoryplot_id}))
- 
-def InventoryDataEdit(request, forestinventorydata_id):
-    data = get_object_or_404(ForestInventoryData, pk=forestinventorydata_id)
-    if request.method == 'POST':
-        form = InventoryDataForm(request.POST, instance=data)
-        form.instance.created_by = self.request.user
-        if form.is_valid():
-            form.save()
-        return HttpResponseRedirect(reverse('geoapp:plot_detail', kwargs={'pk':data.forestinventoryplot_id}))
-    else:
-        form = InventoryDataForm(instance=data)
-        return render(request, 'geoapp/forestinventorydata_update.html', {'form': form})
- 
 def logout_view(request):     
     auth.logout(request)     # Redirect to login page.     
     return HttpResponseRedirect("/geoapp/accounts/login/")

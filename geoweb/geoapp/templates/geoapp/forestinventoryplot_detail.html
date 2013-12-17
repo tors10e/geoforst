@@ -43,6 +43,6 @@ $(function() {
 		{% else %}
 			<p>No data has been entered for this plot.</p>
 		{% endif %}
-		<a href="/geoapp/inventory_plot">Return to plot overview.</a>
-		<a href="/geoapp/inventory_data/{{plot_detail.forestinventoryplot_id}}/add">Add a new data point.</a>
+		<a href="{% url 'geoapp:inventory-plot-list' %}">Return to plot overview.</a>
+		<a href="{% url 'geoapp:inventory-data-add' plot_detail.forestinventoryplot_id %}">Add a new data point.</a>
 {% endblock %}
