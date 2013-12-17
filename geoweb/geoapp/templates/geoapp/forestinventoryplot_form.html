@@ -5,7 +5,7 @@ $(function() {
   $( "#id_plot_create_date" ).datepicker();
 });
 </script>
-<p>Add a new forest inventory data</p>
+<p>Add a new plot</p>
 <form action="" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Create" />
