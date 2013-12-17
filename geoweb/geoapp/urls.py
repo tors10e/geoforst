@@ -2,6 +2,10 @@ from django.conf.urls import patterns, url
 from geoapp import views
 
 urlpatterns = patterns('',
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    url(r'^accounts/logout/$', views.logout_view),
+    url(r'^home/$', views.Home, name = 'home'),
+    
     url(r'^$', views.Index),
     url(r'^lumber_load/$', views.LumberLoadList.as_view(), name='lumber-load-list'),
     url(r'^lumber_load/add/$', views.LumberLoadCreate.as_view(), name='lumber-load-add'),
@@ -24,7 +28,4 @@ urlpatterns = patterns('',
     url(r'^inventory_data/(?P<pk>\d+)/edit/$', views.InventoryDataUpdate.as_view(), name='inventory_data_edit'),
     url(r'^inventory_data/(?P<pk>\d+)/delete/$', views.InventoryDataDelete.as_view(), name='inventory_data_delete'),
     
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
-    url(r'^accounts/logout/$', views.logout_view),
-    url(r'^home/$', views.Home, name = 'home'),
   )

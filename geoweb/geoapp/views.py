@@ -14,6 +14,10 @@ def Home(request):
         return redirect('/geoapp/accounts/login/')
     else:
         return render_to_response('geoapp/home.html', {})
+    
+def logout_view(request):     
+    auth.logout(request)     # Redirect to login page.     
+    return HttpResponseRedirect("/geoapp/accounts/login/")
 
 #************************************************************
 # Lumber scaling classes.
@@ -21,6 +25,7 @@ def Home(request):
 class LumberLoadCreate(CreateView):
     form_class = LumberLoadForm
     model = LumberLoad
+    template_name_suffix = '_form'
     
     # Set created_by to the current user.
     def form_valid(self, form):
@@ -32,15 +37,15 @@ class LumberLoadCreate(CreateView):
         return reverse('geoapp:lumber-load-list')
 
 class LumberLoadList(ListView):
-    template='geoapp/lumberload_list.html'
     context_object_name='lumber_load'
+    template_name_suffix = '_list'
     
     def get_queryset(self):
         return LumberLoad.objects.filter(created_by=self.request.user)
     
 class LumberLoadDetail(DetailView):
     queryset = LumberLoad.objects.all()
-    template_name = 'geoapp/lumberload_detail.html'
+    template_name_suffix = '_detail'
     context_object_name = 'lumber_load_detail'
     
     def get_queryset(self):
@@ -57,6 +62,7 @@ class LumberLoadUpdate(UpdateView):
     
 class LumberLoadDelete(DeleteView):
     model = LumberLoad
+    template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('geoapp:lumber-load-list')
     
     
@@ -67,6 +73,7 @@ class LumberLoadDelete(DeleteView):
 class LogDataCreate(CreateView):
     form_class = LogDataForm
     model = LogData
+    template_name_suffix = '_form'
     
     # Set created_by to the current user.
     def form_valid(self, form):
@@ -80,13 +87,12 @@ class LogDataCreate(CreateView):
   
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        #self.lumberLoadID = self.request.POST['lumberload']
         lumberLoadID = self.kwargs['pk']
         return reverse('geoapp:lumber-load-detail', kwargs={'pk': lumberLoadID})
    
 class LogDataList(ListView):
-    template='geoapp/logdata_list.html'
     context_object_name='log_data'
+    template_name_suffix = '_list'
     
     def get_queryset(self):
         return LogData.objects.filter(created_by=self.request.user)
@@ -105,6 +111,7 @@ class LogDataUpdate(UpdateView):
      
 class LogDataDelete(DeleteView):
     model = LogData
+    template_name_suffix = '_confirm_delete'
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
@@ -120,6 +127,7 @@ class LogDataDelete(DeleteView):
 class InventoryPlotCreate(CreateView):
     form_class = InventoryPlotForm
     model = ForestInventoryPlot
+    template_name_suffix = '_form'
     
     # Return to the inventory plot list when done creating a plot.
     def get_success_url(self):
@@ -136,16 +144,16 @@ class InventoryPlotCreate(CreateView):
             return {'plot_geometry':1, 'plot_area_unit':1, 'plot_radius_unit':1}
 
 class InventoryPlotList(ListView):
-    template='geoapp/forestinventoryplot_list.html'
     context_object_name='inventory_plots'
+    template_name_suffix = '_list'
     
     def get_queryset(self):
         return ForestInventoryPlot.objects.filter(created_by=self.request.user)
 
 class InventoryPlotDetail(DetailView):
     queryset = ForestInventoryPlot.objects.all()
-    template_name = 'geoapp/forestinventoryplot_detail.html'
     context_object_name = 'plot_detail'
+    template_name_suffix = '_detail'
     
     def get_queryset(self):
         return ForestInventoryPlot.objects.filter(created_by=self.request.user)
@@ -161,11 +169,13 @@ class InventoryPlotUpdate(UpdateView):
  
 class InventoryPlotDelete(DeleteView):
     model = ForestInventoryPlot
+    template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('geoapp:inventory-plot-list')
 
 class InventoryDataCreate(CreateView):
     model = ForestInventoryData
     form_class = InventoryDataForm
+    template_name_suffix = '_form'
     
     # Set created by to current user.
     def form_valid(self, form):
@@ -193,14 +203,13 @@ class InventoryDataUpdate(UpdateView):
     
 class InventoryDataDelete(DeleteView):
     model = ForestInventoryData
+    template_name_suffix = '_confirm_delete'
     
     def get_success_url(self):
         plotID = self.object.forestinventoryplot
         return reverse('geoapp:inventory-plot-detail', kwargs={'pk':plotID})
 
-def logout_view(request):     
-    auth.logout(request)     # Redirect to login page.     
-    return HttpResponseRedirect("/geoapp/accounts/login/")
+
     
 
     
