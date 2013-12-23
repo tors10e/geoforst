@@ -20,7 +20,11 @@ $(function() {
 	    {% for load in lumber_load %}
 	    <tr>
 		    <td>{{load.lumberload_id}}</td>
-		   	<td>{{load.scalingticket}}</td>
+		   	{% if load.scalingticket %}
+		   		<td><a href={% url 'geoapp:scaling-ticket-list' %}>{{load.scalingticket}}</a></td>
+		   	{% else %}
+		   		<td><a href={% url 'geoapp:scaling-ticket-add' %}>Add new ticket</a></td>
+		   	{% endif %}
 		   	<td>{{load.load_date}}</td>
 		   	<td>{{load.load_comments}}</td>
 		   	<td>

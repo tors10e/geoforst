@@ -25,16 +25,18 @@ class ActivityArea(models.Model):
     acttype = models.ForeignKey('ActivityType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     revenue = models.DecimalField(max_digits=8, decimal_places=2, blank=True) # This field type is a guess.
-    plannedact_id = models.ForeignKey('PlannedActivity', null=True, blank=True)
+    plannedact = models.ForeignKey('PlannedActivity', null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
         db_table = 'activity_area'
+    def __unicode__(self):
+        return unicode(self.activityarea_id)    
 
 class ActivityType(models.Model):
     acttype_id = models.IntegerField(primary_key=True)
+    acttype_cd = models.CharField(max_length=3, blank=True)
     acttype_dsc = models.CharField(max_length=50, blank=True)
-    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'activity_type'
     def __unicode__(self):
@@ -181,7 +183,7 @@ class Person(models.Model):
         db_table = 'person'
 
 class PlannedActivity(models.Model):
-    plannedact_id = models.IntegerField()
+    plannedact_id = models.IntegerField(primary_key=True)
     acttype = models.ForeignKey(ActivityType, null=True, blank=True)
     planned_date = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
     completed_date = models.CharField(max_length=25, blank=True)
@@ -437,29 +439,29 @@ class WaterType(models.Model):
     def __unicode__(self):
         return unicode(self.watertype_dsc)
 
-class SawMill(models.Model):
+class Sawmill(models.Model):
     sawmill_id = models.AutoField(primary_key=True)
-    sawmill_name = models.CharField(max_length=30, blank=True)
-    sawmill_address = models.CharField(max_length=100, blank=True)
-    sawmill_city = models.CharField(max_length=30, blank=True)
-    sawmill_state = models.CharField(max_length=2, blank=True)
-    sawmill_zip = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
-    sawmill_phone = models.CharField(max_length=20, blank=True)
-    sawmill_email = models.CharField(max_length=100, blank=True)
-    sawmill_website = models.CharField(max_length=255, blank=True)
-    created_by =  models.ForeignKey(User)
+    name = models.CharField(max_length=30, blank=True, unique=True)
+    address = models.CharField(max_length=100, blank=True)
+    city = models.CharField(max_length=30, blank=True)
+    state = models.CharField(max_length=2, blank=True)
+    zip = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
+    phone = models.CharField(max_length=20, blank=True)
+    email = models.CharField(max_length=100, blank=True)
+    website = models.CharField(max_length=255, blank=True)
+    created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'sawmill'
     def __unicode__(self):
-        return unicode(self.sawmill_name)
+        return unicode(self.name)
     
 class ScalingTicket(models.Model):
     scalingticket_id = models.AutoField(primary_key=True)
     sawmill = models.ForeignKey('SawMill', null=True, blank=True)
-    date = models.DateField(null=True, blank=True)
     weight = models.DecimalField(null=True, max_digits=12, decimal_places=2, blank=True)
     ticket_date = models.DateField(blank=True)
     created_by = models.ForeignKey(User)
+    created_date = models.DateField(null=True, blank=True)
     class Meta:
         db_table = 'scaling_ticket'
     def __unicode__(self):

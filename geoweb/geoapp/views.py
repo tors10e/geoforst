@@ -1,8 +1,10 @@
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
 from django.http import HttpResponseRedirect
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
-from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData
+from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket
+from geoapp.models import Sawmill
 from geoapp.forms import InventoryPlotForm, InventoryDataForm, LumberLoadForm, LogDataForm
+from geoapp.forms import  ScalingTicketForm, SawmillForm
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
 
@@ -66,10 +68,6 @@ class LumberLoadDelete(DeleteView):
     success_url = reverse_lazy('geoapp:lumber-load-list')
     
     
-#************************************************************
-# Log Data classes.
-#************************************************************
-
 class LogDataCreate(CreateView):
     form_class = LogDataForm
     model = LogData
@@ -119,6 +117,76 @@ class LogDataDelete(DeleteView):
         log = LogData.objects.get(logdata_id=logID) # Then get the log object.
         loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
         return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
+
+
+class ScalingTicketCreate(CreateView):
+    model = ScalingTicket
+    form_class = ScalingTicketForm
+    template_name_suffix = '_form'
+    
+    def form_valid(self,form):
+        form.instance.created_by = self.request.user
+        return super(ScalingTicketCreate, self).form_valid(form)
+
+    def get_success_url(self):
+        return reverse('geoapp:scaling-ticket-list')
+    
+class ScalingTicketList(ListView):
+    context_object_name = 'scaling_tickets'
+    template_name_suffix = '_list'
+    
+    def get_queryset(self):
+        return ScalingTicket.objects.filter(created_by=self.request.user)
+
+class ScalingTicketUpdate(UpdateView):
+    model = ScalingTicket
+    form_class = ScalingTicketForm
+    template_name_suffix = '_update_form'
+    
+    def get_success_url(self):
+        return reverse('geoapp:scaling-ticket-list')
+
+class ScalingTicketDelete(DeleteView):
+    model = ScalingTicket
+    template_name_suffix = '_confirm_delete'
+    success_url = reverse_lazy('geoapp:scaling-ticket-list')
+    
+class SawmillCreate(CreateView):
+    model = Sawmill
+    form = SawmillForm
+    template_name_suffix = '_form'
+    
+    def get_queryset(self):
+        return Sawmill.objects.filter(created_by=self.request.user)
+        
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super(SawmillCreate, self).form_valid(form)
+    
+    def get_success_url(self):
+        return reverse('geoapp:sawmill-list')
+    
+class SawmillList(ListView):
+    model = Sawmill
+    context_object_name = 'sawmills'
+    template_name_suffix = '_list'
+    
+    def get_queryset(self):
+        return Sawmill.objects.filter(created_by = self.request.user)
+
+class SawmillDelete(DeleteView):
+    model = Sawmill
+    template_name_suffix = '_confirm_delete'
+    success_url = reverse_lazy('geoapp:sawmill-list')
+    
+class SawmillUpdate(UpdateView):
+    model = Sawmill
+    form_class = SawmillForm
+    template_name_suffix = '_update_form'
+    
+    def get_success_url(self):
+        return reverse('geoapp:sawmill-update')
+
     
 #************************************************************
 # Forest inventory classes.
