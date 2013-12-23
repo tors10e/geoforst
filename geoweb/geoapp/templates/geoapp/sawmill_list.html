@@ -1,0 +1,44 @@
+<script>
+$(function() {
+  $( "#id_form_date_field" ).datepicker();
+});
+</script>
+
+{% extends "geoapp/base_inventory.html" %}
+
+{% block content %}
+    <h2>Lumber Scaling Tickets</h2>
+    <table id="table">
+    <tr id="header_row">
+    	<th>ID</th>
+    	<th>Name</th>
+    	<th>Address</th>
+    	<th>City</th>
+    	<th>State</th>
+    	<th>Zip Code</th>
+    	<th>Phone Number</th>
+    	<th>Email Address</th>
+    	<th>Website</th>
+    	<th>Action</th>
+    	</tr>
+    	{% for mill in sawmills %}
+    	<tr>
+	    	<td>{{mill.sawmill_id}}</td>
+	    	<td>{{mill.name}}</td>
+	    	<td>{{mill.address}}</td>
+	    	<td>{{mill.city}}</td>
+	    	<td>{{mill.state}}</td>
+	    	<td>{{mill.zip}}</td>
+	    	<td>{{mill.phone}}</td>
+	    	<td>{{mill.email}}</td>
+	    	<td>{{mill.website}}</td>
+			<td><a href="{% url 'geoapp:sawmill-list' %}">Sawmill {{mill.sawmill_id}} Data</a></td>
+			<td>
+				<a href="{% url 'geoapp:sawmill-edit' mill.sawmill_id %}">Edit</a> 
+				<a href="{% url 'geoapp:sawmill-delete' mill.sawmill_id %}">Delete</a>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+    <a href="{% url 'geoapp:sawmill-add' %}">Add a new sawmill.</a>
+{% endblock %}

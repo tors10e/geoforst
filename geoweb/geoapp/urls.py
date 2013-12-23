@@ -17,6 +17,16 @@ urlpatterns = patterns('',
     url(r'^log_data/(?P<pk>\d+)/edit/$', views.LogDataUpdate.as_view(), name='log-data-edit'),
     url(r'^log_data/(?P<pk>\d+)/delete/$', views.LogDataDelete.as_view(), name='log-data-delete'),
     
+    url(r'^scaling_ticket/add/$', views.ScalingTicketCreate.as_view(), name='scaling-ticket-add'),
+    url(r'^scaling_ticket/$', views.ScalingTicketList.as_view(), name='scaling-ticket-list'),
+    url(r'^scaling_ticket/(?P<pk>\d+)/edit/$', views.ScalingTicketUpdate.as_view(), name='scaling-ticket-edit'),
+    url(r'^scaling_ticket/(?P<pk>\d+)/delete/$', views.ScalingTicketDelete.as_view(), name='scaling-ticket-delete'),
+    
+    url(r'^sawmill/add/$', views.SawmillCreate.as_view(), name='sawmill-add'),
+    url(r'^sawmill/$', views.SawmillList.as_view(), name='sawmill-list'),
+    url(r'^sawmill/(?P<pk>\d+)/edit/$', views.SawmillUpdate.as_view(), name='sawmill-edit'),
+    url(r'^sawmill/(?P<pk>\d+)/delete/$', views.SawmillDelete.as_view(), name='sawmill-delete'),
+    
     url(r'^inventory_plot/$', views.InventoryPlotList.as_view(), name='inventory-plot-list'),
     url(r'^inventory_plot/add/$', views.InventoryPlotCreate.as_view(), name='inventory-plot-add'),
     url(r'^inventory_plot/(?P<pk>\d+)/edit/$', views.InventoryPlotUpdate.as_view(), name='inventory-plot-edit'), 

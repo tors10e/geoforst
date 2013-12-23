@@ -20,7 +20,7 @@ class SawMillAdmin(admin.ModelAdmin):
         ('Sawmill Information', {'fields':['sawmill_name', 'sawmill_address', 'sawmill_state', 'sawmill_zip', 'sawmill_phone', 'sawmill_email', 'sawmill_website']})
         
     ]
-admin.site.register(SawMill, SawMillAdmin)
+admin.site.register(Sawmill, SawMillAdmin)
 admin.site.register(ForestInventoryPlot)
 admin.site.register(ForestInventoryData)
 admin.site.register(LogData)

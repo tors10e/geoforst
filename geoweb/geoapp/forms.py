@@ -1,11 +1,12 @@
 from django.forms import Textarea
-from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData
+from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket, Sawmill
 from django.contrib.gis import forms 
 from geoapp import custom_widgets 
 from django.contrib.gis.forms.widgets import OpenLayersWidget
 from django.forms.widgets import TextInput
+from django.forms import ModelForm
 
-class InventoryPlotForm(forms.ModelForm):
+class InventoryPlotForm(ModelForm):
     class Meta:
         model = ForestInventoryPlot
         exclude = ('created_by','geometry') # Geometry field is temporarily suspended and replaced with lat/long.
@@ -16,17 +17,27 @@ class InventoryPlotForm(forms.ModelForm):
 #            'geometry':custom_widgets.LatLongField(),
         }  
              
-class InventoryDataForm(forms.ModelForm):
+class InventoryDataForm(ModelForm):
     class Meta:
         model = ForestInventoryData
         exclude = ('created_by',)
         
-class LumberLoadForm(forms.ModelForm):
+class LumberLoadForm(ModelForm):
     class Meta:
         model = LumberLoad
         exclude = ('created_by',)
         
-class LogDataForm(forms.ModelForm):
+class LogDataForm(ModelForm):
     class Meta:
         model = LogData
+        exclude = ('created_by',)
+
+class ScalingTicketForm(ModelForm):
+    class Meta:
+        model = ScalingTicket
+        exclude = ('created_by','created_date')
+
+class SawmillForm(ModelForm):
+    class Meta:
+        model = Sawmill
         exclude = ('created_by',)
