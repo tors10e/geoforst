@@ -319,7 +319,7 @@ CREATE TABLE stand_area (
     description character varying(255),
     start_date timestamp,
     foresttype_id integer,
-    transaction_start_date,
+    transaction_start_date timestamp,
     standdescription_id integer,
     FOREIGN KEY (standdescription_id) REFERENCES stand_description(standdescription_id),
     FOREIGN KEY (foresttype_id) REFERENCES forest_type(foresttype_id)
