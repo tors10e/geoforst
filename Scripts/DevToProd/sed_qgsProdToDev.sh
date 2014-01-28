@@ -3,4 +3,4 @@
 # This script should be run from FSP home.
 
 
-sed -E -f Scripts/DevToProd/sedrules_qgsProdToDev.txt Maps/GForst_ME.qgis > Maps/FSP_PGLocal.qgs
+sed -E -f $GEOFORST_HOME/Scripts/DevToProd/sedrules_qgsProdToDev.txt $GEOFORST_HOME/Maps/GForst_ME.qgs > $GEOFORST_HOME/Maps/GForst_ME_Dev.qgs
