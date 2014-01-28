@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312992.30171445570886135</xmin>
-            <ymin>4090271.40226383367553353</ymin>
-            <xmax>-9309901.89119832031428814</xmax>
-            <ymax>4092429.0465554422698915</ymax>
+            <xmin>-9312959.40756810456514359</xmin>
+            <ymin>4090081.03437418723478913</ymin>
+            <xmax>-9309802.04645377397537231</xmax>
+            <ymax>4092247.08993195137009025</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -23,7 +23,7 @@
             </spatialrefsys>
         </destinationsrs>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Water Point Features20121204131510425">
+    <legend updateDrawingOrder="true" activeLayer="Firebreaks20121204132835298">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
@@ -59,9 +59,9 @@
                 <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Firebreaks" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendgroup open="false" checked="Qt::Unchecked" name="Analytical Layers">
@@ -119,9 +119,14 @@
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Base Maps">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20131110173404496" visible="1"/>
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20131110173404496" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140127201457375" visible="1"/>
                 </filegroup>
             </legendlayer>
             <legendgroup open="false" checked="Qt::Unchecked" name="USGS Shaded Quad Maps">
@@ -137,26 +142,6 @@
                 </legendlayer>
             </legendgroup>
         </legendgroup>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="land_owner" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="land_owner20130603102837432" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="person" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="person20130603102559069" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="planned_activity20130101231922171" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Description" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="stand_description20130603102657736" visible="0"/>
-            </filegroup>
-        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Activity Types20121204111631394" visible="0"/>
@@ -187,6 +172,11 @@
                 <legendlayerfile isInOverview="0" layerid="harvest_type20130603100654740" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Land Owner" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="land_owner20130603102837432" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Ordinal Sufficiency Type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="ordinal_sufficiency_type20130603174613510" visible="0"/>
@@ -195,6 +185,16 @@
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Ordinal Magnitude Type" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="ordinal_magnitude_type20130603174613248" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Person" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="person20130603102559069" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="planned_activity20130101231922171" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation Types" showFeatureCount="0">
@@ -220,6 +220,11 @@
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Severtity Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="severity_type20130603100644814" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Description" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="stand_description20130603102657736" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Status Types" showFeatureCount="0">
@@ -258,7 +263,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="45">
+    <projectlayers layercount="46">
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>220130610224644497</id>
             <datasource>crs=EPSG:26917&amp;format=image/png&amp;layers=2&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer</datasource>
@@ -1922,13 +1927,36 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="12" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
             <id>OpenLayers_plugin_layer20131110173404496</id>
-            <datasource></datasource>
+            <datasource>.</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
                 <value></value>
             </keywordList>
             <layername>Bing Aerial</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="0" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+            <id>OpenLayers_plugin_layer20140127201457375</id>
+            <datasource>.</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Google Physical</layername>
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
@@ -1976,7 +2004,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -3404,7 +3432,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>burn_compartment20130605072953108</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='burncompartment_id' srid=26917 type=POLYGON table="burn_compartment" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='burncompartment_id' srid=26917 type=POLYGON table="burn_compartment" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -3674,7 +3702,7 @@
             <keywordList>
                 <value></value>
             </keywordList>
-            <layername>land_owner</layername>
+            <layername>Land Owner</layername>
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -3773,7 +3801,7 @@
             <keywordList>
                 <value></value>
             </keywordList>
-            <layername>person</layername>
+            <layername>Person</layername>
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4640,7 +4668,7 @@
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>trail20131110173044662</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='trail_id' srid=26917 type=LINESTRING table="public"."trail" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='trail_id' srid=26917 type=LINESTRING table="public"."trail" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -4827,10 +4855,10 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="trail_id"/>
+                <edittype labelontop="0" editable="1" type="11" name="trail_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="trail_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="trailstatus_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="trailtype_id"/>
+                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="trailstatus_id" layer="trail_status_type20130605072950232" allowMulti="false" filterExpression="" type="15" value="trailstatus_dsc" name="trailstatus_id"/>
+                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="trailtype_id" layer="trail_type20130605072951441" allowMulti="false" filterExpression="" type="15" value="trailtype_dsc" name="trailtype_id"/>
             </edittypes>
             <editform>../Forms/Trail.ui</editform>
             <editforminit></editforminit>
@@ -4842,7 +4870,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>trail_status_type20130605072950232</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='trailstatus_id' table="trail_status_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='trailstatus_id' table="trail_status_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -4875,7 +4903,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>trail_type20130605072951441</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='trailtype_id' table="trail_type" sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='trailtype_id' table="trail_type" sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
