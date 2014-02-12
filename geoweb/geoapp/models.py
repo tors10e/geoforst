@@ -40,7 +40,7 @@ class ActivityType(models.Model):
     class Meta:
         db_table = 'activity_type'
     def __unicode__(self):
-        return self.acttype_dsc
+        return unicode(self.acttype_dsc)
 
 
 class BurnCompartment(models.Model):
@@ -73,11 +73,13 @@ class CulturalPoint(models.Model):
         db_table = 'cultural_point'
 
 class CulturalType(models.Model):
-    culttype_id = models.IntegerField()
+    culttype_id = models.IntegerField(primary_key=True)
     culttype_cd = models.CharField(max_length=3, blank=True)
     culttype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'cultural_type'
+    def __unicode__(self):
+        return unicode(self.culttype_dsc)
         
 class FirebreakLine(models.Model):
     fbkln_id = models.IntegerField()
@@ -95,12 +97,17 @@ class ForestAgeType(models.Model):
     forestagetype_dsc = models.CharField(max_length=30, blank=True)
     class Meta:
         db_table = 'forest_age_type'
+    def __unicode__(self):
+        return unicode(self.forestagetype_dsc)
 
 class ForestType(models.Model):
     foresttype_id = models.IntegerField(primary_key=True)
+    foresttype_cd = models.CharField(max_length=3, blank=True)
     foresttype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'forest_type'
+    def __unicode__(self):
+        return unicode(self.foresttype_dsc)
 
 class HabitatEnhancementArea(models.Model):
     habenharea_id = models.IntegerField(primary_key=True)
@@ -123,16 +130,22 @@ class HabitatEnhancementPoint(models.Model):
         db_table = 'habitat_enhancement_point'
 
 class HabitatEnhancementType(models.Model):
-    habenhtype_id = models.IntegerField()
+    habenhtype_id = models.IntegerField(primary_key=True)
+    habenhtype_cd = models.CharField(max_length=3, blank=True)
     habenhtype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'habitat_enhancement_type'
+    def __unicode__(self):
+        return unicode(self.habenhtype_dsc)
 
 class HarvestType(models.Model):
-    harvesttype_id = models.IntegerField()
+    harvesttype_id = models.IntegerField(primary_key=True)
+    harvesttype_cd = models.CharField(max_length=3, blank=True)
     harvesttype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'harvest_type'
+    def __unicode__(self):
+        return unicode(self.harvesttype_dsc)
 
 class LandArea(models.Model):
     landarea_id = models.IntegerField()
@@ -207,10 +220,13 @@ class RecreationPoint(models.Model):
         db_table = 'recreation_point'
 
 class RecreationType(models.Model):
-    rectype_id = models.IntegerField()
+    rectype_id = models.IntegerField(primary_key=True)
+    rectype_cd = models.CharField(max_length=3, blank=True)
     rectype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'recreation_type'
+    def __unicode__(self):
+        return unicode(self.rectype_dsc)
 
 class RoadAccessStatusType(models.Model):
     accessstatus_id = models.IntegerField(primary_key=True)
@@ -218,7 +234,9 @@ class RoadAccessStatusType(models.Model):
     accessstatus_dsc = models.CharField(max_length=30, blank=True)
     class Meta:
         db_table = 'road_access_status_type'
-
+    def __unicode__(self):
+        return unicode(self.accessstatus_dsc)
+    
 class RoadLine(models.Model):
     roadln_id = models.IntegerField(primary_key=True)
     geometry = models.MultiLineStringField(srid=2163, null=True, blank=True)
@@ -242,8 +260,8 @@ class RoadSurfaceType(models.Model):
         return unicode(self.roadsurface_dsc)
 
 class RoadType(models.Model):
-    roadtype_id = models.IntegerField()
-    roadtype_code = models.CharField(max_length=3)
+    roadtype_id = models.IntegerField(primary_key=True)
+    roadtype_cd = models.CharField(max_length=3, blank=True)
     roadtype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'road_type'
@@ -328,7 +346,7 @@ class StandType(models.Model):
 
 class StockingType(models.Model):
     stockingtype_id = models.IntegerField(primary_key=True)
-    stockingtype_code = models.CharField(max_length=3, blank=True)
+    stockingtype_cd = models.CharField(max_length=3, blank=True)
     stockingtype_dsc = models.CharField(max_length=50, blank=False)
     class Meta:
         db_table = 'stocking_type'
@@ -432,14 +450,15 @@ class WaterPoint(models.Model):
         return unicode(self.description)
 
 class WaterType(models.Model):
-    watertype_id = models.AutoField(primary_key=True)
+    watertype_id = models.IntegerField(primary_key=True)
+    watertype_cd = models.CharField(max_length=3, blank=True)
     watertype_dsc = models.CharField(max_length=50, blank=True)
     class Meta:
         db_table = 'water_type'
     def __unicode__(self):
         return unicode(self.watertype_dsc)
 
-class Sawmill(models.Model):
+class SawMill(models.Model):
     sawmill_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30, blank=True, unique=True)
     address = models.CharField(max_length=100, blank=True)
