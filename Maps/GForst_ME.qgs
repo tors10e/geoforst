@@ -5,9 +5,9 @@
         <units>meters</units>
         <extent>
             <xmin>-9312959.40756810456514359</xmin>
-            <ymin>4090081.03437418723478913</ymin>
+            <ymin>4090081.03437418676912785</ymin>
             <xmax>-9309802.04645377397537231</xmax>
-            <ymax>4092247.08993195137009025</ymax>
+            <ymax>4092247.08993195183575153</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -81,7 +81,7 @@
                 </filegroup>
             </legendlayer>
         </legendgroup>
-        <legendgroup open="false" checked="Qt::Unchecked" name="External Layers">
+        <legendgroup open="true" checked="Qt::Unchecked" name="External Layers">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="NHD Rivers" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="620130610223950152" visible="0"/>
@@ -5064,23 +5064,32 @@
                 <value>Trees20121204131751596</value>
                 <value>Water Point Features20121204131510425</value>
                 <value>activity_area20130101231920603</value>
+                <value>burn_compartment20130605072953108</value>
                 <value>road_line20130101154010851</value>
+                <value>soil_test20130603122942351</value>
+                <value>trail20131110173044662</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>disabled</value>
-                <value>enabled</value>
-                <value>enabled</value>
-                <value>disabled</value>
-                <value>enabled</value>
-                <value>disabled</value>
-                <value>enabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
-                <value>enabled</value>
-                <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
             </LayerSnappingEnabledList>
             <AvoidIntersectionsList type="QStringList"/>
             <LayerSnappingToleranceUnitList type="QStringList">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
@@ -5104,9 +5113,12 @@
                 <value>to_vertex</value>
                 <value>to_vertex</value>
                 <value>to_vertex_and_segment</value>
+                <value>to_vertex</value>
                 <value>to_vertex_and_segment</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
             </LayerSnapToList>
-            <TopologicalEditing type="int">1</TopologicalEditing>
+            <TopologicalEditing type="bool">false</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
                 <value>0.000000</value>
                 <value>5.000000</value>
@@ -5118,7 +5130,10 @@
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>5.000000</value>
+                <value>0.000000</value>
                 <value>5.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
             </LayerSnappingToleranceList>
         </Digitizing>
         <Identify>
