@@ -1,2 +1,3 @@
 #!/bin/bash
-pg_dump -h geo.torstenernst.com -U postgres  fsp | psql -h localhost -U postgres fsp
+dropdb -h localhost fsp
+pg_dump -C -h geo.torstenernst.com -U postgres -c fsp | psql -h localhost -U postgres 
