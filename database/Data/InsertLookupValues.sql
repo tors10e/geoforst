@@ -156,10 +156,10 @@ INSERT INTO stand_type (standtype_id, standtype_cd, standtype_dsc) VALUES (10, N
 -- Data for Name: stocking_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO stocking_type (stockingtype_id, stockingtype_dsc) VALUES (1, 'Understocked');
-INSERT INTO stocking_type (stockingtype_id, stockingtype_dsc) VALUES (2, 'Fully Stocked');
-INSERT INTO stocking_type (stockingtype_id, stockingtype_dsc) VALUES (3, 'Mildly Overstocked');
-INSERT INTO stocking_type (stockingtype_id, stockingtype_dsc) VALUES (4, 'Overstocked');
+INSERT INTO stocking_type (stockingtype_id, stockingtype_cd, stockingtype_dsc) VALUES (1, 'us', 'Understocked');
+INSERT INTO stocking_type (stockingtype_id, stockingtype_cd, stockingtype_dsc) VALUES (2, 'fs', 'Fully Stocked');
+INSERT INTO stocking_type (stockingtype_id, stockingtype_cd, stockingtype_dsc) VALUES (3, 'mo', 'Mildly Overstocked');
+INSERT INTO stocking_type (stockingtype_id, stockingtype_cd, stockingtype_dsc) VALUES (4, 'os', 'Overstocked');
 
 
 --
@@ -198,8 +198,8 @@ INSERT INTO unit_type (unit_id, unit_cd, unit_dsc) VALUES (1, 'lbsac', 'lbs/Acre
 -- Data for Name: water_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO water_type (watertype_id, watertype_dsc) VALUES (1, 'Spring');
-INSERT INTO water_type (watertype_id, watertype_dsc) VALUES (2, 'Seep');
+INSERT INTO water_type (watertype_id, watertype_cd, watertype_dsc) VALUES (1, 'spr', 'Spring');
+INSERT INTO water_type (watertype_id, watertype_cd, watertype_dsc) VALUES (2, 'sep', 'Seep');
 
 
 --
