@@ -458,7 +458,7 @@ class WaterType(models.Model):
     def __unicode__(self):
         return unicode(self.watertype_dsc)
 
-class SawMill(models.Model):
+class Sawmill(models.Model):
     sawmill_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30, blank=True, unique=True)
     address = models.CharField(max_length=100, blank=True)

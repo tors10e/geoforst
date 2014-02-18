@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', views.logout_view),
     url(r'^home/$', views.Home, name = 'home'),
     
-    url(r'^$', views.Index),
+    url(r'^$',  views.Home, name = 'home'),
     url(r'^lumber_load/$', views.LumberLoadList.as_view(), name='lumber-load-list'),
     url(r'^lumber_load/add/$', views.LumberLoadCreate.as_view(), name='lumber-load-add'),
     url(r'^lumber_load/(?P<pk>\d+)/edit/$', views.LumberLoadUpdate.as_view(), name='lumber-load-edit'),

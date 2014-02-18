@@ -8,8 +8,6 @@ from geoapp.forms import  ScalingTicketForm, SawmillForm
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
 
-def Index(request):
-    return render_to_response('geoapp/index.html', {})
 
 def Home(request):
     if not request.user.is_authenticated():
