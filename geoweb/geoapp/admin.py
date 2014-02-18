@@ -15,12 +15,12 @@ class ActivityTypeAdmin(admin.ModelAdmin):
 
 admin.site.register(ActivityType, ActivityTypeAdmin)
 
-class SawMillAdmin(admin.ModelAdmin):
+class SawmillAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('Sawmill Information', {'fields':['sawmill_name', 'sawmill_address', 'sawmill_state', 'sawmill_zip', 'sawmill_phone', 'sawmill_email', 'sawmill_website']})
+        ('Sawmill Information', {'fields':['name', 'address', 'state', 'zip', 'phone', 'email', 'website']})
         
     ]
-admin.site.register(Sawmill, SawMillAdmin)
+admin.site.register(Sawmill, SawmillAdmin)
 admin.site.register(ForestInventoryPlot)
 admin.site.register(ForestInventoryData)
 admin.site.register(LogData)
@@ -57,5 +57,5 @@ admin.site.register(Tree)
 admin.site.register(WaterPoint)
 admin.site.register(WaterType)
 admin.site.register(ScalingTicket)
-
+admin.site.register(SpeciesTreeType)
 
