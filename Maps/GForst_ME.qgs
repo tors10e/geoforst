@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312959.40756810456514359</xmin>
-            <ymin>4090081.03437418676912785</ymin>
-            <xmax>-9309802.04645377397537231</xmax>
-            <ymax>4092247.08993195183575153</ymax>
+            <xmin>-9313605.22469661571085453</xmin>
+            <ymin>4089914.43894057814031839</ymin>
+            <xmax>-9309460.08580349944531918</xmax>
+            <ymax>4092622.008387784473598</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -23,10 +23,10 @@
             </spatialrefsys>
         </destinationsrs>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Firebreaks20121204132835298">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
+    <legend updateDrawingOrder="true" activeLayer="020140217200921721">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Points" showFeatureCount="0">
@@ -59,12 +59,12 @@
                 <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="false" checked="Qt::Unchecked" name="Analytical Layers">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="Analytical Layers">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
@@ -75,9 +75,9 @@
                     <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="0"/>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Soil Tests" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="1"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
@@ -93,8 +93,8 @@
                 </filegroup>
             </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
@@ -129,18 +129,11 @@
                     <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140127201457375" visible="1"/>
                 </filegroup>
             </legendlayer>
-            <legendgroup open="false" checked="Qt::Unchecked" name="USGS Shaded Quad Maps">
-                <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USGS Quad Maps" showFeatureCount="0">
-                    <filegroup open="false" hidden="false">
-                        <legendlayerfile isInOverview="0" layerid="220130610224644497" visible="0"/>
-                    </filegroup>
-                </legendlayer>
-                <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Hillshade" showFeatureCount="0">
-                    <filegroup open="false" hidden="false">
-                        <legendlayerfile isInOverview="0" layerid="3_2_1_020130610225200927" visible="0"/>
-                    </filegroup>
-                </legendlayer>
-            </legendgroup>
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USGS Shaded Quads" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="020140217200921721" visible="0"/>
+                </filegroup>
+            </legendlayer>
         </legendgroup>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
@@ -263,62 +256,31 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="46">
+    <projectlayers layercount="45">
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-            <id>220130610224644497</id>
-            <datasource>crs=EPSG:26917&amp;format=image/png&amp;layers=2&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer</datasource>
+            <id>020140217200921721</id>
+            <datasource>crs=EPSG:3857&amp;featureCount=10&amp;format=image/jpeg&amp;layers=0&amp;styles=&amp;url=http://basemap.nationalmap.gov/ArcGIS/services/USGSTopo/MapServer/WMSServer?</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
                 <value></value>
             </keywordList>
-            <layername>USGS Quad Maps</layername>
+            <layername>USGS Shaded Quads</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
-            <customproperties/>
-            <provider>wms</provider>
-            <pipe>
-                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
-                    <rasterTransparency/>
-                </rasterrenderer>
-                <brightnesscontrast brightness="0" contrast="0"/>
-                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-                <rasterresampler maxOversampling="2"/>
-            </pipe>
-            <blendMode>0</blendMode>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-            <id>3_2_1_020130610225200927</id>
-            <datasource>crs=EPSG:4326&amp;format=image/png&amp;layers=0&amp;layers=1&amp;layers=2&amp;layers=3&amp;styles=&amp;styles=&amp;styles=&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/TNM_Large_Scale_Shaded_Relief/MapServer/WMSServer</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Hillshade</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
+            <customproperties>
+                <property key="identify/format" value="Html"/>
+            </customproperties>
             <provider>wms</provider>
             <pipe>
                 <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
@@ -396,9 +358,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='cultpt_id' srid=2163 type=POINT table="cultural_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -407,13 +369,13 @@
             <layername>Cultural Features</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -627,6 +589,7 @@
                 </edittype>
                 <edittype labelontop="0" editable="0" type="0" name="Cultural Types_culttype_cd"/>
                 <edittype labelontop="0" editable="0" type="0" name="Cultural Types_culttype_dsc"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="10" name="cultpt_id"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="culttype_cd" layer="cultural_type20121216225244192" allowMulti="false" type="15" value="culttype_dsc" name="culttype_cd"/>
                 <edittype labelontop="0" editable="1" type="0" name="culttype_dsc"/>
@@ -641,9 +604,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Firebreaks20121204132835298</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='fbkln_id' srid=2163 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -652,13 +615,13 @@
             <layername>Firebreaks</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -857,9 +820,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Areas20121204131751547</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenharea_id' srid=2163 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -868,13 +831,13 @@
             <layername>Habitat Enhancement Areas</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -1316,6 +1279,7 @@
                 <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_cd"/>
                 <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_dsc"/>
                 <edittype labelontop="0" editable="1" type="0" name="Revenue"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="10" name="habenharea_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="habenhareadesc"/>
@@ -1341,9 +1305,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhpt_id' srid=2163 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1352,13 +1316,13 @@
             <layername>Habitat Enhancement Points</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -1631,6 +1595,7 @@
                 </edittype>
                 <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_cd"/>
                 <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_dsc"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="descripition"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="10" name="habenhpt_id"/>
@@ -1693,7 +1658,7 @@
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="250001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Land Areas20121204131751632</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='landarea_id' srid=2163 type=POLYGON table="land_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1702,13 +1667,13 @@
             <layername>Land Areas</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -1718,9 +1683,22 @@
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="255,128,0,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.25"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="175,164,121,255"/>
+                            <prop k="color" v="255,128,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -1879,8 +1857,10 @@
             <edittypes>
                 <edittype labelontop="0" editable="1" type="0" name="LandAreaDesc"/>
                 <edittype labelontop="0" editable="1" type="0" name="LandAreaID"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="0" name="landarea_id"/>
+                <edittype labelontop="0" editable="1" type="0" name="name"/>
                 <edittype labelontop="0" editable="1" type="0" name="start_date"/>
                 <edittype labelontop="0" editable="1" type="0" name="transaction_start_date"/>
             </edittypes>
@@ -2004,9 +1984,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=2163 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -2015,13 +1995,13 @@
             <layername>Recreation</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -2274,6 +2254,7 @@
                 </edittype>
                 <edittype labelontop="0" editable="0" type="0" name="Recreation Types_rectype_cd"/>
                 <edittype labelontop="0" editable="0" type="0" name="Recreation Types_rectype_dsc"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="11" name="recpt_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="recptdesc"/>
@@ -2326,9 +2307,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Stands20121204133323889</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standarea_id' srid=2163 type=POLYGON table="stand_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -2337,13 +2318,13 @@
             <layername>Stands</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -2657,9 +2638,11 @@
                 <edittype labelontop="0" editable="1" type="0" name="Stand_No"/>
                 <edittype labelontop="0" editable="1" type="0" name="Stocking"/>
                 <edittype labelontop="0" editable="1" type="0" name="age"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="damaged"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="foresttype_id" layer="forest_type20130118212645702" allowMulti="false" type="15" value="foresttype_dsc" name="foresttype_id"/>
+                <edittype labelontop="0" editable="1" type="0" name="landarea_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="notes"/>
                 <edittype labelontop="0" editable="1" type="0" name="ogc_fid"/>
                 <edittype labelontop="0" editable="1" type="0" name="recommended_treatment"/>
@@ -2715,9 +2698,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='tree_id' srid=2163 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -2726,13 +2709,13 @@
             <layername>Trees</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -2907,8 +2890,10 @@
                 <edittype labelontop="0" editable="1" type="0" name="Species"/>
                 <edittype labelontop="0" editable="1" type="0" name="StartYear"/>
                 <edittype labelontop="0" editable="1" type="0" name="TreePtID"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="specie"/>
                 <edittype labelontop="0" editable="1" type="0" name="species"/>
+                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="start_year"/>
                 <edittype labelontop="0" editable="1" type="10" name="tree_id"/>
             </edittypes>
@@ -2953,9 +2938,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='waterpoint_id' srid=2163 type=POINT table="water_point" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -2964,13 +2949,13 @@
             <layername>Water Point Features</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -3147,13 +3132,16 @@
                 <edittype labelontop="0" editable="1" type="0" name="Species"/>
                 <edittype labelontop="0" editable="1" type="0" name="StartYear"/>
                 <edittype labelontop="0" editable="1" type="0" name="TreePtID"/>
+                <edittype labelontop="0" editable="0" type="0" name="Water Feature Types_watertype_cd"/>
                 <edittype labelontop="0" editable="0" type="11" name="Water Feature Types_watertype_dsc"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="12" name="description"/>
                 <edittype labelontop="0" editable="1" type="0" name="specie"/>
                 <edittype labelontop="0" editable="1" type="0" name="species"/>
                 <edittype labelontop="0" editable="1" type="0" name="start_year"/>
                 <edittype labelontop="0" editable="1" type="10" name="tree_id"/>
                 <edittype labelontop="0" editable="1" type="11" name="waterpoint_id"/>
+                <edittype labelontop="0" editable="1" type="0" name="watertype_cd"/>
                 <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="watertype_id" layer="water_type20130603100649684" allowMulti="false" filterExpression="" type="15" value="watertype_dsc" name="watertype_id"/>
             </edittypes>
             <editform>../Forms/WaterPoint.ui</editform>
@@ -3164,9 +3152,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>activity_area20130101231920603</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='activityarea_id' srid=2163 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -3175,13 +3163,13 @@
             <layername>Activities</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -3355,6 +3343,7 @@
                 <edittype labelontop="0" editable="1" type="0" name="acttype_dsc"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="acttype_id" layer="Activity Types20121204111631394" allowMulti="false" type="15" value="acttype_dsc" name="acttype_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="completed_date"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="0" name="notes"/>
                 <edittype labelontop="0" editable="1" type="0" name="planned_date"/>
@@ -3430,9 +3419,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>burn_compartment20130605072953108</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='burncompartment_id' srid=26917 type=POLYGON table="burn_compartment" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='burncompartment_id' srid=2163 type=POLYGON table="burn_compartment" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -3441,13 +3430,13 @@
             <layername>Burn Compartments</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -3514,7 +3503,124 @@
                 <rotation field=""/>
                 <sizescale field="" scalemethod="area"/>
             </renderer-v2>
-            <customproperties/>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/angleOffset" value="0"/>
+                <property key="labeling/blendMode" value="0"/>
+                <property key="labeling/bufferBlendMode" value="0"/>
+                <property key="labeling/bufferColorA" value="255"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferDraw" value="false"/>
+                <property key="labeling/bufferJoinStyle" value="64"/>
+                <property key="labeling/bufferNoFill" value="false"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/bufferSizeInMapUnits" value="false"/>
+                <property key="labeling/bufferTransp" value="0"/>
+                <property key="labeling/centroidWhole" value="false"/>
+                <property key="labeling/decimals" value="3"/>
+                <property key="labeling/displayAll" value="false"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="false"/>
+                <property key="labeling/fieldName" value=""/>
+                <property key="labeling/fontBold" value="false"/>
+                <property key="labeling/fontCapitals" value="0"/>
+                <property key="labeling/fontFamily" value=".Lucida Grande UI"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontLetterSpacing" value="0"/>
+                <property key="labeling/fontLimitPixelSize" value="false"/>
+                <property key="labeling/fontMaxPixelSize" value="10000"/>
+                <property key="labeling/fontMinPixelSize" value="3"/>
+                <property key="labeling/fontSize" value="13"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/fontWordSpacing" value="0"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelOffsetInMapUnits" value="true"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+                <property key="labeling/limitNumLabels" value="false"/>
+                <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+                <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+                <property key="labeling/maxNumLabels" value="2000"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/multilineAlign" value="0"/>
+                <property key="labeling/multilineHeight" value="1"/>
+                <property key="labeling/namedStyle" value=""/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placeDirectionSymbol" value="0"/>
+                <property key="labeling/placement" value="0"/>
+                <property key="labeling/placementFlags" value="0"/>
+                <property key="labeling/plussign" value="false"/>
+                <property key="labeling/preserveRotation" value="true"/>
+                <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/quadOffset" value="4"/>
+                <property key="labeling/reverseDirectionSymbol" value="false"/>
+                <property key="labeling/rightDirectionSymbol" value=">"/>
+                <property key="labeling/scaleMax" value="10000000"/>
+                <property key="labeling/scaleMin" value="1"/>
+                <property key="labeling/scaleVisibility" value="false"/>
+                <property key="labeling/shadowBlendMode" value="6"/>
+                <property key="labeling/shadowColorB" value="0"/>
+                <property key="labeling/shadowColorG" value="0"/>
+                <property key="labeling/shadowColorR" value="0"/>
+                <property key="labeling/shadowDraw" value="false"/>
+                <property key="labeling/shadowOffsetAngle" value="135"/>
+                <property key="labeling/shadowOffsetDist" value="1"/>
+                <property key="labeling/shadowOffsetGlobal" value="true"/>
+                <property key="labeling/shadowOffsetUnits" value="1"/>
+                <property key="labeling/shadowRadius" value="1.5"/>
+                <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+                <property key="labeling/shadowRadiusUnits" value="1"/>
+                <property key="labeling/shadowScale" value="100"/>
+                <property key="labeling/shadowTransparency" value="30"/>
+                <property key="labeling/shadowUnder" value="0"/>
+                <property key="labeling/shapeBlendMode" value="0"/>
+                <property key="labeling/shapeBorderColorA" value="255"/>
+                <property key="labeling/shapeBorderColorB" value="128"/>
+                <property key="labeling/shapeBorderColorG" value="128"/>
+                <property key="labeling/shapeBorderColorR" value="128"/>
+                <property key="labeling/shapeBorderWidth" value="0"/>
+                <property key="labeling/shapeBorderWidthUnits" value="1"/>
+                <property key="labeling/shapeDraw" value="false"/>
+                <property key="labeling/shapeFillColorA" value="255"/>
+                <property key="labeling/shapeFillColorB" value="255"/>
+                <property key="labeling/shapeFillColorG" value="255"/>
+                <property key="labeling/shapeFillColorR" value="255"/>
+                <property key="labeling/shapeJoinStyle" value="64"/>
+                <property key="labeling/shapeOffsetUnits" value="1"/>
+                <property key="labeling/shapeOffsetX" value="0"/>
+                <property key="labeling/shapeOffsetY" value="0"/>
+                <property key="labeling/shapeRadiiUnits" value="1"/>
+                <property key="labeling/shapeRadiiX" value="0"/>
+                <property key="labeling/shapeRadiiY" value="0"/>
+                <property key="labeling/shapeRotation" value="0"/>
+                <property key="labeling/shapeRotationType" value="0"/>
+                <property key="labeling/shapeSVGFile" value=""/>
+                <property key="labeling/shapeSizeType" value="0"/>
+                <property key="labeling/shapeSizeUnits" value="1"/>
+                <property key="labeling/shapeSizeX" value="0"/>
+                <property key="labeling/shapeSizeY" value="0"/>
+                <property key="labeling/shapeTransparency" value="0"/>
+                <property key="labeling/shapeType" value="0"/>
+                <property key="labeling/textColorA" value="255"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/textTransp" value="0"/>
+                <property key="labeling/upsidedownLabels" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+                <property key="labeling/xOffset" value="0"/>
+                <property key="labeling/yOffset" value="0"/>
+            </customproperties>
             <blendMode>0</blendMode>
             <featureBlendMode>0</featureBlendMode>
             <layerTransparency>0</layerTransparency>
@@ -3544,6 +3650,7 @@
             <edittypes>
                 <edittype labelontop="0" editable="1" type="0" name="burncompartment_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="compartment_set"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -3904,7 +4011,7 @@
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>road_line20130101154010851</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadln_id' srid=2163 table="road_line" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -3913,13 +4020,13 @@
             <layername>Roads</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -4278,6 +4385,7 @@
                 <edittype labelontop="0" editable="0" type="0" name="Road Types_roadtype_dsc"/>
                 <edittype labelontop="0" editable="1" type="0" name="access_status"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="accessstatus_id" layer="road_access_status_type20130603100656354" allowMulti="false" type="15" value="accessstatus_dsc" name="accessstatus_id"/>
+                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="0" name="road_name"/>
                 <edittype labelontop="0" editable="1" type="0" name="roadln_id"/>
@@ -4363,7 +4471,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>soil_test20130603122942351</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='soiltest_id' srid=26917 type=POINT table="soil_test" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='soiltest_id' srid=2163 type=POINT table="soil_test" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -4372,18 +4480,18 @@
             <layername>Soil Tests</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "sample_name", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -4405,7 +4513,124 @@
                 <rotation field=""/>
                 <sizescale field="" scalemethod="area"/>
             </renderer-v2>
-            <customproperties/>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/angleOffset" value="0"/>
+                <property key="labeling/blendMode" value="0"/>
+                <property key="labeling/bufferBlendMode" value="0"/>
+                <property key="labeling/bufferColorA" value="255"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferDraw" value="false"/>
+                <property key="labeling/bufferJoinStyle" value="64"/>
+                <property key="labeling/bufferNoFill" value="false"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/bufferSizeInMapUnits" value="false"/>
+                <property key="labeling/bufferTransp" value="0"/>
+                <property key="labeling/centroidWhole" value="false"/>
+                <property key="labeling/decimals" value="3"/>
+                <property key="labeling/displayAll" value="false"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="false"/>
+                <property key="labeling/fieldName" value=""/>
+                <property key="labeling/fontBold" value="false"/>
+                <property key="labeling/fontCapitals" value="0"/>
+                <property key="labeling/fontFamily" value=".Lucida Grande UI"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontLetterSpacing" value="0"/>
+                <property key="labeling/fontLimitPixelSize" value="false"/>
+                <property key="labeling/fontMaxPixelSize" value="10000"/>
+                <property key="labeling/fontMinPixelSize" value="3"/>
+                <property key="labeling/fontSize" value="13"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/fontWordSpacing" value="0"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="false"/>
+                <property key="labeling/labelOffsetInMapUnits" value="true"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+                <property key="labeling/limitNumLabels" value="false"/>
+                <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+                <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+                <property key="labeling/maxNumLabels" value="2000"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/multilineAlign" value="0"/>
+                <property key="labeling/multilineHeight" value="1"/>
+                <property key="labeling/namedStyle" value=""/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/placeDirectionSymbol" value="0"/>
+                <property key="labeling/placement" value="0"/>
+                <property key="labeling/placementFlags" value="0"/>
+                <property key="labeling/plussign" value="false"/>
+                <property key="labeling/preserveRotation" value="true"/>
+                <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/quadOffset" value="4"/>
+                <property key="labeling/reverseDirectionSymbol" value="false"/>
+                <property key="labeling/rightDirectionSymbol" value=">"/>
+                <property key="labeling/scaleMax" value="10000000"/>
+                <property key="labeling/scaleMin" value="1"/>
+                <property key="labeling/scaleVisibility" value="false"/>
+                <property key="labeling/shadowBlendMode" value="6"/>
+                <property key="labeling/shadowColorB" value="0"/>
+                <property key="labeling/shadowColorG" value="0"/>
+                <property key="labeling/shadowColorR" value="0"/>
+                <property key="labeling/shadowDraw" value="false"/>
+                <property key="labeling/shadowOffsetAngle" value="135"/>
+                <property key="labeling/shadowOffsetDist" value="1"/>
+                <property key="labeling/shadowOffsetGlobal" value="true"/>
+                <property key="labeling/shadowOffsetUnits" value="1"/>
+                <property key="labeling/shadowRadius" value="1.5"/>
+                <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+                <property key="labeling/shadowRadiusUnits" value="1"/>
+                <property key="labeling/shadowScale" value="100"/>
+                <property key="labeling/shadowTransparency" value="30"/>
+                <property key="labeling/shadowUnder" value="0"/>
+                <property key="labeling/shapeBlendMode" value="0"/>
+                <property key="labeling/shapeBorderColorA" value="255"/>
+                <property key="labeling/shapeBorderColorB" value="128"/>
+                <property key="labeling/shapeBorderColorG" value="128"/>
+                <property key="labeling/shapeBorderColorR" value="128"/>
+                <property key="labeling/shapeBorderWidth" value="0"/>
+                <property key="labeling/shapeBorderWidthUnits" value="1"/>
+                <property key="labeling/shapeDraw" value="false"/>
+                <property key="labeling/shapeFillColorA" value="255"/>
+                <property key="labeling/shapeFillColorB" value="255"/>
+                <property key="labeling/shapeFillColorG" value="255"/>
+                <property key="labeling/shapeFillColorR" value="255"/>
+                <property key="labeling/shapeJoinStyle" value="64"/>
+                <property key="labeling/shapeOffsetUnits" value="1"/>
+                <property key="labeling/shapeOffsetX" value="0"/>
+                <property key="labeling/shapeOffsetY" value="0"/>
+                <property key="labeling/shapeRadiiUnits" value="1"/>
+                <property key="labeling/shapeRadiiX" value="0"/>
+                <property key="labeling/shapeRadiiY" value="0"/>
+                <property key="labeling/shapeRotation" value="0"/>
+                <property key="labeling/shapeRotationType" value="0"/>
+                <property key="labeling/shapeSVGFile" value=""/>
+                <property key="labeling/shapeSizeType" value="0"/>
+                <property key="labeling/shapeSizeUnits" value="1"/>
+                <property key="labeling/shapeSizeX" value="0"/>
+                <property key="labeling/shapeSizeY" value="0"/>
+                <property key="labeling/shapeTransparency" value="0"/>
+                <property key="labeling/shapeType" value="0"/>
+                <property key="labeling/textColorA" value="255"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/textTransp" value="0"/>
+                <property key="labeling/upsidedownLabels" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+                <property key="labeling/xOffset" value="0"/>
+                <property key="labeling/yOffset" value="0"/>
+            </customproperties>
             <blendMode>0</blendMode>
             <featureBlendMode>0</featureBlendMode>
             <layerTransparency>0</layerTransparency>
@@ -4489,7 +4714,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>soil_test_recommendation20130603122843299</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='soiltestrec_id' table="soil_test_recommendation" sql=</datasource>
             <title></title>
@@ -4500,14 +4725,14 @@
             <layername>Soil Test Recommendations</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
             <customproperties/>
@@ -4666,9 +4891,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
             <id>trail20131110173044662</id>
-            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='trail_id' srid=26917 type=LINESTRING table="public"."trail" (geometry) sql=</datasource>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='trail_id' srid=2163 type=LINESTRING table="public"."trail" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -4677,13 +4902,13 @@
             <layername>Trails</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
@@ -4934,7 +5159,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>tree_status20130603213537490</id>
             <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='treestatus_id' table="tree_status" sql=</datasource>
             <title></title>
@@ -4945,14 +5170,14 @@
             <layername>Tree Status</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
             <customproperties/>
@@ -4960,6 +5185,7 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
+                <edittype labelontop="0" editable="1" type="0" name="age"/>
                 <edittype labelontop="0" editable="1" type="0" name="dbh_in"/>
                 <edittype labelontop="0" editable="1" type="0" name="height_ft"/>
                 <edittype labelontop="0" editable="1" dateFormat="" type="13" name="status_date"/>
@@ -5012,10 +5238,10 @@
     <properties>
         <WMSContactPerson type="QString"></WMSContactPerson>
         <WMSOnlineResource type="QString"></WMSOnlineResource>
-        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <DeprecatedLabels>
             <Enabled type="bool">true</Enabled>
         </DeprecatedLabels>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <WMSKeywordList type="QStringList">
             <value></value>
         </WMSKeywordList>
@@ -5031,8 +5257,8 @@
             <Automatic type="bool">true</Automatic>
             <DegreeFormat type="QString">D</DegreeFormat>
         </PositionPrecision>
-        <WMSContactPhone type="QString"></WMSContactPhone>
         <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSContactPhone type="QString"></WMSContactPhone>
         <WMSServiceAbstract type="QString"></WMSServiceAbstract>
         <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
         <Measure>
@@ -5144,7 +5370,7 @@
         </Macros>
         <WMSAccessConstraints type="QString"></WMSAccessConstraints>
         <SpatialRefSys>
-            <ProjectCRSProj4String type="QString">+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</ProjectCRSProj4String>
+            <ProjectCRSProj4String type="QString">+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs</ProjectCRSProj4String>
             <ProjectCRSID type="int">3857</ProjectCRSID>
             <ProjectionsEnabled type="int">1</ProjectionsEnabled>
         </SpatialRefSys>
