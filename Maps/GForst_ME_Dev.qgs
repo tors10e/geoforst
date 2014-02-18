@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312638.86078610830008984</xmin>
-            <ymin>4090365.15640530595555902</ymin>
-            <xmax>-9310294.63917908817529678</xmax>
-            <ymax>4091896.38200818933546543</ymax>
+            <xmin>-9313605.22469661571085453</xmin>
+            <ymin>4089914.43894057814031839</ymin>
+            <xmax>-9309460.08580349944531918</xmax>
+            <ymax>4092622.008387784473598</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -23,10 +23,10 @@
             </spatialrefsys>
         </destinationsrs>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Stands20121204133323889">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
+    <legend updateDrawingOrder="true" activeLayer="020140217200921721">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Points" showFeatureCount="0">
@@ -34,9 +34,9 @@
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Cultural Features" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Trees" showFeatureCount="0">
@@ -59,12 +59,12 @@
                 <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="false" checked="Qt::Unchecked" name="Analytical Layers">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="Analytical Layers">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
@@ -75,9 +75,9 @@
                     <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Soil Tests" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="0"/>
+                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="1"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
@@ -93,8 +93,8 @@
                 </filegroup>
             </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
@@ -119,17 +119,21 @@
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Base Maps">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20131110173404496" visible="1"/>
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20131110173404496" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Physical" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140127201457375" visible="0"/>
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140127201457375" visible="1"/>
                 </filegroup>
             </legendlayer>
-            <legendgroup open="false" checked="Qt::Unchecked" name="USGS Shaded Quad Maps"/>
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USGS Shaded Quads" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="020140217200921721" visible="0"/>
+                </filegroup>
+            </legendlayer>
         </legendgroup>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
@@ -252,7 +256,42 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="44">
+    <projectlayers layercount="45">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>020140217200921721</id>
+            <datasource>crs=EPSG:3857&amp;featureCount=10&amp;format=image/jpeg&amp;layers=0&amp;styles=&amp;url=http://basemap.nationalmap.gov/ArcGIS/services/USGSTopo/MapServer/WMSServer?</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>USGS Shaded Quads</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties>
+                <property key="identify/format" value="Html"/>
+            </customproperties>
+            <provider>wms</provider>
+            <pipe>
+                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+                    <rasterTransparency/>
+                </rasterrenderer>
+                <brightnesscontrast brightness="0" contrast="0"/>
+                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+                <rasterresampler maxOversampling="2"/>
+            </pipe>
+            <blendMode>0</blendMode>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="25001" type="raster" hasScaleBasedVisibilityFlag="1">
             <id>620130610223950152</id>
             <datasource>crs=EPSG:4326&amp;format=image/png&amp;layers=6&amp;styles=&amp;url=http://watersgeo.epa.gov/ArcGIS/services/OW/NHD_Med_Basic_WMERC/MapServer/WMSServer</datasource>
@@ -1617,7 +1656,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="250001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="250001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>Land Areas20121204131751632</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='landarea_id' srid=2163 type=POLYGON table="land_area" (geometry) sql=</datasource>
             <title></title>
@@ -1644,9 +1683,22 @@
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="255,128,0,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="1.25"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="175,164,121,255"/>
+                            <prop k="color" v="255,128,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3957,7 +4009,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>road_line20130101154010851</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='roadln_id' srid=2163 table="road_line" (geometry) sql=</datasource>
             <title></title>
@@ -4417,7 +4469,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
             <id>soil_test20130603122942351</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='soiltest_id' srid=2163 type=POINT table="soil_test" (geometry) sql=</datasource>
             <title></title>
