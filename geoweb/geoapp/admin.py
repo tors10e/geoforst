@@ -18,8 +18,8 @@ admin.site.register(ActivityType, ActivityTypeAdmin)
 class SawmillAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Sawmill Information', {'fields':['name', 'address', 'state', 'zip', 'phone', 'email', 'website']})
-        
-    ]
+        ]
+    
 admin.site.register(Sawmill, SawmillAdmin)
 admin.site.register(ForestInventoryPlot)
 admin.site.register(ForestInventoryData)

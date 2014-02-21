@@ -40,4 +40,5 @@ class ScalingTicketForm(ModelForm):
 class SawmillForm(ModelForm):
     class Meta:
         model = Sawmill
+        exclude = ('created_by')
         exclude = ('created_by',)

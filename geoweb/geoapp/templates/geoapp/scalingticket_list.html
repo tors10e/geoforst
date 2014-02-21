@@ -15,7 +15,6 @@ $(function() {
     	<th>Recorded Date</th>
     	<th>Weight</th>
     	<th>Ticket Date</th>
-    	<th>Data</th>
     	<th>Action</th>
     	</tr>
     	{% for ticket in scaling_tickets %}
@@ -28,10 +27,9 @@ $(function() {
 	    			<a href="{% url 'geoapp:sawmill-add' %}">Add sawmill</a>
 	    		</td> 
 	    	{% endif %}
-	    	<td>{{ticket.date}}</td>
+	    	<td>{{ticket.ticket_date}}</td>
 	    	<td>{{ticket.weight}}</td>
 	    	<td>{{ticket.ticket_date}}</td>
-			<td><a href="{% url 'geoapp:scaling-ticket-list' %}">Plot {{plot.forestinventoryplot_id}} Data</a></td>
 			<td>
 				<button><a href="{% url 'geoapp:scaling-ticket-edit' ticket.scalingticket_id %}">Edit</a></button> 
 				<button><a href="{% url 'geoapp:scaling-ticket-delete' ticket.scalingticket_id %}">Delete</a></button>

@@ -5,7 +5,7 @@ import socket
 
 if __name__ == "__main__":
     if socket.gethostname() == 'geoweb':
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "geoweb.settings")
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "geoweb.settings_prod")
     else:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "geoweb.settings_dev")
         
