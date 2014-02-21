@@ -10,7 +10,6 @@ $(function() {
     <h2>Forest Inventory Plots</h2>
     <table id="table">
     <tr id="header_row">
-    	<th>ID</th>
     	<th>Plot Number</th>
     	<th>Position Description</th>
     	<th>Elevation</th>
@@ -20,12 +19,11 @@ $(function() {
     	</tr>
     	{% for plot in inventory_plots %}
     	<tr>
-	    	<td>{{plot.forestinventoryplot_id}}</td>
 	    	<td>{{plot.plot_number}}</td>
 	    	<td>{{plot.position_description}}</td>
 	    	<td>{{plot.elevation}} {{plot.elevation_unit}}</td>
 	    	<td>{{plot.plot_create_date}}</td>
-			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.forestinventoryplot_id}} Data</a></td>
+			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.plot_number}} Data</a></td>
 			<td>
 				<a href="{{plot.forestinventoryplot_id }}/edit/">Edit</a> 
 				<a href="{{plot.forestinventoryplot_id }}/delete/">Delete</a>
@@ -33,5 +31,5 @@ $(function() {
     	</tr>
     	{% endfor %}
     </table>
-    <a href="/geoapp/inventory_plot/add/">Add a new plot.</a>
+    <a href="/geoapp/inventory_plot/add/">Add a new plot</a>
 {% endblock %}

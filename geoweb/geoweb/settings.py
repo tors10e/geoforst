@@ -1,6 +1,6 @@
 # Django settings for geoweb project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -15,14 +15,14 @@ DATABASES = {
         'NAME': 'fsp',                      # Or path to database file if using sqlite3.
         'USER': 'postgres',
         'PASSWORD': 'post28#Inca',
-        'HOST': 'geo.torstenernst.com',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '5432',                         # Set to empty string for default.
     }
 }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [ 'localhost', 'www.geoforst.com', 'geoforst.com', '127.0.0.1']
+ALLOWED_HOSTS = [ 'localhost', 'www.torstenernst.com', 'geo.torstenernst.com', '127.0.0.1']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -60,7 +60,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/var/www/static/'
+STATIC_ROOT = '/Users/torsten/Workspaces/FSP/geoweb/geoweb/static'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -72,7 +72,7 @@ LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-                    ("assets", "/var/www/geoweb/geoapp/static"),
+                    ("assets", "/Users/torsten/Workspaces/FSP/geoweb/geoapp/static"),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

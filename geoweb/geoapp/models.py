@@ -1,6 +1,7 @@
 from __future__ import unicode_literals 
 from django.contrib.gis.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
@@ -21,7 +22,7 @@ objects = models.GeoManager()
 class ActivityArea(models.Model):
     activityarea_id = models.IntegerField(primary_key=True)
     geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
-    activity_date = models.DateField    (blank=True)
+    activity_date = models.DateField (blank=True)
     acttype = models.ForeignKey('ActivityType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     revenue = models.DecimalField(max_digits=8, decimal_places=2, blank=True) # This field type is a guess.
@@ -99,6 +100,32 @@ class ForestAgeType(models.Model):
         db_table = 'forest_age_type'
     def __unicode__(self):
         return unicode(self.forestagetype_dsc)
+    
+class ForestInventoryPlot(models.Model):
+    forestinventoryplot_id = models.AutoField(primary_key=True)
+    plot_number = models.IntegerField(validators=[MinValueValidator(1)], null=False, unique=True)
+    plot_geometry = models.ForeignKey('PlotGeometryType', null=False)
+    plot_area = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
+    plot_area_unit = models.ForeignKey('UnitAreaType',null=True)
+    plot_radius = models.IntegerField(blank=True, null=True)
+    plot_radius_unit = models.ForeignKey('UnitLengthType', null=True, blank=True)
+    plot_xlength = models.IntegerField(blank=True, null=True)
+    plot_ylength = models.IntegerField(blank=True, null=True)
+    plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
+    geometry = models.PointField(srid=2163, null=True, blank=True) 
+    longitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
+    latitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
+    elevation = models.IntegerField(null=True, blank=True)
+    elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
+    position_description = models.CharField(max_length=255, null=True, blank=True)
+    plot_create_date = models.DateField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
+    objects = models.GeoManager()
+    class Meta:
+            db_table = 'forest_inventory_plot'
+            ordering = ["plot_number"]
+    def __unicode__(self):
+        return unicode(self.plot_number)
 
 class ForestType(models.Model):
     foresttype_id = models.IntegerField(primary_key=True)
@@ -400,43 +427,6 @@ class Tree(models.Model):
     def __unicode__(self):
         return unicode(self.tree_id)
 
-class VwQcLandAreaByYear(models.Model):
-    report_year = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
-    period_area = models.FloatField(null=True, blank=True)
-    true_area = models.FloatField(null=True, blank=True)
-    area_diff = models.FloatField(null=True, blank=True)
-    pct_diff = models.FloatField(null=True, blank=True)
-    class Meta:
-        db_table = 'vw_qc_land_area_by_year'
-
-class VwStandAreaAll(models.Model):
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    stand_no = models.IntegerField(null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    start_date = models.DateTimeField(null=True, blank=True)
-    end_date = models.DateTimeField(null=True, blank=True)
-    foresttype_id = models.IntegerField(null=True, blank=True)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'vw_stand_area_all'
-
-class VwStandAreaByYear(models.Model):
-    view_id = models.FloatField(null=True, blank=True)
-    standarea_id = models.IntegerField(null=True, blank=True)
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    stand_no = models.IntegerField(null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    end_date = models.DateTimeField(null=True, blank=True)
-    start_date = models.DateTimeField(null=True, blank=True)
-    foresttype_id = models.IntegerField(null=True, blank=True)
-    reportdate_id = models.IntegerField(null=True, blank=True)
-    report_year = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
-    report_timestamp = models.DateTimeField(null=True, blank=True)
-    status = models.TextField(blank=True)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'vw_stand_area_by_year'
-
 class WaterPoint(models.Model):
     waterpoint_id = models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
@@ -471,6 +461,7 @@ class Sawmill(models.Model):
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'sawmill'
+        ordering = ["name"]
     def __unicode__(self):
         return unicode(self.name)
     
@@ -514,32 +505,7 @@ class LogData(models.Model):
     def __unicode__(self):
         return unicode(self.logdata_id)
     
-class ForestInventoryPlot(models.Model):
-    forestinventoryplot_id = models.AutoField(primary_key=True)
-    plot_number = models.IntegerField(null=False, unique=True)
-    plot_geometry = models.ForeignKey('PlotGeometryType', null=False)
-    plot_area = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
-    plot_area_unit = models.ForeignKey('UnitAreaType',null=True)
-    plot_radius = models.IntegerField(blank=True, null=True)
-    plot_radius_unit = models.ForeignKey('UnitLengthType', null=True, blank=True)
-    plot_xlength = models.IntegerField(blank=True, null=True)
-    plot_ylength = models.IntegerField(blank=True, null=True)
-    plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True) # This is the correct srid!
-#    geometry = models.PointField(srid=9820, null=True, blank=True)
-    longitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
-    latitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
-    elevation = models.IntegerField(null=True, blank=True)
-    elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
-    position_description = models.CharField(max_length=255, null=True, blank=True)
-    plot_create_date = models.DateField(null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-            db_table = 'forest_inventory_plot'
-            ordering = ["forestinventoryplot_id"]
-    def __unicode__(self):
-        return unicode(self.forestinventoryplot_id)
+
     
 class ForestInventoryData(models.Model):
     forestinventorydata_id = models.AutoField(primary_key=True)
@@ -593,5 +559,6 @@ class SpeciesTreeType(models.Model):
     speciestreetype_bn = models.CharField(max_length=50, null=False)
     class Meta:
         db_table='species_tree_type'
+        ordering = ["speciestreetype_dsc"]
     def __unicode__(self):
         return unicode(self.speciestreetype_dsc)
