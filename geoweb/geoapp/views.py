@@ -14,6 +14,12 @@ def Home(request):
         return redirect('/geoapp/accounts/login/')
     else:
         return render_to_response('geoapp/home.html', {})
+
+def LumberScaling(request):
+    if not request.user.is_authenticated():
+        return redirect('/geoapp/accounts/login/')
+    else:
+        return render_to_response('geoapp/lumberscaling.html', {})
     
 def logout_view(request):     
     auth.logout(request)     # Redirect to login page.     

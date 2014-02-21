@@ -5,6 +5,7 @@ urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     url(r'^accounts/logout/$', views.logout_view),
     url(r'^home/$', views.Home, name = 'home'),
+    url(r'^lumber_scaling/$', views.LumberScaling, name = 'lumber-scaling'),
     
     url(r'^$',  views.Home, name = 'home'),
     url(r'^lumber_load/$', views.LumberLoadList.as_view(), name='lumber-load-list'),
