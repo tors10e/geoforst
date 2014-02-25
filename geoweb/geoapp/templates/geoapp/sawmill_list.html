@@ -31,8 +31,8 @@ $(function() {
 	    	<td>{{mill.email}}</td>
 	    	<td>{{mill.website}}</td>
 			<td>
-				<a href="{% url 'geoapp:sawmill-edit' mill.sawmill_id %}">Edit</a> 
-				<a href="{% url 'geoapp:sawmill-delete' mill.sawmill_id %}">Delete</a>
+				<button><a href="{% url 'geoapp:sawmill-edit' mill.sawmill_id %}">Edit</a></button> 
+				<button><a href="{% url 'geoapp:sawmill-delete' mill.sawmill_id %}">Delete</a></button>
 			</td>
     	</tr>
     	{% endfor %}
