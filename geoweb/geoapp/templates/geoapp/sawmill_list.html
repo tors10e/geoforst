@@ -7,10 +7,9 @@ $(function() {
 {% extends "geoapp/base_inventory.html" %}
 
 {% block content %}
-    <h2>Lumber Scaling Tickets</h2>
+    <h2>Sawmills</h2>
     <table id="table">
     <tr id="header_row">
-    	<th>ID</th>
     	<th>Name</th>
     	<th>Address</th>
     	<th>City</th>
@@ -23,7 +22,6 @@ $(function() {
     	</tr>
     	{% for mill in sawmills %}
     	<tr>
-	    	<td>{{mill.sawmill_id}}</td>
 	    	<td>{{mill.name}}</td>
 	    	<td>{{mill.address}}</td>
 	    	<td>{{mill.city}}</td>
@@ -32,7 +30,6 @@ $(function() {
 	    	<td>{{mill.phone}}</td>
 	    	<td>{{mill.email}}</td>
 	    	<td>{{mill.website}}</td>
-			<td><a href="{% url 'geoapp:sawmill-list' %}">Sawmill {{mill.sawmill_id}} Data</a></td>
 			<td>
 				<a href="{% url 'geoapp:sawmill-edit' mill.sawmill_id %}">Edit</a> 
 				<a href="{% url 'geoapp:sawmill-delete' mill.sawmill_id %}">Delete</a>

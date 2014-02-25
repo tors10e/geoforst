@@ -235,6 +235,8 @@ class PlannedActivity(models.Model):
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'planned_activity'
+        ordering = ["-planned_date"]
+        verbose_name_plural = "planned activities"
 
 class RecreationPoint(models.Model):
     recpt_id = models.IntegerField(primary_key=True)
@@ -359,6 +361,7 @@ class StandStatus(models.Model):
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'stand_status'
+        verbose_name_plural = "stand_statuses"
     def __unicode__(self):
         return unicode(self.standstatus_id)
 

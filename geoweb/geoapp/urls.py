@@ -2,12 +2,12 @@ from django.conf.urls import patterns, url
 from geoapp import views
 
 urlpatterns = patterns('',
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
-    url(r'^accounts/logout/$', views.logout_view),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
+    url(r'^accounts/logout/$', views.logout_view, name='logout'),
     url(r'^home/$', views.Home, name = 'home'),
     url(r'^lumber_scaling/$', views.LumberScaling, name = 'lumber-scaling'),
     
-    url(r'^$',  views.Home, name = 'home'),
+    url(r'^$', views.Home, name = 'home'),
     url(r'^lumber_load/$', views.LumberLoadList.as_view(), name='lumber-load-list'),
     url(r'^lumber_load/add/$', views.LumberLoadCreate.as_view(), name='lumber-load-add'),
     url(r'^lumber_load/(?P<pk>\d+)/edit/$', views.LumberLoadUpdate.as_view(), name='lumber-load-edit'),
@@ -38,5 +38,10 @@ urlpatterns = patterns('',
     url(r'^inventory_data/add/$', views.InventoryDataCreate.as_view(), name='inventory-data-add'),
     url(r'^inventory_data/(?P<pk>\d+)/edit/$', views.InventoryDataUpdate.as_view(), name='inventory_data_edit'),
     url(r'^inventory_data/(?P<pk>\d+)/delete/$', views.InventoryDataDelete.as_view(), name='inventory_data_delete'),
+    
+    url(r'^planned_activity/add/$', views.PlannedActivityCreate.as_view(), name='planned-activity-add'),
+    url(r'^planned_activity/$', views.PlannedActivityList.as_view(), name='planned-activity-list'),
+    url(r'^planned_activity/(?P<pk>\d+)/edit/$', views.PlannedActivityUpdate.as_view(), name='planned-activity-edit'),
+    url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
     
   )
