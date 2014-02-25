@@ -27,8 +27,8 @@ $(function() {
 	    	<td>{{ log.speciestreetype }} </td>
 	    	<td>{{ log.recorded_date }} </td>
 			<td>
-				<a href="{{ log.logdata_id }}/edit/">Edit</a> 					
-				<a href="{{ log.logdata_id }}/delete/">Delete</a>
+				<button><a href="{{ log.logdata_id }}/edit/">Edit</a></button>					
+				<button><a href="{{ log.logdata_id }}/delete/">Delete</a></button>
 			</td>
 	    </tr>
     	{% endfor %}  

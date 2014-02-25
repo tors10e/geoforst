@@ -25,8 +25,8 @@
     		<td>{{activity.taskstatus}}</td>
     		<td>{{activity.stand_no}}</td>
     		<td>	
-				<a href="{% url 'geoapp:planned-activity-edit' activity.plannedact_id %}">Edit</a> 
-				<a href="{% url 'geoapp:planned-activity-delete' activity.plannedact_id %}">Delete</a>
+				<button><a href="{% url 'geoapp:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
+				<button><a href="{% url 'geoapp:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
 			</td>
     	</tr>
     	{% endfor %}
