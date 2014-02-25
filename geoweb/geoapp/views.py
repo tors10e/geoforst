@@ -2,16 +2,16 @@ from django.shortcuts import get_object_or_404, render, render_to_response, redi
 from django.http import HttpResponseRedirect
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
 from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket
-from geoapp.models import Sawmill
+from geoapp.models import Sawmill, PlannedActivity
 from geoapp.forms import InventoryPlotForm, InventoryDataForm, LumberLoadForm, LogDataForm
-from geoapp.forms import  ScalingTicketForm, SawmillForm
+from geoapp.forms import  ScalingTicketForm, SawmillForm, PlannedActivityForm
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
 
 
 def Home(request):
     if not request.user.is_authenticated():
-        return redirect('/geoapp/accounts/login/')
+        return HttpResponseRedirect('/geoapp/accounts/login/')
     else:
         return render_to_response('geoapp/home.html', {})
 
@@ -281,6 +281,44 @@ class InventoryDataDelete(DeleteView):
         plotID = self.object.forestinventoryplot
         return reverse('geoapp:inventory-plot-detail', kwargs={'pk':plotID})
 
+#************************************************************
+# Activity classes.
+#************************************************************
+
+class PlannedActivityCreate(CreateView):
+    model = PlannedActivity
+    form = PlannedActivityForm
+    template_name_suffix = '_form'
+    
+    def get_queryset(self):
+        return PlannedActivity.objects.filter(created_by=self.request.user)
+        
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super(PlannedActivityCreate, self).form_valid(form)
+    
+    def get_success_url(self):
+        return reverse('geoapp:planned-activities-list')
+    
+class PlannedActivityList(ListView):
+    context_object_name = 'activities'
+    template_name_suffix = '_list'
+    
+    def get_queryset(self):
+        return PlannedActivity.objects.filter(created_by = self.request.user)
+
+class PlannedActivityDelete(DeleteView):
+    model = PlannedActivity
+    template_name_suffix = '_confirm_delete'
+    success_url = reverse_lazy('geoapp:planned-activity-list')
+    
+class PlannedActivityUpdate(UpdateView):
+    model = PlannedActivity
+    form_class = PlannedActivityForm
+    template_name_suffix = '_update_form'
+    
+    def get_success_url(self):
+        return reverse('geoapp:planned-activity-list')
 
     
 

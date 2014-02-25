@@ -1,5 +1,6 @@
 from django.forms import Textarea
-from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket, Sawmill
+#from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket, Sawmill
+from geoapp.models import *
 from django.contrib.gis import forms 
 from geoapp import custom_widgets 
 from django.contrib.gis.forms.widgets import OpenLayersWidget
@@ -40,5 +41,13 @@ class ScalingTicketForm(ModelForm):
 class SawmillForm(ModelForm):
     class Meta:
         model = Sawmill
-        exclude = ('created_by')
         exclude = ('created_by',)
+        
+class PlannedActivityForm(ModelForm):
+        class Meta:
+            model = PlannedActivity
+            exclude = ('created_by','plannedact_id')
+            widgets = {
+                       'description': Textarea(attrs={'cols': 80, 'rows': 5}),
+            }  
+        ('created_by',)
