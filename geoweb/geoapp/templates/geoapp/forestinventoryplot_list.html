@@ -11,6 +11,8 @@ $(function() {
     <table id="table">
     <tr id="header_row">
     	<th>Plot Number</th>
+    	<th>Latitude</th>
+    	<th>Longitude</th>
     	<th>Position Description</th>
     	<th>Elevation</th>
     	<th>Create Date</th>
@@ -20,6 +22,8 @@ $(function() {
     	{% for plot in inventory_plots %}
     	<tr>
 	    	<td>{{plot.plot_number}}</td>
+	    	<td>{{plot.latitude}}</td>
+	    	<td>{{plot.longitude}}</td>
 	    	<td>{{plot.position_description}}</td>
 	    	<td>{{plot.elevation}} {{plot.elevation_unit}}</td>
 	    	<td>{{plot.plot_create_date}}</td>

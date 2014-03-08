@@ -4,20 +4,38 @@ from geoapp.models import *
 from django.contrib.gis import forms 
 from geoapp import custom_widgets 
 from django.contrib.gis.forms.widgets import OpenLayersWidget
-from django.forms.widgets import TextInput
+from django.forms.widgets import TextInput, HiddenInput
 from django.forms import ModelForm
+from django.db.models.fields import DecimalField, CharField
 
 class InventoryPlotForm(ModelForm):
+    latitude = forms.DecimalField()
+
+    def save(self, commit=True):
+        model_instance = super(InventoryPlotForm, self).save(commit=False)
+        result = super(InventoryPlotForm, self).save(commit=True)
+        model_instance.latitude = self.cleaned_data['latitude']
+        model_instance.save()
+        return result
+    
     class Meta:
         model = ForestInventoryPlot
-        exclude = ('created_by','geometry') # Geometry field is temporarily suspended and replaced with lat/long.
         widgets = {
             'position_description': Textarea(attrs={'cols': 80, 'rows': 5}),
-#            'geometry': custom_widgets.LatLongField(attrs={'size'   :50}),
-            'geometry':TextInput(attrs={'size':75}),
-#            'geometry':custom_widgets.LatLongField(),
+            'geometry' : TextInput(attrs={"size":75}),
         }  
-             
+        fields = {"position_description", "plot_number", "elevation", "elevation_unit", "plot_create_date" }
+    
+
+# class InventoryPlotForm(forms.Form):
+#     plot_number = forms.IntegerField()
+#     position_description = forms.CharField(max_length=100)
+#     latitude = forms.DecimalField()
+#     longitude = forms.DecimalField()
+#     elevation = forms.IntegerField()
+#     elevation_unit= forms.CharField()
+#     plot_create_date = forms.DateField()
+          
 class InventoryDataForm(ModelForm):
     class Meta:
         model = ForestInventoryData
