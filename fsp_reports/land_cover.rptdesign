@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.3.1.v201309091055 Build &lt;4.3.1.v20130917-1035></property>
     <property name="units">in</property>
     <property name="iconFile">/templates/chart_listing.gif</property>
     <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.chartlisting</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">72</property>
+    <parameters>
+        <scalar-parameter name="rpLandArea" id="223">
+            <text-property name="promptText">Land Area</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="isRequired">true</property>
+            <property name="dataSetName">land_areas</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["landarea_id"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["description"]</expression>
+            <expression name="sortByColumn">dataSetRow["description"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">1</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="rpYear" id="225">
+            <text-property name="promptText">Year</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="isRequired">true</property>
+            <property name="dataSetName">report_dimensions</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["report_year"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["report_year"]</expression>
+            <property name="dataType">decimal</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="fsp_prod" id="39">
             <list-property name="privateDriverProperties">
@@ -29,16 +72,32 @@
             <property name="odaUser">fsp_report</property>
             <encrypted-property name="odaPassword" encryptionID="base64">ZnNwUmVwb3J0ZXIyMDAwIQ==</encrypted-property>
         </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="fsp_dev" id="224">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://localhost/fsp</property>
+            <property name="odaUser">fsp_report</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">ZnNwX3JlcG9ydA==</encrypted-property>
+        </oda-data-source>
     </data-sources>
     <data-sets>
         <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="forest_type_area" id="41">
             <list-property name="columnHints">
-                <structure>
-                    <property name="columnName">stand_no</property>
-                    <property name="analysis">measure</property>
-                    <text-property name="displayName">stand_no</text-property>
-                    <text-property name="heading">stand_no</text-property>
-                </structure>
                 <structure>
                     <property name="columnName">forest_type</property>
                     <property name="analysis">dimension</property>
@@ -63,84 +122,124 @@
                     <text-property name="displayName">percent_area</text-property>
                     <text-property name="heading">percent_area</text-property>
                 </structure>
+                <structure>
+                    <property name="columnName">landarea_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">landarea_id</text-property>
+                    <text-property name="heading">landarea_id</text-property>
+                </structure>
             </list-property>
-            <list-property name="parameters"/>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">landArea</property>
+                    <property name="paramName">rpLandArea</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
             <structure name="cachedMetaData">
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">stand_no</property>
-                        <property name="dataType">integer</property>
-                    </structure>
-                    <structure>
-                        <property name="position">2</property>
                         <property name="name">forest_type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">3</property>
+                        <property name="position">2</property>
                         <property name="name">year</property>
                         <property name="dataType">decimal</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">3</property>
                         <property name="name">area</property>
                         <property name="dataType">float</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">4</property>
                         <property name="name">percent_area</property>
                         <property name="dataType">float</property>
                     </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">landarea_id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
                 </list-property>
             </structure>
-            <property name="dataSource">fsp_prod</property>
+            <property name="dataSource">fsp_dev</property>
             <list-property name="resultSet">
                 <structure>
                     <property name="position">1</property>
-                    <property name="name">stand_no</property>
-                    <property name="nativeName">stand_no</property>
-                    <property name="dataType">integer</property>
-                    <property name="nativeDataType">4</property>
-                </structure>
-                <structure>
-                    <property name="position">2</property>
                     <property name="name">forest_type</property>
                     <property name="nativeName">forest_type</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">12</property>
                 </structure>
                 <structure>
-                    <property name="position">3</property>
+                    <property name="position">2</property>
                     <property name="name">year</property>
                     <property name="nativeName">year</property>
                     <property name="dataType">decimal</property>
                     <property name="nativeDataType">2</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">3</property>
                     <property name="name">area</property>
                     <property name="nativeName">area</property>
                     <property name="dataType">float</property>
                     <property name="nativeDataType">8</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">4</property>
                     <property name="name">percent_area</property>
                     <property name="nativeName">percent_area</property>
                     <property name="dataType">float</property>
                     <property name="nativeDataType">8</property>
                 </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">landarea_id</property>
+                    <property name="nativeName">landarea_id</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[select stand_no, ft.foresttype_dsc as forest_type, t1.report_year as year, sum(st_area(geometry)) as area, (sum(st_area(geometry))/t2.total_area)*100 as percent_area
+            <xml-property name="queryText"><![CDATA[select ft.foresttype_dsc as forest_type, t1.report_year as year
+, sum(st_area(geometry)) as area
+, (sum(st_area(geometry))/t2.total_area)*100 as percent_area
+, t1.landarea_id
 from vw_stand_area_by_year t1
-join (select report_year, sum(st_area(geometry)) as total_area from vw_stand_area_by_year group by report_year) as t2 on t1.report_year=t2.report_year
+join (select report_year, landarea_id, sum(st_area(geometry)) as total_area from vw_stand_area_by_year group by report_year, landarea_id) as t2 
+on t1.report_year=t2.report_year
+and t1.landarea_id = t2.landarea_id
 join forest_type ft on t1.foresttype_id = ft.foresttype_id
-group by t1.stand_no, t1.report_year , t2.total_area, ft.foresttype_dsc
-order by t1.report_year, t1.stand_no;]]></xml-property>
+where t1.landarea_id = ?
+group by t1.landarea_id, t1.report_year , t2.total_area, ft.foresttype_dsc
+order by t1.report_year;]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
+  <DataSetParameters>
+    <parameter>
+      <design:ParameterDefinition>
+        <design:inOutMode>In</design:inOutMode>
+        <design:attributes>
+          <design:identifier>
+            <design:name></design:name>
+            <design:position>1</design:position>
+          </design:identifier>
+          <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+          <design:precision>0</design:precision>
+          <design:scale>0</design:scale>
+          <design:nullability>Unknown</design:nullability>
+        </design:attributes>
+      </design:ParameterDefinition>
+    </parameter>
+  </DataSetParameters>
   <design:ResultSets derivedMetaData="true">
     <design:resultSetDefinitions>
       <design:resultSetColumns>
@@ -191,6 +290,156 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
     </design:resultSetDefinitions>
   </design:ResultSets>
 </model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="land_areas" id="222">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">landarea_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">landarea_id</text-property>
+                    <text-property name="heading">landarea_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">description</text-property>
+                    <text-property name="heading">description</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">landarea_id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">fsp_dev</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">landarea_id</property>
+                    <property name="nativeName">landarea_id</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">description</property>
+                    <property name="nativeName">description</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select landarea_id, description
+from land_area]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>landarea_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>landarea_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>landarea_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>description</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>255</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>description</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>description</design:label>
+            <design:formattingHints>
+              <design:displaySize>255</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="report_dimensions" id="226">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">reportdate_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">reportdate_id</text-property>
+                    <text-property name="heading">reportdate_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">report_year</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">report_year</text-property>
+                    <text-property name="heading">report_year</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">reportdate_id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">report_year</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">fsp_dev</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">reportdate_id</property>
+                    <property name="nativeName">reportdate_id</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">report_year</property>
+                    <property name="nativeName">report_year</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select reportdate_id, report_year
+from dim_report_date]]></xml-property>
         </oda-data-set>
     </data-sets>
     <cubes>
@@ -286,10 +535,10 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
             <page-header>
                 <image name="master" id="116">
                     <property name="display">block</property>
-                    <property name="height">70px</property>
-                    <property name="width">728px</property>
+                    <property name="height">0.9722222222222222in</property>
+                    <property name="width">10.11111111111111in</property>
                     <property name="source">file</property>
-                    <expression name="uri" type="constant">geoforst_header.png</expression>
+                    <expression name="uri" type="constant">images/geoforst_header.png</expression>
                 </image>
             </page-header>
             <page-footer>
@@ -306,8 +555,8 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
             <property name="width">100%</property>
             <column id="5"/>
             <row id="6">
-                <property name="height">100%</property>
                 <property name="verticalAlign">text-bottom</property>
+                <property name="height">100%</property>
                 <cell id="7">
                     <property name="verticalAlign">top</property>
                     <label id="8">
@@ -352,7 +601,7 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
                                 <property name="borderTopStyle">solid</property>
                                 <extended-item extensionName="Chart" id="71">
                                     <xml-property name="xmlRepresentation"><![CDATA[<model:ChartWithoutAxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.birt.eclipse.org/ChartModelAttribute" xmlns:layout="http://www.birt.eclipse.org/ChartModelLayout" xmlns:model="http://www.birt.eclipse.org/ChartModel" xmlns:type="http://www.birt.eclipse.org/ChartModelType">
-  <Version>2.5.3</Version>
+  <Version>2.6.1</Version>
   <Type>Pie Chart</Type>
   <SubType>Standard</SubType>
   <Block>
@@ -1239,9 +1488,9 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
                                         </structure>
                                     </list-property>
                                     <property name="inheritColumns">true</property>
-                                    <property name="dataSet">forest_type_area</property>
                                     <property name="height">2.5in</property>
                                     <property name="width">5.138888888888889in</property>
+                                    <property name="dataSet">forest_type_area</property>
                                     <list-property name="boundDataColumns">
                                         <structure>
                                             <property name="name">forest_type</property>
@@ -2432,9 +2681,9 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
 ]]></xml-property>
                                     <property name="outputFormat">PNG</property>
                                     <property name="inheritColumns">false</property>
-                                    <property name="dataSet">forest_type_area</property>
                                     <property name="height">2.5in</property>
                                     <property name="width">9.277777777777779in</property>
+                                    <property name="dataSet">forest_type_area</property>
                                     <list-property name="boundDataColumns">
                                         <structure>
                                             <property name="name">forest_type</property>
@@ -2465,7 +2714,7 @@ order by t1.report_year, t1.stand_no;]]></xml-property>
                 </cell>
             </row>
         </grid>
-        <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="198">
+        <extended-item extensionName="Crosstab" extensionVersion="3.7.0" id="198">
             <property name="cube">Data Cube - forest_type_area</property>
             <property name="measures">
                 <extended-item extensionName="MeasureView" id="209">
