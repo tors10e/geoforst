@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 from django.contrib.gis.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.contrib.gis import geos
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
@@ -113,17 +114,35 @@ class ForestInventoryPlot(models.Model):
     plot_ylength = models.IntegerField(blank=True, null=True)
     plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
     geometry = models.PointField(srid=2163, null=True, blank=True) 
-    longitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
-    latitude = models.DecimalField(max_digits=9, decimal_places=6) # Temporary until geometry widget is functioning.
     elevation = models.IntegerField(null=True, blank=True)
     elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
     position_description = models.CharField(max_length=255, null=True, blank=True)
     plot_create_date = models.DateField(null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
+    
+    @property
+    def latitude(self):
+        self.geometry.transform(4326)
+        return self.geometry.y
+        
+    @latitude.setter
+    def latitude(self, latitude):
+        self.geometry.y = latitude
+        
+    @property
+    def longitude(self):
+        self.geometry.transform(4326)
+        return self.geometry.x
+    
+    @longitude.setter
+    def longitude(self, longitude):
+        self.geometry.x = longitude
+    
     class Meta:
             db_table = 'forest_inventory_plot'
             ordering = ["plot_number"]
+            
     def __unicode__(self):
         return unicode(self.plot_number)
 
@@ -247,6 +266,8 @@ class RecreationPoint(models.Model):
     objects = models.GeoManager()
     class Meta:
         db_table = 'recreation_point'
+    def __unicode__(self):
+        return unicode(self.description)
 
 class RecreationType(models.Model):
     rectype_id = models.IntegerField(primary_key=True)
@@ -320,7 +341,7 @@ class StandArea(models.Model):
     class Meta:
         db_table = 'stand_area'
     def __unicode__(self):
-        return unicode(self.standarea_id)
+        return unicode(self.standdescription)
 
 
 class StandAreaHistory(models.Model):
@@ -350,6 +371,8 @@ class StandDescription(models.Model):
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'stand_description'
+    def __unicode__(self):
+        return unicode(self.stand_description)
 
 class StandStatus(models.Model):
     standstatus_id = models.AutoField(primary_key=True)
