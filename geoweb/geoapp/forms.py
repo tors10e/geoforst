@@ -9,15 +9,6 @@ from django.forms import ModelForm
 from django.db.models.fields import DecimalField, CharField
 
 class InventoryPlotForm(ModelForm):
-    latitude = forms.DecimalField()
-
-    def save(self, commit=True):
-        model_instance = super(InventoryPlotForm, self).save(commit=False)
-        result = super(InventoryPlotForm, self).save(commit=True)
-        model_instance.latitude = self.cleaned_data['latitude']
-        model_instance.save()
-        return result
-    
     class Meta:
         model = ForestInventoryPlot
         widgets = {

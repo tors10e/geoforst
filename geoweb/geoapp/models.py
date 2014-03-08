@@ -121,24 +121,6 @@ class ForestInventoryPlot(models.Model):
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     
-    @property
-    def latitude(self):
-        self.geometry.transform(4326)
-        return self.geometry.y
-        
-    @latitude.setter
-    def latitude(self, latitude):
-        self.geometry.y = latitude
-        
-    @property
-    def longitude(self):
-        self.geometry.transform(4326)
-        return self.geometry.x
-    
-    @longitude.setter
-    def longitude(self, longitude):
-        self.geometry.x = longitude
-    
     class Meta:
             db_table = 'forest_inventory_plot'
             ordering = ["plot_number"]
