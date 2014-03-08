@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.3.1.v201309091055 Build &lt;4.3.1.v20130917-1035></property>
     <property name="units">in</property>
     <property name="iconFile">/templates/blank_report.gif</property>
     <property name="bidiLayoutOrientation">ltr</property>
@@ -36,10 +36,14 @@
                     <property name="value">2013</property>
                     <property name="label">2013</property>
                 </structure>
+                <structure>
+                    <property name="value">2014</property>
+                    <property name="label">2014</property>
+                </structure>
             </list-property>
             <property name="paramType">simple</property>
             <property name="controlType">list-box</property>
-            <property name="mustMatch">false</property>
+            <property name="mustMatch">true</property>
             <property name="fixedOrder">true</property>
             <structure name="format">
                 <property name="category">Unformatted</property>
@@ -59,7 +63,7 @@
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
             <property name="controlType">list-box</property>
-            <property name="mustMatch">false</property>
+            <property name="mustMatch">true</property>
             <property name="fixedOrder">true</property>
             <structure name="format">
                 <property name="category">Unformatted</property>
@@ -531,13 +535,14 @@ where planned_date = ? and taskstatus_id = ?]]></xml-property>
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="orientation">landscape</property>
+            <property name="headerHeight">1.5in</property>
             <page-header>
                 <image name="master" id="116">
                     <property name="display">block</property>
-                    <property name="height">70px</property>
-                    <property name="width">728px</property>
+                    <property name="height">0.9722222222222222in</property>
+                    <property name="width">10.11111111111111in</property>
                     <property name="source">file</property>
-                    <expression name="uri" type="constant">geoforst_header.png</expression>
+                    <expression name="uri" type="constant">images/geoforst_header.png</expression>
                 </image>
             </page-header>
             <page-footer>
