@@ -8,6 +8,7 @@ $(function() {
 
 {% block content %}
     <h2>Forest Inventory Plots</h2>
+    <button><a href="/geoapp/inventory_plot/add/">Add a new plot</a></button>
     <table id="table">
     <tr id="header_row">
     	<th>Plot Number</th>
@@ -31,5 +32,4 @@ $(function() {
     	</tr>
     	{% endfor %}
     </table>
-    <a href="/geoapp/inventory_plot/add/">Add a new plot</a>
 {% endblock %}

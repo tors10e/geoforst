@@ -8,6 +8,7 @@ $(function() {
 
 {% block content %}
     <h2>Lumber Loads</h2>
+    <button><a href="{% url 'geoapp:lumber-load-add' %}">Add New Load</a></button>
     <table id="table">
 	    <tr id="header_row">
 	    	<th>ID</th>
@@ -36,6 +37,5 @@ $(function() {
 			</td>
 	    </tr>
     	{% endfor %}  
-    </table>
-    <a href="{% url 'geoapp:lumber-load-add' %}">Add new load</a>    
+    </table>  
 {% endblock %}

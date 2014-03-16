@@ -8,6 +8,7 @@ $(function() {
 
 {% block content %}
     <h2>Lumber Scaling Tickets</h2>
+    <button><a href="{% url 'geoapp:scaling-ticket-add' %}">Add New Scaling Ticket</a></button>
     <table id="table">
     <tr id="header_row">
     	<th>Mill</th>
@@ -33,5 +34,4 @@ $(function() {
     	</tr>
     	{% endfor %}
     </table>
-    <a href="{% url 'geoapp:scaling-ticket-add' %}">Add a new scaling ticket.</a>
 {% endblock %}
