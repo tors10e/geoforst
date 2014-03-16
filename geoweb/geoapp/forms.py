@@ -1,4 +1,4 @@
-from django.forms import Textarea
+from django.forms import *
 #from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket, Sawmill
 from geoapp.models import *
 from django.contrib.gis import forms 
@@ -7,6 +7,7 @@ from django.contrib.gis.forms.widgets import OpenLayersWidget
 from django.forms.widgets import TextInput, HiddenInput
 from django.forms import ModelForm
 from django.db.models.fields import DecimalField, CharField
+import email
 
 class InventoryPlotForm(ModelForm):
     class Meta:
@@ -51,6 +52,10 @@ class SawmillForm(ModelForm):
     class Meta:
         model = Sawmill
         exclude = ('created_by',)
+        widgets = {
+                   'email':EmailInput(),
+                   'website':URLInput(),
+                   }
         
 class PlannedActivityForm(ModelForm):
         class Meta:
