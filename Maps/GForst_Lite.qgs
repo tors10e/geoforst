@@ -1,13 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.0.1-Dufour">
+<qgis projectname="" version="2.2.0-Valmiera">
     <title></title>
+    <relations/>
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-17622935.05179572105407715</xmin>
-            <ymin>1105051.64486895641312003</ymin>
-            <xmax>-4448125.21730039827525616</xmax>
-            <ymax>9769273.87592868879437447</ymax>
+            <xmin>-26021530.14983378350734711</xmin>
+            <ymin>-3085948.35940586496144533</ymin>
+            <xmax>507358.76611457765102386</xmax>
+            <ymax>14242496.10271359607577324</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -22,8 +23,19 @@
                 <geographicflag>false</geographicflag>
             </spatialrefsys>
         </destinationsrs>
+        <layer_coordinate_transform_info>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Firebreaks20121204132835298"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:26917" srcDatumTransform="-1" destDatumTransform="-1" layerid="220130610224644497"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Land Areas20121204131751632"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="3_2_1_020130610225200927"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="activity_area20130101231920603"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Areas20121204131751547"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="trail20131110173044662"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stands20121204133323889"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="road_line20130101154010851"/>
+        </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Recreation20121204131623145">
+    <legend updateDrawingOrder="true" activeLayer="Stands20121204133323889">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
@@ -101,9 +113,9 @@
                 <legendlayerfile isInOverview="0" layerid="burn_compartment20130605072953108" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stands" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Layers">
@@ -115,11 +127,6 @@
             <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140101213044996" visible="1"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="NHD Rivers" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="620130610223950152" visible="0"/>
                 </filegroup>
             </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USDA Soil Delineation" showFeatureCount="0">
@@ -258,7 +265,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="45">
+    <projectlayers layercount="44">
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>220130610224644497</id>
             <datasource>crs=EPSG:26917&amp;format=image/png&amp;layers=2&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer</datasource>
@@ -325,39 +332,6 @@
             </pipe>
             <blendMode>0</blendMode>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" type="raster" hasScaleBasedVisibilityFlag="1">
-            <id>620130610223950152</id>
-            <datasource>crs=EPSG:4326&amp;format=image/png&amp;layers=6&amp;styles=&amp;url=http://watersgeo.epa.gov/ArcGIS/services/OW/NHD_Med_Basic_WMERC/MapServer/WMSServer</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>NHD Rivers</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
-            <provider>wms</provider>
-            <pipe>
-                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
-                    <rasterTransparency/>
-                </rasterrenderer>
-                <brightnesscontrast brightness="0" contrast="0"/>
-                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-                <rasterresampler maxOversampling="2"/>
-            </pipe>
-            <blendMode>0</blendMode>
-        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="activity_type" sql=</datasource>
@@ -385,13 +359,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="cultural_point" (geometry) sql=</datasource>
             <title></title>
@@ -428,7 +403,8 @@
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/amenity/amenity_fountain.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="amenity/amenity_fountain.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -436,13 +412,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/accommodation/accommodation_bed_and_breakfast.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="accommodation/accommodation_bed_and_breakfast.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -450,13 +428,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/accommodation/accommodation_youth_hostel.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="accommodation/accommodation_youth_hostel.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -464,11 +444,12 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -630,13 +611,14 @@
             </edittypes>
             <editform>../Forms/CulturalPoint.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Firebreaks20121204132835298</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="firebreak_line" (geometry) sql=</datasource>
             <title></title>
@@ -668,6 +650,7 @@
                             <prop k="color" v="255,186,106,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -681,6 +664,7 @@
                             <prop k="color" v="238,27,48,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -691,8 +675,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -846,13 +830,14 @@
             </edittypes>
             <editform>../Forms/firebreak_line.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Areas20121204131751547</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="habitat_enhancement_area" (geometry) sql=</datasource>
             <title></title>
@@ -906,6 +891,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -933,6 +919,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -960,6 +947,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -987,6 +975,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1014,6 +1003,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1041,6 +1031,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1068,6 +1059,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1095,6 +1087,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1124,6 +1117,7 @@
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
+                                    <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -1145,8 +1139,9 @@
                     <prop k="valMax" v="255"/>
                     <prop k="valMin" v="0"/>
                 </colorramp>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <invertedcolorramp value="0"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -1330,13 +1325,14 @@
             </edittypes>
             <editform>../Forms/HabitatEnhancementsArea.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
@@ -1375,7 +1371,8 @@
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/tourist/tourist_castle.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="tourist/tourist_castle.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -1383,13 +1380,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/symbol/poi_embassy2.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="symbol/poi_embassy2.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -1397,13 +1396,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/tourist/tourist_view_point.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="tourist/tourist_view_point.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -1411,13 +1412,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="3">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/religion/place_of_worship_unknown3.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="religion/place_of_worship_unknown3.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -1425,6 +1428,7 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="4"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="4">
@@ -1432,14 +1436,17 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="8,48,107,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
@@ -1449,14 +1456,17 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="143,229,123,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </source-symbol>
@@ -1466,8 +1476,9 @@
                     <prop k="discrete" v="0"/>
                     <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
                 </colorramp>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <invertedcolorramp value="0"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -1647,6 +1658,7 @@
             </edittypes>
             <editform>../Forms/HabitatEnhancements.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -1680,13 +1692,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="250001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="250001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Land Areas20121204131751632</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="land_area" (geometry) sql=</datasource>
             <title></title>
@@ -1725,8 +1738,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -1882,6 +1895,7 @@
             </edittypes>
             <editform>../Forms/LandArea.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -1994,13 +2008,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -2038,7 +2053,8 @@
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#6c7be1"/>
-                            <prop k="name" v="/gpsicons/teepee.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="gpsicons/teepee.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -2046,13 +2062,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="6"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/amenity/amenity_firestation.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="amenity/amenity_firestation.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -2060,13 +2078,15 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="6"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
-                            <prop k="name" v="/tourist/tourist_picnic.svg"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="tourist/tourist_picnic.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -2074,6 +2094,7 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="6"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="3">
@@ -2081,14 +2102,17 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="8,48,107,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
@@ -2098,14 +2122,17 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="248,168,186,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </source-symbol>
@@ -2115,8 +2142,9 @@
                     <prop k="discrete" v="0"/>
                     <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
                 </colorramp>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <invertedcolorramp value="0"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -2283,6 +2311,7 @@
             </edittypes>
             <editform>../Forms/Recreation.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -2316,13 +2345,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Stands20121204133323889</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="stand_area" (geometry) sql=</datasource>
             <title></title>
@@ -2344,7 +2374,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="System">spatialite</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "description", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 attr="stand_no" symbollevels="0" type="categorizedSymbol">
                 <categories>
@@ -2494,8 +2524,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -2655,27 +2685,41 @@
                 <edittype labelontop="0" editable="1" type="0" name="age"/>
                 <edittype labelontop="0" editable="1" type="0" name="damaged"/>
                 <edittype labelontop="0" editable="1" type="0" name="description"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="forestagetype_id" layer="forest_age_type20130603100652966" allowMulti="false" filterExpression="" type="15" value="forestagetype_dsc" name="forestagetype_id"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="foresttype_id" layer="forest_type20130118212645702" allowMulti="false" filterExpression="" type="15" value="foresttype_dsc" name="foresttype_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="notes"/>
                 <edittype labelontop="0" editable="1" type="0" name="ogc_fid"/>
                 <edittype labelontop="0" editable="1" type="0" name="recommended_treatment"/>
-                <edittype labelontop="0" editable="1" type="0" name="stand_no"/>
-                <edittype labelontop="0" editable="1" type="10" name="standarea_id"/>
+                <edittype labelontop="0" editable="1" type="5" min="1" step="1" name="stand_no" max="25"/>
+                <edittype labelontop="0" editable="1" type="11" name="standarea_id"/>
                 <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="standdescription_id" layer="stand_description20130603102657736" allowMulti="false" filterExpression="" type="15" value="stand_description" name="standdescription_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="standno"/>
                 <edittype labelontop="0" editable="1" type="0" name="standstatus_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="start_date"/>
                 <edittype labelontop="0" editable="1" type="0" name="stocking"/>
-                <edittype labelontop="0" editable="1" type="0" name="stockingtype_id"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="stockingtype_id" layer="Stocking Types20121204111631323" allowMulti="false" filterExpression="" type="15" value="stockingtype_dsc" name="stockingtype_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="transaction_start_date"/>
                 <edittype labelontop="0" editable="1" type="0" name="year"/>
             </edittypes>
-            <editform>../Forms/StandArea.ui</editform>
+            <editform>../Forms/StandDescription.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>uifilelayout</editorlayout>
+            <editorlayout>generatedlayout</editorlayout>
+            <aliases>
+                <alias field="description" index="2" name="Description"/>
+                <alias field="foresttype_id" index="3" name="Forest Type"/>
+                <alias field="stand_no" index="1" name="Stand No."/>
+                <alias field="standarea_id" index="0" name="ID"/>
+                <alias field="standdescription_id" index="4" name="Stand Description"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
+            <attributeEditorForm>
+                <attributeEditorContainer name="Stand Description">
+                    <attributeEditorField index="4" name="standdescription_id"/>
+                </attributeEditorContainer>
+            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -2705,13 +2749,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="tree" (geometry) sql=</datasource>
             <title></title>
@@ -2742,19 +2787,22 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="90,218,71,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -2911,6 +2959,7 @@
             </edittypes>
             <editform>../Forms/Tree.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -2944,13 +2993,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="water_point" (geometry) sql=</datasource>
             <title></title>
@@ -2983,19 +3033,22 @@
                             <prop k="angle" v="0"/>
                             <prop k="color" v="0,0,255,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -3156,13 +3209,14 @@
             </edittypes>
             <editform>../Forms/WaterPoint.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>activity_area20130101231920603</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="activity_area" (geometry) sql=</datasource>
             <title></title>
@@ -3201,8 +3255,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -3375,13 +3429,14 @@
             </edittypes>
             <editform>../Forms/ActivityArea.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>burn_compartment20130605072953108</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="burn_compartment" (geometry) sql=</datasource>
             <title></title>
@@ -3462,8 +3517,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -3615,6 +3670,7 @@
             </edittypes>
             <editform>../Forms/BurnCompartment.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3653,6 +3709,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3686,6 +3743,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3723,6 +3781,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3756,6 +3815,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3789,6 +3849,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3822,6 +3883,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3865,6 +3927,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -3898,13 +3961,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>road_line20130101154010851</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="road_line" (geometry) sql=</datasource>
             <title></title>
@@ -3946,6 +4010,7 @@
                             <prop k="color" v="100,100,80,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3959,6 +4024,7 @@
                             <prop k="color" v="244,244,119,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3974,6 +4040,7 @@
                             <prop k="color" v="171,171,171,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3987,6 +4054,7 @@
                             <prop k="color" v="255,255,255,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4002,6 +4070,7 @@
                             <prop k="color" v="134,67,0,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4015,6 +4084,7 @@
                             <prop k="color" v="192,223,255,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4030,6 +4100,7 @@
                             <prop k="color" v="191,191,191,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4045,6 +4116,7 @@
                             <prop k="color" v="192,223,255,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4060,6 +4132,7 @@
                             <prop k="color" v="149,149,112,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="-1"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4073,6 +4146,7 @@
                             <prop k="color" v="144,144,108,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="1"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4093,14 +4167,17 @@
                                     <prop k="angle" v="0"/>
                                     <prop k="color" v="255,0,0,255"/>
                                     <prop k="color_border" v="0,0,0,255"/>
+                                    <prop k="horizontal_anchor_point" v="1"/>
                                     <prop k="name" v="line"/>
                                     <prop k="offset" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
+                                    <prop k="outline_style" v="solid"/>
                                     <prop k="outline_width" v="0"/>
                                     <prop k="outline_width_unit" v="MM"/>
                                     <prop k="scale_method" v="area"/>
                                     <prop k="size" v="0.25"/>
                                     <prop k="size_unit" v="MM"/>
+                                    <prop k="vertical_anchor_point" v="1"/>
                                 </layer>
                             </symbol>
                         </layer>
@@ -4113,6 +4190,7 @@
                             <prop k="color" v="76,65,128,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4129,8 +4207,9 @@
                     <prop k="discrete" v="0"/>
                     <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
                 </colorramp>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <invertedcolorramp value="0"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -4291,6 +4370,7 @@
             </edittypes>
             <editform>../Forms/Road.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4324,6 +4404,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4357,13 +4438,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>soil_test20130603122942351</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="soil_test" (geometry) sql=</datasource>
             <title></title>
@@ -4393,6 +4475,7 @@
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v=""/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4401,11 +4484,12 @@
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="size" v="2"/>
                             <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties/>
             <blendMode>0</blendMode>
@@ -4485,6 +4569,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4541,6 +4626,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4574,6 +4660,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4614,6 +4701,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4662,6 +4750,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4695,13 +4784,14 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>trail20131110173044662</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="public"."trail" (geometry) sql=</datasource>
             <title></title>
@@ -4733,6 +4823,7 @@
                             <prop k="color" v="207,139,141,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -4743,8 +4834,8 @@
                         </layer>
                     </symbol>
                 </symbols>
-                <rotation field=""/>
-                <sizescale field="" scalemethod="area"/>
+                <rotation/>
+                <sizescale scalemethod="area"/>
             </renderer-v2>
             <customproperties>
                 <property key="labeling" value="pal"/>
@@ -4898,6 +4989,7 @@
             </edittypes>
             <editform>../Forms/Trail.ui</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4931,6 +5023,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -4964,6 +5057,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -5005,6 +5099,7 @@
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -5038,6 +5133,7 @@
             <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
@@ -5048,10 +5144,10 @@
     <properties>
         <WMSContactPerson type="QString"></WMSContactPerson>
         <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <DeprecatedLabels>
             <Enabled type="bool">true</Enabled>
         </DeprecatedLabels>
-        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <WMSKeywordList type="QStringList">
             <value></value>
         </WMSKeywordList>
@@ -5067,8 +5163,8 @@
             <Automatic type="bool">true</Automatic>
             <DegreeFormat type="QString">D</DegreeFormat>
         </PositionPrecision>
-        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
         <WMSContactPhone type="QString"></WMSContactPhone>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
         <WMSServiceAbstract type="QString"></WMSServiceAbstract>
         <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
         <Measure>
