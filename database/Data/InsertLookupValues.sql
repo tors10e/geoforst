@@ -287,5 +287,18 @@ INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestr
 INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestreetype_dsc, speciestreetype_bn) VALUES (11, 'ns', 'Black Gum', 'Nyssa sylvatica');
 INSERT INTO species_tree_type (speciestreetype_id, speciestreetype_cd, speciestreetype_dsc, speciestreetype_bn) VALUES (12, 'lt', 'Yellow Poplar', 'Liriodendron tulipifera');
 
-
-
+--
+-- Data for Name: stand_description; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+TRUNCATE TABLE stand_description;
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (5, 2, 3, 'Upland Hardwood/Pine, Intermediate aged, fully stocked –', 3, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (3, 2, 1, 'Forested Wetland', 5, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (1, 2, 1, 'Improved grassland.', 6, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (8, 3, 3, 'Pine/Hardwood, Intermediate Aged, mildly overstocked', 5, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (9, 4, 5, 'Mixed yellow pine, early mature, over stocked.', 2, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (4, 2, 2, 'Upland hardwood/pine mixed age.', 4, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (2, 2, 3, 'Residential area.', 3, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (6, 2, 1, 'Mesic Hardwood/Pine, juvenile aged, overstocked', 4, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (7, 2, 2, 'Pine/Hardwood, mixed age (beetle damage)', 5, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (10, 4, 1, 'Immature pine, overstocked.', 2, NULL);
+INSERT INTO stand_description (standdescription_id, stockingtype_id, forestagetype_id, stand_description, foresttype_id, created_by_id) VALUES (11, 3, 4, 'Young pure yellow poplar.', 4, NULL);
