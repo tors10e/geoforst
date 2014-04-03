@@ -5,10 +5,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312630.39023093692958355</xmin>
-            <ymin>4090526.04552567237988114</ymin>
-            <xmax>-9310266.77911741472780704</xmax>
-            <ymax>4092050.04552722675725818</ymax>
+            <xmin>-9313823.41712340712547302</xmin>
+            <ymin>4089617.04722512094303966</ymin>
+            <xmax>-9309096.19489636272192001</xmax>
+            <ymax>4092665.0472282306291163</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -24,25 +24,44 @@
             </spatialrefsys>
         </destinationsrs>
         <layer_coordinate_transform_info>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Points20121204131751561"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Recreation20121204131623145"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_concentration_type20140403093339164"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_area_type20140403093424792"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Firebreaks20121204132835298"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="soil_test20130603122942351"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Land Areas20121204131751632"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="trail20131110173044662"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="road_line20130101154010851"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites_copy20140402110432566"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2014_copy20140402110926375"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_length_type20140403093407210"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cultural Features20121204131751585"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2011_copy20140402110734134"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="burn_compartment20130605072953108"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="tree_status20130603213537490"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Land Areas20121204131751632"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Points20121204131751561"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Water Point Features20121204131510425"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Areas20121204131751547"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2010_copy20140402110700963"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="soil_test20130603122942351"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="soil_test20140403091105174"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="species_tree_type20140403090557542"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="activity_area20140402104458810"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="trail20131110173044662"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Recreation20121204131623145"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stands20121204133323889"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2013_copy20140402110834310"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Trees20121204131751596"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="soil_test_recommendation20130603122843299"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2010_copy20140402110758248"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="trail20131110173044662">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
+    <legend updateDrawingOrder="true" activeLayer="soil_test20140403091105174">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Points" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
@@ -60,6 +79,23 @@
                 <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendgroup open="true" checked="Qt::Unchecked" name="Analytical Layers">
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="soil_test20140403091105174" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Soil Test Recommendations" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
+                </filegroup>
+            </legendlayer>
+        </legendgroup>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Trails" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="trail20131110173044662" visible="1"/>
@@ -75,23 +111,6 @@
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="true" checked="Qt::PartiallyChecked" name="Analytical Layers">
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Soil Test Recommendations" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Soil Tests" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="1"/>
-                </filegroup>
-            </legendlayer>
-        </legendgroup>
         <legendgroup open="true" checked="Qt::Unchecked" name="External Layers">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USDA Soil Delineation" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
@@ -105,8 +124,8 @@
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::Unchecked" name="Activities">
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activites - All Years" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activites - All Years" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="Activites___2014_copy20140402110926375" visible="0"/>
                 </filegroup>
             </legendlayer>
@@ -135,14 +154,9 @@
                     <legendlayerfile isInOverview="0" layerid="Activites_copy20140402110432566" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activites - 2009" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="activity_area20140402104458810" visible="0"/>
-                </filegroup>
-            </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Habitat Enhancement Areas" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Areas" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="0"/>
             </filegroup>
         </legendlayer>
@@ -253,6 +267,11 @@
                 <legendlayerfile isInOverview="0" layerid="severity_type20130603100644814" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Tree Species" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="species_tree_type20140403090557542" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Description" showFeatureCount="0">
             <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="stand_description20130603102657736" visible="0"/>
@@ -283,6 +302,21 @@
                 <legendlayerfile isInOverview="0" layerid="trail_status_type20130605072950232" visible="0"/>
             </filegroup>
         </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Unit Concentration Type" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="unit_concentration_type20140403093339164" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Unit Length Type" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="unit_length_type20140403093407210" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Unit Area Type" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="unit_area_type20140403093424792" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Water Types" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="water_type20130603100649684" visible="0"/>
@@ -294,7 +328,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="50">
+    <projectlayers layercount="54">
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>020140217200921721</id>
             <datasource>crs=EPSG:3857&amp;featureCount=10&amp;format=image/jpeg&amp;layers=0&amp;styles=&amp;url=http://basemap.nationalmap.gov/ArcGIS/services/USGSTopo/MapServer/WMSServer?</datasource>
@@ -359,11 +393,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -590,11 +624,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -821,11 +855,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -1052,11 +1086,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -1254,7 +1288,7 @@
             </attributeEditorForm>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Activites___2014_copy20140402110926375</id>
             <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='activityarea_id' srid=2163 type=MULTIPOLYGON table="public"."activity_area" (geometry) sql=</datasource>
             <title></title>
@@ -1283,11 +1317,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -1514,11 +1548,11 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="color_border" v="255,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
+                            <prop k="style" v="dense5"/>
                             <prop k="style_border" v="solid"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
@@ -2250,58 +2284,70 @@
             </vectorjoins>
             <renderer-v2 attr="habenhtype_id" symbollevels="0" type="categorizedSymbol">
                 <categories>
-                    <category symbol="0" value="1" label="Brush Pile"/>
-                    <category symbol="1" value="5" label="Fallow Field"/>
-                    <category symbol="2" value="2" label="Oak Early Successional"/>
-                    <category symbol="3" value="3" label="Planting"/>
-                    <category symbol="4" value="6" label="Shrub Thicket"/>
-                    <category symbol="5" value="4" label="Soft Edge"/>
-                    <category symbol="6" value="7" label="Duck Nest Box"/>
-                    <category symbol="7" value="" label=""/>
+                    <category symbol="0" value="5" label="Fallow Field"/>
+                    <category symbol="1" value="2" label="Oak Early Successional"/>
+                    <category symbol="2" value="3" label="Planting"/>
+                    <category symbol="3" value="6" label="Shrub Thicket"/>
+                    <category symbol="4" value="4" label="Soft Edge"/>
+                    <category symbol="5" value="" label=""/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="190,155,132,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="69,196,88,255"/>
+                            <prop k="color_border" v="175,179,138,255"/>
+                            <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@0@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
-                                    <prop k="customdash" v="5;2"/>
-                                    <prop k="customdash_unit" v="MM"/>
-                                    <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
-                                    <prop k="offset" v="0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="PointPatternFill" locked="0">
+                            <prop k="displacement_x" v="0"/>
+                            <prop k="displacement_x_unit" v="MM"/>
+                            <prop k="displacement_y" v="1"/>
+                            <prop k="displacement_y_unit" v="MM"/>
+                            <prop k="distance_x" v="1.5"/>
+                            <prop k="distance_x_unit" v="MM"/>
+                            <prop k="distance_y" v="2"/>
+                            <prop k="distance_y_unit" v="MM"/>
+                            <symbol alpha="1" type="marker" name="@0@1">
+                                <layer pass="0" class="SimpleMarker" locked="0">
+                                    <prop k="angle" v="0"/>
+                                    <prop k="color" v="144,112,76,255"/>
+                                    <prop k="color_border" v="0,0,0,0"/>
+                                    <prop k="horizontal_anchor_point" v="1"/>
+                                    <prop k="name" v="circle"/>
+                                    <prop k="offset" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
-                                    <prop k="penstyle" v="solid"/>
-                                    <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
-                                    <prop k="width_unit" v="MM"/>
+                                    <prop k="outline_style" v="solid"/>
+                                    <prop k="outline_width" v="0"/>
+                                    <prop k="outline_width_unit" v="MM"/>
+                                    <prop k="scale_method" v="area"/>
+                                    <prop k="size" v="0.6"/>
+                                    <prop k="size_unit" v="MM"/>
+                                    <prop k="vertical_anchor_point" v="1"/>
                                 </layer>
                             </symbol>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="fill" name="1">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="231,231,244,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="offset_unit" v="MM"/>
+                        <layer pass="0" class="SVGFill" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="pattern_width_unit" v="MM"/>
+                            <prop k="svgFile" v="arrows/NorthArrow_01.svg"/>
+                            <prop k="svgFillColor" v="#408000"/>
+                            <prop k="svgOutlineColor" v="#ffffff"/>
+                            <prop k="svgOutlineWidth" v="1"/>
+                            <prop k="svgOutlineWidth_expression" v="svgOutlineWidth_expression"/>
+                            <prop k="svg_outline_width_unit" v="MM"/>
+                            <prop k="width" v="4"/>
                             <symbol alpha="1" type="line" name="@1@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
+                                    <prop k="color" v="128,128,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
@@ -2317,146 +2363,124 @@
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="fill" name="2">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="123,141,140,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="241,244,199,255"/>
+                            <prop k="color_border" v="175,179,138,255"/>
+                            <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@2@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
-                                    <prop k="customdash" v="5;2"/>
-                                    <prop k="customdash_unit" v="MM"/>
-                                    <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
-                                    <prop k="offset" v="0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="PointPatternFill" locked="0">
+                            <prop k="displacement_x" v="0"/>
+                            <prop k="displacement_x_unit" v="MM"/>
+                            <prop k="displacement_y" v="1"/>
+                            <prop k="displacement_y_unit" v="MM"/>
+                            <prop k="distance_x" v="1.5"/>
+                            <prop k="distance_x_unit" v="MM"/>
+                            <prop k="distance_y" v="2"/>
+                            <prop k="distance_y_unit" v="MM"/>
+                            <symbol alpha="1" type="marker" name="@2@1">
+                                <layer pass="0" class="SimpleMarker" locked="0">
+                                    <prop k="angle" v="0"/>
+                                    <prop k="color" v="178,223,138,255"/>
+                                    <prop k="color_border" v="0,0,0,255"/>
+                                    <prop k="horizontal_anchor_point" v="1"/>
+                                    <prop k="name" v="diamond"/>
+                                    <prop k="offset" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
-                                    <prop k="penstyle" v="solid"/>
-                                    <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
-                                    <prop k="width_unit" v="MM"/>
+                                    <prop k="outline_style" v="solid"/>
+                                    <prop k="outline_width" v="0"/>
+                                    <prop k="outline_width_unit" v="MM"/>
+                                    <prop k="scale_method" v="area"/>
+                                    <prop k="size" v="3"/>
+                                    <prop k="size_unit" v="MM"/>
+                                    <prop k="vertical_anchor_point" v="1"/>
                                 </layer>
                             </symbol>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="fill" name="3">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="170,178,229,255"/>
-                            <prop k="distance" v="1.5"/>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="165,191,221,255"/>
+                            <prop k="color_border" v="114,133,132,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="LinePatternFill" locked="1">
+                            <prop k="color" v="52,111,107,255"/>
+                            <prop k="distance" v="2"/>
                             <prop k="distance_unit" v="MM"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
+                            <prop k="linewidth" v="0.1"/>
+                            <prop k="offset" v="1"/>
                             <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@3@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
+                            <symbol alpha="1" type="line" name="@3@1">
+                                <layer pass="0" class="SimpleLine" locked="1">
+                                    <prop k="capstyle" v="round"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
+                                    <prop k="joinstyle" v="round"/>
                                     <prop k="offset" v="0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
+                                    <prop k="width" v="0.46"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="fill" name="4">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="83,96,57,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="241,244,199,255"/>
+                            <prop k="color_border" v="175,179,138,255"/>
+                            <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@4@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
-                                    <prop k="customdash" v="5;2"/>
-                                    <prop k="customdash_unit" v="MM"/>
-                                    <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
-                                    <prop k="offset" v="0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                        <layer pass="0" class="PointPatternFill" locked="0">
+                            <prop k="displacement_x" v="0"/>
+                            <prop k="displacement_x_unit" v="MM"/>
+                            <prop k="displacement_y" v="1"/>
+                            <prop k="displacement_y_unit" v="MM"/>
+                            <prop k="distance_x" v="1.5"/>
+                            <prop k="distance_x_unit" v="MM"/>
+                            <prop k="distance_y" v="2"/>
+                            <prop k="distance_y_unit" v="MM"/>
+                            <symbol alpha="1" type="marker" name="@4@1">
+                                <layer pass="0" class="SimpleMarker" locked="0">
+                                    <prop k="angle" v="0"/>
+                                    <prop k="color" v="144,112,76,255"/>
+                                    <prop k="color_border" v="0,0,0,0"/>
+                                    <prop k="horizontal_anchor_point" v="1"/>
+                                    <prop k="name" v="circle"/>
+                                    <prop k="offset" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
-                                    <prop k="penstyle" v="solid"/>
-                                    <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
-                                    <prop k="width_unit" v="MM"/>
+                                    <prop k="outline_style" v="solid"/>
+                                    <prop k="outline_width" v="0"/>
+                                    <prop k="outline_width_unit" v="MM"/>
+                                    <prop k="scale_method" v="area"/>
+                                    <prop k="size" v="0.6"/>
+                                    <prop k="size_unit" v="MM"/>
+                                    <prop k="vertical_anchor_point" v="1"/>
                                 </layer>
                             </symbol>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="fill" name="5">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="14,13,17,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@5@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
-                                    <prop k="customdash" v="5;2"/>
-                                    <prop k="customdash_unit" v="MM"/>
-                                    <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
-                                    <prop k="offset" v="0"/>
-                                    <prop k="offset_unit" v="MM"/>
-                                    <prop k="penstyle" v="solid"/>
-                                    <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
-                                    <prop k="width_unit" v="MM"/>
-                                </layer>
-                            </symbol>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="fill" name="6">
-                        <layer pass="0" class="LinePatternFill" locked="0">
-                            <prop k="color" v="62,51,53,255"/>
-                            <prop k="distance" v="1.5"/>
-                            <prop k="distance_unit" v="MM"/>
-                            <prop k="line_width_unit" v="MM"/>
-                            <prop k="lineangle" v="45"/>
-                            <prop k="linewidth" v="0.5"/>
-                            <prop k="offset" v="0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@6@0">
-                                <layer pass="0" class="SimpleLine" locked="0">
-                                    <prop k="capstyle" v="square"/>
-                                    <prop k="color" v="0,0,0,255"/>
-                                    <prop k="customdash" v="5;2"/>
-                                    <prop k="customdash_unit" v="MM"/>
-                                    <prop k="draw_inside_polygon" v="0"/>
-                                    <prop k="joinstyle" v="bevel"/>
-                                    <prop k="offset" v="0"/>
-                                    <prop k="offset_unit" v="MM"/>
-                                    <prop k="penstyle" v="solid"/>
-                                    <prop k="use_custom_dash" v="0"/>
-                                    <prop k="width" v="0.26"/>
-                                    <prop k="width_unit" v="MM"/>
-                                </layer>
-                            </symbol>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="fill" name="7">
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="distance" v="1.5"/>
@@ -2466,7 +2490,7 @@
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <symbol alpha="1" type="line" name="@7@0">
+                            <symbol alpha="1" type="line" name="@5@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
@@ -2718,7 +2742,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='habenhpt_id' srid=2163 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
@@ -2754,6 +2778,22 @@
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="rectangle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="4"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -2764,12 +2804,28 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="4"/>
+                            <prop k="size" v="3"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="rectangle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="4"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -2780,12 +2836,28 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="4"/>
+                            <prop k="size" v="3"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="rectangle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="4"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -2796,12 +2868,28 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="4"/>
+                            <prop k="size" v="3"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="3">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="rectangle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="4"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -2812,7 +2900,7 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="4"/>
+                            <prop k="size" v="3"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -3417,7 +3505,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='recpt_id' srid=2163 type=POINT table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -3452,22 +3540,54 @@
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0.2,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="6"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="fill" v="#6c7be1"/>
+                            <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="gpsicons/teepee.svg"/>
-                            <prop k="offset" v="0,0"/>
+                            <prop k="offset" v="0,-0.2"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="5"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="6"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -3478,12 +3598,28 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="5"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="6"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -3494,7 +3630,7 @@
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_unit" v="MM"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="5"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -4148,7 +4284,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='tree_id' srid=2163 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
@@ -4177,7 +4313,7 @@
                     <symbol alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="90,218,71,255"/>
+                            <prop k="color" v="0,255,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
@@ -4346,7 +4482,7 @@
                 <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="specie"/>
                 <edittype labelontop="0" editable="1" type="0" name="species"/>
-                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_id"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="false" key="speciestreetype_id" layer="species_tree_type20140403090557542" allowMulti="false" filterExpression="" type="15" value="speciestreetype_dsc" name="speciestreetype_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="start_year"/>
                 <edittype labelontop="0" editable="1" type="10" name="tree_id"/>
             </edittypes>
@@ -4393,7 +4529,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='waterpoint_id' srid=2163 type=POINT table="water_point" (geometry) sql=</datasource>
             <title></title>
@@ -4424,10 +4560,10 @@
                     <symbol alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="0,0,255,255"/>
+                            <prop k="color" v="31,120,180,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
+                            <prop k="name" v="rectangle"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
@@ -4609,237 +4745,6 @@
             <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
-            <attributeactions/>
-        </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-            <id>activity_area20140402104458810</id>
-            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='activityarea_id' srid=2163 type=MULTIPOLYGON table="public"."activity_area" (geometry) sql="activity_date" >= '2009-01-01' AND "activity_date" &lt;= '2009-12-31'</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Activites - 2009</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
-                    <srsid>154</srsid>
-                    <srid>2163</srid>
-                    <authid>EPSG:2163</authid>
-                    <description>US National Atlas Equal Area</description>
-                    <projectionacronym>laea</projectionacronym>
-                    <ellipsoidacronym></ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <provider encoding="System">postgres</provider>
-            <previewExpression>COALESCE( "description", '&lt;NULL>' )</previewExpression>
-            <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
-                <symbols>
-                    <symbol alpha="1" type="fill" name="0">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="0,0,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="style" v="dense7"/>
-                            <prop k="style_border" v="solid"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </symbols>
-                <rotation/>
-                <sizescale scalemethod="area"/>
-            </renderer-v2>
-            <customproperties>
-                <property key="labeling" value="pal"/>
-                <property key="labeling/addDirectionSymbol" value="false"/>
-                <property key="labeling/angleOffset" value="0"/>
-                <property key="labeling/blendMode" value="0"/>
-                <property key="labeling/bufferBlendMode" value="0"/>
-                <property key="labeling/bufferColorA" value="255"/>
-                <property key="labeling/bufferColorB" value="255"/>
-                <property key="labeling/bufferColorG" value="255"/>
-                <property key="labeling/bufferColorR" value="255"/>
-                <property key="labeling/bufferDraw" value="false"/>
-                <property key="labeling/bufferJoinStyle" value="64"/>
-                <property key="labeling/bufferNoFill" value="false"/>
-                <property key="labeling/bufferSize" value="1"/>
-                <property key="labeling/bufferSizeInMapUnits" value="false"/>
-                <property key="labeling/bufferTransp" value="0"/>
-                <property key="labeling/centroidWhole" value="false"/>
-                <property key="labeling/decimals" value="3"/>
-                <property key="labeling/displayAll" value="false"/>
-                <property key="labeling/dist" value="0"/>
-                <property key="labeling/distInMapUnits" value="false"/>
-                <property key="labeling/enabled" value="false"/>
-                <property key="labeling/fieldName" value=""/>
-                <property key="labeling/fontBold" value="false"/>
-                <property key="labeling/fontCapitals" value="0"/>
-                <property key="labeling/fontFamily" value="Lucida Grande"/>
-                <property key="labeling/fontItalic" value="false"/>
-                <property key="labeling/fontLetterSpacing" value="0"/>
-                <property key="labeling/fontLimitPixelSize" value="false"/>
-                <property key="labeling/fontMaxPixelSize" value="10000"/>
-                <property key="labeling/fontMinPixelSize" value="3"/>
-                <property key="labeling/fontSize" value="13"/>
-                <property key="labeling/fontSizeInMapUnits" value="false"/>
-                <property key="labeling/fontStrikeout" value="false"/>
-                <property key="labeling/fontUnderline" value="false"/>
-                <property key="labeling/fontWeight" value="50"/>
-                <property key="labeling/fontWordSpacing" value="0"/>
-                <property key="labeling/formatNumbers" value="false"/>
-                <property key="labeling/isExpression" value="false"/>
-                <property key="labeling/labelOffsetInMapUnits" value="true"/>
-                <property key="labeling/labelPerPart" value="false"/>
-                <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-                <property key="labeling/limitNumLabels" value="false"/>
-                <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-                <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-                <property key="labeling/maxNumLabels" value="2000"/>
-                <property key="labeling/mergeLines" value="false"/>
-                <property key="labeling/minFeatureSize" value="0"/>
-                <property key="labeling/multilineAlign" value="0"/>
-                <property key="labeling/multilineHeight" value="1"/>
-                <property key="labeling/namedStyle" value="Regular"/>
-                <property key="labeling/obstacle" value="true"/>
-                <property key="labeling/placeDirectionSymbol" value="0"/>
-                <property key="labeling/placement" value="0"/>
-                <property key="labeling/placementFlags" value="0"/>
-                <property key="labeling/plussign" value="false"/>
-                <property key="labeling/preserveRotation" value="true"/>
-                <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-                <property key="labeling/priority" value="5"/>
-                <property key="labeling/quadOffset" value="4"/>
-                <property key="labeling/reverseDirectionSymbol" value="false"/>
-                <property key="labeling/rightDirectionSymbol" value=">"/>
-                <property key="labeling/scaleMax" value="10000000"/>
-                <property key="labeling/scaleMin" value="1"/>
-                <property key="labeling/scaleVisibility" value="false"/>
-                <property key="labeling/shadowBlendMode" value="6"/>
-                <property key="labeling/shadowColorB" value="0"/>
-                <property key="labeling/shadowColorG" value="0"/>
-                <property key="labeling/shadowColorR" value="0"/>
-                <property key="labeling/shadowDraw" value="false"/>
-                <property key="labeling/shadowOffsetAngle" value="135"/>
-                <property key="labeling/shadowOffsetDist" value="1"/>
-                <property key="labeling/shadowOffsetGlobal" value="true"/>
-                <property key="labeling/shadowOffsetUnits" value="1"/>
-                <property key="labeling/shadowRadius" value="1.5"/>
-                <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-                <property key="labeling/shadowRadiusUnits" value="1"/>
-                <property key="labeling/shadowScale" value="100"/>
-                <property key="labeling/shadowTransparency" value="30"/>
-                <property key="labeling/shadowUnder" value="0"/>
-                <property key="labeling/shapeBlendMode" value="0"/>
-                <property key="labeling/shapeBorderColorA" value="255"/>
-                <property key="labeling/shapeBorderColorB" value="128"/>
-                <property key="labeling/shapeBorderColorG" value="128"/>
-                <property key="labeling/shapeBorderColorR" value="128"/>
-                <property key="labeling/shapeBorderWidth" value="0"/>
-                <property key="labeling/shapeBorderWidthUnits" value="1"/>
-                <property key="labeling/shapeDraw" value="false"/>
-                <property key="labeling/shapeFillColorA" value="255"/>
-                <property key="labeling/shapeFillColorB" value="255"/>
-                <property key="labeling/shapeFillColorG" value="255"/>
-                <property key="labeling/shapeFillColorR" value="255"/>
-                <property key="labeling/shapeJoinStyle" value="64"/>
-                <property key="labeling/shapeOffsetUnits" value="1"/>
-                <property key="labeling/shapeOffsetX" value="0"/>
-                <property key="labeling/shapeOffsetY" value="0"/>
-                <property key="labeling/shapeRadiiUnits" value="1"/>
-                <property key="labeling/shapeRadiiX" value="0"/>
-                <property key="labeling/shapeRadiiY" value="0"/>
-                <property key="labeling/shapeRotation" value="0"/>
-                <property key="labeling/shapeRotationType" value="0"/>
-                <property key="labeling/shapeSVGFile" value=""/>
-                <property key="labeling/shapeSizeType" value="0"/>
-                <property key="labeling/shapeSizeUnits" value="1"/>
-                <property key="labeling/shapeSizeX" value="0"/>
-                <property key="labeling/shapeSizeY" value="0"/>
-                <property key="labeling/shapeTransparency" value="0"/>
-                <property key="labeling/shapeType" value="0"/>
-                <property key="labeling/textColorA" value="255"/>
-                <property key="labeling/textColorB" value="0"/>
-                <property key="labeling/textColorG" value="0"/>
-                <property key="labeling/textColorR" value="0"/>
-                <property key="labeling/textTransp" value="0"/>
-                <property key="labeling/upsidedownLabels" value="0"/>
-                <property key="labeling/wrapChar" value=""/>
-                <property key="labeling/xOffset" value="0"/>
-                <property key="labeling/yOffset" value="0"/>
-            </customproperties>
-            <blendMode>0</blendMode>
-            <featureBlendMode>0</featureBlendMode>
-            <layerTransparency>0</layerTransparency>
-            <displayfield>description</displayfield>
-            <label>0</label>
-            <labelattributes>
-                <label fieldname="" text="Label"/>
-                <family fieldname="" name="Lucida Grande"/>
-                <size fieldname="" units="pt" value="12"/>
-                <bold fieldname="" on="0"/>
-                <italic fieldname="" on="0"/>
-                <underline fieldname="" on="0"/>
-                <strikeout fieldname="" on="0"/>
-                <color fieldname="" red="0" blue="0" green="0"/>
-                <x fieldname=""/>
-                <y fieldname=""/>
-                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-                <angle fieldname="" value="0" auto="0"/>
-                <alignment fieldname="" value="center"/>
-                <buffercolor fieldname="" red="255" blue="255" green="255"/>
-                <buffersize fieldname="" units="pt" value="1"/>
-                <bufferenabled fieldname="" on=""/>
-                <multilineenabled fieldname="" on=""/>
-                <selectedonly on=""/>
-            </labelattributes>
-            <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="activity_date"/>
-                <edittype labelontop="0" editable="1" type="10" name="activityarea_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="acttype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="acttype_id" layer="Activity Types20121204111631394" allowMulti="false" type="15" value="acttype_dsc" name="acttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="completed_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="created_by_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="notes"/>
-                <edittype labelontop="0" editable="1" type="0" name="planned_date"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="acttype_id" layer="planned_activity20130101231922171" allowMulti="false" filterExpression="" type="15" value="description" name="plannedact_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="revenue"/>
-                <edittype labelontop="0" editable="1" type="0" name="standact_id"/>
-                <edittype labelontop="0" editable="1" type="3" name="standarea_id">
-                    <valuepair key="Fallow field opening." value="25"/>
-                    <valuepair key="Forested wetland" value="11"/>
-                    <valuepair key="Improved forage grass field" value="12"/>
-                    <valuepair key="Logging deck turned  into wildlife opening." value="26"/>
-                    <valuepair key="Mesic hardwood, yng. age, overstocked" value="15"/>
-                    <valuepair key="Mixed yellow pine, early mature, overstocked" value="8"/>
-                    <valuepair key="Pine/Hardwood, med. age, mildly overstocked" value="7"/>
-                    <valuepair key="Pine/Hardwood, mxd. age, (beetle damage)" value="1"/>
-                    <valuepair key="Residential area" value="16"/>
-                    <valuepair key="Upland hardwood/pine (beetle damage)" value="21"/>
-                    <valuepair key="Upland hardwood/pine, med. age, fully stocked" value="6"/>
-                </edittype>
-            </edittypes>
-            <editform>../Forms/ActivityArea.ui</editform>
-            <editforminit></editforminit>
-            <featformsuppress>0</featformsuppress>
-            <annotationform>.</annotationform>
-            <editorlayout>uifilelayout</editorlayout>
-            <excludeAttributesWMS/>
-            <excludeAttributesWFS/>
-            <attributeEditorForm>
-                <attributeEditorContainer name="Activity Data">
-                    <attributeEditorField index="1" name="acttype_id"/>
-                    <attributeEditorField index="5" name="standact_id"/>
-                    <attributeEditorField index="4" name="plannedact_id"/>
-                    <attributeEditorField index="2" name="description"/>
-                    <attributeEditorField index="7" name="activity_date"/>
-                    <attributeEditorField index="3" name="revenue"/>
-                </attributeEditorContainer>
-            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -5921,9 +5826,9 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-            <id>soil_test20130603122942351</id>
-            <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='soiltest_id' srid=2163 type=POINT table="soil_test" (geometry) sql=</datasource>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>soil_test20140403091105174</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='soiltest_id' srid=2163 type=POINT table="public"."soil_test" (geometry) sql=</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -5950,7 +5855,7 @@
                     <symbol alpha="1" type="marker" name="0">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="166,206,227,255"/>
+                            <prop k="color" v="230,230,230,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
@@ -5960,7 +5865,21 @@
                             <prop k="outline_width" v="0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="2"/>
+                            <prop k="size" v="4"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="crosses/Cross1.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="size" v="3"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -6094,7 +6013,7 @@
             <label>0</label>
             <labelattributes>
                 <label fieldname="" text="Label"/>
-                <family fieldname="" name="Lucida Grande"/>
+                <family fieldname="" name=".Lucida Grande UI"/>
                 <size fieldname="" units="pt" value="12"/>
                 <bold fieldname="" on="0"/>
                 <italic fieldname="" on="0"/>
@@ -6113,8 +6032,8 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="ca_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="ca_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="ca_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="&#xa;" type="15" value="unitconctype_cd" name="ca_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="ca_value"/>
                 <edittype labelontop="0" editable="1" type="0" name="client_address_1"/>
                 <edittype labelontop="0" editable="1" type="0" name="client_address_2"/>
@@ -6123,10 +6042,10 @@
                 <edittype labelontop="0" editable="1" type="0" name="client_last_name"/>
                 <edittype labelontop="0" editable="1" type="0" name="client_state"/>
                 <edittype labelontop="0" editable="1" type="0" name="client_zip"/>
-                <edittype labelontop="0" editable="1" dateFormat="" type="13" name="completed_date"/>
+                <edittype labelontop="0" editable="1" type="0" name="completed_date"/>
                 <edittype labelontop="0" editable="1" type="0" name="extractant"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="k_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="k_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="k_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="&#x9;" type="15" value="unitconctype_cd" name="k_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="k_value"/>
                 <edittype labelontop="0" editable="1" type="0" name="lab_address_1"/>
                 <edittype labelontop="0" editable="1" type="0" name="lab_address_2"/>
@@ -6137,41 +6056,38 @@
                 <edittype labelontop="0" editable="1" type="0" name="lab_phone"/>
                 <edittype labelontop="0" editable="1" type="0" name="lab_state"/>
                 <edittype labelontop="0" editable="1" type="0" name="lab_zip"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="lbc_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="lbc_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="lbc_value"/>
                 <edittype labelontop="0" editable="1" type="0" name="lime_buffer_capacity_method"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="mg_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="mg_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="mg_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="false" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="" type="15" value="unitconctype_cd" name="mg_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="mg_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="mn_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="mn_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="mn_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="" type="15" value="unitconctype_cd" name="mn_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="mn_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="p_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="p_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="p_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="false" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="" type="15" value="unitconctype_cd" name="p_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="p_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="ph_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="ph_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="ph_relative_amount"/>
                 <edittype labelontop="0" editable="1" type="0" name="ph_value"/>
-                <edittype labelontop="0" editable="1" dateFormat="" type="13" name="sample_collection_date"/>
+                <edittype labelontop="0" editable="1" type="0" name="sample_collection_date"/>
                 <edittype labelontop="0" editable="1" type="0" name="sample_desc"/>
                 <edittype labelontop="0" editable="1" type="0" name="sample_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="sample_name"/>
                 <edittype labelontop="0" editable="1" type="0" name="soiltest_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="zn_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="zn_unit"/>
+                <edittype labelontop="0" editable="1" type="0" name="zn_relative_amount"/>
+                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="false" key="unitconctype_id" layer="unit_concentration_type20140403093339164" allowMulti="false" filterExpression="" type="15" value="unitconctype_cd" name="zn_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="zn_value"/>
             </edittypes>
-            <editform>.</editform>
+            <editform>../Forms/SoilTest.ui</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>generatedlayout</editorlayout>
+            <editorlayout>uifilelayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>soil_test_recommendation20130603122843299</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='soiltestrec_id' table="soil_test_recommendation" sql=</datasource>
             <title></title>
@@ -6194,7 +6110,7 @@
             </srs>
             <customproperties/>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE("soiltestrec_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
                 <edittype labelontop="0" editable="1" type="0" name="b_unit"/>
@@ -6218,6 +6134,46 @@
                 <edittype labelontop="0" editable="1" type="10" name="soiltestrec_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="zn_unit"/>
                 <edittype labelontop="0" editable="1" type="0" name="zn_value"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>species_tree_type20140403090557542</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='speciestreetype_id' srid=-2147483648 table="public"."species_tree_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Tree Species</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_bn"/>
+                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_cd"/>
+                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_dsc"/>
+                <edittype labelontop="0" editable="1" type="0" name="speciestreetype_id"/>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -6352,7 +6308,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>trail20131110173044662</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='trail_id' srid=2163 type=LINESTRING table="public"."trail" (geometry) sql=</datasource>
             <title></title>
@@ -6374,7 +6330,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "trail_name", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -6556,6 +6512,7 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
+                <edittype labelontop="0" editable="1" type="0" name="description"/>
                 <edittype labelontop="0" editable="1" type="11" name="trail_id"/>
                 <edittype labelontop="0" editable="1" type="0" name="trail_name"/>
                 <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="trailstatus_id" layer="trail_status_type20130605072950232" allowMulti="false" filterExpression="" type="15" value="trailstatus_dsc" name="trailstatus_id"/>
@@ -6566,6 +6523,87 @@
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>uifilelayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>trail20140402165005718</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='trail_id' table="public"."trail" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>trail</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
+                    <srsid>154</srsid>
+                    <srid>2163</srid>
+                    <authid>EPSG:2163</authid>
+                    <description>US National Atlas Equal Area</description>
+                    <projectionacronym>laea</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">postgres</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="241,62,152,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>trail_name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name=".Lucida Grande UI"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
@@ -6661,7 +6699,7 @@
             </srs>
             <customproperties/>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE("treestatus_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
                 <edittype labelontop="0" editable="1" type="0" name="age"/>
@@ -6672,6 +6710,108 @@
                 <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="tree_id" layer="Trees20121204131751596" allowMulti="false" type="15" value="tree_id" name="tree_id"/>
                 <edittype labelontop="0" editable="1" type="10" name="treestatus_id"/>
             </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>unit_area_type20140403093424792</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='unitareatype_id' srid=-2147483648 table="public"."unit_area_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Unit Area Type</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>unit_concentration_type20140403093339164</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='unitconctype_id' srid=-2147483648 table="public"."unit_concentration_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Unit Concentration Type</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>unit_length_type20140403093407210</id>
+            <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='unitlengthtype_id' srid=-2147483648 table="public"."unit_length_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Unit Length Type</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
