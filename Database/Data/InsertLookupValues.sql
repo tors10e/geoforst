@@ -212,6 +212,7 @@ TRUNCATE TABLE trail_status_type;
 INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (1, 'opn ', 'Open');
 INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (2, 'cls ', 'Closed');
 INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (3, 'prp ', 'Proposed');
+INSERT INTO trail_status_type (trailstatus_id, trailstatus_cd, trailstatus_dsc) VALUES (4, 'dev', 'In Development');
 
 --
 -- Data for Name: trail_type; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -268,6 +269,18 @@ INSERT INTO unit_area_type (unitareatype_id, unitareatype_cd, unitareatype_dsc) 
 INSERT INTO unit_area_type (unitareatype_id, unitareatype_cd, unitareatype_dsc) VALUES (2, 'in2', 'Square Inches');
 INSERT INTO unit_area_type (unitareatype_id, unitareatype_cd, unitareatype_dsc) VALUES (3, 'm2', 'Square Meters');
 INSERT INTO unit_area_type (unitareatype_id, unitareatype_cd, unitareatype_dsc) VALUES (4, 'cm2', 'Square Centimeters');
+
+--
+-- Data for Name: unit_concentration_type
+--
+TRUNCATE TABLE unit_concentration_type;
+
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (1, 'mg/l', 'Milligrams/Liter');
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (2, 'mg/kg', 'Milligrams/Kilogram');
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (3, 'ppm', 'Parts Per Million');
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (4, 'ppb', 'Parts Per Billon');
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (5, 'g/kg', 'Grams/Kilogram');
+INSERT INTO unit_concentration_type (unitconctype_id, unitconctype_cd, unitconctype_dsc) VALUES (6, 'lbs/a', 'Pounds/Acre');
 
 --
 -- Data for Name: species_tree_type; Type: TABLE DATA; Schema: public; Owner: postgres
