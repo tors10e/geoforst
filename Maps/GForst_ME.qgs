@@ -5,10 +5,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9313823.41712340712547302</xmin>
-            <ymin>4089617.04722512094303966</ymin>
-            <xmax>-9309096.19489636272192001</xmax>
-            <ymax>4092665.0472282306291163</ymax>
+            <xmin>-9313782.41271747276186943</xmin>
+            <ymin>4088797.93831612076610327</ymin>
+            <xmax>-9309055.19049042835831642</xmax>
+            <ymax>4093202.98306796420365572</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -30,11 +30,11 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="road_line20130101154010851"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites_copy20140402110432566"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2014_copy20140402110926375"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2011_copy20140402110734134"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_length_type20140403093407210"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cultural Features20121204131751585"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2011_copy20140402110734134"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="burn_compartment20130605072953108"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="tree_status20130603213537490"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="burn_compartment20130605072953108"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Land Areas20121204131751632"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Points20121204131751561"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Water Point Features20121204131510425"/>
@@ -53,7 +53,7 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2010_copy20140402110758248"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="soil_test20140403091105174">
+    <legend updateDrawingOrder="true" activeLayer="Activites___2014_copy20140402110926375">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
@@ -123,15 +123,15 @@
                 <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="true" checked="Qt::Unchecked" name="Activities">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="Activities">
             <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activites - All Years" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="Activites___2014_copy20140402110926375" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activites - 2014" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Activites - 2014" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="Activites___2013_copy20140402110834310" visible="0"/>
+                    <legendlayerfile isInOverview="0" layerid="Activites___2013_copy20140402110834310" visible="1"/>
                 </filegroup>
             </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activites - 2013" showFeatureCount="0">
