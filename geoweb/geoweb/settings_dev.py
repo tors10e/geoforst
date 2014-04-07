@@ -60,7 +60,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/Users/torsten/Workspaces/FSP/geoweb/geoweb/static'
+STATIC_ROOT = '/Users/torsten/Workspaces/Geoforst/Default/FSP/geoweb/geoweb/static'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -72,7 +72,7 @@ LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-                    ("assets", "/Users/torsten/Workspaces/FSP/geoweb/geoapp/static"),
+                    ('/Users/torsten/Workspaces/GeoForst/Default/FSP/geoweb/geoapp/static'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -114,6 +114,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    ("/Users/torsten/Workspaces/GeoForst/Default/FSP/geoweb/geoapp/templates"),
+    ("/Users/torsten/Workspaces/GeoForst/Default/FSP/geoweb/wedding/templates"),
 )
 
 INSTALLED_APPS = (
@@ -126,6 +128,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.gis',
     'geoapp',
+    'wedding',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
