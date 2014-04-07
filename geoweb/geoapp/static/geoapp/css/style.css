@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #top {
-	width:1120px;
+	width:100%;
 	margin:auto;
 	height:60px;
 	left: 15px;
@@ -34,25 +34,25 @@ h1,h2,h3,h4,h5,h6 {
 
 a.topnav:visited {
 	text-decoration: none; 
-	color: lightgrey
+	color: white;
 	}
 
 #topnav {
 	height:25px;
+	width:100%;
+	border-radius: 2px;
 	background-color:rgb(49,65,150);
 	text-align: right;
-	padding-right: 5px;
 }
 
 
 #page {
-	width:100%;
-	float:left;
-	margin-left:10px;
+	margin: 0 auto;
+	width:90%;
 	margin-top:10px;
 	padding-bottom:20px;
 	box-shadow: 0px 0px 20px 3px #d3d3d3;
-	border-radius:4px;
+	border-radius:8px;
 	background-color:#ffffff;
 }
 
@@ -104,14 +104,11 @@ td {
 }
 
 #sidebar {
-	float: left;
-	margin-left: 0em;
-	padding-left: 0em;
 	width: 250px;
-	margin-bottom: 1em;
 	background-color: rgb(255,255,255);
 	border-radius:5px;
 	text-decoration: none;
+	margin-top:5px;
 }
 
 #sidebar h1 {
