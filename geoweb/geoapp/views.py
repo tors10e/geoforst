@@ -8,6 +8,11 @@ from geoapp.forms import  ScalingTicketForm, SawmillForm, PlannedActivityForm
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
 
+def Map(request):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/geoapp/accounts/login')
+    else:
+        return render_to_response('geoapp/map.html', {})
 
 def Home(request):
     if not request.user.is_authenticated():
