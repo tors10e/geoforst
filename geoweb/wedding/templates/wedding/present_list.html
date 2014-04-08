@@ -1,0 +1,32 @@
+{% extends "wedding/base.html" %}
+
+{% block content %}
+    <h2></h2>
+    <table id="table">
+    <tr id="header_row">
+    	<th>Item</th>
+    	<th>Description</th>
+    	<th>Status</th>
+    	</tr>
+    	{% for p in presents %}
+    	<tr>
+    		<td>{{p.name}}</td>
+    		<td>{{p.description}}</td>
+	    	<td>		    	
+	    		<form action="{% url 'wedding:toggle-purchased' p.present_id %}" method="post">
+				{% csrf_token %}
+	    			<input type="checkbox" 
+	    				name="purchased" 
+	    				id="present{{ p.present_id}}" 
+	    				value="{{ p.is_purchased}}" 
+	    				{% if p.is_purchased %} checked="checked"{% endif %} 
+	    			/>
+	    			<label for="present{{ p.present_id}}" ></label>
+					<input type="submit" {% if p.is_purchased %}  value="Unpurchase" 
+						{% else %}value="I bought this" {% endif %} />
+				</form></td>
+
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}
