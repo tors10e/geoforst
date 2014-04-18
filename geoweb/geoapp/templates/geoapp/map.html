@@ -11,7 +11,8 @@
     <script type='text/javascript'>
 
     var map;
-    
+    // Trouble getting my own api key so borrowing this in the meantime.
+    var apiKey = "AqTGBsziZHIJYYxgivLBf0hVdrAk9mWO5cQcb8Yux8sW5M8c8opEC2lZqKR1ZZXf"
     function init() {
             //Create the map object
             
@@ -40,6 +41,24 @@
                 "Google Streets",
                 {numZoomLevels: 20}
             );
+            
+            //Bing layers
+            var bing_road = new OpenLayers.Layer.Bing({
+                name: "Road",
+                key: apiKey,
+                type: "Road"
+            });
+            var bing_hybrid = new OpenLayers.Layer.Bing({
+                name: "Hybrid",
+                key: apiKey,
+                type: "AerialWithLabels"
+            });
+            var bing_aerial = new OpenLayers.Layer.Bing({
+                name: "Aerial",
+                key: apiKey,
+                type: "Aerial"
+            });
+
 
             //WMS Layer
 // 			var wms_layer = new OpenLayers.Layer.WMS(
@@ -68,7 +87,7 @@
               );
 
             // map layers
-            map.addLayers([google_streets, wms_tiled]);
+            map.addLayers([google_streets, bing_aerial,  wms_tiled]);
 
 			//Add a mouse position control
 			map.addControl(new OpenLayers.Control.MousePosition());
