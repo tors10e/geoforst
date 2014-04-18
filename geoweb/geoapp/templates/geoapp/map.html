@@ -14,16 +14,25 @@
     
     function init() {
             //Create the map object
+            
+             	boundsLeft = -9339840;
+                boundsRight = -9263403;
+                boundsTop = 4151753;
+                boundsBottom = 4075316;
+                
+            center = new OpenLayers.LonLat([-9299531, 4114553]);
+                
             map = new OpenLayers.Map('map_element',{
-				maxExtent: new OpenLayers.Bounds(
-				-128 * 156543.0339,
-				-128 * 156543.0339,
-				128 * 156543.0339,
-				128 * 156543.0339),
+				extent: new OpenLayers.Bounds(
+				boundsBottom,
+				boundsLeft,
+				boundsRight,
+				boundsTop),
 				maxResolution: 156543.0339,                
 				units: 'm',
 				projection: new OpenLayers.Projection('EPSG:900913'),
 				displayProjection: new OpenLayers.Projection("EPSG:4326"),
+				zoom: 9,
 			});
 
             //Google streets is the normal map type, so we don't need to pass in a type
@@ -33,25 +42,34 @@
             );
 
             //WMS Layer
-			var wms_layer = new OpenLayers.Layer.WMS(
-				"GEoforst",
-				"http://geoforst.com:8080/geoserver/geoforst/wms?",
-				{layers: "geoforst:activity_area", 
-					transparent: "true",
-					 "format":"image/png"},
-				{"reproject":"true"}
-			);
-
-            //Vector Layer
-			var vector_layer = new OpenLayers.Layer.Vector(
-				'Editable Vectors');
+// 			var wms_layer = new OpenLayers.Layer.WMS(
+// 				"GEoforst",
+// 				"http://geoforst.com:8080/geoserver/geoforst/wms?",
+// 				{layers: "geoforst:activity_area", 
+// 					transparent: "true",
+// 					 "format":"image/png"},
+// 				{"reproject":"true"}
+// 			);
+            format = "image/png";
+		 	var wms_tiled = new OpenLayers.Layer.WMS(
+                  "Geoserver layers - Tiled", "http://geoforst.com:8080/geoserver/geoforst/wms",
+                  {
+                      LAYERS: 'Geoforst Layers',
+                      STYLES: '',
+                      format: format,
+                      transparent: "true"
+                  },
+                  {
+                      buffer: 0,
+                      displayOutsideMaxExtent: "false",
+                      isBaseLayer: false,
+                    //  yx : {'EPSG:2163' : false}
+                  } 
+              );
 
             // map layers
-            map.addLayers([google_streets, wms_layer, vector_layer]);
-			//map.addLayers([ wms_layer]);
-            //Add a vector editing control
-            map.addControl(new OpenLayers.Control.EditingToolbar(vector_layer));
-			
+            map.addLayers([google_streets, wms_tiled]);
+
 			//Add a mouse position control
 			map.addControl(new OpenLayers.Control.MousePosition());
 			
@@ -60,7 +78,8 @@
 			
 			// Zoom the map to the max extent 
 			if(!map.getCenter()){
-				map.zoomToMaxExtent();
+				//map.zoomToMaxExtent();
+				map.setCenter(center, 10);
 			}
         }
 
