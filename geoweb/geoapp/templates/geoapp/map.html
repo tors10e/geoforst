@@ -65,24 +65,28 @@
 
 
             //WMS Layer
-			var wms_layer = new OpenLayers.Layer.WMS(
-				"GEoforst",
-				"http://geoforst.com:8082/geoserver/geoforst/wms",
-				{
-					layers: "geoforst:vw_land_area", 
-					transparent: "true",
-					format:"image/png",
-					projection: new OpenLayers.Projection('EPSG:3857')
-					 //projection: "EPSG:2163",
-				},
-				{
-					//"reproject":"true"
-				}
-			);
+			format = "image/png";
             
-            format = "image/png";
+		 	var fire_management = new OpenLayers.Layer.WMS(
+                  "Fire Management", 
+                  "http://geoforst.com:8082/geoserver/geoforst/wms",
+                  {
+                      LAYERS: 'fire_management',
+                      STYLES: '',
+                      format: format,
+                      transparent: "true",
+                      projection: new OpenLayers.Projection('EPSG:3857')
+                  },
+                  {
+                      buffer: 0,
+                      displayOutsideMaxExtent: "false",
+                      isBaseLayer: false,
+                   	  yx : {'EPSG:4326' : false}
+                  } 
+              );
+            
 		 	var wms_tiled = new OpenLayers.Layer.WMS(
-                  "Geoserver layers - Tiled", 
+                  "Base Layers", 
                   "http://geoforst.com:8082/geoserver/geoforst/wms",
                   {
                       LAYERS: 'geoforst_base_layers',
@@ -95,12 +99,12 @@
                       buffer: 0,
                       displayOutsideMaxExtent: "false",
                       isBaseLayer: false,
-                   	  yx : {'EPSG:2163' : false}
+                   	  yx : {'EPSG:4326' : false}
                   } 
               );
 
             // map layers
-            map.addLayers([google_streets, bing_aerial, wms_tiled]);
+            map.addLayers([google_streets, bing_aerial, wms_tiled, fire_management]);
 
 			//Add a mouse position control
 			map.addControl(new OpenLayers.Control.MousePosition());
