@@ -35,15 +35,12 @@
 				displayProjection: new OpenLayers.Projection("EPSG:4326"),
 				zoom: 9,
 			});
-
-            //Google streets is the normal map type, so we don't need to pass in a type
-            var google_streets = new OpenLayers.Layer.Google(
-                "Google Streets",
-                {'sphericalMercator': true,
-                	numZoomLevels: 20
-                 }
-            );
             
+            var gphy = new OpenLayers.Layer.Google(
+            	    "Google Physical",
+            	    {type: google.maps.MapTypeId.TERRAIN}
+            );
+            	    
             //Bing layers
             var bing_road = new OpenLayers.Layer.Bing({
                 name: "Road",
@@ -85,6 +82,25 @@
                   } 
               );
             
+		 	var recreation = new OpenLayers.Layer.WMS(
+	                  "Recreation", 
+	                  "http://geoforst.com:8082/geoserver/geoforst/wms",
+	                  {
+	                      LAYERS: 'recreation',
+	                      STYLES: '',
+	                      format: format,
+	                      transparent: "true",
+	                      projection: new OpenLayers.Projection('EPSG:3857')
+	                  },
+	                  {
+	                      buffer: 0,
+	                      displayOutsideMaxExtent: "false",
+	                      isBaseLayer: false,
+	                   	  yx : {'EPSG:4326' : false}
+	                  } 
+	              );
+	            
+		 	
 		 	var wms_tiled = new OpenLayers.Layer.WMS(
                   "Base Layers", 
                   "http://geoforst.com:8082/geoserver/geoforst/wms",
@@ -102,9 +118,14 @@
                    	  yx : {'EPSG:4326' : false}
                   } 
               );
+		 	
+
+		 	// Set intial layer visibility. 
+		 	fire_management.setVisibility(false);
+		 	recreation.setVisibility(false);
 
             // map layers
-            map.addLayers([google_streets, bing_aerial, wms_tiled, fire_management]);
+            map.addLayers([gphy, bing_aerial, wms_tiled, fire_management, recreation]);
 
 			//Add a mouse position control
 			map.addControl(new OpenLayers.Control.MousePosition());
@@ -124,6 +145,6 @@
 </head>
 
 <body onload='init();'>
-    <div id='map_element' style='width: 750px; height: 500px;'></div>
+    <div id='map_element' style='width: 750px; height: 750px;'></div>
 </body>
 </html>
