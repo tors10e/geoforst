@@ -6,6 +6,7 @@
     <meta charset='utf-8' /> 
 	<script src="http://maps.google.com/maps/api/js?sensor=false&v=3.2"></script> 
     <script type="text/css" src="{% static 'geoapp/css/theme/default/style.css' %}"></script>
+    <script type="text/css" src="{% static 'geoapp/css/theme/default/style.mobile.css' %}"></script>
     <script type="text/css" src="{% static 'geoapp/javascript/theme/default/style.css' %}"></script>
     <script type="text/javascript" src="{% static 'geoapp/javascript/OpenLayers.js' %}"></script>
     <script type='text/javascript'>
@@ -31,7 +32,11 @@
 		    initialize: function(options) {
 		        OpenLayers.Control.Panel.prototype.initialize.apply(this, [options]);
 		        this.addControls([
-		          new OpenLayers.Control.Navigation(),
+		          new OpenLayers.Control.TouchNavigation({
+		                dragPanOptions: {
+		                    enableKinetic: true
+		                }
+		            }),
 				  //Here it come
 		          new OpenLayers.Control.ZoomBox({alwaysZoom:true})
 		        ]);
@@ -57,13 +62,22 @@
                 
             centerStart = new OpenLayers.LonLat([-9311386, 4091253]);
                 
-            map = new OpenLayers.Map('map_element',{
+            map = new OpenLayers.Map('map_element',
+            	{
 				center: centerStart,
 				zoom: 10,
             	maxResolution: 156543,                
 				units: 'm',
 				projection: new OpenLayers.Projection('EPSG:3857'),
 				displayProjection: new OpenLayers.Projection("EPSG:4326"),
+				controls: [
+				            new OpenLayers.Control.TouchNavigation({
+				                dragPanOptions: {
+				                    enableKinetic: true
+				                }
+				            }),
+				            new OpenLayers.Control.Zoom()
+				        ]
 			});
             
             var gphy = new OpenLayers.Layer.Google(
