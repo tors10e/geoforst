@@ -7,8 +7,10 @@
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Primary</se:Name>
-          <se:Description>Primary</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>Primary</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
@@ -17,26 +19,26 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#646450</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1.96</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#f4f477</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.14796</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
           <se:Name>Secondary</se:Name>
-          <se:Description>Secondary</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>Secondary</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>2</ogc:Literal>
@@ -48,7 +50,6 @@
               <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
           <se:LineSymbolizer>
@@ -57,14 +58,15 @@
               <se:SvgParameter name="stroke-width">0.836283</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
           <se:Name>Two Track</se:Name>
-          <se:Description>Two Track</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>Two Track</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>3</ogc:Literal>
@@ -76,7 +78,6 @@
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
           <se:LineSymbolizer>
@@ -85,14 +86,15 @@
               <se:SvgParameter name="stroke-width">0.589041</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
           <se:Name>ATV Track</se:Name>
-          <se:Description>ATV Track</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>ATV Track</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>4</ogc:Literal>
@@ -104,14 +106,15 @@
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
           <se:Name>Abandoned</se:Name>
-          <se:Description>Abandoned</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>Abandoned</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>5</ogc:Literal>
@@ -123,14 +126,15 @@
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
           <se:Name>Obliterated</se:Name>
-          <se:Description>Obliterated</se:Description>
-          <ogc:Filter>
+          <se:Description>
+            <se:Title>Obliterated</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>roadtype_id</ogc:PropertyName>
               <ogc:Literal>6</ogc:Literal>
@@ -139,20 +143,18 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#959570</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.26</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.13</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
             <se:PerpendicularOffset>-1</se:PerpendicularOffset>
           </se:LineSymbolizer>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#90906c</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.26</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.13</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">5 2</se:SvgParameter>
             </se:Stroke>
             <se:PerpendicularOffset>1</se:PerpendicularOffset>
           </se:LineSymbolizer>
@@ -169,10 +171,12 @@
                       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>0.5</se:Size>
+                  <se:Size>0.25</se:Size>
                 </se:Graphic>
                 <se:Gap>
-                  <ogc:Literal>1.5</ogc:Literal>
+                  <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                    <ogc:Literal>1.5</ogc:Literal>
+                  </ogc:Filter>
                 </se:Gap>
               </se:GraphicStroke>
             </se:Stroke>

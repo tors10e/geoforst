@@ -21,10 +21,12 @@ INSERT INTO activity_type (acttype_id, acttype_dsc, acttype_cd) VALUES (9, 'Habi
 
 TRUNCATE TABLE cultural_type;
 
-INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (1, 'abw', 'Abandoned Well');
-INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (2, 'hms', 'Historic Homesite (Abandoned)');
-INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (3, 'bdg', 'Building');
-
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (1, 'abw', 'Well');
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (2, 'hms', 'Historic Structure');
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (3, 'bdg', 'Existing Structure');
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (4, 'hfr', 'Historic Feature');
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (5, 'nts', 'Native Settlement');
+INSERT INTO cultural_type (culttype_id, culttype_cd, culttype_dsc) VALUES (6, 'hts', 'Historic Site');
 
 --
 -- Data for Name: forest_age_type; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -52,7 +54,6 @@ INSERT INTO forest_type (foresttype_id, foresttype_dsc, foresttype_cd) VALUES (4
 INSERT INTO forest_type (foresttype_id, foresttype_dsc, foresttype_cd) VALUES (5, 'Lowland Hardwood', NULL);
 INSERT INTO forest_type (foresttype_id, foresttype_dsc, foresttype_cd) VALUES (6, 'Non-Forested', NULL);
 
-
 --
 -- Data for Name: habitat_enhancement_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -67,7 +68,6 @@ INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_
 INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (6, 'Shrub Thicket', 'st');
 INSERT INTO habitat_enhancement_type (habenhtype_id, habenhtype_dsc, habenhtype_cd) VALUES (7, 'Wood Duck Nest Box', 'nb');
 
-
 --
 -- Data for Name: harvest_type; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -77,7 +77,6 @@ TRUNCATE TABLE harvest_type;
 INSERT INTO harvest_type (harvesttype_id, harvesttype_dsc, harvesttype_cd) VALUES (1, 'Thinning', NULL);
 INSERT INTO harvest_type (harvesttype_id, harvesttype_dsc, harvesttype_cd) VALUES (2, 'Total Harvest', NULL);
 INSERT INTO harvest_type (harvesttype_id, harvesttype_dsc, harvesttype_cd) VALUES (3, 'Gap Cut', NULL);
-
 
 --
 -- Data for Name: ordinal_magnitude_type; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -89,7 +88,6 @@ INSERT INTO ordinal_magnitude_type (ordinalmag_id, ordinalmag_cd, ordinalmag_dsc
 INSERT INTO ordinal_magnitude_type (ordinalmag_id, ordinalmag_cd, ordinalmag_dsc) VALUES (2, 'med', 'Medium');
 INSERT INTO ordinal_magnitude_type (ordinalmag_id, ordinalmag_cd, ordinalmag_dsc) VALUES (3, 'hi ', 'High');
 INSERT INTO ordinal_magnitude_type (ordinalmag_id, ordinalmag_cd, ordinalmag_dsc) VALUES (4, 'vhi', 'Very High');
-
 
 --
 -- Data for Name: ordinal_sufficiency_type; Type: TABLE DATA; Schema: public; Owner: postgres

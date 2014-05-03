@@ -14,6 +14,12 @@ def Map(request):
     else:
         return render_to_response('geoapp/map.html', {})
 
+def MobileMap(request):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/geoapp/accounts/login')
+    else:
+        return render_to_response('geoapp/map_mobile.html', {})
+
 def Home(request):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/geoapp/accounts/login/')
