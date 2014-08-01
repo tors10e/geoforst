@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" width="215.9mm" height="279.4mm" viewBox="0 0 21590 27940" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+ <g visibility="visible" id="MasterSlide_1_Default">
+  <desc>Master slide
+  </desc>
+  <rect fill="none" stroke="none" x="0" y="0" width="21590" height="27940"/>
+ </g>
+ <g visibility="visible" id="Slide_1_page1">
+  <g id="DrawingGroup_1">
+   <g>
+    <path fill="rgb(0,0,0)" stroke="none" d="M 20050,21977 C 19787,22612 19238,23096 18565,23268 L 3421,23268 C 2468,23024 1762,22158 1762,21125 L 1762,7081 C 1762,5859 2751,4874 3969,4874 L 18018,4874 C 18934,4874 19718,5432 20050,6229 L 20050,21977 Z"/>
+    <rect fill="none" stroke="none" x="1761" y="4874" width="18291" height="18396"/>
+   </g>
+   <g>
+    <path fill="rgb(0,0,0)" stroke="none" d="M 3969,5245 L 18018,5245 C 19023,5245 19844,6070 19844,7081 L 19844,21125 C 19844,22136 19023,22961 18018,22961 L 3969,22961 C 2958,22961 2138,22136 2138,21125 L 2138,7081 C 2138,6070 2958,5245 3969,5245 Z"/>
+    <rect fill="none" stroke="none" x="2137" y="5244" width="17708" height="17719"/>
+   </g>
+   <g>
+    <path fill="rgb(255,255,255)" stroke="none" d="M 12340,8900 L 17727,12382 16150,12382 16150,17547 12324,17547 12324,13467 9662,13467 9662,17642 5837,17642 5837,12382 4254,12382 10996,8032 11763,8530 12340,8900 Z"/>
+    <rect fill="none" stroke="none" x="4254" y="8032" width="13474" height="9612"/>
+   </g>
+  </g>
+ </g>
+</svg>
