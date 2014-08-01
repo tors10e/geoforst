@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="170.02298"
+   height="105.69199"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="APP-6 Electronic Warfare.svg"
+   sodipodi:docbase="/home/mandibula/Desktop/imágenes/wiki/app-6a"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata2913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="975"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="5.0287322"
+     inkscape:cx="85.011487"
+     inkscape:cy="52.845999"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="layer1"
+     width="180px"
+     height="130px"
+     borderlayer="true"
+     showgrid="false"
+     inkscape:grid-points="false"
+     inkscape:grid-bbox="false"
+     inkscape:showpageshadow="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3166"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 52.849651 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="169.97537 : 52.849651 : 1"
+       inkscape:persp3d-origin="84.987686 : 35.233101 : 1"
+       id="perspective11" />
+    <inkscape:perspective
+       id="perspective3218"
+       inkscape:persp3d-origin="84.987686 : 35.233101 : 1"
+       inkscape:vp_z="169.97537 : 52.849651 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 52.849651 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(2.386666,0,0,2.579998,-1.0891261,-0.9238116)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.20897067000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3320"
+       width="69.981712"
+       height="39.803127"
+       x="1.0848297"
+       y="0.9394626" />
+    <path
+       transform="scale(1.0397139,0.9618031)"
+       style="font-size:19.34352875px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       d="M 19.929781,28.394512 L 19.929781,14.548021 L 29.941568,14.548021 L 29.941568,16.182021 L 21.762127,16.182021 L 21.762127,20.422863 L 29.422088,20.422863 L 29.422088,22.047417 L 21.762127,22.047417 L 21.762127,26.760513 L 30.262701,26.760513 L 30.262701,28.394512 L 19.929781,28.394512 z M 35.230814,28.394512 L 31.556677,14.548021 L 33.436248,14.548021 L 35.542502,23.624746 C 35.769179,24.575554 35.964377,25.520062 36.128097,26.45827 C 36.480708,24.978544 36.6885,24.125339 36.751472,23.898653 L 39.38665,14.548021 L 41.5968,14.548021 L 43.580267,21.556273 C 44.077695,23.294173 44.436608,24.92817 44.657006,26.45827 C 44.833301,25.583029 45.063131,24.578703 45.346497,23.445289 L 47.518866,14.548021 L 49.360657,14.548021 L 45.563734,28.394512 L 43.797504,28.394512 L 40.878973,17.844355 C 40.633392,16.962826 40.488567,16.421308 40.4445,16.219801 C 40.299666,16.855781 40.164287,17.397299 40.038361,17.844355 L 37.10094,28.394512 L 35.230814,28.394512 z"
+       id="text3215" />
+  </g>
+</svg>

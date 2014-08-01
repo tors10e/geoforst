@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xml:space="default" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+	<title>日本の地図記号 - 警察署</title>
+	<rect fill="none" x="0" y="0" width="250" height="250" />
+	<circle fill="none" stroke="white" stroke-width="20px" cx="125" cy="125" r="100" />
+	<line stroke="white" stroke-width="20px" x1="55" y1="55" x2="195" y2="195" />
+	<line stroke="white" stroke-width="20px" x1="55" y1="195" x2="195" y2="55" />
+</svg>
