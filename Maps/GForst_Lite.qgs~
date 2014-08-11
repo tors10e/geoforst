@@ -113,8 +113,8 @@
                 <legendlayerfile isInOverview="0" layerid="burn_compartment20130605072953108" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Stands" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
@@ -2708,12 +2708,10 @@
             <editorlayout>generatedlayout</editorlayout>
             <aliases>
                 <alias field="description" index="2" name="Description"/>
-                <alias field="forestagetype_id" index="6" name=""/>
                 <alias field="foresttype_id" index="3" name="Forest Type"/>
                 <alias field="stand_no" index="1" name="Stand No."/>
                 <alias field="standarea_id" index="0" name="ID"/>
                 <alias field="standdescription_id" index="4" name="Stand Description"/>
-                <alias field="stockingtype_id" index="5" name=""/>
             </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>

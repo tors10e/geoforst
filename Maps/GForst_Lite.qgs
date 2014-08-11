@@ -1,14 +1,149 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.2.0-Valmiera">
+<qgis projectname="" version="2.4.0-Chugiak">
     <title></title>
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+        <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Recreation20121204131623145" name="Recreation">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Habitat Enhancement Points20121204131751561" name="Habitat Enhancement Points">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Cultural Features20121204131751585" name="Cultural Features">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Trees20121204131751596" name="Trees">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Water Point Features20121204131510425" name="Water Point Features">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="trail20131110173044662" name="Trails">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="road_line20130101154010851" name="Roads">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Firebreaks20121204132835298" name="Firebreaks">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Analytical Layers">
+            <customproperties/>
+            <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="tree_status20130603213537490" name="Tree Status">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="soil_test_recommendation20130603122843299" name="Soil Test Recommendations">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="soil_test20130603122942351" name="Soil Tests">
+                <customproperties/>
+            </layer-tree-layer>
+        </layer-tree-group>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Land Areas20121204131751632" name="Land Areas">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Habitat Enhancement Areas20121204131751547" name="Habitat Enhancement Areas">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="activity_area20130101231920603" name="Activities">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="burn_compartment20130605072953108" name="Burn Compartments">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Stands20121204133323889" name="Stands">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="External Layers">
+            <customproperties/>
+            <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="MapunitPoly20130609232914802" name="USDA Soil Delineation">
+                <customproperties/>
+            </layer-tree-layer>
+        </layer-tree-group>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="External Base Maps">
+            <customproperties/>
+            <layer-tree-group expanded="0" checked="Qt::Unchecked" name="USGS Shaded Quad Maps">
+                <customproperties/>
+            </layer-tree-group>
+        </layer-tree-group>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="planned_activity20130101231922171" name="Planned Activities">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="stand_description20130603102657736" name="Stand Description">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Activity Types20121204111631394" name="Activity Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="cultural_type20121216225244192" name="Cultural Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="forest_age_type20130603100652966" name="Forest Age Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="forest_type20130118212645702" name="Forest Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Habitat Enhancement Types20121204111631376" name="Habitat Enhancement Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="harvest_type20130603100654740" name="Harvest Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ordinal_sufficiency_type20130603174613510" name="Ordinal Sufficiency Type">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ordinal_magnitude_type20130603174613248" name="Ordinal Magnitude Type">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Recreation Types20121204111631341" name="Recreation Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="road_access_status_type20130603100656354" name="Road Access Status Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="road_surface_type20130603100643130" name="Road Surface Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Road Types20121204111443350" name="Road Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="severity_type20130603100644814" name="Severtity Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="stand_status20121215085843270" name="Stand Status Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="stand_type20130603100641352" name="Stand Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Stocking Types20121204111631323" name="Stocking Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="trail_type20130605072951441" name="Trail Type">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="trail_status_type20130605072950232" name="Trail Status Type">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="species_tree_type20131128080501132" name="Tree Species Type">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="water_type20130603100649684" name="Water Types">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Water Feature Types20121204111631302" name="Water Feature Types">
+            <customproperties/>
+        </layer-tree-layer>
+    </layer-tree-group>
     <relations/>
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-26021530.14983378350734711</xmin>
-            <ymin>-3085948.35940586496144533</ymin>
-            <xmax>507358.76611457765102386</xmax>
-            <ymax>14242496.10271359607577324</ymax>
+            <xmin>-24396393.53730154037475586</xmin>
+            <ymin>-5219249.6926338579505682</ymin>
+            <xmax>2132495.37864682078361511</xmax>
+            <ymax>16462292.66501799039542675</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -24,18 +159,67 @@
             </spatialrefsys>
         </destinationsrs>
         <layer_coordinate_transform_info>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Points20121204131751561"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Recreation20121204131623145"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Firebreaks20121204132835298"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:26917" srcDatumTransform="-1" destDatumTransform="-1" layerid="220130610224644497"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Land Areas20121204131751632"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="3_2_1_020130610225200927"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="activity_area20130101231920603"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Water Point Features20121204131510425"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Areas20121204131751547"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cultural Features20121204131751585"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="trail20131110173044662"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stands20121204133323889"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="road_line20130101154010851"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Trees20121204131751596"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Stands20121204133323889">
+    <layer-tree-canvas>
+        <custom-order enabled="0">
+            <item>Recreation20121204131623145</item>
+            <item>Habitat Enhancement Points20121204131751561</item>
+            <item>Cultural Features20121204131751585</item>
+            <item>Trees20121204131751596</item>
+            <item>Water Point Features20121204131510425</item>
+            <item>trail20131110173044662</item>
+            <item>road_line20130101154010851</item>
+            <item>Firebreaks20121204132835298</item>
+            <item>tree_status20130603213537490</item>
+            <item>soil_test_recommendation20130603122843299</item>
+            <item>soil_test20130603122942351</item>
+            <item>Land Areas20121204131751632</item>
+            <item>Habitat Enhancement Areas20121204131751547</item>
+            <item>activity_area20130101231920603</item>
+            <item>burn_compartment20130605072953108</item>
+            <item>Stands20121204133323889</item>
+            <item>MapunitPoly20130609232914802</item>
+            <item>planned_activity20130101231922171</item>
+            <item>stand_description20130603102657736</item>
+            <item>Activity Types20121204111631394</item>
+            <item>cultural_type20121216225244192</item>
+            <item>forest_age_type20130603100652966</item>
+            <item>forest_type20130118212645702</item>
+            <item>Habitat Enhancement Types20121204111631376</item>
+            <item>harvest_type20130603100654740</item>
+            <item>ordinal_sufficiency_type20130603174613510</item>
+            <item>ordinal_magnitude_type20130603174613248</item>
+            <item>Recreation Types20121204111631341</item>
+            <item>road_access_status_type20130603100656354</item>
+            <item>road_surface_type20130603100643130</item>
+            <item>Road Types20121204111443350</item>
+            <item>severity_type20130603100644814</item>
+            <item>stand_status20121215085843270</item>
+            <item>stand_type20130603100641352</item>
+            <item>Stocking Types20121204111631323</item>
+            <item>trail_type20130605072951441</item>
+            <item>trail_status_type20130605072950232</item>
+            <item>species_tree_type20131128080501132</item>
+            <item>water_type20130603100649684</item>
+            <item>Water Feature Types20121204111631302</item>
+        </custom-order>
+    </layer-tree-canvas>
+    <legend updateDrawingOrder="true">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
@@ -118,17 +302,7 @@
                 <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Layers">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
-                <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140101212650674" visible="0"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
-                <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140101213044996" visible="1"/>
-                </filegroup>
-            </legendlayer>
+        <legendgroup open="true" checked="Qt::Unchecked" name="External Layers">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USDA Soil Delineation" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="MapunitPoly20130609232914802" visible="0"/>
@@ -136,18 +310,7 @@
             </legendlayer>
         </legendgroup>
         <legendgroup open="true" checked="Qt::Unchecked" name="External Base Maps">
-            <legendgroup open="false" checked="Qt::Unchecked" name="USGS Shaded Quad Maps">
-                <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="USGS Quad Maps" showFeatureCount="0">
-                    <filegroup open="false" hidden="false">
-                        <legendlayerfile isInOverview="0" layerid="220130610224644497" visible="0"/>
-                    </filegroup>
-                </legendlayer>
-                <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Hillshade" showFeatureCount="0">
-                    <filegroup open="false" hidden="false">
-                        <legendlayerfile isInOverview="0" layerid="3_2_1_020130610225200927" visible="0"/>
-                    </filegroup>
-                </legendlayer>
-            </legendgroup>
+            <legendgroup open="false" checked="Qt::Unchecked" name="USGS Shaded Quad Maps"/>
         </legendgroup>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
             <filegroup open="false" hidden="false">
@@ -265,73 +428,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="44">
-        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-            <id>220130610224644497</id>
-            <datasource>crs=EPSG:26917&amp;format=image/png&amp;layers=2&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/DRG/TNM_Digital_Raster_Graphics/MapServer/WMSServer</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>USGS Quad Maps</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-                    <srsid>2294</srsid>
-                    <srid>26917</srid>
-                    <authid>EPSG:26917</authid>
-                    <description>NAD83 / UTM zone 17N</description>
-                    <projectionacronym>utm</projectionacronym>
-                    <ellipsoidacronym>GRS80</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
-            <provider>wms</provider>
-            <pipe>
-                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
-                    <rasterTransparency/>
-                </rasterrenderer>
-                <brightnesscontrast brightness="0" contrast="0"/>
-                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-                <rasterresampler maxOversampling="2"/>
-            </pipe>
-            <blendMode>0</blendMode>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
-            <id>3_2_1_020130610225200927</id>
-            <datasource>crs=EPSG:4326&amp;format=image/png&amp;layers=0&amp;layers=1&amp;layers=2&amp;layers=3&amp;styles=&amp;styles=&amp;styles=&amp;styles=&amp;url=http://raster.nationalmap.gov/ArcGIS/services/TNM_Large_Scale_Shaded_Relief/MapServer/WMSServer</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Hillshade</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
-            <provider>wms</provider>
-            <pipe>
-                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
-                    <rasterTransparency/>
-                </rasterrenderer>
-                <brightnesscontrast brightness="0" contrast="0"/>
-                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
-                <rasterresampler maxOversampling="2"/>
-            </pipe>
-            <blendMode>0</blendMode>
-        </maplayer>
+    <projectlayers layercount="40">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
             <datasource>dbname='../Data/FSP2.sqlite' table="activity_type" sql=</datasource>
@@ -357,6 +454,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="acttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="acttype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="acttype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -406,11 +514,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="amenity/amenity_fountain.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -422,11 +534,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="accommodation/accommodation_bed_and_breakfast.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -438,11 +554,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="accommodation/accommodation_youth_hostel.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -595,19 +715,21 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="CultPtDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="CultPtID"/>
-                <edittype labelontop="0" editable="1" type="3" name="CultTypeID">
-                    <valuepair key="Abandoned Well" value="1"/>
-                    <valuepair key="Old Homesite" value="2"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cultpt_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" type="0" name="Cultural Types_culttype_cd"/>
-                <edittype labelontop="0" editable="0" type="0" name="Cultural Types_culttype_dsc"/>
-                <edittype labelontop="0" editable="1" type="10" name="cultpt_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="culttype_cd" layer="cultural_type20121216225244192" allowMulti="false" type="15" value="culttype_dsc" name="culttype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="culttype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="culttype_id" layer="cultural_type20121216225244192" allowMulti="false" type="15" value="culttype_dsc" name="culttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="culttype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="culttype_id" Layer="cultural_type20121216225244192" Value="culttype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Cultural Types_culttype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Cultural Types_culttype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/CulturalPoint.ui</editform>
             <editforminit></editforminit>
@@ -649,28 +771,34 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="255,186,106,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="238,27,48,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="dot"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.871795"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -822,11 +950,15 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="FireBreakLnID"/>
-                <edittype labelontop="0" editable="1" type="0" name="FireBreakTypeDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="fbkln_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="length_meters"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="fbkln_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="length_meters">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/firebreak_line.ui</editform>
             <editforminit></editforminit>
@@ -879,25 +1011,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="190,155,132,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@0@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -907,25 +1047,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="231,231,244,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@1@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -935,25 +1083,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="123,141,140,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@2@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -963,25 +1119,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="170,178,229,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@3@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -991,25 +1155,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="83,96,57,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@4@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -1019,25 +1191,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="14,13,17,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@5@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -1047,25 +1227,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="62,51,53,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@6@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -1075,25 +1263,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@7@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -1105,25 +1301,33 @@
                         <layer pass="0" class="LinePatternFill" locked="0">
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="distance" v="1.5"/>
+                            <prop k="distance_map_unit_scale" v="0,0"/>
                             <prop k="distance_unit" v="MM"/>
+                            <prop k="line_width_map_unit_scale" v="0,0"/>
                             <prop k="line_width_unit" v="MM"/>
                             <prop k="lineangle" v="45"/>
                             <prop k="linewidth" v="0.5"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
                             <symbol alpha="1" type="line" name="@0@0">
                                 <layer pass="0" class="SimpleLine" locked="0">
                                     <prop k="capstyle" v="square"/>
                                     <prop k="color" v="0,0,0,255"/>
                                     <prop k="customdash" v="5;2"/>
+                                    <prop k="customdash_map_unit_scale" v="0,0"/>
                                     <prop k="customdash_unit" v="MM"/>
                                     <prop k="draw_inside_polygon" v="0"/>
                                     <prop k="joinstyle" v="bevel"/>
                                     <prop k="offset" v="0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="penstyle" v="solid"/>
                                     <prop k="use_custom_dash" v="0"/>
                                     <prop k="width" v="0.26"/>
+                                    <prop k="width_map_unit_scale" v="0,0"/>
                                     <prop k="width_unit" v="MM"/>
                                 </layer>
                             </symbol>
@@ -1287,40 +1491,20 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="ActAge"/>
-                <edittype labelontop="0" editable="1" type="0" name="ActAreaID"/>
-                <edittype labelontop="0" editable="1" type="0" name="ActDate"/>
-                <edittype labelontop="0" editable="1" type="0" name="ActDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="ActTypeID"/>
-                <edittype labelontop="0" editable="1" type="0" name="HabEnhAreaDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="HabEnhAreaID"/>
-                <edittype labelontop="0" editable="1" type="3" name="HabEnhTypeID">
-                    <valuepair key="Brush Pile" value="1"/>
-                    <valuepair key="Fallow Field" value="5"/>
-                    <valuepair key="Oak Early Successional" value="2"/>
-                    <valuepair key="Planting" value="3"/>
-                    <valuepair key="Shrub Thicket" value="6"/>
-                    <valuepair key="Soft Edge" value="4"/>
-                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="habenharea_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_cd"/>
-                <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="Revenue"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="10" name="habenharea_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhareadesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="habenhtype_id" layer="Habitat Enhancement Types20121204111631376" allowMulti="false" type="15" value="habenhtype_dsc" name="habenhtype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtypedesc"/>
-                <edittype labelontop="0" editable="1" type="3" name="habenhtypeid">
-                    <valuepair key="Brush Pile" value="1"/>
-                    <valuepair key="Fallow Field" value="5"/>
-                    <valuepair key="Oak Early Successional" value="2"/>
-                    <valuepair key="Planting" value="3"/>
-                    <valuepair key="Shrub Thicket" value="6"/>
-                    <valuepair key="Soft Edge" value="4"/>
-                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="habenhtype_id">
+                    <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" fieldEditable="1" Key="habenhtype_id" Layer="Habitat Enhancement Types20121204111631376" Value="habenhtype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Habitat Enhancement Types_habenhtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Habitat Enhancement Types_habenhtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
             <editform>../Forms/HabitatEnhancementsArea.ui</editform>
@@ -1374,11 +1558,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="tourist/tourist_castle.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1390,11 +1578,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="symbol/poi_embassy2.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1406,11 +1598,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="tourist/tourist_view_point.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1422,11 +1618,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="religion/place_of_worship_unknown3.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="4"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1439,12 +1639,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1459,12 +1662,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -1624,37 +1830,21 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="HabEnhPtDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="HabEnhPtID"/>
-                <edittype labelontop="0" editable="1" type="3" name="HabEnhTypeID">
-                    <valuepair key="Brush Pile" value="1"/>
-                    <valuepair key="Fallow Field" value="5"/>
-                    <valuepair key="Oak Early Successional" value="2"/>
-                    <valuepair key="Planting" value="3"/>
-                    <valuepair key="Shrub Thicket" value="6"/>
-                    <valuepair key="Soft Edge" value="4"/>
-                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="habenhpt_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_cd"/>
-                <edittype labelontop="0" editable="0" type="0" name="Habitat Enhancement Types_habenhtype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="descripition"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="10" name="habenhpt_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhptdesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="habenhtype_id" layer="Habitat Enhancement Types20121204111631376" allowMulti="false" type="15" value="habenhtype_dsc" name="habenhtype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="habenhtypedesc"/>
-                <edittype labelontop="0" editable="1" type="3" name="habenhtypeid">
-                    <valuepair key="Brush Pile" value="1"/>
-                    <valuepair key="Fallow Field" value="5"/>
-                    <valuepair key="Oak Early Successional" value="2"/>
-                    <valuepair key="Planting" value="3"/>
-                    <valuepair key="Shrub Thicket" value="6"/>
-                    <valuepair key="Soft Edge" value="4"/>
-                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="habenhtype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="habenhtype_id" Layer="Habitat Enhancement Types20121204111631376" Value="habenhtype_dsc" labelOnTop="0" AllowMulti="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" type="0" name="ogc_fid"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Habitat Enhancement Types_habenhtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Habitat Enhancement Types_habenhtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/HabitatEnhancements.ui</editform>
             <editforminit></editforminit>
@@ -1690,6 +1880,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="habenhtype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="habenhtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="habenhtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -1727,10 +1928,13 @@
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="175,164,121,255"/>
                             <prop k="color_border" v="255,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="no"/>
                             <prop k="style_border" v="dash dot dot"/>
@@ -1885,13 +2089,15 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="LandAreaDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="LandAreaID"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="10" name="landarea_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="name"/>
-                <edittype labelontop="0" editable="1" type="0" name="start_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="transaction_start_date"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="landarea_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/LandArea.ui</editform>
             <editforminit></editforminit>
@@ -1925,6 +2131,9 @@
             </srs>
             <customproperties/>
             <provider>wms</provider>
+            <noData>
+                <noDataList bandNo="1" useSrcNoData="0"/>
+            </noData>
             <pipe>
                 <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
                     <rasterTransparency/>
@@ -1934,52 +2143,6 @@
                 <rasterresampler maxOversampling="2"/>
             </pipe>
             <blendMode>0</blendMode>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="12" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
-            <id>OpenLayers_plugin_layer20140101212650674</id>
-            <datasource>.</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Bing Aerial</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
-                    <srsid>3857</srsid>
-                    <srid>3857</srid>
-                    <authid>EPSG:3857</authid>
-                    <description>WGS 84 / Pseudo Mercator</description>
-                    <projectionacronym>merc</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="0" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
-            <id>OpenLayers_plugin_layer20140101213044996</id>
-            <datasource>.</datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Google Physical</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
-                    <srsid>3857</srsid>
-                    <srid>3857</srid>
-                    <authid>EPSG:3857</authid>
-                    <description>WGS 84 / Pseudo Mercator</description>
-                    <projectionacronym>merc</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation Types20121204111631341</id>
@@ -2006,6 +2169,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression>COALESCE("rectype_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rectype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rectype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rectype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2056,11 +2230,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="gpsicons/teepee.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="6"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2072,11 +2250,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="amenity/amenity_firestation.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="6"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2088,11 +2270,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="tourist/tourist_picnic.svg"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="6"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2105,12 +2291,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2125,12 +2314,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2290,23 +2482,20 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="RecPtDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="RecPtID"/>
-                <edittype labelontop="0" editable="1" type="3" name="RecTypeID">
-                    <valuepair key="Camp Site" value="2"/>
-                    <valuepair key="Fire Ring" value="1"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="recpt_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" type="0" name="Recreation Types_rectype_cd"/>
-                <edittype labelontop="0" editable="0" type="0" name="Recreation Types_rectype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="10" name="recpt_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="recptdesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="rectype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="rectype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="rectype_id" layer="Recreation Types20121204111631341" allowMulti="false" type="15" value="rectype_dsc" name="rectype_id"/>
-                <edittype labelontop="0" editable="1" type="3" name="rectypeid">
-                    <valuepair key="Camp Site" value="Camp Site"/>
-                    <valuepair key="Fire Ring" value="Fire Ring"/>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="rectype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="rectype_id" Layer="Recreation Types20121204111631341" Value="rectype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="Recreation Types_rectype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="Recreation Types_rectype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
             <editform>../Forms/Recreation.ui</editform>
@@ -2343,6 +2532,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadtype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2393,10 +2593,13 @@
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="50,136,189,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2405,10 +2608,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="1">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="213,62,79,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2417,10 +2623,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="10">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="50,136,189,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2429,10 +2638,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="2">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="79,233,116,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2441,10 +2653,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="3">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="244,109,67,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2453,10 +2668,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="4">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="253,174,97,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2465,10 +2683,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="5">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="254,224,139,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2477,10 +2698,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="6">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="255,255,191,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2489,10 +2713,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="7">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="230,245,152,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2501,10 +2728,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="8">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="171,221,164,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2513,10 +2743,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="9">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="102,194,165,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -2672,34 +2905,21 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="Age"/>
-                <edittype labelontop="0" editable="1" type="0" name="Beetle_Dam"/>
-                <edittype labelontop="0" editable="1" type="0" name="Description"/>
-                <edittype labelontop="0" editable="1" type="0" name="ForestryOperation"/>
-                <edittype labelontop="0" editable="1" type="0" name="Shape_Area"/>
-                <edittype labelontop="0" editable="1" type="0" name="Shape_Leng"/>
-                <edittype labelontop="0" editable="1" type="0" name="StandAreaID"/>
-                <edittype labelontop="0" editable="1" type="0" name="StandDesc"/>
-                <edittype labelontop="0" editable="1" type="0" name="Stand_No"/>
-                <edittype labelontop="0" editable="1" type="0" name="Stocking"/>
-                <edittype labelontop="0" editable="1" type="0" name="age"/>
-                <edittype labelontop="0" editable="1" type="0" name="damaged"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="forestagetype_id" layer="forest_age_type20130603100652966" allowMulti="false" filterExpression="" type="15" value="forestagetype_dsc" name="forestagetype_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="foresttype_id" layer="forest_type20130118212645702" allowMulti="false" filterExpression="" type="15" value="foresttype_dsc" name="foresttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="notes"/>
-                <edittype labelontop="0" editable="1" type="0" name="ogc_fid"/>
-                <edittype labelontop="0" editable="1" type="0" name="recommended_treatment"/>
-                <edittype labelontop="0" editable="1" type="5" min="1" step="1" name="stand_no" max="25"/>
-                <edittype labelontop="0" editable="1" type="11" name="standarea_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="standdescription_id" layer="stand_description20130603102657736" allowMulti="false" filterExpression="" type="15" value="stand_description" name="standdescription_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="standno"/>
-                <edittype labelontop="0" editable="1" type="0" name="standstatus_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="start_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="stocking"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="stockingtype_id" layer="Stocking Types20121204111631323" allowMulti="false" filterExpression="" type="15" value="stockingtype_dsc" name="stockingtype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="transaction_start_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="year"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="standarea_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="stand_no">
+                    <widgetv2config fieldEditable="1" Step="1" Style="Edit" labelOnTop="0" Min="1" Max="25"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="foresttype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="foresttype_id" Layer="forest_type20130118212645702" Value="foresttype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="standdescription_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="standdescription_id" Layer="stand_description20130603102657736" Value="stand_description" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/StandDescription.ui</editform>
             <editforminit></editforminit>
@@ -2747,6 +2967,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="stockingtype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="stockingtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="stockingtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2790,12 +3021,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -2948,14 +3182,15 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="Species"/>
-                <edittype labelontop="0" editable="1" type="0" name="StartYear"/>
-                <edittype labelontop="0" editable="1" type="0" name="TreePtID"/>
-                <edittype labelontop="0" editable="1" type="0" name="specie"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="speciestreetype_id" layer="species_tree_type20131128080501132" allowMulti="false" filterExpression="" type="15" value="speciestreetype_dsc" name="species"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="speciestreetype_id" layer="species_tree_type20131128080501132" allowMulti="false" filterExpression="" type="15" value="speciestreetype_dsc" name="speciestreetype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="start_year"/>
-                <edittype labelontop="0" editable="1" type="10" name="tree_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="tree_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="speciestreetype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="speciestreetype_id" Layer="species_tree_type20131128080501132" Value="speciestreetype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="start_year">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/Tree.ui</editform>
             <editforminit></editforminit>
@@ -2991,6 +3226,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -3036,12 +3282,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline_style" v="solid"/>
                             <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -3194,18 +3443,21 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="Species"/>
-                <edittype labelontop="0" editable="1" type="0" name="StartYear"/>
-                <edittype labelontop="0" editable="1" type="0" name="TreePtID"/>
-                <edittype labelontop="0" editable="0" type="0" name="Water Feature Types_watertype_cd"/>
-                <edittype labelontop="0" editable="0" type="11" name="Water Feature Types_watertype_dsc"/>
-                <edittype labelontop="0" editable="1" type="12" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="specie"/>
-                <edittype labelontop="0" editable="1" type="0" name="species"/>
-                <edittype labelontop="0" editable="1" type="0" name="start_year"/>
-                <edittype labelontop="0" editable="1" type="10" name="tree_id"/>
-                <edittype labelontop="0" editable="1" type="11" name="waterpoint_id"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="watertype_id" layer="water_type20130603100649684" allowMulti="false" filterExpression="" type="15" value="watertype_dsc" name="watertype_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="waterpoint_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="watertype_id">
+                    <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" fieldEditable="1" Key="watertype_id" Layer="water_type20130603100649684" Value="watertype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="1" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="Water Feature Types_watertype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="Water Feature Types_watertype_dsc">
+                    <widgetv2config fieldEditable="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/WaterPoint.ui</editform>
             <editforminit></editforminit>
@@ -3244,10 +3496,13 @@
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="0,0,255,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="dense7"/>
                             <prop k="style_border" v="solid"/>
@@ -3402,29 +3657,26 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="activity_date"/>
-                <edittype labelontop="0" editable="1" type="10" name="activityarea_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="acttype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="acttype_id" layer="Activity Types20121204111631394" allowMulti="false" type="15" value="acttype_dsc" name="acttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="completed_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="notes"/>
-                <edittype labelontop="0" editable="1" type="0" name="planned_date"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="plannedact_id" layer="planned_activity20130101231922171" allowMulti="false" filterExpression="" type="15" value="description" name="plannedact_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="revenue"/>
-                <edittype labelontop="0" editable="1" type="0" name="standact_id"/>
-                <edittype labelontop="0" editable="1" type="3" name="standarea_id">
-                    <valuepair key="Fallow field opening." value="25"/>
-                    <valuepair key="Forested wetland" value="11"/>
-                    <valuepair key="Improved forage grass field" value="12"/>
-                    <valuepair key="Logging deck turned  into wildlife opening." value="26"/>
-                    <valuepair key="Mesic hardwood, yng. age, overstocked" value="15"/>
-                    <valuepair key="Mixed yellow pine, early mature, overstocked" value="8"/>
-                    <valuepair key="Pine/Hardwood, med. age, mildly overstocked" value="7"/>
-                    <valuepair key="Pine/Hardwood, mxd. age, (beetle damage)" value="1"/>
-                    <valuepair key="Residential area" value="16"/>
-                    <valuepair key="Upland hardwood/pine (beetle damage)" value="21"/>
-                    <valuepair key="Upland hardwood/pine, med. age, fully stocked" value="6"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="activityarea_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="activity_date">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="acttype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="acttype_id" Layer="Activity Types20121204111631394" Value="acttype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="revenue">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="plannedact_id">
+                    <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" fieldEditable="1" Key="plannedact_id" Layer="planned_activity20130101231922171" Value="description" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="standact_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
             <editform>../Forms/ActivityArea.ui</editform>
@@ -3470,10 +3722,13 @@
                 <symbols>
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="52,1,184,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -3482,10 +3737,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="1">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="170,0,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -3494,10 +3752,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="2">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="63,174,38,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -3506,10 +3767,13 @@
                     </symbol>
                     <symbol alpha="1" type="fill" name="3">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="0,0,127,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="solid"/>
@@ -3665,8 +3929,12 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="10" name="burncompartment_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="compartment_set"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="burncompartment_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="compartment_set">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/BurnCompartment.ui</editform>
             <editforminit></editforminit>
@@ -3703,9 +3971,15 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="culttype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="culttype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="culttype_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="culttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="culttype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="culttype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -3741,6 +4015,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="forestagetype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="forestagetype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="forestagetype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -3776,8 +4061,15 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="foresttype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="foresttype_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="foresttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="foresttype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foresttype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -3813,6 +4105,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="harvesttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="harvesttype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="harvesttype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -3847,6 +4150,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalmag_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalmag_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalmag_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -3881,6 +4195,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalsuff_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalsuff_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ordinalsuff_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -3916,14 +4241,33 @@
             <previewExpression>COALESCE("plannedact_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="acttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="completed_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="notes"/>
-                <edittype labelontop="0" editable="1" type="0" name="planned_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="plannedact_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="revenue"/>
-                <edittype labelontop="0" editable="1" type="0" name="standarea_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="plannedact_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="acttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="planned_date">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="completed_date">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="notes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="revenue">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="taskstatus_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="stand_no">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -3959,6 +4303,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="accessstatus_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="accessstatus_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="accessstatus_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -4009,28 +4364,34 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="100,100,80,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1.5"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="244,244,119,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1.14796"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4039,28 +4400,34 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="171,171,171,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1.5"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="255,255,255,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.836283"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4069,28 +4436,34 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="134,67,0,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="192,223,255,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.589041"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4099,14 +4472,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="191,191,191,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4115,14 +4491,17 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="192,223,255,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4131,34 +4510,45 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="149,149,112,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="-1"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.13"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="144,144,108,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="1"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.13"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="0" class="MarkerLine" locked="0">
                             <prop k="interval" v="1.5"/>
+                            <prop k="interval_map_unit_scale" v="0,0"/>
                             <prop k="interval_unit" v="MM"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_along_line" v="0"/>
+                            <prop k="offset_along_line_map_unit_scale" v="0,0"/>
+                            <prop k="offset_along_line_unit" v="MM"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="placement" v="interval"/>
                             <prop k="rotate" v="1"/>
@@ -4170,12 +4560,15 @@
                                     <prop k="horizontal_anchor_point" v="1"/>
                                     <prop k="name" v="line"/>
                                     <prop k="offset" v="0,0"/>
+                                    <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
                                     <prop k="outline_style" v="solid"/>
                                     <prop k="outline_width" v="0"/>
+                                    <prop k="outline_width_map_unit_scale" v="0,0"/>
                                     <prop k="outline_width_unit" v="MM"/>
                                     <prop k="scale_method" v="area"/>
                                     <prop k="size" v="0.25"/>
+                                    <prop k="size_map_unit_scale" v="0,0"/>
                                     <prop k="size_unit" v="MM"/>
                                     <prop k="vertical_anchor_point" v="1"/>
                                 </layer>
@@ -4189,14 +4582,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="76,65,128,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4355,18 +4751,30 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="0" type="0" name="Road Types_roadtype_cd"/>
-                <edittype labelontop="0" editable="0" type="0" name="Road Types_roadtype_dsc"/>
-                <edittype labelontop="0" editable="1" type="0" name="access_status"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="accessstatus_id" layer="road_access_status_type20130603100656354" allowMulti="false" type="15" value="accessstatus_dsc" name="accessstatus_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="road_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="roadln_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="roadsurface_id" layer="road_surface_type20130603100643130" allowMulti="false" type="15" value="roadsurface_dsc" name="roadsurface_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="roadtype_cd"/>
-                <edittype labelontop="0" editable="1" type="0" name="roadtype_dsc"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="roadtype_id" layer="Road Types20121204111443350" allowMulti="false" type="15" value="roadtype_dsc" name="roadtype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="surface"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="roadln_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="roadtype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="roadtype_id" Layer="Road Types20121204111443350" Value="roadtype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="road_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="accessstatus_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="accessstatus_id" Layer="road_access_status_type20130603100656354" Value="accessstatus_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="roadsurface_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="roadsurface_id" Layer="road_surface_type20130603100643130" Value="roadsurface_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="Road Types_roadtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="Road Types_roadtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/Road.ui</editform>
             <editforminit></editforminit>
@@ -4402,6 +4810,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadsurface_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadsurface_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="roadsurface_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -4436,6 +4855,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="severity_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="severity_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="severity_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -4478,11 +4908,15 @@
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v=""/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
                             <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
                             <prop k="size" v="2"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
@@ -4518,54 +4952,141 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="ca_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="ca_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="ca_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_address_1"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_address_2"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_city"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_first_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_last_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_state"/>
-                <edittype labelontop="0" editable="1" type="0" name="client_zip"/>
-                <edittype labelontop="0" editable="1" dateFormat="" type="13" name="completed_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="extractant"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="k_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="k_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="k_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_address_1"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_address_2"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_city"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_email"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_phone"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_state"/>
-                <edittype labelontop="0" editable="1" type="0" name="lab_zip"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="lbc_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="lbc_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="lbc_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="lime_buffer_capacity_method"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="mg_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="mg_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="mg_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="mn_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="mn_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="mn_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalmag_cd" layer="ordinal_magnitude_type20130603174613248" allowMulti="false" type="15" value="ordinalmag_dsc" name="p_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="p_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="p_value"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="ph_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="ph_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="ph_value"/>
-                <edittype labelontop="0" editable="1" dateFormat="" type="13" name="sample_collection_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="sample_desc"/>
-                <edittype labelontop="0" editable="1" type="0" name="sample_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="sample_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="soiltest_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="ordinalsuff_cd" layer="ordinal_sufficiency_type20130603174613510" allowMulti="false" type="15" value="ordinalsuff_dsc" name="zn_relative_amount"/>
-                <edittype labelontop="0" editable="1" type="0" name="zn_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="zn_value"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="soiltest_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="sample_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="sample_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="DateTime" name="sample_collection_date">
+                    <widgetv2config fieldEditable="1" calendar_popup="0" display_format="" field_format="yyyy-mm-dd" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="sample_desc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_last_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_first_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_address_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_address_2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_city">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_state">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="client_zip">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="DateTime" name="completed_date">
+                    <widgetv2config fieldEditable="1" calendar_popup="0" display_format="" field_format="yyyy-mm-dd" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_address_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_address_2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_city">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_state">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_zip">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_phone">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lab_email">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="extractant">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lime_buffer_capacity_method">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="p_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="p_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="p_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalmag_cd" Layer="ordinal_magnitude_type20130603174613248" Value="ordinalmag_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="k_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="k_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="k_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalmag_cd" Layer="ordinal_magnitude_type20130603174613248" Value="ordinalmag_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ca_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ca_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="ca_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalmag_cd" Layer="ordinal_magnitude_type20130603174613248" Value="ordinalmag_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mg_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mg_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="mg_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalmag_cd" Layer="ordinal_magnitude_type20130603174613248" Value="ordinalmag_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="zn_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="zn_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="zn_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalsuff_cd" Layer="ordinal_sufficiency_type20130603174613510" Value="ordinalsuff_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mn_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mn_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="mn_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalsuff_cd" Layer="ordinal_sufficiency_type20130603174613510" Value="ordinalsuff_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ph_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="ph_relative_amount">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="ordinalsuff_cd" Layer="ordinal_sufficiency_type20130603174613510" Value="ordinalsuff_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lbc_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -4602,27 +5123,69 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="b_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="b_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="crop"/>
-                <edittype labelontop="0" editable="1" type="0" name="limestone_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="limestone_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="mn_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="mn_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="n_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="n_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="ph_max"/>
-                <edittype labelontop="0" editable="1" type="0" name="ph_min"/>
-                <edittype labelontop="0" editable="1" type="0" name="phosphate_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="phosphate_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="potash_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="potash_value"/>
-                <edittype labelontop="0" editable="1" type="0" name="s_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="s_value"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="false" key="soiltest_id" layer="soil_test20130603122942351" allowMulti="false" type="15" value="sample_name" name="soiltest_id"/>
-                <edittype labelontop="0" editable="1" type="10" name="soiltestrec_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="zn_unit"/>
-                <edittype labelontop="0" editable="1" type="0" name="zn_value"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="soiltestrec_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="soiltest_id">
+                    <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" fieldEditable="1" Key="soiltest_id" Layer="soil_test20130603122942351" Value="sample_name" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="crop">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="limestone_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="limestone_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="n_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="n_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="phosphate_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="phosphate_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="potash_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="potash_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="s_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="s_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="b_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="b_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mn_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="mn_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="zn_value">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="zn_unit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ph_min">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ph_max">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -4658,6 +5221,20 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="speciestreetype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="speciestreetype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="speciestreetype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="speciestreetype_bn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -4693,11 +5270,21 @@
             <previewExpression>COALESCE("standdescription_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="forestagetype_id" layer="forest_age_type20130603100652966" allowMulti="false" type="15" value="forestagetype_dsc" name="forestagetype_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="foresttype_id" layer="forest_type20130118212645702" allowMulti="false" type="15" value="foresttype_dsc" name="foresttype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="stand_description"/>
-                <edittype labelontop="0" editable="1" type="10" name="standdescription_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="stockingtype_id" layer="Stocking Types20121204111631323" allowMulti="false" type="15" value="stockingtype_dsc" name="stockingtype_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="standdescription_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="stockingtype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="stockingtype_id" Layer="Stocking Types20121204111631323" Value="stockingtype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="forestagetype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="forestagetype_id" Layer="forest_age_type20130603100652966" Value="forestagetype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="stand_description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="foresttype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="foresttype_id" Layer="forest_type20130118212645702" Value="foresttype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -4736,17 +5323,36 @@
                 <join targetField="1" joinField="0" memoryCache="0" joinLayerId="Stands20121204133323889"/>
             </vectorjoins>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="age"/>
-                <edittype labelontop="0" editable="1" type="0" name="damaged"/>
-                <edittype labelontop="0" editable="1" type="0" name="description"/>
-                <edittype labelontop="0" editable="1" type="0" name="notes"/>
-                <edittype labelontop="0" editable="1" type="0" name="recommended_treatment"/>
-                <edittype labelontop="0" editable="1" type="0" name="stand_no"/>
-                <edittype labelontop="0" editable="1" type="0" name="standarea_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="standstatus_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="stocking"/>
-                <edittype labelontop="0" editable="1" type="0" name="stockingtype_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="year"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="standstatus_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="year">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="recommended_treatment">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="notes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="damage_severity">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="stand_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Stands_stand_no">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Stands_description">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Stands_foresttype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Stands_standdescription_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -4782,6 +5388,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="standtype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="standtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="standtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -4822,14 +5439,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="207,139,141,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -4981,11 +5601,21 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="trail_description"/>
-                <edittype labelontop="0" editable="1" type="0" name="trail_id"/>
-                <edittype labelontop="0" editable="1" type="0" name="trail_name"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="trailstatus_id" layer="trail_status_type20130605072950232" allowMulti="false" filterExpression="" type="15" value="trailstatus_dsc" name="trailstatus_id"/>
-                <edittype labelontop="0" editable="1" allowNull="true" orderByValue="true" key="trailtype_id" layer="trail_type20130605072951441" allowMulti="false" filterExpression="" type="15" value="trailtype_dsc" name="trailtype_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="trail_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="trail_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="trailtype_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="trailtype_id" Layer="trail_type20130605072951441" Value="trailtype_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="trailstatus_id">
+                    <widgetv2config OrderByValue="1" AllowNull="1" FilterExpression="" fieldEditable="1" Key="trailstatus_id" Layer="trail_status_type20130605072950232" Value="trailstatus_dsc" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="trail_description">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>../Forms/Trail.ui</editform>
             <editforminit></editforminit>
@@ -5021,6 +5651,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression>COALESCE("trailstatus_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailstatus_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailstatus_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailstatus_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -5055,6 +5696,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression>COALESCE("trailtype_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailtype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailtype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="trailtype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -5090,12 +5742,27 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="dbh_in"/>
-                <edittype labelontop="0" editable="1" type="0" name="height_ft"/>
-                <edittype labelontop="0" editable="1" dateFormat="" type="13" name="status_date"/>
-                <edittype labelontop="0" editable="1" type="0" name="status_notes"/>
-                <edittype labelontop="0" editable="1" allowNull="false" orderByValue="true" key="tree_id" layer="Trees20121204131751596" allowMulti="false" type="15" value="tree_id" name="tree_id"/>
-                <edittype labelontop="0" editable="1" type="10" name="treestatus_id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="treestatus_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="tree_id">
+                    <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" fieldEditable="1" Key="tree_id" Layer="Trees20121204131751596" Value="tree_id" labelOnTop="0" AllowMulti="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="DateTime" name="status_date">
+                    <widgetv2config fieldEditable="1" calendar_popup="0" display_format="" field_format="yyyy-mm-dd" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="dbh_in">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="height_ft">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="status_notes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="age">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -5131,6 +5798,17 @@
             <provider encoding="System">spatialite</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_cd">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="watertype_dsc">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -5196,7 +5874,10 @@
                 <value>Trees20121204131751596</value>
                 <value>Water Point Features20121204131510425</value>
                 <value>activity_area20130101231920603</value>
+                <value>burn_compartment20130605072953108</value>
                 <value>road_line20130101154010851</value>
+                <value>soil_test20130603122942351</value>
+                <value>trail20131110173044662</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
                 <value>disabled</value>
@@ -5209,10 +5890,16 @@
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>enabled</value>
+                <value>disabled</value>
                 <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
             </LayerSnappingEnabledList>
             <AvoidIntersectionsList type="QStringList"/>
             <LayerSnappingToleranceUnitList type="QStringList">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
@@ -5237,6 +5924,9 @@
                 <value>to_vertex</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
             </LayerSnapToList>
             <TopologicalEditing type="int">1</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
@@ -5250,7 +5940,10 @@
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>5.000000</value>
+                <value>0.000000</value>
                 <value>5.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
             </LayerSnappingToleranceList>
         </Digitizing>
         <Identify>
