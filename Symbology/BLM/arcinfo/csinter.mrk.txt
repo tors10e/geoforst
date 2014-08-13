@@ -1,0 +1,162 @@
+Markerset csinter.mrk 
+SYMBOL  FEATURE                                
+01      campground 
+02      parking 
+03      mountain bike trail              
+04      wheelchair accessible
+05      watchable wildlife
+06      information                     
+07      campfire                      
+08      picnic area                   
+09      motor boating                       
+10      marina                            
+11      hiking trail                        
+12      all terrain vehicle trail     
+13      fishing                      
+14      boat ramp                   
+15      hunting                    
+16      interpretive trail        
+17      first aid                
+18      rock collecting         
+19      winter recreation area 
+20      restrooms
+21      scenic area
+22      climbing                               
+23      horse trail                            
+24      wild horse viewing area                
+25      dirt bike trail                        
+26      four wheel drive trail                 
+27      bird viewing area                      
+28      bird of prey viewing area             
+29      spelunking                             
+30      bicycle trail                           
+31      rafting                    
+32      kayaking                               
+33      canoeing                               
+34      scenic geology                         
+35      visitor center                         
+36      blm back country byway                 
+37      drinking water                         
+38      cross country skiing                   
+39      point of interest                      
+40      picnic shelter                         
+41      downhill skiing                        
+42      food service                           
+43      interpretive auto road                 
+44      snowmobiling                           
+45      trailer camping                        
+46      interpretive sign                      
+47      playground                             
+48      petroglyph                             
+49      archeological site                     
+50      trail shelter                      
+51      trailer sanitary station                
+52      gas station                        
+53      hang gliding area                      
+54      telephone                              
+55      cabin rental                           
+56      land sailing                           
+57      desert tortoise area                       
+58      fee area                               
+59      fossil site                            
+60      historic site                          
+61      ranger station                         
+62      grocery store                          
+63      lodging                                
+64      environmental study area               
+65      group campground                       
+66      litter container
+67      group day use area                     
+68      long term visitor area                  
+69      swimming                               
+70      emergency communication                       
+71      wayside exhibit                        
+72      golfing                                
+73      hospital                               
+74      off highway vehicle area               
+75      other forest service facility          
+76      trailhead 
+77      trailhead
+78      trailhead                     
+79      trailhead                       
+80      hot tubs                               
+81      post office                            
+82      archery range                               
+83      lookout tower                          
+84      amphitheater                           
+85      showers                                
+86      non-motorized boats
+87      snowshoeing                           
+88      sailboating                            
+89      recreation area # 1                   
+90      recreation area # 2                   
+91      recreation area # 3                   
+92      recreation area # 4                   
+93      recreation area # 5                   
+94      recreation area # 6                   
+95      recreation area # 7                   
+96      recreation area # 8                    
+97      recreation area # 9                   
+98      recreation area # 10                  
+99      recreation area # 11                  
+100     recreation area # 12                  
+101     ferry 
+102     mechanic
+103     electrical hookup
+104     motorhome
+105     group picnic area
+106     rock climbing
+107     stable
+108     aerial tramway
+109     corral
+110     rollerblading
+111     walk in campground
+112     ice skating
+113     ski jumping
+114     ski bobbing
+115     sledding
+116     chairlift
+117     dog sledding
+118     snow tubing
+119     snowboarding
+120     boat tours
+121     diving
+122     scuba diving
+123     water skiing
+124     surfing
+125     wading
+126     beach
+127     fishing pier
+128     hand launch
+129     personal watercraft area
+130     wind surfing
+131     blm field office
+132     automobile
+133     bear viewing area
+134     dam
+135     deer viewing area
+136     nature study area
+137     shooting area
+138     fish hatchery
+139     leashed pets
+140     lighthouse
+141     pedestrian crossing
+142     smoking permitted
+143     truck parking
+144     tunnel
+145     (blank)
+146     (blank)
+147     high-clearence vehicle
+148     seaplane activity
+149     airport
+150     bus stop
+151     elevator
+152     kennel
+153     laundry
+154     locker rental
+155     men's restroom
+156     woman's restroom
+157     sleeping shelter
+158     bus parking
+159     family restroom
+160     helicopter activity
