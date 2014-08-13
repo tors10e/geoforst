@@ -592,7 +592,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="cultural_point" (geometry) sql=</datasource>
             <title></title>
@@ -670,21 +670,20 @@
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="2">
-                        <layer pass="0" class="SimpleMarker" locked="0">
+                        <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="165,56,192,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
+                            <prop k="name" v="pictograms-nps-4-wheel-drive_road.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="2"/>
+                            <prop k="size" v="4"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -954,7 +953,7 @@
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="GEOMETRY">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cultpt_id">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cultpt_id">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="culttype_id">
@@ -1779,7 +1778,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Points20121204131751561</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="habitat_enhancement_point" (geometry) sql=</datasource>
             <title></title>
@@ -1963,21 +1962,20 @@
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="7">
-                        <layer pass="0" class="SimpleMarker" locked="0">
+                        <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="8,48,107,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
+                            <prop k="name" v="Unknown.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="2"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2192,7 +2190,7 @@
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="GEOMETRY">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="habenhpt_id">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="habenhpt_id">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="habenhtype_id">
@@ -2564,7 +2562,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -2590,15 +2588,165 @@
             <vectorjoins>
                 <join targetField="2" joinField="0" memoryCache="0" joinLayerId="Recreation Types20121204111631341"/>
             </vectorjoins>
-            <renderer-v2 attr="rectype_id" symbollevels="0" type="categorizedSymbol">
+            <renderer-v2 attr="Recreation Types_rectype_dsc" symbollevels="0" type="categorizedSymbol">
                 <categories>
-                    <category symbol="0" value="2" label="Camp Site"/>
-                    <category symbol="1" value="1" label="Fire Ring"/>
-                    <category symbol="2" value="3" label="Picnic Area"/>
-                    <category symbol="3" value="" label=""/>
+                    <category symbol="0" value="ATV Trail" label="ATV Trail"/>
+                    <category symbol="1" value="Bicycle Trail" label="Bicycle Trail"/>
+                    <category symbol="2" value="Boat Dock" label="Boat Dock"/>
+                    <category symbol="3" value="Camp Site" label="Camp Site"/>
+                    <category symbol="4" value="Fire Ring" label="Fire Ring"/>
+                    <category symbol="5" value="Fishing" label="Fishing"/>
+                    <category symbol="6" value="Horseback Riding" label="Horseback Riding"/>
+                    <category symbol="7" value="Hunting Stand" label="Hunting Stand"/>
+                    <category symbol="8" value="Picnic Area" label="Picnic Area"/>
+                    <category symbol="9" value="Point of Interest" label="Point of Interest"/>
+                    <category symbol="10" value="Scenic Viewpoint" label="Scenic Viewpoint"/>
+                    <category symbol="11" value="Shelter" label="Shelter"/>
+                    <category symbol="12" value="Wildlife Viewing" label="Wildlife Viewing"/>
+                    <category symbol="13" value="Unknown" label="Unknown"/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="ATVTrail.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="1">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="MountainBiking.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="10">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="ViewPoint.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="11">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="LeanToThree.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="12">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="DeerViewing.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="13">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="Unknown.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="2">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="BoatDock.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="3">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="color" v="255,255,255,255"/>
@@ -2613,7 +2761,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2631,13 +2779,13 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="4.5"/>
+                            <prop k="size" v="6"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
-                    <symbol alpha="1" type="marker" name="1">
+                    <symbol alpha="1" type="marker" name="4">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="color" v="255,255,255,255"/>
@@ -2652,7 +2800,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="7"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2670,13 +2818,73 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="5.14286"/>
+                            <prop k="size" v="6"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
-                    <symbol alpha="1" type="marker" name="2">
+                    <symbol alpha="1" type="marker" name="5">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="Fishing.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="6">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="HorsebackRidingTrail.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="7">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="fill" v="#000000"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="ViewingPlatform.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
+                            <prop k="outline_width_map_unit_scale" v="0,0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="8"/>
+                            <prop k="size_map_unit_scale" v="0,0"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                    <symbol alpha="1" type="marker" name="8">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="color" v="255,255,255,255"/>
@@ -2691,7 +2899,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2709,28 +2917,27 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="4.5"/>
+                            <prop k="size" v="6"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
-                    <symbol alpha="1" type="marker" name="3">
-                        <layer pass="0" class="SimpleMarker" locked="0">
+                    <symbol alpha="1" type="marker" name="9">
+                        <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="8,48,107,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
+                            <prop k="name" v="PointOfInterest.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="2"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2945,7 +3152,7 @@
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="GEOMETRY">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="recpt_id">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="recpt_id">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="rectype_id">

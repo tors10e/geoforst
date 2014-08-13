@@ -6,32 +6,71 @@
       <se:Name>Recreation</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
+          <se:Name>ATV Trail</se:Name>
+          <se:Description>
+            <se:Title>ATV Trail</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'ATV Trail'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="ATVTrail.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Bicycle Trail</se:Name>
+          <se:Description>
+            <se:Title>Bicycle Trail</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Bicycle Trail'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="MountainBiking.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Boat Dock</se:Name>
+          <se:Description>
+            <se:Title>Boat Dock</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Boat Dock'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="BoatDock.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
           <se:Name>Camp Site</se:Name>
           <se:Description>
             <se:Title>Camp Site</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>rectype_id</ogc:PropertyName>
-              <ogc:Literal>2</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Camp Site'-->
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#e6e6e6</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>6</se:Size>
-              <se:Displacement>
-                <se:DisplacementX>0.2</se:DisplacementX>
-                <se:DisplacementY>0</se:DisplacementY>
-              </se:Displacement>
+              <se:Size>8</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
@@ -40,10 +79,10 @@
                 <se:OnlineResource xlink:type="simple" xlink:href="gpsicons/teepee.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
-              <se:Size>5</se:Size>
+              <se:Size>6</se:Size>
               <se:Displacement>
-                <se:DisplacementX>0</se:DisplacementX>
-                <se:DisplacementY>-0.2</se:DisplacementY>
+                <se:DisplacementX>-0.2</se:DisplacementX>
+                <se:DisplacementY>-0.4</se:DisplacementY>
               </se:Displacement>
             </se:Graphic>
           </se:PointSymbolizer>
@@ -53,24 +92,19 @@
           <se:Description>
             <se:Title>Fire Ring</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>rectype_id</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Fire Ring'-->
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#e6e6e6</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>6</se:Size>
+              <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
@@ -79,7 +113,59 @@
                 <se:OnlineResource xlink:type="simple" xlink:href="amenity/amenity_firestation.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
-              <se:Size>5</se:Size>
+              <se:Size>6</se:Size>
+              <se:Displacement>
+                <se:DisplacementX>0</se:DisplacementX>
+                <se:DisplacementY>-0.2</se:DisplacementY>
+              </se:Displacement>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Fishing</se:Name>
+          <se:Description>
+            <se:Title>Fishing</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Fishing'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="Fishing.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Horseback Riding</se:Name>
+          <se:Description>
+            <se:Title>Horseback Riding</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Horseback Riding'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="HorsebackRidingTrail.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Hunting Stand</se:Name>
+          <se:Description>
+            <se:Title>Hunting Stand</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Hunting Stand'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="ViewingPlatform.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -88,24 +174,19 @@
           <se:Description>
             <se:Title>Picnic Area</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>rectype_id</ogc:PropertyName>
-              <ogc:Literal>3</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Picnic Area'-->
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#e6e6e6</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>6</se:Size>
+              <se:Size>8</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
@@ -114,33 +195,87 @@
                 <se:OnlineResource xlink:type="simple" xlink:href="tourist/tourist_picnic.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
-              <se:Size>5</se:Size>
+              <se:Size>6</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name></se:Name>
+          <se:Name>Point of Interest</se:Name>
           <se:Description>
-            <se:Title>rectype_id is ''</se:Title>
+            <se:Title>Point of Interest</se:Title>
           </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>rectype_id</ogc:PropertyName>
-              <ogc:Literal></ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Point of Interest'-->
           <se:PointSymbolizer>
             <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>circle</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#08306b</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
-              <se:Size>2</se:Size>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="PointOfInterest.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Scenic Viewpoint</se:Name>
+          <se:Description>
+            <se:Title>Scenic Viewpoint</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Scenic Viewpoint'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="ViewPoint.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Shelter</se:Name>
+          <se:Description>
+            <se:Title>Shelter</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Shelter'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="LeanToThree.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Wildlife Viewing</se:Name>
+          <se:Description>
+            <se:Title>Wildlife Viewing</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Wildlife Viewing'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="DeerViewing.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Unknown</se:Name>
+          <se:Description>
+            <se:Title>Unknown</se:Title>
+          </se:Description>
+          <!--Parser Error: syntax error, unexpected COLUMN_REF, expecting $end - Expression was: Recreation Types_rectype_dsc = 'Unknown'-->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="Unknown.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>8</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
