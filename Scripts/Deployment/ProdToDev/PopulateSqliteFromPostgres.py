@@ -1,29 +1,31 @@
 import os
 import getpass
+import datetime
+from datetime import date
+
 
 host = "geo.torstenernst.com"
 port = 5432
-username = "ternst"
-password = ""
 database = "fsp"
-outputPath = "~/temp/"
+outputPath = "$GEOFORST_HOME/Data/"
 outputFile = "geoforst.sqlite"
 spatialTables = [
-    ["activity_area", "POLYGON"],
+    ["activity_area", "MULTIPOLYGON"],
     ["burn_compartment", "POLYGON"],
     ["control_point", "POINT"],
     ["cultural_point", "POINT"],
+    ["cultural_type"],
     ["firebreak_line", "LINESTRING"],
     ["forest_inventory_plot", "POLYGON"],
     ["habitat_enhancement_area", "POLYGON"],
     ["habitat_enhancement_point", "POINT"],
     ["land_area", "POLYGON"],
     ["recreation_point", "POINT"],
-    ["road_line", "LINESTRING"],
+    ["road_line", "MULTILINESTRING"],
     ["soil_test", "POINT"],
     ["stand_area", "POLYGON"],
     ["stream", "LINESTRING"],
-    ["streamside_management_zone", "POLYGON"],
+    ["streamside_management_zone", "MULTIPOLYGON"],
     ["trail", "LINESTRING"],
     ["tree" , "POINT"],
     ["water_point", "POINT"],
@@ -58,10 +60,29 @@ spatialTables = [
     ["tree_status"]
 ]
 
-
 username = raw_input("Please enter username for database %s on %s: " %(database, host))
 password = getpass.getpass("Please enter password for user %s: " %(username))
-print("Loading...")
+
+
+# Delete existing database and replace with a blank one with spatialite so that we 
+# have all the spatial components needed when we load the new table structure.
+print("Rebuilding %s%s") %(outputPath, outputFile)
+try:
+   commandString = "mv %s%s %s%s_" %(outputPath, outputFile, outputPath, outputFile) + date.today().__str__()
+   os.system(commandString) 
+except IOError: 
+    # The source file may not have existed.
+    print "%s%s does not exist, backup not completed" %(outputPath, outputFile)
+
+# Create a new spatialite database ready for loading.
+try:
+    commandString = "spatialite %s%s '.database'" %(outputPath, outputFile)
+    os.system(commandString) 
+except (IOError, EnvironmentError, TypeError) as e:
+    # Unsure of error, so let's just print it out.
+    print e
+    
+# Use ogr2ogr to populate the sqlite tables from postgresql.
 for table in spatialTables:
    connectString = "ogr2ogr -f SQLite -overwrite  %s%s  PG:\"host=%s user=%s dbname=%s password=%s port=%s\"" %(outputPath, outputFile, host, username, database, password, port)
    selectString = "-sql \"select * from %s;\"" %(table[0])
@@ -71,7 +92,13 @@ for table in spatialTables:
    else: geomTypeString = ""
    commandString = connectString + " " + selectString + " " + nameString + " " + geomTypeString
    print("Loading table " + table[0])
-   #print(commandString)
-   os.system(commandString)
+   try:
+       #print(commandString)
+       os.system(commandString)
+   except (IOError, EnvironmentError, TypeError) as e:
+      # Error could be that the geometery type is incorrect.
+      # Unsure of error, so let's just print it out.
+      print e
+        
 
 print ("Loading complete!")
