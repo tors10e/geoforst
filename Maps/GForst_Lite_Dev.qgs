@@ -3,33 +3,33 @@
     <title></title>
     <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="control_point20140811132323039" name="Control Points">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="control_point20140811132323039" name="Control Points">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Recreation20121204131623145" name="Recreation">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Recreation20121204131623145" name="Recreation">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="Habitat Enhancement Points20121204131751561" name="Habitat Enhancement Points">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Cultural Features20121204131751585" name="Cultural Features">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Cultural Features20121204131751585" name="Cultural Features">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Trees20121204131751596" name="Trees">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Water Point Features20121204131510425" name="Water Point Features">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Water Point Features20121204131510425" name="Water Point Features">
+        <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Analytical Layers">
             <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Analytical Layers">
-            <customproperties/>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Trees20121204131751596" name="Crop Trees">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="soil_test20130603122942351" name="Soil Tests">
+                <customproperties/>
+            </layer-tree-layer>
             <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="tree_status20130603213537490" name="Tree Status">
                 <customproperties/>
             </layer-tree-layer>
             <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="soil_test_recommendation20130603122843299" name="Soil Test Recommendations">
-                <customproperties/>
-            </layer-tree-layer>
-            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="soil_test20130603122942351" name="Soil Tests">
                 <customproperties/>
             </layer-tree-layer>
         </layer-tree-group>
@@ -45,10 +45,10 @@
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="Land Areas20121204131751632" name="Land Areas">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Habitat Enhancement Areas20121204131751547" name="Habitat Enhancement Areas">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Habitat Enhancement Areas20121204131751547" name="Habitat Enhancement Areas">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="activity_area20130101231920603" name="Activities">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="activity_area20130101231920603" name="Activities">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="burn_compartment20130605072953108" name="Burn Compartments">
@@ -60,14 +60,11 @@
         <layer-tree-group expanded="1" checked="Qt::Unchecked" name="External Layers">
             <customproperties/>
         </layer-tree-group>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="External Base Maps">
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="External Base Maps">
             <customproperties/>
         </layer-tree-group>
-        <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Lookup Tables">
+        <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Lookup Tables">
             <customproperties/>
-            <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20140828111519253" name="Bing Aerial">
-                <customproperties/>
-            </layer-tree-layer>
             <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="planned_activity20130101231922171" name="Planned Activities">
                 <customproperties/>
             </layer-tree-layer>
@@ -143,10 +140,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-14911809.52733844518661499</xmin>
-            <ymin>8069294.90947296656668186</ymin>
-            <xmax>-14908630.62035002559423447</xmax>
-            <ymax>8071439.79836405254900455</ymax>
+            <xmin>-9313507.21223761886358261</xmin>
+            <ymin>4089377.55083898548036814</ymin>
+            <xmax>-9309531.40667800977826118</xmax>
+            <ymax>4092531.38417553622275591</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -203,8 +200,10 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828115707048"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722104838877"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828115545537"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141003141024717"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Areas20121204131751547"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828151035371"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141003135529368"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:26917" srcDatumTransform="-1" destDatumTransform="-1" layerid="220130610224644497"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Firebreaks20121204132835298"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722184409011"/>
@@ -240,14 +239,14 @@
             <item>Recreation20121204131623145</item>
             <item>Habitat Enhancement Points20121204131751561</item>
             <item>Cultural Features20121204131751585</item>
-            <item>Trees20121204131751596</item>
             <item>Water Point Features20121204131510425</item>
+            <item>Trees20121204131751596</item>
+            <item>soil_test20130603122942351</item>
+            <item>tree_status20130603213537490</item>
+            <item>soil_test_recommendation20130603122843299</item>
             <item>trail20131110173044662</item>
             <item>road_line20130101154010851</item>
             <item>Firebreaks20121204132835298</item>
-            <item>tree_status20130603213537490</item>
-            <item>soil_test_recommendation20130603122843299</item>
-            <item>soil_test20130603122942351</item>
             <item>Land Areas20121204131751632</item>
             <item>Habitat Enhancement Areas20121204131751547</item>
             <item>activity_area20130101231920603</item>
@@ -276,18 +275,17 @@
             <item>species_tree_type20131128080501132</item>
             <item>water_type20130603100649684</item>
             <item>Water Feature Types20121204111631302</item>
-            <item>OpenLayers_plugin_layer20140828111519253</item>
         </custom-order>
     </layer-tree-canvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Control Points" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Control Points" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="control_point20140811132323039" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="control_point20140811132323039" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
@@ -295,22 +293,27 @@
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Cultural Features" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Trees" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Water Point Features" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Water Point Features" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="0"/>
-            </filegroup>
-        </legendlayer>
-        <legendgroup open="true" checked="Qt::Unchecked" name="Analytical Layers">
+        <legendgroup open="false" checked="Qt::Unchecked" name="Analytical Layers">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Crop Trees" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="0"/>
+                </filegroup>
+            </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
@@ -319,11 +322,6 @@
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Soil Test Recommendations" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="soil_test_recommendation20130603122843299" visible="0"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
-                <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="0"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
@@ -347,13 +345,13 @@
                 <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Areas" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="0"/>
+                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="activity_area20130101231920603" visible="0"/>
             </filegroup>
         </legendlayer>
@@ -368,13 +366,8 @@
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::Unchecked" name="External Layers"/>
-        <legendgroup open="true" checked="Qt::Unchecked" name="External Base Maps"/>
-        <legendgroup open="false" checked="Qt::PartiallyChecked" name="Lookup Tables">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
-                <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140828111519253" visible="1"/>
-                </filegroup>
-            </legendlayer>
+        <legendgroup open="true" checked="Qt::Checked" name="External Base Maps"/>
+        <legendgroup open="false" checked="Qt::Unchecked" name="Lookup Tables">
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="planned_activity20130101231922171" visible="0"/>
@@ -492,30 +485,7 @@
             </legendlayer>
         </legendgroup>
     </legend>
-    <mapcanvas>
-        <units>degrees</units>
-        <extent>
-            <xmin>2453.45454545454549589</xmin>
-            <ymin>-1656</ymin>
-            <xmax>2944.36363636363603291</xmax>
-            <ymax>-1106.18181818181801646</ymax>
-        </extent>
-        <projections>0</projections>
-        <destinationsrs>
-            <spatialrefsys>
-                <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                <srsid>3452</srsid>
-                <srid>4326</srid>
-                <authid>EPSG:4326</authid>
-                <description>WGS 84</description>
-                <projectionacronym>longlat</projectionacronym>
-                <ellipsoidacronym>WGS84</ellipsoidacronym>
-                <geographicflag>true</geographicflag>
-            </spatialrefsys>
-        </destinationsrs>
-        <layer_coordinate_transform_info/>
-    </mapcanvas>
-    <projectlayers layercount="43">
+    <projectlayers layercount="42">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="activity_type" sql=</datasource>
@@ -605,7 +575,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="house.svg"/>
+                            <prop k="name" v="House.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -614,32 +584,13 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="1">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="255,255,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="rectangle"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="no"/>
-                            <prop k="outline_width" v="0"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="5.4"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -653,7 +604,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -664,7 +615,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="pictograms-nps-4-wheel-drive_road.svg"/>
+                            <prop k="name" v="HistoricSite.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -673,32 +624,13 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="4"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="3">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="255,255,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="rectangle"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="no"/>
-                            <prop k="outline_width" v="0"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="5"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
@@ -712,7 +644,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -732,7 +664,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -743,7 +675,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Unknown.svg"/>
+                            <prop k="name" v="Unknown_Cultural.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -752,7 +684,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -1740,7 +1672,7 @@
             <renderer-v2 attr="Habitat Enhancement Types_habenhtype_dsc" symbollevels="0" type="categorizedSymbol">
                 <categories>
                     <category symbol="0" value="Brush Pile" label="Brush Pile"/>
-                    <category symbol="1" value="Fallow Field" label="Fallow Field"/>
+                    <category symbol="1" value="Fallow Field" label="Fallow Field/Meadow"/>
                     <category symbol="2" value="Planting" label="Planting"/>
                     <category symbol="3" value="Shrub Thicket" label="Shrub Thicket"/>
                     <category symbol="4" value="Wood Duck Nest Box" label="Nest Box"/>
@@ -1752,7 +1684,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Brush_Pile_White.svg"/>
+                            <prop k="name" v="Brush_Pile.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -1772,7 +1704,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="green-grass.svg"/>
+                            <prop k="name" v="Grass.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -1801,7 +1733,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -1813,7 +1745,7 @@
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="ShrubThicket.svg"/>
-                            <prop k="offset" v="-0.2,-0.4"/>
+                            <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -1821,7 +1753,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
+                            <prop k="size" v="8.2"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -1841,7 +1773,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="7"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -1852,7 +1784,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Unknown.svg"/>
+                            <prop k="name" v="Unknown_Habitat.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -2375,31 +2307,6 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
-            <id>OpenLayers_plugin_layer20140828111519253</id>
-            <datasource></datasource>
-            <title></title>
-            <abstract></abstract>
-            <keywordList>
-                <value></value>
-            </keywordList>
-            <layername>Bing Aerial</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
-                    <srsid>3857</srsid>
-                    <srid>3857</srid>
-                    <authid>EPSG:3857</authid>
-                    <description>WGS 84 / Pseudo Mercator</description>
-                    <projectionacronym>merc</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <customproperties>
-                <property key="ol_layer_type" value="Bing Aerial"/>
-            </customproperties>
-        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>Raster20140828112755810</id>
             <datasource>../../../../../Documents/Landmgt/MaasProperties/Images/TakuValleySubdivision.jpg</datasource>
@@ -2566,7 +2473,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
+                            <prop k="size" v="8.2"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2637,7 +2544,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Unknown.svg"/>
+                            <prop k="name" v="Unknown_Recreation.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -2706,7 +2613,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
+                            <prop k="size" v="7"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -2715,11 +2622,11 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="gpsicons/teepee.svg"/>
+                            <prop k="name" v="teepee.svg"/>
                             <prop k="offset" v="-0.2,-0.4"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
+                            <prop k="outline" v="#ffffff"/>
                             <prop k="outline-width" v="1"/>
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
@@ -2733,7 +2640,7 @@
                     <symbol alpha="1" type="marker" name="4">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="255,255,255,255"/>
+                            <prop k="color" v="0,0,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
@@ -2752,9 +2659,9 @@
                         </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
+                            <prop k="fill" v="#ffffff"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="amenity/amenity_firestation.svg"/>
+                            <prop k="name" v="amenity_firestation.svg"/>
                             <prop k="offset" v="0,-0.2"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -2851,7 +2758,7 @@
                     <symbol alpha="1" type="marker" name="8">
                         <layer pass="0" class="SimpleMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="255,255,255,255"/>
+                            <prop k="color" v="0,0,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="circle"/>
@@ -2863,16 +2770,16 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
+                            <prop k="size" v="7"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
+                            <prop k="fill" v="#ffffff"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="tourist/tourist_picnic.svg"/>
+                            <prop k="name" v="tourist_picnic.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3679,7 +3586,7 @@
             <keywordList>
                 <value></value>
             </keywordList>
-            <layername>Trees</layername>
+            <layername>Crop Trees</layername>
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs</proj4>
@@ -3702,7 +3609,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Tree.svg"/>
+                            <prop k="name" v="Tree_Deciduous.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -3966,7 +3873,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Water Point Features20121204131510425</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="water_point" (geometry) sql=</datasource>
             <title></title>
@@ -4044,8 +3951,8 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Unknown.svg"/>
-                            <prop k="offset" v="0,0"/>
+                            <prop k="name" v="Unknown_Water.svg"/>
+                            <prop k="offset" v="-0.2,-0.4"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="outline" v="#000000"/>
@@ -4053,7 +3960,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="7.8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -4924,7 +4831,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>control_point20140811132323039</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="control_point" (geometry) sql=</datasource>
             <title></title>
@@ -4955,7 +4862,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="control_point.svg"/>
+                            <prop k="name" v="Control_Point.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -6176,21 +6083,20 @@
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
-                        <layer pass="0" class="SimpleMarker" locked="0">
+                        <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
-                            <prop k="color" v="166,206,227,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
+                            <prop k="name" v="Soil_Sample.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
+                            <prop k="outline" v="#000000"/>
+                            <prop k="outline-width" v="1"/>
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="2"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
