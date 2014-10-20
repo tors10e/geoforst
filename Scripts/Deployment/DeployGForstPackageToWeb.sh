@@ -1,44 +1,55 @@
 #!/bin/sh
+PACKAGE_VERSION="0.1"
+SOURCE_DIR="/home/ubuntu/downloads/fsp"
+STAGING_DIR="/home/ubuntu/temp"
+WEB_DIR="/var/www"
+ 
+cd /home/ubuntu/downloads/
+sudo rm -rf /home/ubuntu/downloads/fsp
+hg clone https://torstenernst@bitbucket.org/torstenernst/fsp
+
 
  # Create directory structure.
- mkdir -p ~/temp/GForst_Lite/Maps
- mkdir -p ~/temp/GForst_Lite/Data
- mkdir -p ~/temp/GForst_Lite/Forms
-
- mkdir -p ~/temp/GForst_ME/Maps
- mkdir -p ~/temp/GForst_ME/Forms
+ sudo mkdir -p $STAGING_DIR/GForst_Lite/Maps
+ sudo mkdir -p $STAGING_DIR/GForst_Lite/Data
+ sudo mkdir -p $STAGING_DIR/GForst_Lite/Forms
+ sudo mkdir -p $STAGING_DIR/GForst_Lite/Symbology
  
+ sudo mkdir -p $STAGING_DIR/GForst_ME/Maps
+ sudo mkdir -p $STAGING_DIR/GForst_ME/Forms
+ sudo mkdir -p $STAGING_DIR/GForst_ME/Symbology
+ 
+ sudo mkdir $STAGING_DIR/gf_deployment 
+
  echo "Copying files to temp directories..."
  # Copy files to new directories.
- cp -r  $GEOFORST_HOME/www/WebContent/ ~/temp/gf_deployment # Copy website to temp.
- cp $GEOFORST_HOME/Maps/GForst_Lite.qgs ~/temp/GForst_lite/Maps
- cp $GEOFORST_HOME/Data/FSP2.sqlite ~/temp/GForst_Lite/Data
- cp $GEOFORST_HOME/Forms/* ~/temp/GForst_lite/Forms
+ sudo cp -r  $SOURCE_DIR/www/WebContent/* $STAGING_DIR/gf_deployment 
  
- cp $GEOFORST_HOME/Maps/GForst_ME.qgs ~/temp/GForst_ME/Maps
- cp $GEOFORST_HOME/Forms/* ~/temp/GForst_ME/Forms
+ sudo cp $SOURCE_DIR/Maps/GForst_Lite.qgs $STAGING_DIR/GForst_Lite/Maps
+ sudo cp $SOURCE_DIR/Data/geoforst.sqlite $STAGING_DIR/GForst_Lite/Data
+ sudo cp $SOURCE_DIR/Forms/* $STAGING_DIR/GForst_Lite/Forms
+ sudo cp $SOURCE_DIR/Forms/* $STAGING_DIR/GForst_Lite/Symbology
+  
+sudo cp $SOURCE_DIR/Maps/GForst_ME.qgs $STAGING_DIR/GForst_ME/Maps
+sudo cp $SOURCE_DIR/Forms/* $STAGING_DIR/GForst_ME/Forms
+sudo cp $SOURCE_DIR/Forms/* $STAGING_DIR/GForst_ME/Symbols
  
- echo "Zipping the files..."
+  echo "Zipping the files..."
  # Create a zip package.
- rm ~/temp/gf_deployment/packages/0.1/* # Clean the directory first since things weren't getting overwritten.
- cd ~/temp # The path to the directory to be zipped must be relative to prevent zip from including the full path in the output.
-  
+ sudo rm $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION/* # Clean the directory first since things weren't getting overwritten.
+ sudo mkdir -p $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION
+ cd $STAGING_DIR # The path to the directory to be zipped must be relative to prevent zip from including the full path in the output.
+ 
+ sudo zip -ru $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION/GForst_Lite_v$PACKAGE_VERSION.zip  ./GForst_Lite/ 
+ sudo zip -ru $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION/GForst_ME_v$PACKAGE_VERSION.zip ./GForst_ME/ 
+ 
+
  # Update date on web page.
- currDate=$(date +"%m-%d-%Y")
- sed -i '' 's/\[DATE\]/'$currDate/g  ~/temp/gf_deployment/index.html
+ CURR_DATE=$(date +"%m-%d-%Y")
+ sudo sed -i 's/\[DATE\]/'$CURR_DATE/g  $STAGING_DIR/gf_deployment/index.html
  
- zip -ru ~/temp/gf_deployment/packages/0.1/GForst_Lite_v0.1.zip  ./GForst_Lite/ 
- zip -ru ~/temp/gf_deployment/packages/0.1/GForst_ME_v0.1.zip ./GForst_ME/ 
+ # Copy files to web directory.
+sudo cp -rf $STAGING_DIR/gf_deployment/* $WEB_DIR
  
- # Copy geoforst web site to torstenernst.com/geoforst.
-echo "Copying from $GEOFORST_HOME/www/WebContent to torstenernst.com/geoforst..."
-scp -r ~/temp/gf_deployment/* ternst@vector.xyxx.com:/home/ternst/www/torstenernst/geoforst
-echo "Copying complete."
- 
- echo "Cleaning up temp files..."
- rm -r ~/temp/GForst_lite
- rm -r ~/temp/GForst_ME
- rm -r ~/temp/gf_deployment
-  
  echo "Packaging and deploying complete."
  
