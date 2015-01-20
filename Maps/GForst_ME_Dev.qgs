@@ -77,13 +77,19 @@
         <layer-tree-layer expanded="0" checked="Qt::Checked" id="Stands20121204133323889" name="Stands">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-group expanded="0" checked="Qt::Checked" name="External Base Maps">
+        <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="External Base Maps">
             <customproperties/>
-            <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141004102851682" name="Bing Aerial">
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141004102851682" name="Bing Aerial">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141009145912107" name="Stamen Terrain-USA/OSM">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141007163112111" name="Google Physical">
                 <customproperties/>
             </layer-tree-layer>
         </layer-tree-group>
-        <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Lookup Tables">
+        <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Reference Tables">
             <customproperties/>
             <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Activity Types20121204111631394" name="Activity Types">
                 <customproperties/>
@@ -194,10 +200,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9312718.00331319496035576</xmin>
-            <ymin>4090430.41441869037225842</ymin>
-            <xmax>-9310255.61442178674042225</xmax>
-            <ymax>4091972.05330915655940771</ymax>
+            <xmin>-9312817.66303551569581032</xmin>
+            <ymin>4090416.30330756725743413</ymin>
+            <xmax>-9310297.06581072136759758</xmax>
+            <ymax>4091993.21997584262862802</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -215,10 +221,13 @@
         <layer_coordinate_transform_info>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="control_point20140403134019760"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141004102535623"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141007163112111"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_concentration_type20140403093339164"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="MapunitPoly20130609232914802"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="unit_area_type20140403093424792"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Firebreaks20121204132835298"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="road_line20130101154010851"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141009145912107"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites_copy20140402110432566"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Activites___2014_copy20140402110926375"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141004102851682"/>
@@ -303,6 +312,8 @@
             <item>water_type20130603100649684</item>
             <item>Water Feature Types20121204111631302</item>
             <item>task_status_type20141007144336886</item>
+            <item>OpenLayers_plugin_layer20141007163112111</item>
+            <item>OpenLayers_plugin_layer20141009145912107</item>
         </custom-order>
     </layer-tree-canvas>
     <legend updateDrawingOrder="true">
@@ -417,14 +428,24 @@
                 <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="false" checked="Qt::Checked" name="External Base Maps">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Base Maps">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004102851682" visible="1"/>
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004102851682" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Stamen Terrain-USA/OSM" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141009145912107" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141007163112111" visible="1"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
-        <legendgroup open="false" checked="Qt::PartiallyChecked" name="Lookup Tables">
+        <legendgroup open="false" checked="Qt::PartiallyChecked" name="Reference Tables">
             <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="Activity Types20121204111631394" visible="0"/>
@@ -582,7 +603,7 @@
             </legendlayer>
         </legendgroup>
     </legend>
-    <projectlayers layercount="54">
+    <projectlayers layercount="56">
         <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Activites___2010_copy20140402110700963</id>
             <datasource>dbname='fsp' host=localhost port=5432 user='ternst' password='Black1ce!' sslmode=disable key='activityarea_id' srid=2163 type=MULTIPOLYGON table="public"."activity_area" (geometry) sql="activity_date" >= '2011-01-01' AND "activity_date" &lt;= '2011-12-31'</datasource>
@@ -2026,7 +2047,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='cultpt_id' srid=2163 type=POINT table="cultural_point" (geometry) sql=</datasource>
             <title></title>
@@ -2048,18 +2069,15 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "description", '&lt;NULL>' )</previewExpression>
             <vectorjoins>
                 <join joinFieldName="culttype_id" targetFieldName="culttype_id" memoryCache="0" joinLayerId="cultural_type20121216225244192"/>
             </vectorjoins>
             <renderer-v2 attr="Cultural Types_culttype_dsc" symbollevels="0" type="categorizedSymbol">
                 <categories>
                     <category symbol="0" value="Existing Structure" label="Existing Structure"/>
-                    <category symbol="1" value="Historic Homesite (Abandoned)" label="Historic Homesite (Abandoned)"/>
-                    <category symbol="2" value="Historic Native Settlement" label="Historic Native Settlement"/>
-                    <category symbol="3" value="Historic Site" label="Historic Site"/>
-                    <category symbol="4" value="Well" label="Well"/>
-                    <category symbol="5" value="" label=""/>
+                    <category symbol="1" value="Historic Site" label="Historic Site"/>
+                    <category symbol="2" value="" label=""/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
@@ -2107,66 +2125,6 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="HistoricSite.svg"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
-                            <prop k="outline-width" v="1"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="marker" name="3">
-                        <layer pass="0" class="SvgMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="HistoricSite.svg"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
-                            <prop k="outline-width" v="1"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="marker" name="4">
-                        <layer pass="0" class="SvgMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="Well.svg"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
-                            <prop k="outline-width" v="1"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="marker" name="5">
-                        <layer pass="0" class="SvgMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="Unknown_Cultural.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2206,6 +2164,8 @@
                         </layer>
                     </symbol>
                 </source-symbol>
+                <colorramp type="randomcolors" name="[source]"/>
+                <invertedcolorramp value="0"/>
                 <rotation/>
                 <sizescale scalemethod="area"/>
             </renderer-v2>
@@ -3875,6 +3835,56 @@
                 <property key="ol_layer_type" value="Bing Aerial"/>
             </customproperties>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+            <id>OpenLayers_plugin_layer20141007163112111</id>
+            <datasource>.</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Google Physical</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties>
+                <property key="ol_layer_type" value="Google Physical"/>
+            </customproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+            <id>OpenLayers_plugin_layer20141009145912107</id>
+            <datasource>.</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Stamen Terrain-USA/OSM</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties>
+                <property key="ol_layer_type" value="Stamen Terrain-USA/OSM"/>
+            </customproperties>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Recreation Types20121204111631341</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
@@ -4994,7 +5004,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Trees20121204131751596</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='tree_id' srid=2163 type=POINT table="tree" (geometry) sql=</datasource>
             <title></title>
@@ -5213,8 +5223,8 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="tree_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="tree_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="start_year">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -5222,17 +5232,26 @@
                 <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="speciestreetype_id">
                     <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" fieldEditable="1" Key="speciestreetype_id" Layer="species_tree_type20140403090557542" Value="speciestreetype_dsc" labelOnTop="0" AllowMulti="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="created_by_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="created_by_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
             </edittypes>
             <editform>../Forms/Tree.ui</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>uifilelayout</editorlayout>
+            <editorlayout>tablayout</editorlayout>
+            <aliases>
+                <alias field="speciestreetype_id" index="2" name="Species Type"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
+            <attributeEditorForm>
+                <attributeEditorContainer name="Tree Information"/>
+                <attributeEditorContainer name="Tree Status">
+                    <attributeEditorRelation relation="tree_status20130603213537490_tree_id_Trees20121204131751596_tree_id" name="tree_status20130603213537490_tree_id_Trees20121204131751596_tree_id"/>
+                </attributeEditorContainer>
+            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -6155,7 +6174,7 @@
             </srs>
             <customproperties/>
             <provider encoding="System">postgres</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE("culttype_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="culttype_id">
@@ -7567,12 +7586,129 @@
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>uifilelayout</editorlayout>
+            <editorlayout>tablayout</editorlayout>
+            <aliases>
+                <alias field="ca_relative_amount" index="32" name="Calcium Relative Amount"/>
+                <alias field="ca_unit" index="31" name="Calcium Unit"/>
+                <alias field="ca_value" index="30" name="Calcium Value"/>
+                <alias field="client_address_1" index="7" name="Address 1"/>
+                <alias field="client_address_2" index="8" name="Address 2"/>
+                <alias field="client_city" index="9" name="City"/>
+                <alias field="client_first_name" index="6" name="First Name"/>
+                <alias field="client_last_name" index="5" name="Last Name"/>
+                <alias field="client_state" index="10" name="State"/>
+                <alias field="client_zip" index="11" name="Zip"/>
+                <alias field="completed_date" index="13" name="Completed Date"/>
+                <alias field="extractant" index="22" name="Extractant"/>
+                <alias field="k_relative_amount" index="29" name="Potassium Relative Amount"/>
+                <alias field="k_unit" index="28" name="Potassium Unit"/>
+                <alias field="k_value" index="27" name="Potassium Value"/>
+                <alias field="lab_address_1" index="15" name="Address 1"/>
+                <alias field="lab_address_2" index="16" name="Address 2"/>
+                <alias field="lab_city" index="17" name="City"/>
+                <alias field="lab_email" index="21" name="Email"/>
+                <alias field="lab_id" index="12" name="Lab ID"/>
+                <alias field="lab_name" index="14" name="Lab Name"/>
+                <alias field="lab_phone" index="20" name="Phone"/>
+                <alias field="lab_state" index="18" name="State"/>
+                <alias field="lab_zip" index="19" name="Zip"/>
+                <alias field="lbc_value" index="44" name="LBC Value"/>
+                <alias field="lime_buffer_capacity_method" index="23" name="LBC Method"/>
+                <alias field="mg_relative_amount" index="35" name="Magnesium Relative Amount"/>
+                <alias field="mg_unit" index="34" name="Magnesium Unit"/>
+                <alias field="mg_value" index="33" name="Magnesium Value"/>
+                <alias field="mn_relative_amount" index="41" name="Manganese Relative Amount"/>
+                <alias field="mn_unit" index="40" name="Manganese Unit"/>
+                <alias field="mn_value" index="39" name="Manganese Value"/>
+                <alias field="p_relative_amount" index="26" name="Phosphorous Relative Amount"/>
+                <alias field="p_unit" index="25" name="Phosphorous Unit"/>
+                <alias field="p_value" index="24" name="Phosphorus Value"/>
+                <alias field="ph_relative_amount" index="43" name="Ph relative Amount"/>
+                <alias field="ph_value" index="42" name="Ph Value"/>
+                <alias field="sample_collection_date" index="3" name="Sample Collection Date"/>
+                <alias field="sample_desc" index="4" name="Sample Description"/>
+                <alias field="sample_id" index="2" name="Sample ID"/>
+                <alias field="sample_name" index="1" name="Sample Name"/>
+                <alias field="soiltest_id" index="0" name="Test ID"/>
+                <alias field="zn_relative_amount" index="38" name="Zinc Relative Amount"/>
+                <alias field="zn_unit" index="37" name="Zinc Unit"/>
+                <alias field="zn_value" index="36" name="Zinc Value"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
+            <attributeEditorForm>
+                <attributeEditorContainer name="Sample">
+                    <attributeEditorField index="0" name="soiltest_id"/>
+                    <attributeEditorField index="1" name="sample_name"/>
+                    <attributeEditorField index="2" name="sample_id"/>
+                    <attributeEditorField index="3" name="sample_collection_date"/>
+                    <attributeEditorField index="4" name="sample_desc"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Client">
+                    <attributeEditorField index="5" name="client_last_name"/>
+                    <attributeEditorField index="6" name="client_first_name"/>
+                    <attributeEditorField index="7" name="client_address_1"/>
+                    <attributeEditorField index="8" name="client_address_2"/>
+                    <attributeEditorField index="9" name="client_city"/>
+                    <attributeEditorField index="10" name="client_state"/>
+                    <attributeEditorField index="11" name="client_zip"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Lab">
+                    <attributeEditorField index="12" name="lab_id"/>
+                    <attributeEditorField index="13" name="completed_date"/>
+                    <attributeEditorField index="14" name="lab_name"/>
+                    <attributeEditorField index="15" name="lab_address_1"/>
+                    <attributeEditorField index="16" name="lab_address_2"/>
+                    <attributeEditorField index="17" name="lab_city"/>
+                    <attributeEditorField index="18" name="lab_state"/>
+                    <attributeEditorField index="19" name="lab_zip"/>
+                    <attributeEditorField index="20" name="lab_phone"/>
+                    <attributeEditorField index="21" name="lab_email"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Ph">
+                    <attributeEditorField index="22" name="extractant"/>
+                    <attributeEditorField index="23" name="lime_buffer_capacity_method"/>
+                    <attributeEditorField index="42" name="ph_value"/>
+                    <attributeEditorField index="43" name="ph_relative_amount"/>
+                    <attributeEditorField index="44" name="lbc_value"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Phosphorous">
+                    <attributeEditorField index="24" name="p_value"/>
+                    <attributeEditorField index="25" name="p_unit"/>
+                    <attributeEditorField index="26" name="p_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="K">
+                    <attributeEditorField index="27" name="k_value"/>
+                    <attributeEditorField index="28" name="k_unit"/>
+                    <attributeEditorField index="29" name="k_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Ca">
+                    <attributeEditorField index="30" name="ca_value"/>
+                    <attributeEditorField index="31" name="ca_unit"/>
+                    <attributeEditorField index="32" name="ca_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Mg">
+                    <attributeEditorField index="33" name="mg_value"/>
+                    <attributeEditorField index="34" name="mg_unit"/>
+                    <attributeEditorField index="35" name="mg_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Zn">
+                    <attributeEditorField index="36" name="zn_value"/>
+                    <attributeEditorField index="37" name="zn_unit"/>
+                    <attributeEditorField index="38" name="zn_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Mn">
+                    <attributeEditorField index="39" name="mn_value"/>
+                    <attributeEditorField index="40" name="mn_unit"/>
+                    <attributeEditorField index="41" name="mn_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Recommendations">
+                    <attributeEditorRelation relation="soil_test_recommendation20130603122843299_soiltest_id_soil_test20140403091105174_soiltest_id" name="soil_test_recommendation20130603122843299_soiltest_id_soil_test20140403091105174_soiltest_id"/>
+                </attributeEditorContainer>
+            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>soil_test_recommendation20130603122843299</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='soiltestrec_id' table="soil_test_recommendation" sql=</datasource>
             <title></title>
@@ -7598,11 +7734,11 @@
             <previewExpression>COALESCE("soiltestrec_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="soiltestrec_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="soiltestrec_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="soiltest_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="soiltest_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="crop">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -7667,6 +7803,26 @@
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
+            <aliases>
+                <alias field="b_unit" index="14" name="Boron Unit"/>
+                <alias field="b_value" index="13" name="Boron Value"/>
+                <alias field="limestone_unit" index="4" name="Limestone Unit"/>
+                <alias field="limestone_value" index="3" name="Limestone Value"/>
+                <alias field="mn_unit" index="16" name="Manganese Unit"/>
+                <alias field="mn_value" index="15" name="Manganese Value"/>
+                <alias field="n_unit" index="6" name="Nitrogen Unit"/>
+                <alias field="n_value" index="5" name="Nitrogen Value"/>
+                <alias field="ph_max" index="20" name="PH Maximum"/>
+                <alias field="ph_min" index="19" name="PH minimum"/>
+                <alias field="phosphate_unit" index="8" name="Phosphate Unit"/>
+                <alias field="phosphate_value" index="7" name="Phosphate Value"/>
+                <alias field="potash_unit" index="10" name="Potash Unit"/>
+                <alias field="potash_value" index="9" name="Potash Value"/>
+                <alias field="s_unit" index="12" name="Sulfur Unit"/>
+                <alias field="s_value" index="11" name="Sulfur Value"/>
+                <alias field="zn_unit" index="18" name="Zinc Unit"/>
+                <alias field="zn_value" index="17" name="Zinc Value"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
@@ -7924,20 +8080,20 @@
             <previewExpression></previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="taskstatus_id">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="taskstatus_id">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="status_code">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="status_code">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="status_dsc">
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="status_dsc">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -8369,7 +8525,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>tree_status20130603213537490</id>
             <datasource>dbname='fsp' host=localhost port=5432 sslmode=disable key='treestatus_id' table="tree_status" sql=</datasource>
             <title></title>
@@ -8395,26 +8551,26 @@
             <previewExpression>COALESCE("treestatus_id", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="treestatus_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="treestatus_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="tree_id">
-                    <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" fieldEditable="1" Key="tree_id" Layer="Trees20121204131751596" Value="tree_id" labelOnTop="0" AllowMulti="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="tree_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="DateTime" name="status_date">
                     <widgetv2config fieldEditable="1" calendar_popup="0" display_format="" field_format="yyyy-mm-dd" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="dbh_in">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="dbh_in">
+                    <widgetv2config fieldEditable="1" Step="0" Style="SpinBox" labelOnTop="0" Min="4" Max="100"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="height_ft">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="height_ft">
+                    <widgetv2config fieldEditable="1" Step="0" Style="SpinBox" labelOnTop="0" Min="1" Max="250"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="status_notes">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="age">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="age">
+                    <widgetv2config fieldEditable="1" Step="1" Style="SpinBox" labelOnTop="0" Min="1" Max="500"/>
                 </edittype>
             </edittypes>
             <editform>.</editform>
@@ -8422,6 +8578,13 @@
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
+            <aliases>
+                <alias field="age" index="6" name="Age"/>
+                <alias field="dbh_in" index="3" name="DBH (in)"/>
+                <alias field="height_ft" index="4" name="Height (ft)"/>
+                <alias field="status_date" index="2" name="Status Date"/>
+                <alias field="status_notes" index="5" name="Notes"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
@@ -8610,10 +8773,10 @@
     <properties>
         <WMSContactPerson type="QString"></WMSContactPerson>
         <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <DeprecatedLabels>
             <Enabled type="bool">true</Enabled>
         </DeprecatedLabels>
-        <WMSContactOrganization type="QString"></WMSContactOrganization>
         <WMSKeywordList type="QStringList">
             <value></value>
         </WMSKeywordList>
@@ -8630,8 +8793,8 @@
             <DegreeFormat type="QString">D</DegreeFormat>
         </PositionPrecision>
         <WCSUrl type="QString"></WCSUrl>
-        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
         <WMSContactPhone type="QString"></WMSContactPhone>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
         <WMSServiceAbstract type="QString"></WMSServiceAbstract>
         <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
         <Measure>
@@ -8664,28 +8827,8 @@
                 <value>Habitat Enhancement Areas20121204131751547</value>
                 <value>Habitat Enhancement Points20121204131751561</value>
                 <value>Land Areas20121204131751632</value>
-                <value>Recreation20121204131623145</value>
-                <value>Stands20121204133323889</value>
-                <value>Trees20121204131751596</value>
-                <value>Water Point Features20121204131510425</value>
-                <value>burn_compartment20130605072953108</value>
-                <value>control_point20140403134019760</value>
-                <value>road_line20130101154010851</value>
-                <value>soil_test20140403091105174</value>
-                <value>trail20131110173044662</value>
-                <value>trail20140402165005718</value>
             </LayerSnappingList>
             <LayerSnappingEnabledList type="QStringList">
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
-                <value>disabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
                 <value>disabled</value>
@@ -8711,28 +8854,8 @@
                 <value>0</value>
                 <value>0</value>
                 <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
-                <value>0</value>
             </LayerSnappingToleranceUnitList>
             <LayerSnapToList type="QStringList">
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
-                <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
                 <value>to_vertex_and_segment</value>
@@ -8747,16 +8870,6 @@
             </LayerSnapToList>
             <TopologicalEditing type="bool">false</TopologicalEditing>
             <LayerSnappingToleranceList type="QStringList">
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
-                <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
                 <value>0.000000</value>
