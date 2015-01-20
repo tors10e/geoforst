@@ -1,164 +1,251 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="2.4.0-Chugiak" minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-  <renderer-v2 attr="Habitat Enhancement Types_habenhtype_dsc" symbollevels="0" type="categorizedSymbol">
+<qgis version="2.4.0-Chugiak" minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+  <renderer-v2 attr="habenhtype_id" symbollevels="0" type="categorizedSymbol">
     <categories>
-      <category symbol="0" value="Brush Pile" label="Brush Pile"/>
-      <category symbol="1" value="Fallow Field" label="Fallow Field"/>
-      <category symbol="2" value="Planting" label="Planting"/>
-      <category symbol="3" value="Shrub Thicket" label="Shrub Thicket"/>
-      <category symbol="4" value="Wood Duck Nest Box" label="Nest Box"/>
-      <category symbol="5" value="" label="Unknown"/>
+      <category symbol="0" value="5" label="Fallow Field"/>
+      <category symbol="1" value="2" label="Oak Early Successional"/>
+      <category symbol="2" value="6" label="Shrub Thicket"/>
+      <category symbol="3" value="4" label="Soft Edge"/>
+      <category symbol="4" value="" label="Undefined"/>
     </categories>
     <symbols>
-      <symbol alpha="1" type="marker" name="0">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="Brush_Pile_White.svg"/>
+      <symbol alpha="1" type="fill" name="0">
+        <layer pass="0" class="LinePatternFill" locked="0">
+          <prop k="color" v="0,0,0,255"/>
+          <prop k="distance" v="2"/>
+          <prop k="distance_map_unit_scale" v="0,0"/>
+          <prop k="distance_unit" v="MM"/>
+          <prop k="line_width_map_unit_scale" v="0,0"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="lineangle" v="0"/>
+          <prop k="linewidth" v="0.5"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_width_map_unit_scale" v="0,0"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <symbol alpha="1" type="line" name="@0@0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="color" v="128,255,0,255"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="penstyle" v="solid"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width" v="0.5"/>
+              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_unit" v="MM"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="fill" name="1">
+        <layer pass="0" class="PointPatternFill" locked="0">
+          <prop k="displacement_x" v="0"/>
+          <prop k="displacement_x_map_unit_scale" v="0,0"/>
+          <prop k="displacement_x_unit" v="MM"/>
+          <prop k="displacement_y" v="0"/>
+          <prop k="displacement_y_map_unit_scale" v="0,0"/>
+          <prop k="displacement_y_unit" v="MM"/>
+          <prop k="distance_x" v="3"/>
+          <prop k="distance_x_map_unit_scale" v="0,0"/>
+          <prop k="distance_x_unit" v="MM"/>
+          <prop k="distance_y" v="3"/>
+          <prop k="distance_y_map_unit_scale" v="0,0"/>
+          <prop k="distance_y_unit" v="MM"/>
+          <prop k="outline_width_map_unit_scale" v="0,0"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <symbol alpha="1" type="marker" name="@1@0">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="fill" v="#000000"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="tree_deciduous_green.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline" v="#000000"/>
+              <prop k="outline-width" v="1"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="fill" name="2">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="border_width_unit" v="MM"/>
+          <prop k="color" v="241,244,199,255"/>
+          <prop k="color_border" v="175,179,138,255"/>
+          <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
+          <prop k="style" v="solid"/>
+          <prop k="style_border" v="solid"/>
+          <prop k="width_border" v="0.26"/>
+        </layer>
+        <layer pass="0" class="PointPatternFill" locked="0">
+          <prop k="displacement_x" v="0"/>
+          <prop k="displacement_x_map_unit_scale" v="0,0"/>
+          <prop k="displacement_x_unit" v="MM"/>
+          <prop k="displacement_y" v="1"/>
+          <prop k="displacement_y_map_unit_scale" v="0,0"/>
+          <prop k="displacement_y_unit" v="MM"/>
+          <prop k="distance_x" v="1.5"/>
+          <prop k="distance_x_map_unit_scale" v="0,0"/>
+          <prop k="distance_x_unit" v="MM"/>
+          <prop k="distance_y" v="2"/>
+          <prop k="distance_y_map_unit_scale" v="0,0"/>
+          <prop k="distance_y_unit" v="MM"/>
           <prop k="outline_width_map_unit_scale" v="0,0"/>
           <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="8"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
+          <symbol alpha="1" type="marker" name="@2@1">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="144,112,76,255"/>
+              <prop k="color_border" v="0,0,0,0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="0.6"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
-      <symbol alpha="1" type="marker" name="1">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="green-grass.svg"/>
+      <symbol alpha="1" type="fill" name="3">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="border_width_unit" v="MM"/>
+          <prop k="color" v="64,128,0,255"/>
+          <prop k="color_border" v="0,0,0,255"/>
+          <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
-          <prop k="outline_width_map_unit_scale" v="0,0"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="8"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
+          <prop k="style" v="solid"/>
+          <prop k="style_border" v="solid"/>
+          <prop k="width_border" v="0.26"/>
         </layer>
-      </symbol>
-      <symbol alpha="1" type="marker" name="2">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="Wheat.svg"/>
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="border_width_unit" v="MM"/>
+          <prop k="color" v="0,0,255,255"/>
+          <prop k="color_border" v="0,0,0,255"/>
+          <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
-          <prop k="outline_width_map_unit_scale" v="0,0"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="6"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
+          <prop k="style" v="b_diagonal"/>
+          <prop k="style_border" v="no"/>
+          <prop k="width_border" v="0.46"/>
         </layer>
       </symbol>
-      <symbol alpha="1" type="marker" name="3">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="ShrubThicket.svg"/>
-          <prop k="offset" v="-0.2,-0.4"/>
+      <symbol alpha="1" type="fill" name="4">
+        <layer pass="0" class="LinePatternFill" locked="0">
+          <prop k="color" v="0,0,0,255"/>
+          <prop k="distance" v="1.5"/>
+          <prop k="distance_map_unit_scale" v="0,0"/>
+          <prop k="distance_unit" v="MM"/>
+          <prop k="line_width_map_unit_scale" v="0,0"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="lineangle" v="45"/>
+          <prop k="linewidth" v="0.5"/>
+          <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
           <prop k="outline_width_map_unit_scale" v="0,0"/>
           <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="8"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
-        </layer>
-      </symbol>
-      <symbol alpha="1" type="marker" name="4">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="Nest_Box.svg"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
-          <prop k="outline_width_map_unit_scale" v="0,0"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="7"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
-        </layer>
-      </symbol>
-      <symbol alpha="1" type="marker" name="5">
-        <layer pass="0" class="SvgMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="fill" v="#000000"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="Unknown.svg"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline" v="#000000"/>
-          <prop k="outline-width" v="1"/>
-          <prop k="outline_width_map_unit_scale" v="0,0"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="8"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
+          <symbol alpha="1" type="line" name="@4@0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="penstyle" v="solid"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width" v="0.26"/>
+              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_unit" v="MM"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol alpha="1" type="marker" name="0">
-        <layer pass="0" class="SimpleMarker" locked="0">
-          <prop k="angle" v="0"/>
-          <prop k="color" v="143,229,123,255"/>
-          <prop k="color_border" v="0,0,0,255"/>
-          <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="circle"/>
-          <prop k="offset" v="0,0"/>
+      <symbol alpha="1" type="fill" name="0">
+        <layer pass="0" class="LinePatternFill" locked="0">
+          <prop k="color" v="0,0,0,255"/>
+          <prop k="distance" v="1.5"/>
+          <prop k="distance_map_unit_scale" v="0,0"/>
+          <prop k="distance_unit" v="MM"/>
+          <prop k="line_width_map_unit_scale" v="0,0"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="lineangle" v="45"/>
+          <prop k="linewidth" v="0.5"/>
+          <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0"/>
           <prop k="outline_width_map_unit_scale" v="0,0"/>
           <prop k="outline_width_unit" v="MM"/>
-          <prop k="scale_method" v="area"/>
-          <prop k="size" v="2"/>
-          <prop k="size_map_unit_scale" v="0,0"/>
-          <prop k="size_unit" v="MM"/>
-          <prop k="vertical_anchor_point" v="1"/>
+          <symbol alpha="1" type="line" name="@0@0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="penstyle" v="solid"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width" v="0.26"/>
+              <prop k="width_map_unit_scale" v="0,0"/>
+              <prop k="width_unit" v="MM"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
     </source-symbol>
-    <colorramp type="gradient" name="[source]">
-      <prop k="color1" v="247,251,255,255"/>
-      <prop k="color2" v="8,48,107,255"/>
-      <prop k="discrete" v="0"/>
-      <prop k="stops" v="0.13;222,235,247,255:0.26;198,219,239,255:0.39;158,202,225,255:0.52;107,174,214,255:0.65;66,146,198,255:0.78;33,113,181,255:0.9;8,81,156,255"/>
+    <colorramp type="random" name="[source]">
+      <prop k="count" v="9"/>
+      <prop k="hueMax" v="359"/>
+      <prop k="hueMin" v="0"/>
+      <prop k="satMax" v="255"/>
+      <prop k="satMin" v="0"/>
+      <prop k="valMax" v="255"/>
+      <prop k="valMin" v="0"/>
     </colorramp>
     <invertedcolorramp value="0"/>
     <rotation/>
@@ -313,7 +400,7 @@
   <displayfield>description</displayfield>
   <label>0</label>
   <labelattributes>
-    <label fieldname="" text=""/>
+    <label fieldname="" text="Label"/>
     <family fieldname="" name="MS Shell Dlg 2"/>
     <size fieldname="" units="pt" value="12"/>
     <bold fieldname="" on="0"/>
@@ -328,22 +415,22 @@
     <alignment fieldname="" value="center"/>
     <buffercolor fieldname="" red="255" blue="255" green="255"/>
     <buffersize fieldname="" units="pt" value="1"/>
-    <bufferenabled fieldname="" on=""/>
+    <bufferenabled fieldname="" on="1"/>
     <multilineenabled fieldname="" on=""/>
     <selectedonly on=""/>
   </labelattributes>
   <edittypes>
     <edittype labelontop="0" editable="1" name="OGC_FID"/>
     <edittype labelontop="0" editable="1" name="GEOMETRY"/>
-    <edittype labelontop="0" editable="1" name="habenhpt_id"/>
+    <edittype labelontop="0" editable="1" name="habenharea_id"/>
     <edittype labelontop="0" editable="1" name="habenhtype_id"/>
     <edittype labelontop="0" editable="1" name="description"/>
     <edittype labelontop="0" editable="1" name="created_by_id"/>
-    <edittype labelontop="0" editable="0" name="Habitat Enhancement Types_OGC_FID"/>
+    <edittype labelontop="0" editable="0" name="Habitat Enhancement Types_habenhtype_id"/>
     <edittype labelontop="0" editable="0" name="Habitat Enhancement Types_habenhtype_dsc"/>
     <edittype labelontop="0" editable="0" name="Habitat Enhancement Types_habenhtype_cd"/>
   </edittypes>
-  <editform>../Forms/HabitatEnhancements.ui</editform>
+  <editform>../Forms/HabitatEnhancementsArea.ui</editform>
   <editforminit></editforminit>
   <featformsuppress>0</featformsuppress>
   <annotationform>.</annotationform>
