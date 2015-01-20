@@ -1,3 +1,6 @@
+# Delete existing database and replace with a blank one with spatialite 
+# and populate sqlite table with data from postgres.
+
 import os
 import getpass
 import datetime
@@ -9,6 +12,8 @@ port = 5432
 database = "fsp"
 outputPath = "$GEOFORST_HOME/Data/"
 outputFile = "geoforst.sqlite"
+
+# List of tables we want to replicate in sqlite.
 spatialTables = [
     ["activity_area", "MULTIPOLYGON"],
     ["burn_compartment", "POLYGON"],
@@ -19,6 +24,7 @@ spatialTables = [
     ["forest_inventory_plot", "POLYGON"],
     ["habitat_enhancement_area", "POLYGON"],
     ["habitat_enhancement_point", "POINT"],
+    ["hazard", "POINT"],
     ["land_area", "POLYGON"],
     ["recreation_point", "POINT"],
     ["road_line", "MULTILINESTRING"],
@@ -60,6 +66,7 @@ spatialTables = [
     ["tree_status"]
 ]
 
+
 username = raw_input("Please enter username for database %s on %s: " %(database, host))
 password = getpass.getpass("Please enter password for user %s: " %(username))
 
@@ -100,5 +107,4 @@ for table in spatialTables:
       # Unsure of error, so let's just print it out.
       print e
         
-
 print ("Loading complete!")

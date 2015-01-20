@@ -1,5 +1,5 @@
 # This script synchronizes data from the sqlite database to the master postgresql database.
-# It uses uses the ogr2ogr update and append commands to update the postgres database.
+# It uses uses the ogr2ogr update and append commands to update the postgres staging database.
 
 import os
 import getpass
@@ -36,6 +36,7 @@ tables = [
     ["forest_inventory_plot", "POLYGON"],
     ["habitat_enhancement_area", "POLYGON"],
     ["habitat_enhancement_point", "POINT"],
+    ["hazard", "POINT"],
     ["land_area", "POLYGON"],
     ["recreation_point", "POINT"],
     ["road_line", "MULTILINESTRING"],
@@ -74,7 +75,8 @@ tables = [
     ["soil_test_recommendation"],
     ["stand_description"],
     ["stand_status"],
-    ["tree_status"]
+    ["tree_status"],
+    ["tree_type"]
 ]
 
 user = raw_input("Please enter user name for database %s on %s: " %(database, host))
