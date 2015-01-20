@@ -3,52 +3,52 @@
     <title></title>
     <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="control_point20140811132323039" name="Control Points">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="control_point20140811132323039" name="Control Points">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Recreation20121204131623145" name="Recreation">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Recreation20121204131623145" name="Recreation">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Habitat Enhancement Points20121204131751561" name="Habitat Enhancement Points">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Habitat Enhancement Points20121204131751561" name="Habitat Enhancement Points">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Cultural Features20121204131751585" name="Cultural Features">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Cultural Features20121204131751585" name="Cultural Features">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Water Point Features20121204131510425" name="Water Point Features">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Water Point Features20121204131510425" name="Water Point Features">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Analytical Layers">
+        <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Analytical Layers">
             <customproperties/>
-            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Trees20121204131751596" name="Crop Trees">
-                <customproperties/>
-            </layer-tree-layer>
-            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="soil_test20130603122942351" name="Soil Tests">
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="Trees20121204131751596" name="Crop Trees">
                 <customproperties/>
             </layer-tree-layer>
             <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="tree_status20130603213537490" name="Tree Status">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="soil_test20130603122942351" name="Soil Tests">
                 <customproperties/>
             </layer-tree-layer>
             <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="soil_test_recommendation20130603122843299" name="Soil Test Recommendations">
                 <customproperties/>
             </layer-tree-layer>
         </layer-tree-group>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="trail20131110173044662" name="Trails">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="trail20131110173044662" name="Trails">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="road_line20130101154010851" name="Roads">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="road_line20130101154010851" name="Roads">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Firebreaks20121204132835298" name="Firebreaks">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Firebreaks20121204132835298" name="Firebreaks">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Land Areas20121204131751632" name="Land Areas">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Land Areas20121204131751632" name="Land Areas">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="Habitat Enhancement Areas20121204131751547" name="Habitat Enhancement Areas">
+        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Habitat Enhancement Areas20121204131751547" name="Habitat Enhancement Areas">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="activity_area20130101231920603" name="Activities">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="activity_area20130101231920603" name="Activities">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="burn_compartment20130605072953108" name="Burn Compartments">
@@ -62,7 +62,10 @@
         </layer-tree-group>
         <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="External Base Maps">
             <customproperties/>
-            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141004072920232" name="Bing Aerial">
+            <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141004072920232" name="Bing Aerial">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141106123907106" name="Stamen Watercolor/OSM">
                 <customproperties/>
             </layer-tree-layer>
             <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141004073033248" name="Google Physical">
@@ -142,14 +145,21 @@
             </layer-tree-layer>
         </layer-tree-group>
     </layer-tree-group>
-    <relations/>
+    <relations>
+        <relation referencingLayer="soil_test_recommendation20130603122843299" referencedLayer="soil_test20130603122942351" id="soil_test_recommendation20130603122843299_OGC_FID_soil_test20130603122942351_OGC_FID" name="SOIL_TESTS">
+            <fieldRef referencedField="OGC_FID" referencingField="OGC_FID"/>
+        </relation>
+        <relation referencingLayer="tree_status20130603213537490" referencedLayer="Trees20121204131751596" id="tree_status20130603213537490_tree_id_Trees20121204131751596_OGC_FID" name="TREE_DATA">
+            <fieldRef referencedField="OGC_FID" referencingField="tree_id"/>
+        </relation>
+    </relations>
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-16216955.35990382917225361</xmin>
-            <ymin>1866314.86801575403660536</ymin>
-            <xmax>-6134566.46073090564459562</xmax>
-            <ymax>8173981.54111624043434858</ymax>
+            <xmin>-9312909.35575528256595135</xmin>
+            <ymin>4090352.199103819206357</ymin>
+            <xmax>-9310206.55561335198581219</xmax>
+            <ymax>4092154.0658651040866971</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -183,11 +193,14 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828131519083"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="control_point20140728091858254"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="control_point20140811132323039"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141106123525826"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="activity_area20130101231920603"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="trail20131110173044662"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141106123907106"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140813161719413"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828152434947"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828113623806"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="USGS_Shaded_Relief_Basemap___18k_and_Smaller20141106125151679"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140828111519253"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stands20121204133323889"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722190923971"/>
@@ -207,6 +220,7 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828115707048"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722104838877"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828115545537"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141106123548149"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141003141024717"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Habitat Enhancement Areas20121204131751547"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828151035371"/>
@@ -216,8 +230,10 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722184409011"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828115327071"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision20140828112456913"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20141106123843467"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722114034698"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828160010161"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="USGS_Topographic_Basemap_Small_Scale20141106125033086"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722184844336"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="control_point20140811132141404"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722184313728"/>
@@ -232,6 +248,7 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828152316714"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2163" srcDatumTransform="-1" destDatumTransform="-1" layerid="Trees20121204131751596"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140722184203781"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="USGS_Imagery_Topo_Basemap___18k_and_Smaller20141106124657279"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="3_2_1_020130610225200927"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828152154643"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="TakuValleySubdivision_projected20140828151222575"/>
@@ -249,8 +266,8 @@
             <item>Cultural Features20121204131751585</item>
             <item>Water Point Features20121204131510425</item>
             <item>Trees20121204131751596</item>
-            <item>soil_test20130603122942351</item>
             <item>tree_status20130603213537490</item>
+            <item>soil_test20130603122942351</item>
             <item>soil_test_recommendation20130603122843299</item>
             <item>trail20131110173044662</item>
             <item>road_line20130101154010851</item>
@@ -260,6 +277,9 @@
             <item>activity_area20130101231920603</item>
             <item>burn_compartment20130605072953108</item>
             <item>Stands20121204133323889</item>
+            <item>OpenLayers_plugin_layer20141004072920232</item>
+            <item>OpenLayers_plugin_layer20141106123907106</item>
+            <item>OpenLayers_plugin_layer20141004073033248</item>
             <item>planned_activity20130101231922171</item>
             <item>stand_description20130603102657736</item>
             <item>Activity Types20121204111631394</item>
@@ -283,50 +303,48 @@
             <item>species_tree_type20131128080501132</item>
             <item>water_type20130603100649684</item>
             <item>Water Feature Types20121204111631302</item>
-            <item>OpenLayers_plugin_layer20141004072920232</item>
-            <item>OpenLayers_plugin_layer20141004073033248</item>
         </custom-order>
     </layer-tree-canvas>
     <legend updateDrawingOrder="true">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Control Points" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Control Points" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="control_point20140811132323039" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cultural Features" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Water Point Features" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Water Point Features" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendgroup open="false" checked="Qt::Unchecked" name="Analytical Layers">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Crop Trees" showFeatureCount="0">
+        <legendgroup open="false" checked="Qt::PartiallyChecked" name="Analytical Layers">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Crop Trees" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="0"/>
-                </filegroup>
-            </legendlayer>
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Soil Tests" showFeatureCount="0">
-                <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="0"/>
+                    <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="1"/>
                 </filegroup>
             </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Tree Status" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="tree_status20130603213537490" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Soil Tests" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="soil_test20130603122942351" visible="1"/>
                 </filegroup>
             </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Soil Test Recommendations" showFeatureCount="0">
@@ -335,33 +353,33 @@
                 </filegroup>
             </legendlayer>
         </legendgroup>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Trails" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Trails" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="trail20131110173044662" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Roads" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Roads" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Firebreaks" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Firebreaks" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Habitat Enhancement Areas" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
-            <filegroup open="true" hidden="false">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="activity_area20130101231920603" visible="0"/>
             </filegroup>
         </legendlayer>
@@ -377,9 +395,14 @@
         </legendlayer>
         <legendgroup open="true" checked="Qt::Unchecked" name="External Layers"/>
         <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Base Maps">
-            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004072920232" visible="0"/>
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004072920232" visible="1"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Stamen Watercolor/OSM" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141106123907106" visible="0"/>
                 </filegroup>
             </legendlayer>
             <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
@@ -506,7 +529,7 @@
             </legendlayer>
         </legendgroup>
     </legend>
-    <projectlayers layercount="44">
+    <projectlayers layercount="45">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>Activity Types20121204111631394</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="activity_type" sql=</datasource>
@@ -1179,7 +1202,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="50001" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Habitat Enhancement Areas20121204131751547</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="habitat_enhancement_area" (geometry) sql=</datasource>
             <title></title>
@@ -1233,9 +1256,9 @@
                             <symbol alpha="1" type="marker" name="@0@0">
                                 <layer pass="0" class="SvgMarker" locked="0">
                                     <prop k="angle" v="0"/>
-                                    <prop k="fill" v="#000000"/>
+                                    <prop k="fill" v="#ffffff"/>
                                     <prop k="horizontal_anchor_point" v="1"/>
-                                    <prop k="name" v="green-grass.svg"/>
+                                    <prop k="name" v="geoforst/green-grass.svg"/>
                                     <prop k="offset" v="0,0"/>
                                     <prop k="offset_map_unit_scale" v="0,0"/>
                                     <prop k="offset_unit" v="MM"/>
@@ -2378,6 +2401,31 @@
                 <property key="ol_layer_type" value="Google Physical"/>
             </customproperties>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+            <id>OpenLayers_plugin_layer20141106123907106</id>
+            <datasource>.</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Stamen Watercolor/OSM</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                    <srsid>3857</srsid>
+                    <srid>3857</srid>
+                    <authid>EPSG:3857</authid>
+                    <description>WGS 84 / Pseudo Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <customproperties>
+                <property key="ol_layer_type" value="Stamen Watercolor/OSM"/>
+            </customproperties>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>Raster20140828112755810</id>
             <datasource>../../../../../Documents/Landmgt/MaasProperties/Images/TakuValleySubdivision.jpg</datasource>
@@ -2466,7 +2514,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Recreation20121204131623145</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="recreation_point" (geometry) sql=</datasource>
             <title></title>
@@ -2670,30 +2718,11 @@
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="3">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="255,255,255,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="7"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="teepee.svg"/>
+                            <prop k="name" v="Campsite.svg"/>
                             <prop k="offset" v="-0.2,-0.4"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -2709,30 +2738,11 @@
                         </layer>
                     </symbol>
                     <symbol alpha="1" type="marker" name="4">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="0,0,0,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="circle"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline_style" v="solid"/>
-                            <prop k="outline_width" v="0"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="7"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#ffffff"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="amenity_firestation.svg"/>
+                            <prop k="name" v="Fire_Ring.svg"/>
                             <prop k="offset" v="0,-0.2"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -2741,7 +2751,7 @@
                             <prop k="outline_width_map_unit_scale" v="0,0"/>
                             <prop k="outline_width_unit" v="MM"/>
                             <prop k="scale_method" v="area"/>
-                            <prop k="size" v="6"/>
+                            <prop k="size" v="8"/>
                             <prop k="size_map_unit_scale" v="0,0"/>
                             <prop k="size_unit" v="MM"/>
                             <prop k="vertical_anchor_point" v="1"/>
@@ -3868,14 +3878,14 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="OGC_FID">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="OGC_FID">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="GEOMETRY">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="GEOMETRY">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="tree_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="tree_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="start_year">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -3891,9 +3901,20 @@
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>uifilelayout</editorlayout>
+            <editorlayout>tablayout</editorlayout>
+            <aliases>
+                <alias field="speciestreetype_id" index="4" name="Species"/>
+                <alias field="start_year" index="3" name="Start Year"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
+            <attributeEditorForm>
+                <attributeEditorContainer name="Tree Information">
+                    <attributeEditorField index="4" name="speciestreetype_id"/>
+                    <attributeEditorField index="3" name="start_year"/>
+                    <attributeEditorRelation relation="tree_status20130603213537490_tree_id_Trees20121204131751596_OGC_FID" name="tree_status20130603213537490_tree_id_Trees20121204131751596_OGC_FID"/>
+                </attributeEditorContainer>
+            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
@@ -4933,7 +4954,7 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="control_point.svg"/>
+                            <prop k="name" v="Control_Point.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -6127,7 +6148,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>soil_test20130603122942351</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="soil_test" (geometry) sql=</datasource>
             <title></title>
@@ -6492,12 +6513,79 @@
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
-            <editorlayout>generatedlayout</editorlayout>
+            <editorlayout>tablayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
+            <attributeEditorForm>
+                <attributeEditorContainer name="Sample">
+                    <attributeEditorField index="3" name="sample_name"/>
+                    <attributeEditorField index="4" name="sample_id"/>
+                    <attributeEditorField index="5" name="sample_collection_date"/>
+                    <attributeEditorField index="6" name="sample_desc"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Client">
+                    <attributeEditorField index="7" name="client_last_name"/>
+                    <attributeEditorField index="8" name="client_first_name"/>
+                    <attributeEditorField index="9" name="client_address_1"/>
+                    <attributeEditorField index="10" name="client_address_2"/>
+                    <attributeEditorField index="11" name="client_city"/>
+                    <attributeEditorField index="12" name="client_state"/>
+                    <attributeEditorField index="13" name="client_zip"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Lab">
+                    <attributeEditorField index="16" name="lab_name"/>
+                    <attributeEditorField index="17" name="lab_address_1"/>
+                    <attributeEditorField index="18" name="lab_address_2"/>
+                    <attributeEditorField index="19" name="lab_city"/>
+                    <attributeEditorField index="20" name="lab_state"/>
+                    <attributeEditorField index="21" name="lab_zip"/>
+                    <attributeEditorField index="22" name="lab_phone"/>
+                    <attributeEditorField index="23" name="lab_email"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Mg">
+                    <attributeEditorField index="35" name="mg_value"/>
+                    <attributeEditorField index="36" name="mg_unit"/>
+                    <attributeEditorField index="37" name="mg_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="P">
+                    <attributeEditorField index="26" name="p_value"/>
+                    <attributeEditorField index="27" name="p_unit"/>
+                    <attributeEditorField index="28" name="p_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Mn">
+                    <attributeEditorField index="41" name="mn_value"/>
+                    <attributeEditorField index="42" name="mn_unit"/>
+                    <attributeEditorField index="43" name="mn_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Zn">
+                    <attributeEditorField index="38" name="zn_value"/>
+                    <attributeEditorField index="39" name="zn_unit"/>
+                    <attributeEditorField index="40" name="zn_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="K">
+                    <attributeEditorField index="29" name="k_value"/>
+                    <attributeEditorField index="30" name="k_unit"/>
+                    <attributeEditorField index="31" name="k_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Calcium">
+                    <attributeEditorField index="32" name="ca_value"/>
+                    <attributeEditorField index="33" name="ca_unit"/>
+                    <attributeEditorField index="34" name="ca_relative_amount"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Acidity">
+                    <attributeEditorField index="44" name="ph_value"/>
+                    <attributeEditorField index="45" name="ph_relative_amount"/>
+                    <attributeEditorField index="46" name="lbc_value"/>
+                    <attributeEditorField index="25" name="lime_buffer_capacity_method"/>
+                    <attributeEditorField index="24" name="extractant"/>
+                </attributeEditorContainer>
+                <attributeEditorContainer name="Recommendations">
+                    <attributeEditorRelation relation="soil_test_recommendation20130603122843299_OGC_FID_soil_test20130603122942351_OGC_FID" name="soil_test_recommendation20130603122843299_OGC_FID_soil_test20130603122942351_OGC_FID"/>
+                </attributeEditorContainer>
+            </attributeEditorForm>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>soil_test_recommendation20130603122843299</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="soil_test_recommendation" sql=</datasource>
             <title></title>
@@ -6520,17 +6608,17 @@
             </srs>
             <customproperties/>
             <provider encoding="System">spatialite</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE("OGC_FID", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="OGC_FID">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="OGC_FID">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="soiltestrec_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="soiltestrec_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="soiltest_id">
-                    <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" fieldEditable="1" Key="soiltest_id" Layer="soil_test20130603122942351" Value="sample_name" labelOnTop="0" AllowMulti="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="soiltest_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="crop">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -7229,17 +7317,17 @@
             </srs>
             <customproperties/>
             <provider encoding="System">spatialite</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE("OGC_FID", '&lt;NULL>')</previewExpression>
             <vectorjoins/>
             <edittypes>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="OGC_FID">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="OGC_FID">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="treestatus_id">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="treestatus_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="ValueRelation" name="tree_id">
-                    <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" fieldEditable="1" Key="tree_id" Layer="Trees20121204131751596" Value="tree_id" labelOnTop="0" AllowMulti="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Hidden" name="tree_id">
+                    <widgetv2config fieldEditable="1" labelOnTop="0"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="DateTime" name="status_date">
                     <widgetv2config fieldEditable="1" calendar_popup="0" display_format="" field_format="yyyy-mm-dd" labelOnTop="0"/>
@@ -7247,14 +7335,14 @@
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="dbh_in">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="height_ft">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="height_ft">
+                    <widgetv2config fieldEditable="1" Step="1" Style="SpinBox" labelOnTop="0" Min="1" Max="250"/>
                 </edittype>
                 <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="status_notes">
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="age">
-                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                <edittype labelontop="0" editable="1" widgetv2type="Range" name="age">
+                    <widgetv2config fieldEditable="1" Step="1" Style="SpinBox" labelOnTop="0" Min="1" Max="150"/>
                 </edittype>
             </edittypes>
             <editform>.</editform>
@@ -7262,6 +7350,13 @@
             <featformsuppress>0</featformsuppress>
             <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
+            <aliases>
+                <alias field="age" index="7" name="Age"/>
+                <alias field="dbh_in" index="4" name="DBH"/>
+                <alias field="height_ft" index="5" name="Height"/>
+                <alias field="status_date" index="3" name="Status Date"/>
+                <alias field="status_notes" index="6" name="Notes"/>
+            </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
