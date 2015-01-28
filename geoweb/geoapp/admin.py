@@ -1,6 +1,5 @@
 from django.contrib.gis import admin
 from geoapp.models import *
-from wedding.models import *
 from django.contrib.gis.admin import site
 from atexit import register
 
@@ -59,12 +58,4 @@ admin.site.register(WaterPoint)
 admin.site.register(WaterType)
 admin.site.register(ScalingTicket)
 admin.site.register(SpeciesTreeType)
-
-# wedding stuff
-
-
-class PresentAdmin(admin.ModelAdmin):
-    fieldsets = [
-        ('Present Information', {'fields':['name', 'count','description', 'is_purchased']})
-    ]
-admin.site.register(Present, PresentAdmin)
+admin.site.register(UserUpload)

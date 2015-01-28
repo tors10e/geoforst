@@ -73,7 +73,6 @@ LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
 # Additional locations of static files
 STATICFILES_DIRS = (
                     "/var/www/geoweb/geoapp/static",
-                    "/var/www/geoweb/wedding/static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -112,7 +111,6 @@ ROOT_URLCONF = 'geoweb.urls'
 WSGI_APPLICATION = 'geoweb.wsgi.application'
 
 TEMPLATE_DIRS = (
-                 "/var/www/geoweb/wedding/templates",
                  "/var/www/geoweb/geoapp/templates",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -129,7 +127,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.gis',
     'geoapp',
-    'wedding',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

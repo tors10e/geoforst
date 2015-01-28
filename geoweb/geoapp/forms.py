@@ -16,7 +16,7 @@ class InventoryPlotForm(ModelForm):
             'position_description': Textarea(attrs={'cols': 80, 'rows': 5}),
             'geometry' : TextInput(attrs={"size":75}),
         }  
-        fields = {"position_description", "plot_number", "elevation", "elevation_unit", "plot_create_date" }
+        fields = {"position_description", "plot_number", "elevation", "elevation_unit", "plot_create_date", "latitude", "longitude" }
     
 
 # class InventoryPlotForm(forms.Form):
@@ -42,6 +42,15 @@ class LogDataForm(ModelForm):
     class Meta:
         model = LogData
         exclude = ('created_by',)
+        
+class PlannedActivityForm(ModelForm):
+    class Meta:
+        model = PlannedActivity
+        exclude = ('created_by','plannedact_id')
+        widgets = {
+                    'description': Textarea(attrs={'cols': 80, 'rows': 5}),
+        }  
+    ('created_by',)
 
 class ScalingTicketForm(ModelForm):
     class Meta:
@@ -56,12 +65,5 @@ class SawmillForm(ModelForm):
                    'email':EmailInput(),
                    'website':URLInput(),
                    }
-        
-class PlannedActivityForm(ModelForm):
-        class Meta:
-            model = PlannedActivity
-            exclude = ('created_by','plannedact_id')
-            widgets = {
-                       'description': Textarea(attrs={'cols': 80, 'rows': 5}),
-            }  
-        ('created_by',)
+
+
