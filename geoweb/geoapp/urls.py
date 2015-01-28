@@ -46,4 +46,5 @@ urlpatterns = patterns('',
     url(r'^planned_activity/(?P<pk>\d+)/edit/$', views.PlannedActivityUpdate.as_view(), name='planned-activity-edit'),
     url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
     
+    url(r'^upload/$', views.UserUploadView.as_view(), name='user-data-upload'),
   )

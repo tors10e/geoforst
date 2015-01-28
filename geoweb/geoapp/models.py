@@ -3,6 +3,7 @@ from django.contrib.gis.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.contrib.gis import geos
+from django.contrib.gis.geos import Point
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
@@ -113,12 +114,15 @@ class ForestInventoryPlot(models.Model):
     plot_xlength = models.IntegerField(blank=True, null=True)
     plot_ylength = models.IntegerField(blank=True, null=True)
     plot_length_unit = models.ForeignKey('UnitLengthType', related_name='plot_length_unit', null=True, blank=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True) 
+    geometry = models.PointField(srid=2163, null=True, blank=True)
+    latitude = models.FloatField(verbose_name='Latitude') # Not persisted, used to populate geometry.
+    longitude = models.FloatField(verbose_name='Longitude') 
     elevation = models.IntegerField(null=True, blank=True)
     elevation_unit = models.ForeignKey('UnitLengthType', related_name='elevation_unit', null=True, blank=True)
     position_description = models.CharField(max_length=255, null=True, blank=True)
     plot_create_date = models.DateField(null=True, blank=True)
     created_by = models.ForeignKey(User)
+    
     objects = models.GeoManager()
     
     class Meta:
@@ -127,6 +131,10 @@ class ForestInventoryPlot(models.Model):
             
     def __unicode__(self):
         return unicode(self.plot_number)
+    
+    def save(self,*args, **kwargs):
+        self.geometry = Point(self.longitude, self.latitude)
+        super(ForestInventoryPlot, self).save(*args,**kwargs)
 
 class ForestType(models.Model):
     foresttype_id = models.IntegerField(primary_key=True)
@@ -559,7 +567,17 @@ class UnitAreaType(models.Model):
         db_table = 'unit_area_type'
     def __unicode__(self):        
         return unicode(self.unitareatype_dsc)  
+ 
     
+class UserUpload(models.Model):
+    userupload_id = models.AutoField(primary_key=True)
+    file = models.FileField(upload_to='user_data')
+    description = models.CharField(max_length=255, null=True)
+    create_date = models.DateField(blank=True, null=True)
+    created_by =  models.ForeignKey(User)
+    class Meta:
+        db_table='user_upload'
+        
 class SpeciesTreeType(models.Model):
     speciestreetype_id = models.IntegerField(primary_key=True)
     speciestreetype_cd = models.CharField(max_length=3, null=False)

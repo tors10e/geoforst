@@ -73,7 +73,6 @@ LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
 # Additional locations of static files
 STATICFILES_DIRS = (
                     "/Users/torsten/Workspaces/FSP/geoweb/geoapp/static",
-                    "/Users/torsten/Workspaces/FSP/geoweb/wedding/static",
                     
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
@@ -128,7 +127,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.gis',
     'geoapp',
-    'wedding',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

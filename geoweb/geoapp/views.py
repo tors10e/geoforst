@@ -1,12 +1,10 @@
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
 from django.http import HttpResponseRedirect
-from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
-from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket
-from geoapp.models import Sawmill, PlannedActivity
-from geoapp.forms import InventoryPlotForm, InventoryDataForm, LumberLoadForm, LogDataForm
-from geoapp.forms import  ScalingTicketForm, SawmillForm, PlannedActivityForm
+from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView, FormView
+from geoapp.forms import * 
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
+import datetime
 
 def Map(request):
     if not request.user.is_authenticated():
@@ -218,7 +216,7 @@ class InventoryPlotCreate(CreateView):
     
     # Set created_by to the current user.
     def form_valid(self, form):
-        form.instance.created_by = self.request.user
+        form.instance.created_by =  self.request.user
         return super(InventoryPlotCreate, self).form_valid(form)
     
     # Set default form values.
@@ -330,12 +328,22 @@ class PlannedActivityUpdate(UpdateView):
     
     def get_success_url(self):
         return reverse('geoapp:planned-activity-list')
+    
+#************************************************************
+# Uploading sqlite databases for upsert.
+#************************************************************
 
+class UserUploadView(CreateView):
+    model = UserUpload
+    fields = ['file','description']
+    success_url = reverse_lazy('geoapp:home')
     
-
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        form.instance.create_date = datetime.datetime.now()
+        return super(UserUploadView, self).form_valid(form)
     
-    
-    
+  
     
     
     
