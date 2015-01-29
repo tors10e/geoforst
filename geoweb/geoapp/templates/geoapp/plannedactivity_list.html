@@ -12,7 +12,7 @@
     		<th>Notes</th>
     		<th>Revenues</th>
     		<th>Task Status</th>
-    		<th>Stand Area</th>
+    		<th>Stand Number</th>
     		<th>Action</th>
     	</tr>
     	{% for activity in activities %}
@@ -24,7 +24,7 @@
     		<td>{{activity.notes|default:"None"}}</td>
     		<td>{{activity.revenues|cut:" " | default:"Undetermined"}}</td>
     		<td>{{activity.taskstatus}}</td>
-    		<td>{{activity.standarea_id}}</td>
+    		<td>{{activity.stand_no}}</td>
     		<td>	
 				<button><a href="{% url 'geoapp:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
 				<button><a href="{% url 'geoapp:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
