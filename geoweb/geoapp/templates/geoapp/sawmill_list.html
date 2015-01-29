@@ -25,12 +25,12 @@ $(function() {
     	<tr>
 	    	<td>{{mill.name}}</td>
 	    	<td>{{mill.address}}</td>
-	    	<td>{{mill.city}}</td>
-	    	<td>{{mill.state}}</td>
-	    	<td>{{mill.zip}}</td>
+	    	<td>{{mill.city|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.state|cut:" "|default:"Unkno	wn"}}</td>
+	    	<td>{{mill.zip|cut:" "|default:"Unknown"}}</td>
 	    	<td>{{mill.phone}}</td>
-	    	<td>{{mill.email}}</td>
-	    	<td>{{mill.website}}</td>
+	    	<td>{{mill.email|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.website|default:"Unknown"}}</td>
 			<td>
 				<button><a href="{% url 'geoapp:sawmill-edit' mill.sawmill_id %}">Edit</a></button> 
 				<button><a href="{% url 'geoapp:sawmill-delete' mill.sawmill_id %}">Delete</a></button>
