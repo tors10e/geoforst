@@ -225,6 +225,7 @@ class InventoryPlotCreate(CreateView):
             return {'plot_geometry':1, 'plot_area_unit':1, 'plot_radius_unit':1}
 
 class InventoryPlotList(ListView):
+    model = ForestInventoryPlot
     context_object_name='inventory_plots'
     template_name_suffix = '_list'
     
@@ -296,8 +297,9 @@ class InventoryDataDelete(DeleteView):
 
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
-    form = PlannedActivityForm
+    #form = PlannedActivityForm
     template_name_suffix = '_form'
+    fields = ('acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'standarea_id')
     
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by=self.request.user)
@@ -307,11 +309,13 @@ class PlannedActivityCreate(CreateView):
         return super(PlannedActivityCreate, self).form_valid(form)
     
     def get_success_url(self):
-        return reverse('geoapp:planned-activities-list')
+        return reverse('geoapp:planned-activity-list')
     
 class PlannedActivityList(ListView):
-    context_object_name = 'activities'
+    #model = PlannedActivity
     template_name_suffix = '_list'
+    form = PlannedActivityForm
+    context_object_name = 'activities'
     
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by = self.request.user)

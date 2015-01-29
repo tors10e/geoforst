@@ -232,15 +232,15 @@ class Person(models.Model):
         db_table = 'person'
 
 class PlannedActivity(models.Model):
-    plannedact_id = models.IntegerField(primary_key=True)
+    plannedact_id = models.AutoField(primary_key=True)
     acttype = models.ForeignKey(ActivityType, null=True, blank=True)
     planned_date = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
-    completed_date = models.CharField(max_length=25, blank=True)
+    completed_date = models.CharField(max_length=25, blank=True, null=True)
     description = models.CharField(max_length=255, blank=True)
     notes = models.CharField(max_length=255, blank=True)
     revenue = models.FloatField(null=True, blank=True)
     taskstatus = models.ForeignKey('TaskStatusType', null=True, blank=True)
-    stand_no = models.IntegerField(null=True, blank=True)
+    standarea_id = models.IntegerField(null=True, blank=True)
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'planned_activity'

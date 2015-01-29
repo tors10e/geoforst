@@ -17,17 +17,7 @@ class InventoryPlotForm(ModelForm):
             'geometry' : TextInput(attrs={"size":75}),
         }  
         fields = {"position_description", "plot_number", "elevation", "elevation_unit", "plot_create_date", "latitude", "longitude" }
-    
-
-# class InventoryPlotForm(forms.Form):
-#     plot_number = forms.IntegerField()
-#     position_description = forms.CharField(max_length=100)
-#     latitude = forms.DecimalField()
-#     longitude = forms.DecimalField()
-#     elevation = forms.IntegerField()
-#     elevation_unit= forms.CharField()
-#     plot_create_date = forms.DateField()
-          
+            
 class InventoryDataForm(ModelForm):
     class Meta:
         model = ForestInventoryData

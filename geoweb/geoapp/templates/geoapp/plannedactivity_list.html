@@ -12,19 +12,19 @@
     		<th>Notes</th>
     		<th>Revenues</th>
     		<th>Task Status</th>
-    		<th>Stand Number</th>
+    		<th>Stand Area</th>
     		<th>Action</th>
     	</tr>
     	{% for activity in activities %}
     	<tr>
 	    	<td>{{activity.acttype}}</td>
 	    	<td>{{activity.planned_date}}</td>
-    		<td>{{activity.completed_date}}</td>
+    		<td>{{activity.completed_date|cut:" " | default:"Undetermined"}}</td>
     		<td>{{activity.description}}</td>
-    		<td>{{activity.notes}}</td>
-    		<td>{{activity.revenues}}</td>
+    		<td>{{activity.notes|default:"None"}}</td>
+    		<td>{{activity.revenues|cut:" " | default:"Undetermined"}}</td>
     		<td>{{activity.taskstatus}}</td>
-    		<td>{{activity.stand_no}}</td>
+    		<td>{{activity.standarea_id}}</td>
     		<td>	
 				<button><a href="{% url 'geoapp:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
 				<button><a href="{% url 'geoapp:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
