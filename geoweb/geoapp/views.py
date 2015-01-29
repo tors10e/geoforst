@@ -299,7 +299,7 @@ class PlannedActivityCreate(CreateView):
     model = PlannedActivity
     #form = PlannedActivityForm
     template_name_suffix = '_form'
-    fields = ('acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'standarea_id')
+    fields = ('acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no')
     
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by=self.request.user)
@@ -310,6 +310,11 @@ class PlannedActivityCreate(CreateView):
     
     def get_success_url(self):
         return reverse('geoapp:planned-activity-list')
+    
+        # Set default form values.
+    def get_initial(self):
+        if self.request.method == 'GET':
+            return {'revenue':0, 'taskstatus':1, 'acttype':8}
     
 class PlannedActivityList(ListView):
     #model = PlannedActivity
