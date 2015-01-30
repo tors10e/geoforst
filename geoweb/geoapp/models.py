@@ -487,9 +487,14 @@ class Sawmill(models.Model):
     
 class ScalingTicket(models.Model):
     scalingticket_id = models.AutoField(primary_key=True)
-    sawmill = models.ForeignKey('SawMill', null=True, blank=True)
+    sawmill = models.ForeignKey('Sawmill', null=True, blank=True)
+    species = models.CharField(max_length=30, null=True, blank=True)
+    fbm = models.IntegerField(verbose_name="Board Ft.", null=True, blank=True)
+    price_mfbm = models.DecimalField(verbose_name="Price/Mfbm", max_digits=6, decimal_places=2, null=True, blank=True)
     weight = models.DecimalField(null=True, max_digits=12, decimal_places=2, blank=True)
+    price_ton= models.DecimalField(verbose_name="Price/Ton", max_digits=6, decimal_places=2, null=True, blank=True)
     ticket_date = models.DateField(blank=True)
+    revenue = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     created_by = models.ForeignKey(User)
     created_date = models.DateField(null=True, blank=True)
     class Meta:
