@@ -6,6 +6,7 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', views.logout_view, name='logout'),
     url(r'^home/$', views.Home, name = 'home'),
     url(r'^map/$', views.Map, name = 'map'),
+    url(r'^maps/$', views.Maps, name = 'maps'),
     url(r'^mobilemap/$', views.MobileMap, name = 'mobile-map'),
     url(r'^lumber_scaling/$', views.LumberScaling, name = 'lumber-scaling'),
     
