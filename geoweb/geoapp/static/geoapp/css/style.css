@@ -77,6 +77,12 @@ td, th {
 	padding:3px 7px 2px 7px;
 }
 
+td.menu {
+	font-size:1em;
+	border:None;
+	padding:3px 7px 2px 7px;
+}
+
 th {
 	font-size:1.1em;
 	text-align:left;
@@ -114,7 +120,7 @@ td {
 #sidebar h1 {
 	font-size: 18pt;
 	margin-bottom: 5px;
-	padding-bottom: 0.3em;
+	padding: 0.3em;
 	letter-spacing: -0.05em;
 	color:rgb(49,65,150);
 	border-radius:5px;
