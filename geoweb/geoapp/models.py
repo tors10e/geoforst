@@ -184,7 +184,7 @@ class HarvestType(models.Model):
         return unicode(self.harvesttype_dsc)
 
 class LandArea(models.Model):
-    landarea_id = models.IntegerField()
+    landarea_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30, null=True, blank=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -194,6 +194,9 @@ class LandArea(models.Model):
     objects = models.GeoManager()
     class Meta:
         db_table = 'land_area'
+    
+    def __unicode__(self):
+        return unicode(self.name)
 
 class LandAreaHistory(models.Model):
     landareahist_id = models.IntegerField()
@@ -233,14 +236,15 @@ class Person(models.Model):
 
 class PlannedActivity(models.Model):
     plannedact_id = models.AutoField(primary_key=True)
-    acttype = models.ForeignKey(ActivityType, null=True, blank=True)
+    acttype = models.ForeignKey(ActivityType, verbose_name="Activity Type", null=True, blank=True)
     planned_date = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
     completed_date = models.CharField(max_length=25, blank=True, null=True)
     description = models.TextField(max_length=255, blank=True)
     notes = models.TextField(max_length=255, blank=True)
     revenue = models.FloatField(null=True, blank=True)
-    taskstatus = models.ForeignKey('TaskStatusType', null=True, blank=True)
+    taskstatus = models.ForeignKey('TaskStatusType', verbose_name="Task Status", null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
+    landarea = models.ForeignKey(LandArea, verbose_name="Land Area", null=True, blank=True)
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'planned_activity'
@@ -520,9 +524,7 @@ class LogData(models.Model):
         ordering = ["logdata_id"]
     def __unicode__(self):
         return unicode(self.logdata_id)
-    
 
-    
 class ForestInventoryData(models.Model):
     forestinventorydata_id = models.AutoField(primary_key=True)
     forestinventoryplot = models.ForeignKey('ForestInventoryPlot', null=True, blank=True)

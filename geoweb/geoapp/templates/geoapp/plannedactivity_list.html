@@ -5,6 +5,7 @@
   	<button><a href="{% url 'geoapp:planned-activity-add' %}">Add New Activity</a></button>
     <table id="table">
     	<tr id="header_row">
+    		<th>Land Area</th>
     		<th>Activity Type</th>
     		<th>Planned Year</th>
     		<th>Completed Date</th>
@@ -17,6 +18,7 @@
     	</tr>
     	{% for activity in activities %}
     	<tr>
+    		<td>{{activity.landarea}}</td>
 	    	<td>{{activity.acttype}}</td>
 	    	<td>{{activity.planned_date}}</td>
     		<td>{{activity.completed_date|cut:" " | default:"Undetermined"}}</td>

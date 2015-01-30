@@ -272,7 +272,6 @@ class InventoryDataCreate(CreateView):
     # Return to inventory data list for the plot.
     def get_success_url(self):
         return reverse('geoapp:inventory-plot-detail', kwargs={'pk':self.kwargs['pk']})
-        
 
 class InventoryDataUpdate(UpdateView):
     model = ForestInventoryData
@@ -297,9 +296,9 @@ class InventoryDataDelete(DeleteView):
 
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
-    #form = PlannedActivityForm
+    form = PlannedActivityForm
     template_name_suffix = '_form'
-    fields = ('acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no')
+    fields = ('landarea', 'acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no')
     
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by=self.request.user)
