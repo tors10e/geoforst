@@ -1,0 +1,322 @@
+body {
+	background-image: url(images/bg_head.jpg);
+	background-repeat: repeat-x;
+	background-position: 50% -100px;
+	padding-top: 35px;
+}
+
+#menus {
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-weight: bold;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 35px;
+	font-size: 16pt;
+	letter-spacing: 0.1em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-transform: uppercase;
+}
+
+#menus a {
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	white-space:nowrap;
+	width: 25%;
+}
+
+#menus a:hover,#menus a.on {
+	text-decoration: none;
+	color: #fff;
+}
+
+a#menu1 {
+	color: rgb(237,166,103);
+}
+
+a#menu1:hover,a#menu1.on {
+	background-color: rgb(237,166,103);
+}
+
+a#menu2 {
+	color: rgb(199,62,85);
+}
+
+a#menu2:hover,a#menu2.on {
+	background-color: rgb(199,62,85);
+}
+
+a#menu3 {
+	color: rgb(49,65,150);
+}
+
+a#menu3:hover,a#menu3.on {
+	background-color: rgb(49,65,150);
+}
+
+a#menu4 {
+	color: rgb(131,131,131);
+}
+
+a#menu4:hover,a#menu4.on {
+	background-color: rgb(131,131,131);
+}
+
+#content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12pt;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #555;
+	padding-top: 0.75em;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+#content p {
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 1em;
+}
+
+#content p.alert {
+	color: rgb(199,62,85);
+	font-size: 80%;
+	line-height: 1.1em;
+}
+
+#content h1 {
+	font-size: 36pt;
+	color: rgb(49,65,150);
+	margin-bottom: 0px;
+	padding-bottom: 0.3em;
+	letter-spacing: -0.05em;
+}
+
+#content h2 {
+	font-size: 16pt;
+	padding-bottom: 0.65em;
+	margin-top: 0px;
+	padding-top: 0px;
+	font-weight: bold;
+}
+
+#content h3 {
+	font-size: 16pt;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	color: rgb(199,62,85);
+	font-weight: normal;
+	line-height: 1em;
+}
+
+#content h4 {
+	font-size: 10pt;
+	margin-top: 0px;
+	padding-top: 0px;
+	color: rgb(000);
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+#content h5 {
+	font-size: 16pt;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 0.7em;
+	padding-top: 0px;
+	color: rgb(000);
+	font-weight: bold;
+	line-height: 1em;
+}
+
+#content h5.feedback {
+	color: rgb(199,62,85);
+}
+
+#content #mainbody {
+	clear: both;
+}
+
+#content a {
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+	color: #555;
+	font-weight: normal;
+}
+
+#content a:hover {
+	border-bottom: 1px solid #999;
+	color: rgb(237,166,103);
+}
+#content #sidebar {
+	float: right;
+	border-left: 1px solid #aaa;
+	margin-left: 1em;
+	padding-left: 1em;
+	width: 225px;
+	margin-bottom: 1em;
+}
+
+#content #sidebar h1 {
+	font-size: 12pt;
+	color: #000;
+	margin-top: 1em;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#content .warning {
+	color: #b55;
+	font-size: 10pt;
+	line-height: 1.2em;
+}
+
+#content a.download, table#downloadchoices td a.mainlink {
+	height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	border: 2px dashed rgb(49,65,150);
+	display: block;
+	border-radius: 10px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0.5em;
+	line-height: 1em;
+	vertical-align: middle;
+	padding-top: 0.5em;
+	padding-bottom: 0.0em;
+}
+
+#content a.download:hover, table#downloadchoices td a.mainlink:hover {
+	background-color: rgb(49,65,150);
+	border: 2px dashed rgb(49,65,150);
+	color: #fff;
+}
+
+#content a.style2, table#downloadchoices td.style2 a.mainlink:hover {
+	border: 2px dashed rgb(131,131,131);
+}
+
+#content a.style2:hover {
+	background-color: rgb(131,131,131);
+	border: 2px dashed rgb(131,131,131);
+	color: #fff;
+}
+
+#content a.download .desc {
+	font-size: 10pt;
+	font-weight: normal;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+table#downloadchoices {
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px;
+}
+
+table#downloadchoices td {
+	margin: 0px;
+	padding: 0px;
+	width: 40%;
+	vertical-align: top;
+}
+
+table#downloadchoices td a.mainlink {
+	height: auto;
+	font-size: 10pt;
+	font-weight: normal;
+	padding: 1em;
+	text-align: justify;
+	min-height: 100%;
+	display: block;
+}
+
+table#downloadchoices td a.mainlink h1 {
+	font-size: 18pt;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.25em;
+	line-height: 0.8em;
+}
+
+table#downloadchoices td a.mainlink h2 {
+	font-size: 12pt;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0.7em;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	text-align: center;
+	margin-top: -0.1em;
+	color: rgb(131,131,131);
+}
+
+table#downloadchoices td a.mainlink h3 {
+	font-size: 10pt;
+	margin: 0px;
+	padding: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 0.7em;
+	color: #555;
+}
+
+table#downloadchoices td a.mainlink:hover, table#downloadchoices td a.mainlink:hover h1, table#downloadchoices td a.mainlink:hover h2, table#downloadchoices td a.mainlink:hover h3 {
+	color: #fff; 
+}
+
+table#downloadchoices td.style2 a.mainlink {
+	border: 2px dashed rgb(131,131,131);
+}
+
+table#downloadchoices td.style2 a.mainlink h1 {
+	color: #555;
+}
+
+table#downloadchoices td.style2 a.mainlink:hover h1 {
+	color: #fff;
+}
+
+table#downloadchoices td.style2 a.mainlink:hover {
+	background-color: rgb(131,131,131);
+}
+
+table#downloadchoices td.style1 {
+	padding-right: 0.5em;
+}
+
+table#downloadchoices td.style2 {
+	padding-left: 0.5em;
+}
+
+div.downloadCount {
+	font-size: 85%;
+	color: #666;
+	margin-top: -0.5em;
+}
+
+
+
+
+
