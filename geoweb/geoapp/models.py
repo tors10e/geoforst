@@ -245,7 +245,9 @@ class PlannedActivity(models.Model):
     taskstatus = models.ForeignKey('TaskStatusType', verbose_name="Task Status", null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     landarea = models.ForeignKey(LandArea, verbose_name="Land Area", null=True, blank=True)
+    geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
     created_by = models.ForeignKey(User)
+    objects = models.GeoManager()
     class Meta:
         db_table = 'planned_activity'
         ordering = ["-planned_date"]
