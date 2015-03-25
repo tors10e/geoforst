@@ -6,4 +6,5 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^geoapp/admin/', include(admin.site.urls)),
     url(r'^geoapp/', include('geoapp.urls', namespace='geoapp')),
+    url (r'^accounts/', include('registration.backends.default.urls')),
 )
