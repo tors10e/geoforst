@@ -4,6 +4,7 @@ from geoapp import views
 urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
     url(r'^accounts/logout/$', views.logout_view, name='logout'),
+    url(r'^accounts/register/$', views.register, name='register'),
     url(r'^home/$', views.Home, name = 'home'),
     url(r'^map/$', views.Map, name = 'map'),
     url(r'^maps/$', views.Maps, name = 'maps'),
@@ -48,4 +49,5 @@ urlpatterns = patterns('',
     url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
     
     url(r'^upload/$', views.UserUploadView.as_view(), name='user-data-upload'),
+    url(r'^upload_success/$', views.UserUploadSuccess, name='user-upload-success'),
   )
