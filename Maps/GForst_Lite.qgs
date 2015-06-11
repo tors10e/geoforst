@@ -12,7 +12,7 @@
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Habitat Enhancement Points20121204131751561" name="Habitat Enhancement Points">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cultural Features20121204131751585" name="Cultural Features">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Cultural Features20121204131751585" name="Cultural Features">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Water Point Features20121204131510425" name="Water Point Features">
@@ -42,7 +42,7 @@
         <layer-tree-layer expanded="0" checked="Qt::Checked" id="road_line20130101154010851" name="Roads">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="Firebreaks20121204132835298" name="Firebreaks">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Firebreaks20121204132835298" name="Firebreaks">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" checked="Qt::Checked" id="Land Areas20121204131751632" name="Land Areas">
@@ -170,10 +170,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-9313198.59570052661001682</xmin>
-            <ymin>4089516.98062443919479847</ymin>
-            <xmax>-9309431.43463985808193684</xmax>
-            <ymax>4092200.31808528676629066</ymax>
+            <xmin>-9313106.29219949617981911</xmin>
+            <ymin>4088241.27335099643096328</ymin>
+            <xmax>-9305808.57481696084141731</xmax>
+            <ymax>4092573.38446652656421065</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -338,8 +338,8 @@
                 <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
-            <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Cultural Features" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
             </filegroup>
         </legendlayer>
@@ -382,9 +382,9 @@
                 <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Firebreaks" showFeatureCount="0">
             <filegroup open="false" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Land Areas" showFeatureCount="0">
@@ -612,7 +612,7 @@
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="25001" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>Cultural Features20121204131751585</id>
             <datasource>dbname='../Data/geoforst.sqlite' table="cultural_point" (geometry) sql=</datasource>
             <title></title>
@@ -641,11 +641,9 @@
             <renderer-v2 attr="Cultural Types_culttype_dsc" symbollevels="0" type="categorizedSymbol">
                 <categories>
                     <category symbol="0" value="Existing Structure" label="Existing Structure"/>
-                    <category symbol="1" value="Historic Homesite (Abandoned)" label="Historic Homesite (Abandoned)"/>
-                    <category symbol="2" value="Historic Native Settlement" label="Historic Native Settlement"/>
-                    <category symbol="3" value="Historic Site" label="Historic Site"/>
-                    <category symbol="4" value="Well" label="Well"/>
-                    <category symbol="5" value="" label="Undetermined"/>
+                    <category symbol="1" value="Historic Site" label="Historic Site"/>
+                    <category symbol="2" value="Well" label="Well"/>
+                    <category symbol="3" value="" label="Undetermined"/>
                 </categories>
                 <symbols>
                     <symbol alpha="1" type="marker" name="0">
@@ -693,46 +691,6 @@
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
                             <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="HistoricSite.svg"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
-                            <prop k="outline-width" v="1"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="marker" name="3">
-                        <layer pass="0" class="SvgMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
-                            <prop k="name" v="HistoricSite.svg"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="offset_map_unit_scale" v="0,0"/>
-                            <prop k="offset_unit" v="MM"/>
-                            <prop k="outline" v="#000000"/>
-                            <prop k="outline-width" v="1"/>
-                            <prop k="outline_width_map_unit_scale" v="0,0"/>
-                            <prop k="outline_width_unit" v="MM"/>
-                            <prop k="scale_method" v="area"/>
-                            <prop k="size" v="8"/>
-                            <prop k="size_map_unit_scale" v="0,0"/>
-                            <prop k="size_unit" v="MM"/>
-                            <prop k="vertical_anchor_point" v="1"/>
-                        </layer>
-                    </symbol>
-                    <symbol alpha="1" type="marker" name="4">
-                        <layer pass="0" class="SvgMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="fill" v="#000000"/>
-                            <prop k="horizontal_anchor_point" v="1"/>
                             <prop k="name" v="Well.svg"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_map_unit_scale" v="0,0"/>
@@ -748,7 +706,7 @@
                             <prop k="vertical_anchor_point" v="1"/>
                         </layer>
                     </symbol>
-                    <symbol alpha="1" type="marker" name="5">
+                    <symbol alpha="1" type="marker" name="3">
                         <layer pass="0" class="SvgMarker" locked="0">
                             <prop k="angle" v="0"/>
                             <prop k="fill" v="#000000"/>
