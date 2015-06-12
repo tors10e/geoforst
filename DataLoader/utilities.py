@@ -48,7 +48,10 @@ def get_user_id(conn_string, user_name):
         conn = create_connection(conn_string)
         sql = "select id from auth_user where username = \'%s\';" %(user_name)
         scalar = execute_sql_scalar(conn, sql)
-        return scalar[0]
+        if scalar:
+            return scalar[0]
+        else:
+            print("No user id returned for user %s" %(user_name))
     except:
         print("Unable to get user_id.")
 
