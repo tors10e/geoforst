@@ -14,9 +14,9 @@ WHERE s.name = p.name
 	and s.created_by_id = p.created_by_id;
 
 -- Insert new records
-INSERT INTO public.land_area(landarea_id, geometry, description, start_date, transaction_start_date, 
+INSERT INTO public.land_area(geometry, description, start_date, transaction_start_date, 
        created_by_id, name)
-SELECT s.landarea_id, s.geometry, s.description, s.start_date, s.transaction_start_date, 
+SELECT s.geometry, s.description, s.start_date, s.transaction_start_date, 
        s.created_by_id, s.name
 FROM staging.land_area s
   LEFT OUTER JOIN public.land_area p 
