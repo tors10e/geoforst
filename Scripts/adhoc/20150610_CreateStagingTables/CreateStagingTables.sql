@@ -210,7 +210,7 @@ CREATE TABLE staging.hazard
   description character varying,
   created_by_id integer,
   create_date date,
-  CONSTRAINT hazrad_pk PRIMARY KEY (hazard_id)
+  CONSTRAINT hazard_pk PRIMARY KEY (hazard_id)
 )
 WITH (
   OIDS=FALSE
