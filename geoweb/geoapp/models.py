@@ -2,8 +2,8 @@ from __future__ import unicode_literals
 from django.contrib.gis.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
-from django.contrib.gis import geos
 from django.contrib.gis.geos import Point
+import uuid
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
@@ -14,21 +14,17 @@ from django.contrib.gis.geos import Point
 # Also note: You'll have to insert the output of 'django-admin.py sqlcustom [appname]'
 # into your database.
 
-# GeoDjango-specific: a geometry field (MultiPolygonField), and
-# overriding the default manager with a GeoManager instance.
-mpoly = models.MultiPolygonField()
-objects = models.GeoManager()
-
 # Returns the string representation of the model.
 
 class ActivityArea(models.Model):
-    activityarea_id = models.IntegerField(primary_key=True)
-    geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
+    activityarea_id = models.AutoField(primary_key=True)
+    activityarea_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
     activity_date = models.DateField (blank=True)
     acttype = models.ForeignKey('ActivityType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     revenue = models.DecimalField(max_digits=8, decimal_places=2, blank=True) # This field type is a guess.
-    plannedact = models.ForeignKey('PlannedActivity', null=True, blank=True)
+    plannedact_uuid = models.ForeignKey('PlannedActivity', null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
@@ -47,7 +43,7 @@ class ActivityType(models.Model):
 
 
 class BurnCompartment(models.Model):
-    burncompartment_id = models.IntegerField(primary_key=True)
+    burncompartment_id = models.AutoField(primary_key=True)
     geometry = models.TextField(blank=True) # This field type is a guess.
     compartment_set = models.IntegerField(null=True, blank=True)
     created_by = models.ForeignKey(User)
@@ -55,7 +51,7 @@ class BurnCompartment(models.Model):
         db_table = 'burn_compartment'
 
 class ControlPoint(models.Model):
-    controlpt_id = models.IntegerField()
+    controlpt_id = models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     x = models.FloatField(null=True, blank=True)
@@ -66,7 +62,7 @@ class ControlPoint(models.Model):
         db_table = 'control_point'
 
 class CulturalPoint(models.Model):
-    cultpt_id = models.IntegerField()
+    cultpt_id = models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
     culttype = models.ForeignKey('CulturalType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -85,7 +81,7 @@ class CulturalType(models.Model):
         return unicode(self.culttype_dsc)
         
 class FirebreakLine(models.Model):
-    fbkln_id = models.IntegerField()
+    fbkln_id = models.AutoField(primary_key=True)
     geometry = models.LineStringField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     created_by = models.ForeignKey(User)
@@ -103,8 +99,29 @@ class ForestAgeType(models.Model):
     def __unicode__(self):
         return unicode(self.forestagetype_dsc)
     
+class ForestInventoryData(models.Model):
+    forestinventorydata_id = models.AutoField(primary_key=True)
+    forestinventorydata_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+    forestinventoryplot = models.ForeignKey('ForestInventoryPlot',null=True, blank=True)
+    tree = models.ForeignKey('Tree', null=True, blank=True)
+    collection_date = models.DateField(null=True, blank=True)
+    speciestreetype = models.ForeignKey('SpeciesTreeType', null=False)
+    dbh = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
+    dbh_unit = models.ForeignKey('UnitLengthType', related_name='dbh_unit', null=True)
+    height = models.IntegerField(blank=True, null=True)
+    height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True, blank=True)
+    age = models.IntegerField(blank=True)
+    created_by =  models.ForeignKey(User)
+    
+    class Meta:
+        db_table = 'forest_inventory_data'
+        ordering = ['collection_date']
+    def __unicode__(self):
+        return unicode(self.forestinventorydata_id)
+
 class ForestInventoryPlot(models.Model):
     forestinventoryplot_id = models.AutoField(primary_key=True)
+    forestinventoryplot_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     plot_number = models.IntegerField(validators=[MinValueValidator(1)], null=False, unique=True)
     plot_geometry = models.ForeignKey('PlotGeometryType', null=False)
     plot_area = models.DecimalField(null=True, blank=True, max_digits=5, decimal_places=1)
@@ -146,7 +163,7 @@ class ForestType(models.Model):
         return unicode(self.foresttype_dsc)
 
 class HabitatEnhancementArea(models.Model):
-    habenharea_id = models.IntegerField(primary_key=True)
+    habenharea_id = models.AutoField(primary_key=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -156,7 +173,7 @@ class HabitatEnhancementArea(models.Model):
         db_table = 'habitat_enhancement_area'
 
 class HabitatEnhancementPoint(models.Model):
-    habenhpt_id = models.IntegerField(primary_key=True)
+    habenhpt_id =models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
     habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -199,7 +216,7 @@ class LandArea(models.Model):
         return unicode(self.name)
 
 class LandAreaHistory(models.Model):
-    landareahist_id = models.IntegerField()
+    landareahist_id = models.AutoField(primary_key=True)
     landarea_id = models.IntegerField(null=True, blank=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -212,16 +229,8 @@ class LandAreaHistory(models.Model):
     class Meta:
         db_table = 'land_area_history'
 
-class LandOwner(models.Model):
-    landowner_id = models.IntegerField(primary_key=True)
-    landarea = models.ForeignKey(LandArea, null=True, blank=True)
-    person = models.ForeignKey('Person', null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    class Meta:
-        db_table = 'land_owner'
-
 class Person(models.Model):
-    person_id = models.IntegerField(primary_key=True)
+    person_id = models.AutoField(primary_key=True)
     name_last = models.CharField(max_length=30)
     name_first = models.CharField(max_length=30)
     address = models.CharField(max_length=50, blank=True)
@@ -245,7 +254,6 @@ class PlannedActivity(models.Model):
     taskstatus = models.ForeignKey('TaskStatusType', verbose_name="Task Status", null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     landarea = models.ForeignKey(LandArea, verbose_name="Land Area", null=True, blank=True)
-    geometry = models.MultiPolygonField(srid=2163, null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
@@ -254,7 +262,7 @@ class PlannedActivity(models.Model):
         verbose_name_plural = "planned activities"
 
 class RecreationPoint(models.Model):
-    recpt_id = models.IntegerField(primary_key=True)
+    recpt_id = models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
     rectype = models.ForeignKey('RecreationType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -284,7 +292,7 @@ class RoadAccessStatusType(models.Model):
         return unicode(self.accessstatus_dsc)
     
 class RoadLine(models.Model):
-    roadln_id = models.IntegerField(primary_key=True)
+    roadln_id = models.AutoField(primary_key=True)
     geometry = models.MultiLineStringField(srid=2163, null=True, blank=True)
     roadtype = models.ForeignKey('RoadType', null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -531,24 +539,6 @@ class LogData(models.Model):
         ordering = ["logdata_id"]
     def __unicode__(self):
         return unicode(self.logdata_id)
-
-class ForestInventoryData(models.Model):
-    forestinventorydata_id = models.AutoField(primary_key=True)
-    forestinventoryplot = models.ForeignKey('ForestInventoryPlot', null=True, blank=True)
-    tree = models.ForeignKey('Tree', null=True, blank=True)
-    collection_date = models.DateField(null=True, blank=True)
-    speciestreetype = models.ForeignKey('SpeciesTreeType', null=False)
-    dbh = models.DecimalField(max_digits=4, decimal_places=1, blank=True, null=True)
-    dbh_unit = models.ForeignKey('UnitLengthType', related_name='dbh_unit', null=True)
-    height = models.IntegerField(blank=True, null=True)
-    height_unit = models.ForeignKey('UnitLengthType',related_name='height_unit', null=True, blank=True)
-    age = models.IntegerField(blank=True)
-    created_by =  models.ForeignKey(User)
-    class Meta:
-        db_table = 'forest_inventory_data'
-        ordering = ["forestinventorydata_id"]
-    def __unicode__(self):
-        return unicode(self.forestinventorydata_id)
     
 class PlotGeometryType(models.Model):
     plotgeomtype_id = models.IntegerField(primary_key=True)

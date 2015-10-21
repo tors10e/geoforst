@@ -328,7 +328,7 @@ class PlannedActivityCreate(CreateView):
     model = PlannedActivity
     form = PlannedActivityForm
     template_name_suffix = '_form'
-    fields = ('landarea', 'acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no', 'geometry')
+    fields = ('landarea', 'acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no')
     
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by=self.request.user)
