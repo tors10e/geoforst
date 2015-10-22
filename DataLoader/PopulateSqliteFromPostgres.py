@@ -30,6 +30,7 @@ else:
     destination_db = outputPath + outputFile
 
 
+
 # List of tables we want to replicate in sqlite.
 spatialTables = [
     ["activity_area", "MULTIPOLYGON"],

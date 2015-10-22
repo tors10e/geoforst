@@ -9,7 +9,8 @@ def create_ogr_command(host, port, user, password, source_database, dest_databas
         src_datasource = "{src_database}".format(src_database=source_database)
         table =  "{table[0]}".format(table=table)
         layer_creation_options = "-lco SCHEMA={schema}".format(schema=lc_options)
-        command = " ".join([command, layer_creation_options, format_name, dst_datasource, src_datasource, table])
+        geomfield = "-geomfield geometry"
+        command = " ".join([command, geomfield, layer_creation_options, format_name, dst_datasource, src_datasource, table])
         
         return command
     except:

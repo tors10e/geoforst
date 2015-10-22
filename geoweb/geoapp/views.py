@@ -1,15 +1,18 @@
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView, FormView
 from geoapp.forms import *
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib import auth
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
+from geoapp.models import ForestInventoryPlot
+from django.core import serializers
 
 import datetime
+from django.views.decorators.csrf import csrf_exempt
 
-def Map(request):
+def Map(request):   
     """Return web map if logged in, otherwise return login page."""
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/geoapp/accounts/login')
@@ -279,10 +282,23 @@ class InventoryPlotUpdate(UpdateView):
     def get_success_url(self):
         return reverse('geoapp:inventory-plot-list')
  
+# Returns json representation of inventory plots. 
+@csrf_exempt
+def InventoryPlotJson(request):
+    if request.method == 'GET':
+        plots = ForestInventoryPlot.objects.all()
+        data = serializers.serialize('json', plots)
+        return HttpResponse(data)
+    
+    else:
+        return HttpResponse("only get requests.")      
+     
 class InventoryPlotDelete(DeleteView):
     model = ForestInventoryPlot
     template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('geoapp:inventory-plot-list')
+
+
 
 class InventoryDataCreate(CreateView):
     model = ForestInventoryData

@@ -38,6 +38,7 @@ urlpatterns = patterns('',
     url(r'^inventory_plot/(?P<pk>\d+)/delete/$', views.InventoryPlotDelete.as_view(), name='inventory_plot_delete'),    
     url(r'^inventory_plot/(?P<pk>\d+)/detail/$', views.InventoryPlotDetail.as_view(), name='inventory-plot-detail'),
     url(r'^inventory_plot/(?P<pk>\d+)/add_data/$', views.InventoryDataCreate.as_view(), name='inventory-data-add'),
+    url(r'^inventory_plot/json/$', views.InventoryPlotJson),
        
     url(r'^inventory_data/add/$', views.InventoryDataCreate.as_view(), name='inventory-data-add'),
     url(r'^inventory_data/(?P<pk>\d+)/edit/$', views.InventoryDataUpdate.as_view(), name='inventory_data_edit'),
