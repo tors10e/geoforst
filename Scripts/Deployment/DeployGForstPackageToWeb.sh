@@ -1,5 +1,12 @@
 #!/bin/sh
 
+#----------------------------------------------------------------------------------------
+# This deployment script gets the latest from the source repository and deploys to the
+# production web server. It should be ran from outside the project, for instance grab it 
+# and move it to your home directory, otherwise it will delete itself when it updates to
+# the newest code. 
+#----------------------------------------------------------------------------------------
+
 PACKAGE_VERSION=0.1
 SOURCE_DIR=~/downloads/fsp
 STAGING_DIR=~/temp
@@ -48,6 +55,10 @@ cp -fr $SOURCE_DIR/geoweb/ $WEB_DIR
 python $WEB_DIR/geoweb/manage.py collectstatic
 rm -f $WEB_DIR/geoweb/geoweb/settings.py
 cp $WEB_DIR/geoweb/geoweb/settings_prod.py $WEB_DIR/geoweb/geoweb/settings.py 
+
+# Change ownership to the appropriate user/group.
+sudo chown -R ubuntu:www-data /var/www
+
 sudo service apache2 stop
 sudo service apache2 start
  

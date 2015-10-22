@@ -1,6 +1,7 @@
 """ This script loads data from the sqlite database to the master postgresql database.
  It uses uses the ogr2ogr update and append commands to truncate and insert the postgres staging database
- using the provided user name to set the created_by_id fields.
+ using the provided user name to set the created_by_id fields. If the table does not exist, it will
+ be created. Note that the geometry field will have to be renamed.
  
 ex. python loadstagingtables.py ~/temp/test.sqlite ernst --test --mock
 
@@ -20,10 +21,10 @@ parser.add_argument("--mock", action="store_true", help="Perform a mock run to p
 args = parser.parse_args()
 
 # Set initial variables.
-if args.test=="True":
-    host = "geo.torstenernst.com"
-else:
+if args.test == True:
     host = "localhost"
+else:
+    host = "geo.torstenernst.com"
     
 port = 5432
 dest_database = "fsp"

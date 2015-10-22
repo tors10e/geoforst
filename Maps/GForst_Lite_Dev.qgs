@@ -3,7 +3,7 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="hazard20150919085513697" name="Hazard">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="hazard20150919085513697" name="Hazard">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="control_point20140811132323039" name="Control Points">
@@ -18,7 +18,7 @@
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cultural Features20121204131751585" name="Cultural Features">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Water Point Features20121204131510425" name="Water Point Features">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="Water Point Features20121204131510425" name="Water Point Features">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Soil Tests">
@@ -68,13 +68,13 @@
     </layer-tree-group>
     <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="External Base Maps">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141004072920232" name="Bing Aerial">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141004072920232" name="Bing Aerial">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141106123907106" name="Stamen Watercolor/OSM">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20141004073033248" name="Google Physical">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20141004073033248" name="Google Physical">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -174,10 +174,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-9312394.05338240973651409</xmin>
-      <ymin>4090552.95477835554629564</ymin>
-      <xmax>-9310713.0672695841640234</xmax>
-      <ymax>4091635.98255723807960749</ymax>
+      <xmin>-9312255.56786314398050308</xmin>
+      <ymin>4090700.31757449870929122</ymin>
+      <xmax>-9310574.58175031840801239</xmax>
+      <ymax>4091783.34535338124260306</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -332,9 +332,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Hazard" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Hazard" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="hazard20150919085513697" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="hazard20150919085513697" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Control Points" showFeatureCount="0">
@@ -357,9 +357,9 @@
         <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Water Point Features" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Water Point Features" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendgroup open="true" checked="Qt::Unchecked" name="Soil Tests">
@@ -428,9 +428,9 @@
     </legendlayer>
     <legendgroup open="true" checked="Qt::Unchecked" name="External Layers"/>
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="External Base Maps">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004072920232" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004072920232" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Stamen Watercolor/OSM" showFeatureCount="0">
@@ -438,9 +438,9 @@
           <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141106123907106" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Physical" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Physical" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004073033248" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20141004073033248" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
