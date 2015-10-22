@@ -52,9 +52,9 @@ cp -rf $STAGING_DIR/gf_deployment/* $WEB_DIR
 
 echo "Deploying Django"
 cp -fr $SOURCE_DIR/geoweb/ $WEB_DIR
-python $WEB_DIR/geoweb/manage.py collectstatic
 rm -f $WEB_DIR/geoweb/geoweb/settings.py
 cp $WEB_DIR/geoweb/geoweb/settings_prod.py $WEB_DIR/geoweb/geoweb/settings.py 
+python $WEB_DIR/geoweb/manage.py collectstatic
 
 # Change ownership to the appropriate user/group.
 sudo chown -R ubuntu:www-data /var/www
