@@ -8,6 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from geoapp.models import ForestInventoryPlot
 from django.core import serializers
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 import datetime
 from django.views.decorators.csrf import csrf_exempt
@@ -366,7 +367,7 @@ class PlannedActivityList(ListView):
     template_name_suffix = '_list'
     form = PlannedActivityForm
     context_object_name = 'activities'
-    
+    paginate_by = 10
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by = self.request.user)
 
