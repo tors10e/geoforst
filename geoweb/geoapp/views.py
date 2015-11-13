@@ -46,11 +46,11 @@ def LumberScaling(request):
    
    
 #************************************************************
-#User handling.
+# User handling.
 #************************************************************    
 def logout_view(request):  
     """Logs out a user and redirects to the login page."""   
-    auth.logout(request)     # Redirect to login page.     
+    auth.logout(request)  # Redirect to login page.     
     return HttpResponseRedirect("/geoapp/accounts/login/")
 
 def register(request):
@@ -62,7 +62,7 @@ def register(request):
             return HttpResponseRedirect("/geoapp/home")
     else: 
         form = UserCreationForm()
-    return render(request, "registration/register.html", {'form': form,})
+    return render(request, "registration/register.html", {'form': form, })
 
 #************************************************************
 # Lumber scaling classes.
@@ -86,7 +86,7 @@ class LumberLoadCreate(CreateView):
         return reverse('geoapp:lumber-load-list')
 
 class LumberLoadList(ListView):
-    context_object_name='lumber_load'
+    context_object_name = 'lumber_load'
     template_name_suffix = '_list'
     
     def get_queryset(self):
@@ -128,7 +128,7 @@ class LogDataCreate(CreateView):
     # Set initial values of unit fields.
     def get_initial(self):
          if self.request.method == 'GET':
-             return { 'lumberload': self.kwargs['pk'],'diameter_unit': '3', 'length_unit': '1' }
+             return { 'lumberload': self.kwargs['pk'], 'diameter_unit': '3', 'length_unit': '1' }
   
     # Return to the load list when done creating a plot.
     def get_success_url(self):
@@ -136,7 +136,7 @@ class LogDataCreate(CreateView):
         return reverse('geoapp:lumber-load-detail', kwargs={'pk': lumberLoadID})
    
 class LogDataList(ListView):
-    context_object_name='log_data'
+    context_object_name = 'log_data'
     template_name_suffix = '_list'
     
     def get_queryset(self):
@@ -149,9 +149,9 @@ class LogDataUpdate(UpdateView):
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        logID = self.kwargs['pk'] # Get the log id.
-        log = get_object_or_404(LogData, logdata_id=logID) # Then get the log object.
-        loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
+        logID = self.kwargs['pk']  # Get the log id.
+        log = get_object_or_404(LogData, logdata_id=logID)  # Then get the log object.
+        loadID = log.lumberload_id  # Finally get lumberload id from the object to redirect after save.
         return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
      
 class LogDataDelete(DeleteView):
@@ -160,9 +160,9 @@ class LogDataDelete(DeleteView):
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
-        logID = self.kwargs['pk'] # Get the log id.
-        log = LogData.objects.get(logdata_id=logID) # Then get the log object.
-        loadID = log.lumberload_id # Finally get lumberload id from the object to redirect after save.
+        logID = self.kwargs['pk']  # Get the log id.
+        log = LogData.objects.get(logdata_id=logID)  # Then get the log object.
+        loadID = log.lumberload_id  # Finally get lumberload id from the object to redirect after save.
         return reverse('geoapp:lumber-load-detail', kwargs={'pk':loadID})
 
 
@@ -171,7 +171,7 @@ class ScalingTicketCreate(CreateView):
     form_class = ScalingTicketForm
     template_name_suffix = '_form'
     
-    def form_valid(self,form):
+    def form_valid(self, form):
         form.instance.created_by = self.request.user
         return super(ScalingTicketCreate, self).form_valid(form)
 
@@ -219,7 +219,7 @@ class SawmillList(ListView):
     template_name_suffix = '_list'
     
     def get_queryset(self):
-        return Sawmill.objects.filter(created_by = self.request.user)
+        return Sawmill.objects.filter(created_by=self.request.user)
 
 class SawmillDelete(DeleteView):
     model = Sawmill
@@ -250,7 +250,7 @@ class InventoryPlotCreate(CreateView):
     
     # Set created_by to the current user.
     def form_valid(self, form):
-        form.instance.created_by =  self.request.user
+        form.instance.created_by = self.request.user
         return super(InventoryPlotCreate, self).form_valid(form)
     
     # Set default form values.
@@ -260,7 +260,7 @@ class InventoryPlotCreate(CreateView):
 
 class InventoryPlotList(ListView):
     model = ForestInventoryPlot
-    context_object_name='inventory_plots'
+    context_object_name = 'inventory_plots'
     template_name_suffix = '_list'
     
     def get_queryset(self):
@@ -338,59 +338,12 @@ class InventoryDataDelete(DeleteView):
         return reverse('geoapp:inventory-plot-detail', kwargs={'pk':plotID})
 
 #************************************************************
-# Activity classes.
-#************************************************************
-
-class PlannedActivityCreate(CreateView):
-    model = PlannedActivity
-    form = PlannedActivityForm
-    template_name_suffix = '_form'
-    fields = ('landarea', 'acttype','planned_date','completed_date','description','notes','revenue', 'taskstatus', 'stand_no')
-    
-    def get_queryset(self):
-        return PlannedActivity.objects.filter(created_by=self.request.user)
-        
-    def form_valid(self, form):
-        form.instance.created_by = self.request.user
-        return super(PlannedActivityCreate, self).form_valid(form)
-    
-    def get_success_url(self):
-        return reverse('geoapp:planned-activity-list')
-    
-        # Set default form values.
-    def get_initial(self):
-        if self.request.method == 'GET':
-            return {'revenue':0, 'taskstatus':1, 'acttype':8}
-    
-class PlannedActivityList(ListView):
-    #model = PlannedActivity
-    template_name_suffix = '_list'
-    form = PlannedActivityForm
-    context_object_name = 'activities'
-    paginate_by = 10
-    def get_queryset(self):
-        return PlannedActivity.objects.filter(created_by = self.request.user)
-
-class PlannedActivityDelete(DeleteView):
-    model = PlannedActivity
-    template_name_suffix = '_confirm_delete'
-    success_url = reverse_lazy('geoapp:planned-activity-list')
-    
-class PlannedActivityUpdate(UpdateView):
-    model = PlannedActivity
-    form_class = PlannedActivityForm
-    template_name_suffix = '_update_form'
-    
-    def get_success_url(self):
-        return reverse('geoapp:planned-activity-list')
-    
-#************************************************************
 # Uploading sqlite databases for upsert.
 #************************************************************
 
 class UserUploadView(CreateView):
     model = UserUpload
-    fields = ['file','description']
+    fields = ['file', 'description']
     success_url = reverse_lazy('geoapp:home')
     
     def form_valid(self, form):
