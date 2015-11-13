@@ -14,9 +14,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'fsp',                      # Or path to database file if using sqlite3.
+        'NAME': 'geoforst',                      # Or path to database file if using sqlite3.
         'USER': 'postgres',
-        'PASSWORD': 'post28#Inca',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '5432',                         # Set to empty string for default.
     }
@@ -62,7 +62,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/Users/torsten/Workspaces/FSP/geoweb/geoweb/static'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -74,7 +74,9 @@ LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-                    "/Users/torsten/Workspaces/FSP/geoweb/geoapp/static",
+                     os.path.join(os.path.dirname(__file__),'static',),
+                    # os.path.join(BASE_DIR, "static"),
+                    '/var/www/static/',
                     
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
@@ -94,11 +96,11 @@ STATICFILES_FINDERS = (
 SECRET_KEY = 'k)}hM]"M_#Vc'
 
 # List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
+#TEMPLATE_LOADERS = (
+  #  'django.template.loaders.filesystem.Loader',
+    #'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
-)
+#)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -119,7 +121,9 @@ WSGI_APPLICATION = 'geoweb.wsgi.application'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+                 os.path.join(BASE_DIR, 'templates'),
+           ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,7 +131,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+                "django.core.context_processors.request",
+                "django.core.context_processors.media",
+                "django.core.context_processors.static", 
+           ],
         },
     },
 ]
@@ -141,9 +148,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'geoapp',
+    'utilities',
+    'crispy_forms',
+    'forest_management',
+    'django_filters',
 )
 
-# Django registration setings.
+# Crispy forms settings.
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# Django registration settings.
 ACCOUNT_ACTIVATION_DAYS = 7
 
 # A sample logging configuration. The only tangible logging

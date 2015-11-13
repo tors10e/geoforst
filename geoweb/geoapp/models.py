@@ -16,31 +16,6 @@ import uuid
 
 # Returns the string representation of the model.
 
-class ActivityArea(models.Model):
-    activityarea_id = models.AutoField(primary_key=True)
-    activityarea_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    activity_date = models.DateField (blank=True)
-    acttype = models.ForeignKey('ActivityType', null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    revenue = models.DecimalField(max_digits=8, decimal_places=2, blank=True) # This field type is a guess.
-    plannedact_uuid = models.ForeignKey('PlannedActivity', null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'activity_area'
-    def __unicode__(self):
-        return unicode(self.activityarea_id)    
-
-class ActivityType(models.Model):
-    acttype_id = models.IntegerField(primary_key=True)
-    acttype_cd = models.CharField(max_length=3, blank=True)
-    acttype_dsc = models.CharField(max_length=50, blank=True)
-    class Meta:
-        db_table = 'activity_type'
-    def __unicode__(self):
-        return unicode(self.acttype_dsc)
-
 
 class BurnCompartment(models.Model):
     burncompartment_id = models.AutoField(primary_key=True)
@@ -242,24 +217,6 @@ class Person(models.Model):
     created_by = models.ForeignKey(User)
     class Meta:
         db_table = 'person'
-
-class PlannedActivity(models.Model):
-    plannedact_id = models.AutoField(primary_key=True)
-    acttype = models.ForeignKey(ActivityType, verbose_name="Activity Type", null=True, blank=True)
-    planned_date = models.DecimalField(null=True, max_digits=4, decimal_places=0, blank=True)
-    completed_date = models.CharField(max_length=25, blank=True, null=True)
-    description = models.TextField(max_length=255, blank=True)
-    notes = models.TextField(max_length=255, blank=True)
-    revenue = models.FloatField(null=True, blank=True)
-    taskstatus = models.ForeignKey('TaskStatusType', verbose_name="Task Status", null=True, blank=True)
-    stand_no = models.IntegerField(null=True, blank=True)
-    landarea = models.ForeignKey(LandArea, verbose_name="Land Area", null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'planned_activity'
-        ordering = ["-planned_date"]
-        verbose_name_plural = "planned activities"
 
 class RecreationPoint(models.Model):
     recpt_id = models.AutoField(primary_key=True)

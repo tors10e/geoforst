@@ -19,7 +19,13 @@
 		</div>
 		{% block header %}{% endblock %}
 		{% block content %}{% endblock %}  
-		{% block footer %}<a href="https://bitbucket.org/torstenernst/fsp/issues/new">Having problems, click here to log an issue.</a>{% endblock %} 
+		{% block footer %}
+		    {% if user.is_authenticated %}
+	    		<p>Logged in as user <i>{{ user.username }}</i></p>
+			{% else %}
+	    		<a href = '/geoapp/accounts/login/'>Please log in to access your data.</a>
+			{% endif %}  
+		{% endblock %} 
 	</div>
 </body> 
 </html>

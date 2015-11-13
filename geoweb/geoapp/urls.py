@@ -44,11 +44,6 @@ urlpatterns = patterns('',
     url(r'^inventory_data/(?P<pk>\d+)/edit/$', views.InventoryDataUpdate.as_view(), name='inventory_data_edit'),
     url(r'^inventory_data/(?P<pk>\d+)/delete/$', views.InventoryDataDelete.as_view(), name='inventory_data_delete'),
     
-    url(r'^planned_activity/add/$', views.PlannedActivityCreate.as_view(), name='planned-activity-add'),
-    url(r'^planned_activity/$', views.PlannedActivityList.as_view(), name='planned-activity-list'),
-    url(r'^planned_activity/(?P<pk>\d+)/edit/$', views.PlannedActivityUpdate.as_view(), name='planned-activity-edit'),
-    url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
-    
     url(r'^upload/$', views.UserUploadView.as_view(), name='user-data-upload'),
     url(r'^upload_success/$', views.UserUploadSuccess, name='user-upload-success'),
   )

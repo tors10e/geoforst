@@ -3,10 +3,5 @@
 {% block title %}Forest Inventory{% endblock %} 
 
 {% block footer %}     
-    {% if user.is_authenticated %}
-	    <p>You are logged in as {{ user.username }}.</p>
-	{% else %}
-	    <a href = '/geoapp/accounts/login/'>Please log in to access your data.</a>
-	{% endif %}  
 {% endblock %} 
  
