@@ -2,12 +2,13 @@
 
 {% block content %}
     <h2>Planned Activities</h2>
-  	<button><a href="{% url 'geoapp:planned-activity-add' %}">Add New Activity</a></button>
+  	<button><a href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a></button>
     <table id="table">
     	<tr id="header_row">
     		<th>Land Area</th>
     		<th>Activity Type</th>
     		<th>Planned Year</th>
+    		<th>Planned Month</th>
     		<th>Completed Date</th>
     		<th>Description</th>
     		<th>Notes</th>
@@ -20,7 +21,8 @@
     	<tr>
     		<td>{{activity.landarea}}</td>
 	    	<td>{{activity.acttype}}</td>
-	    	<td>{{activity.planned_date}}</td>
+	    	<td>{{activity.planned_year}}</td>
+	    	<td>{{activity.planned_month}}</td>
     		<td>{{activity.completed_date|cut:" " | default:"Undetermined"}}</td>
     		<td>{{activity.description}}</td>
     		<td>{{activity.notes|default:"None"}}</td>
@@ -28,8 +30,8 @@
     		<td>{{activity.taskstatus}}</td>
     		<td>{{activity.stand_no}}</td>
     		<td>	
-				<button><a href="{% url 'geoapp:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
-				<button><a href="{% url 'geoapp:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
+				<button><a href="{% url 'forest_management:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
+				<button><a href="{% url 'forest_management:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
 			</td>
     	</tr>
     	{% endfor %}
