@@ -278,6 +278,15 @@ class RoadType(models.Model):
         db_table = 'road_type'
     def __unicode__(self):
         return unicode(self.roadtype_dsc)
+    
+class SeasonType(models.Model):
+    season_id = models.IntegerField(primary_key=True)
+    season_cd = models.CharField(unique=True, max_length=6)
+    season_dsc = models.CharField(max_length=6)
+    class Meta:
+        db_table = 'season_type'
+    def __unicode__(self):
+        return unicode(self.season_dsc)
 
 class SeverityType(models.Model):
     severity_id = models.IntegerField(primary_key=True)
@@ -496,6 +505,15 @@ class LogData(models.Model):
         ordering = ["logdata_id"]
     def __unicode__(self):
         return unicode(self.logdata_id)
+
+class MonthType(models.Model):
+    month_id = models.IntegerField(primary_key=True)
+    month_cd = models.CharField(max_length=3, null=False)
+    month_dsc = models.CharField(max_length=30, null=False)
+    class Meta:
+        db_table = 'month_type'
+    def __unicode__(self):
+        return unicode(self.month_dsc)
     
 class PlotGeometryType(models.Model):
     plotgeomtype_id = models.IntegerField(primary_key=True)

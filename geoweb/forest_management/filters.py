@@ -1,7 +1,7 @@
 import django_filters
 from django_filters import ChoiceFilter, DateFilter, IsoDateTimeFilter
 from forest_management.models import PlannedActivity
-from forest_management import forms 
+from forest_management.forms import PlannedActivityFilterForm
 from django.db.models.query import QuerySet
 
 STATUS_CHOICES = (
@@ -11,27 +11,31 @@ STATUS_CHOICES = (
 )
 
 class PlannedActivityFilter(django_filters.FilterSet):
+    def __init__(self, *args, **kwargs):
+         self.user = kwargs.pop('current_user')
+         super(PlannedActivityFilter, self).__init__(*args, **kwargs)
+        
     class Meta:
         model = PlannedActivity
-        planned_date = django_filters.DateTimeFilter()
-        #planned_year = django_filters.NumberFilter(lookup_type='exact', widget=forms.CheckboxInput)
-        #planned_year = ChoiceFilter(choices=STATUS_CHOICES)
-        #planned_date = DateFilter();
-        fields = [
-                  'planned_year', 
-                  'acttype', 
-                  'taskstatus', 
-                  'landarea', 
-                  'stand_no',]
+#         planned_year = ChoiceFilter(choices=STATUS_CHOICES)
+#         activity_type = django_filters.
+        fields = {
+                  'planned_year':['exact'],
+                  'acttype':['exact'],
+                  'planned_season':['exact'],
+                  'taskstatus':['exact'],
+                  'landarea':['exact'],
+                  'stand_no':['exact'],
+                  }
+        
         #form = forms.PlannedActivityFilterForm
-        #together = ['planned_year', 'planned_date']
         #widgets = {
          #           'planned_year': Select(attrs={choices=STATUS_CHOICES)),
           #       }  
-         #   def get_queryset(self):
-        #return PlannedActivity.objects.filter(created_by=self.request.user)
-        queryset = PlannedActivity.objects.filter(created_by=3)
-       # def get_queryset(self):
-        #     return PlannedActivity.objects.filter(created_by=self.request.user)
-          
+ 
+        #queryset = PlannedActivity.objects.filter(created_by=3)
+
+
+    
+
    
