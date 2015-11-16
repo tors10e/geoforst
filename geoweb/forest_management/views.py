@@ -10,6 +10,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from models import PlannedActivity
 from forms import PlannedActivityForm
 from filters import PlannedActivityFilter
+from django_filters.views import FilterView
 
 #************************************************************
 # Activity classes.
@@ -64,6 +65,9 @@ class PlannedActivityUpdate(UpdateView):
     def get_success_url(self):
         return reverse('forest_management:planned-activity-list')
 
-class PlannedActivityDetail(DetailView):
-    model = PlannedActivity
+def PlannedActivityFilterList(request):
+    user = request.user
+    f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all(), current_user=user)
+    return render_to_response('forest_management/plannedactivity_filter.html', {'filter': f})
+     
     
