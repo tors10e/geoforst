@@ -1,9 +1,9 @@
-{% extends "geoapp/base_inventory.html" %}
+{% extends "forest_management/base_inventory.html" %}
 
 {% block content %}
     <h2>Planned Activities</h2>
-  	<button><a href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a></button>
-    <table id="table">
+  	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a>
+    <table class="table table-striped table-bordered table-condensed table-responsive table-hover">
     	<tr id="header_row">
     		<th>Land Area</th>
     		<th>Activity Type</th>
@@ -30,25 +30,27 @@
     		<td>{{activity.taskstatus}}</td>
     		<td>{{activity.stand_no}}</td>
     		<td>	
-				<button><a href="{% url 'forest_management:planned-activity-edit' activity.plannedact_id %}">Edit</a></button> 
-				<button><a href="{% url 'forest_management:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
+				<a class="btn btn-warning btn-xs" href="{% url 'forest_management:planned-activity-edit' activity.plannedact_id %}">Edit</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'forest_management:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
 			</td>
     	</tr>
     	{% endfor %}
     </table>
        {% if is_paginated %}
         <div class="pagination">
-            <span class="page-links">
+              <ul class="pagination">
                 {% if page_obj.has_previous %}
-                     <a href="?page={{ page_obj.previous_page_number }}">previous</a> 
+                    <li> <a href="?page={{ page_obj.previous_page_number }}">Previous</a> </li>
                 {% endif %}
-                <span class="page-current">
-                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-                </span>
+
+                {% for page in  page_obj.paginator.page_range %}
+                 		<li><a href="?page={{page}}">{{page}}</a></li>
+                {% endfor %}
+                 
                 {% if page_obj.has_next %}
-                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
                 {% endif %}
-            </span>
+           	</ul>
         </div>
     {% endif %}
 {% endblock %}
