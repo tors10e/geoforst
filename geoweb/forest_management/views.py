@@ -36,14 +36,6 @@ class PlannedActivityCreate(CreateView):
         if self.request.method == 'GET':
             return {'revenue':0, 'taskstatus':1, 'acttype':8}
     
-# class PlannedActivityList(ListView):
-#     # model = PlannedActivity
-#     template_name_suffix = '_list'
-#     form = PlannedActivityForm
-#     context_object_name = 'activities'
-#     paginate_by = 10
-#     def get_queryset(self):
-#         return PlannedActivity.objects.filter(created_by=self.request.user)
 
 class PlannedActivityList(ListView):
     model = PlannedActivityFilter
@@ -56,7 +48,7 @@ class PlannedActivityList(ListView):
         planned_activities = PlannedActivity.objects.filter(created_by=self.request.user)
         if planned_year is not None:
                 planned_activities = planned_activities.filter(planned_year=planned_year)
-        #return PlannedActivity.objects.filter(created_by=self.request.user).filter(planned_year=planned_year)
+                return PlannedActivity.objects.filter(created_by=self.request.user).filter(planned_year=planned_year)
         return planned_activities
 
 class PlannedActivityDelete(DeleteView):
@@ -71,17 +63,7 @@ class PlannedActivityUpdate(UpdateView):
     
     def get_success_url(self):
         return reverse('forest_management:planned-activity-list')
-#     
-# class PlannedActivityCreate(CreateView):
-#     model = PlannedActivity
-#     form_class = PlannedActivityForm
-#     template_name = 'forest_management/plannedactivity_update_form.html'
-#     
-#     def get_success_url(self):
-#         return reverse('geoapp:planned-activity-list')
+
+class PlannedActivityDetail(DetailView):
+    model = PlannedActivity
     
-
-# def planned_activity_list(request):
-#     f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all())
-#     return render_to_response('forest_management/template.html', {'filter': f})
-
