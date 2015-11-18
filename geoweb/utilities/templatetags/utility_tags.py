@@ -20,3 +20,24 @@ def append_to_query(context, **kwargs):
             query_params. iteritems() if value 
         ]).replace('&', '&amp;')
     return query_string
+
+register = template.Library()
+
+@register.filter
+def htmlattributes(value, arg):
+    """Inserts html attributes into using a tag. 
+    
+    Acquired from here:
+    http://stackoverflow.com/questions/4951810/django-how-to-add-html-attributes-to-forms-on-templates"""
+    attrs = value.field.widget.attrs
+    data = arg.replace(' ', '')   
+    kvs = data.split(',') 
+
+    for string in kvs:
+        kv = string.split(':')
+        attrs[kv[0]] = kv[1]
+
+    rendered = str(value)
+
+    return rendered
+
