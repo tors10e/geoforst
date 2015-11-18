@@ -9,6 +9,5 @@ urlpatterns = patterns(
     url(r'^planned_activity/add/$', views.PlannedActivityCreate.as_view(), name='planned-activity-add'),
     url(r'^planned_activity/(?P<pk>\d+)/edit/$', views.PlannedActivityUpdate.as_view(), name='planned-activity-edit'),
     url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
-    #url(r'^planned_activity/$', views.PlannedActivityList.as_view(), name='planned-activity-list'),
     url(r'^planned_activity/$', views.PlannedActivityFilterList, name='planned-activity-list'),
   )

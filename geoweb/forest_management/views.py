@@ -68,6 +68,8 @@ class PlannedActivityUpdate(UpdateView):
 def PlannedActivityFilterList(request):
     user = request.user
     f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all(), current_user=user)
-    return render_to_response('forest_management/plannedactivity_filter.html', {'filter': f})
-     
+    #for table in f.filters:
+     #       f.filters[table]._field.help_text = ''
+    return render(request, 'forest_management/plannedactivity_filter.html', {'filter': f})
+
     

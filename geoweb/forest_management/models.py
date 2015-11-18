@@ -30,10 +30,10 @@ class ActivityType(models.Model):
 class PlannedActivity(models.Model):
     plannedact_id = models.AutoField(primary_key=True)
     plannedact_uuid = models.UUIDField(default=uuid.uuid4, verbose_name="Planned Activity", unique=True)
-    acttype = models.ForeignKey(ActivityType, verbose_name="Activity Type", null=True, blank=True)
-    planned_year = models.IntegerField(null=True, blank=True, choices=lookups.get_years_list(10))
+    acttype = models.ForeignKey(ActivityType, verbose_name="Activity Type", help_text='Type of activity', null=True, blank=True)
+    planned_year = models.IntegerField(help_text='Year work is to be started', null=True, blank=True, choices=lookups.get_years_list(10))
     planned_month = models.ForeignKey(MonthType, to_field="month_id", blank=True, null=True)
-    planned_season = models.ForeignKey(SeasonType, to_field="season_cd", blank=True, null=True)
+    planned_season = models.ForeignKey(SeasonType, help_text='Season work is to be started', to_field="season_cd", blank=True, null=True)
     completed_date = models.CharField(max_length=25, blank=True, null=True)
     description = models.TextField(max_length=255, blank=True)
     notes = models.TextField(max_length=255, blank=True)
