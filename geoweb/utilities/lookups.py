@@ -1,8 +1,12 @@
 import datetime
 
-def get_years_list(numberOfYears=10):
+def get_years_list(yearsInFuture=10, yearsInPast=10):
     """Returns a list of years for lookups"""
-    year = datetime.datetime.now().year
+    # Adding 10 years to allow choices ten years 
+    # in the future.
+    currentYear = datetime.datetime.now().year
+    year = currentYear+yearsInFuture
+    numberOfYears = yearsInPast+yearsInFuture
     yearList=[]
     i=0
     while i < numberOfYears:

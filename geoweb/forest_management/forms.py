@@ -25,27 +25,4 @@ class PlannedActivityForm(ModelForm):
     
     class Meta:
         model = PlannedActivity
-        exclude = ('created_by','plannedact_id')      
- 
-    
-class PlannedActivityFilterForm(ModelForm):
-    def __init__(self, *args, **kwargs):
-        super(PlannedActivityFilterForm, self).__init__(*args, **kwargs)
-        self.helper = FormHelper(self)
-        self.helper.form_id = 'id-PlannedActivityFilterForm'
-        self.helper.form_class = 'form-horizontal'
-        self.helper.label_class = 'col-xs-2'
-        self.helper.field_class = 'col-lg-8'
-        self.helper.form_method = 'post'
-        
-    class Meta:
-        model = PlannedActivity
-        fields = (
-               'acttype',
-               'planned_year',
-               )
-     
-    
-    class Meta:
-        model = PlannedActivity
-        exclude = ('created_by','plannedact_id')   
+        exclude = ('created_by','plannedact_id', 'plannedact_uuid')      

@@ -1,3 +1,9 @@
+# _*_ coding: UTF-8 _*_
+# System libraries
+
+# Third-party libraries
+
+# Django modules
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView, FormView
@@ -7,10 +13,14 @@ from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.core import serializers
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django_filters.views import FilterView
+
+# Django apps
 from models import PlannedActivity
 from forms import PlannedActivityForm
 from filters import PlannedActivityFilter
-from django_filters.views import FilterView
+
+# Current app modules
 
 #************************************************************
 # Activity classes.
@@ -18,10 +28,9 @@ from django_filters.views import FilterView
 
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
-    form = PlannedActivityForm
+    form_class = PlannedActivityForm
     template_name_suffix = '_form'
-    fields = ('landarea', 'acttype', 'planned_year', 'planned_month', 'completed_date', 'description', 'notes', 'revenue', 'taskstatus', 'stand_no')
-    
+
     def get_queryset(self):
         return PlannedActivity.objects.filter(created_by=self.request.user)
         
@@ -70,6 +79,6 @@ def PlannedActivityFilterList(request):
     f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all(), current_user=user)
     #for table in f.filters:
      #       f.filters[table]._field.help_text = ''
-    return render(request, 'forest_management/plannedactivity_filter.html', {'filter': f})
+    return render(request, 'forest_management/plannedactivity_list.html', {'filter': f})
 
     

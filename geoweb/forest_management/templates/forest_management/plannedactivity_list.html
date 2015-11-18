@@ -1,7 +1,24 @@
 {% extends "base_listview.html" %}
+{% load pagination_tags %}
+{% load utility_tags %}
 
-{% block content %}
-    <h2>Planned Activities</h2>
+
+<h2>Planned Activities Filter</h2>
+   <div class="row row-offcanvas row-offcanvas-left">
+{% block sidebar %}
+     <form role="form" action="" method="get">
+		{% for field in filter.form %}
+    <div class="form-group">
+        {{ field.errors }}
+        {{ field.label_tag }} 
+        {{ field|htmlattributes:"class : form-control"  }}
+    </div>
+{% endfor %}
+         <button type="submit" class="btn btn-default">Filter Results</button>
+    </form>
+{% endblock %}
+{% block main %}
+    {% autopaginate filter 10 %}
   	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a>
     <table class="table table-striped table-bordered table-responsive table-hover">
     	<tr id="header_row">
@@ -12,11 +29,11 @@
     		<th>Stand Number</th>
     		<th>Action</th>
     	</tr>
-    	{% for activity in activities %}
+    	{% for activity in filter %}
     	<tr>
 	    	<td>{{activity.acttype}}</td>
 	    	<td>{{activity.planned_year}}</td>
-	    	<td>{{activity.planned_season}}</td>
+	    	<td>{{activity.seasontype}}</td>
     		<td>{{activity.description}}</td>
     		<td>{{activity.stand_no}}</td>
     		<td>	
@@ -26,4 +43,6 @@
     	</tr>
     	{% endfor %}
     </table>
+{% paginate %}
+</div>
 {% endblock %}

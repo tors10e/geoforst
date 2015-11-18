@@ -1,14 +1,7 @@
 import django_filters
 from django_filters import ChoiceFilter, DateFilter, IsoDateTimeFilter
 from forest_management.models import PlannedActivity
-from forest_management.forms import PlannedActivityFilterForm
 from django.db.models.query import QuerySet
-
-STATUS_CHOICES = (
-    (0, '2009'),
-    (1, '2010'),
-    (2, '2011'),
-)
 
 class PlannedActivityFilter(django_filters.FilterSet):
            
@@ -17,7 +10,7 @@ class PlannedActivityFilter(django_filters.FilterSet):
         fields = {
                   'planned_year':['exact'],
                   'acttype':['exact'],
-                  'planned_season':['exact'],
+                  'seasontype':['exact'],
                   'taskstatus':['exact'],
                   'landarea':['exact'],
                   'stand_no':['exact'],

@@ -1,13 +1,14 @@
-{% extends "geoapp/base_inventory.html" %}
-{% block content %} 
-<script>
-$(function() {
-  $( "#id_ticket_date" ).datepicker();
-});
-</script>
-<p>Planned Activities</p>
-<form action="" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Create" />
-</form>
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Create New Planned Activity</h1>
+      <hr/>
+      <div class="well">
+        {% crispy form %}
+      </div>
+    </div>
+  </div>
 {% endblock %}
