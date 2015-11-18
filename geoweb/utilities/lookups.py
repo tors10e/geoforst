@@ -1,6 +1,7 @@
 import datetime
 
 def get_years_list(numberOfYears=10):
+    """Returns a list of years for lookups"""
     year = datetime.datetime.now().year
     yearList=[]
     i=0
