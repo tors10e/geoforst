@@ -1,21 +1,12 @@
 {% extends "base.html" %}
-
-{% block footer %}      
-       {% if is_paginated %}
-        <div class="pagination">
-              <ul class="pagination">
-                {% if page_obj.has_previous %}
-                    <li> <a href="?page={{ page_obj.previous_page_number }}">Previous</a> </li>
-                {% endif %}
-
-                {% for page in  page_obj.paginator.page_range %}
-                 		<li><a href="?page={{page}}">{{page}}</a></li>
-                {% endfor %}
-                 
-                {% if page_obj.has_next %}
-                    <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
-                {% endif %}
-           	</ul>
+   {
+        {% block content %}
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+ 			{% block sidebar %}{% endblock %}
         </div>
-    {% endif %}
- {% endblock %}
+        <div class="col-xs-12 col-sm-9">
+        	{% block main %}{% endblock %}
+        </div>
+    {% endblock %}   
+  	
