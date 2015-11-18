@@ -11,14 +11,9 @@ STATUS_CHOICES = (
 )
 
 class PlannedActivityFilter(django_filters.FilterSet):
-    def __init__(self, *args, **kwargs):
-         self.user = kwargs.pop('current_user')
-         super(PlannedActivityFilter, self).__init__(*args, **kwargs)
-        
+           
     class Meta:
         model = PlannedActivity
-#         planned_year = ChoiceFilter(choices=STATUS_CHOICES)
-#         activity_type = django_filters.
         fields = {
                   'planned_year':['exact'],
                   'acttype':['exact'],
@@ -27,15 +22,10 @@ class PlannedActivityFilter(django_filters.FilterSet):
                   'landarea':['exact'],
                   'stand_no':['exact'],
                   }
-        
-        #form = forms.PlannedActivityFilterForm
-        #widgets = {
-         #           'planned_year': Select(attrs={choices=STATUS_CHOICES)),
-          #       }  
- 
-        #queryset = PlannedActivity.objects.filter(created_by=3)
 
+    def __init__(self, *args, **kwargs):
+         self.user = kwargs.pop('current_user')        
+         super(PlannedActivityFilter, self).__init__(*args, **kwargs)
 
-    
 
    

@@ -111,6 +111,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'pagination_bootstrap.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'geoweb.urls'
@@ -134,6 +135,7 @@ TEMPLATES = [
                 "django.core.context_processors.request",
                 "django.core.context_processors.media",
                 "django.core.context_processors.static", 
+                "django.core.context_processors.i18n",
            ],
         },
     },
@@ -152,6 +154,7 @@ INSTALLED_APPS = (
     'crispy_forms',
     'forest_management',
     'django_filters',
+    'pagination_bootstrap',
 )
 
 # Crispy forms settings.
