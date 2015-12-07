@@ -16,6 +16,23 @@ from django.db.models.query import QuerySet
 
 
 class LumberLoadForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(LumberLoadForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.form_id = "id-lumberloadForm"
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = "col-lg-2"
+        self.helper.field_class = "col-lg-8"
+        self.helper.form_method = 'post'
+    
+        self.helper.layout.append(
+                FormActions(
+                    HTML("""<a role="button" class="btn btn-default"
+                            href="{% url "lumber_scaling:lumber-load-list" %}">Cancel</a>"""),
+                    Submit('save', 'Submit'),
+            ))  
+        
+    
     class Meta:
         model = LumberLoad
         exclude = ('created_by',)

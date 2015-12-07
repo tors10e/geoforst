@@ -51,6 +51,7 @@ class LumberLoadCreate(CreateView):
         return reverse('lumber_scaling:lumber-load-list')
 
 def LumberLoadList(request):
+    """ Generate a list of lumber loads. """
     user = request.user
     f = LumberListFilter(request.GET, queryset=LumberLoad.objects.all(), current_user = user)
     return render(request, 'lumber_scaling/lumber_list.html',{'filter', f})
