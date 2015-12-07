@@ -7,15 +7,8 @@ from atexit import register
 #admin.site.register(StandArea, admin.OSMGeoAdmin)
 admin.site.register(StandArea, admin.GeoModelAdmin)
 
-class SawmillAdmin(admin.ModelAdmin):
-    fieldsets = [
-        ('Sawmill Information', {'fields':['name', 'address', 'state', 'zip', 'phone', 'email', 'website']})
-        ]
-    
-admin.site.register(Sawmill, SawmillAdmin)
 admin.site.register(ForestInventoryPlot)
 admin.site.register(ForestInventoryData)
-admin.site.register(LogData)
 admin.site.register(BurnCompartment)
 admin.site.register(CulturalPoint)
 admin.site.register(CulturalType)
@@ -45,6 +38,5 @@ admin.site.register(TaskStatusType)
 admin.site.register(Tree)
 admin.site.register(WaterPoint)
 admin.site.register(WaterType)
-admin.site.register(ScalingTicket)
 admin.site.register(SpeciesTreeType)
 admin.site.register(UserUpload)

@@ -12,10 +12,10 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='activityarea',
-            name='plannedact_uuid',
-        ),
+     #   migrations.RemoveField(
+     #       model_name='activityarea',
+      #      name='plannedact_uuid',
+      #  ),
         migrations.AlterField(
             model_name='plannedactivity',
             name='planned_year',

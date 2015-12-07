@@ -1,6 +1,5 @@
 from django.forms import *
-#from geoapp.models import ForestInventoryPlot, ForestInventoryData, LumberLoad, LogData, ScalingTicket, Sawmill
-from models import *
+from geoapp.models import *
 from django.contrib.gis import forms 
 from django.forms.widgets import TextInput, HiddenInput
 from django.forms import ModelForm
@@ -22,29 +21,6 @@ class InventoryDataForm(ModelForm):
         model = ForestInventoryData
         exclude = ('created_by',)
         
-class LumberLoadForm(ModelForm):
-    class Meta:
-        model = LumberLoad
-        exclude = ('created_by',)
-        
-class LogDataForm(ModelForm):
-    class Meta:
-        model = LogData
-        exclude = ('created_by',)
-
-class ScalingTicketForm(ModelForm):
-    class Meta:
-        model = ScalingTicket
-        exclude = ('created_by','created_date')
-
-class SawmillForm(ModelForm):
-    class Meta:
-        model = Sawmill
-        exclude = ('created_by',)
-        widgets = {
-                   'email':EmailInput(),
-                   'website':URLInput(),
-                   }
 
 
 
