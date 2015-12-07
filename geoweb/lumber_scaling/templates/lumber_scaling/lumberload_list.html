@@ -3,7 +3,7 @@
 {% load utility_tags %}
 
 
-<h2>Scaling Tickets</h2>\
+<h2>Scaling Tickets</h2>
 {% block sidebar %}
      <form role="form" action="" method="get">
 		{% for field in filter.form %}
@@ -18,10 +18,9 @@
 {% endblock %}
 {% block main %}
     {% autopaginate filter 10 %}
-  	<a class="btn btn-primary" href="{% url 'lumber_scaling:scaling-ticket-add' %}">Add New Ticket</a>
+  	<a class="btn btn-primary" href="{% url 'lumber_scaling:lumber-load-add' %}">Add New Load</a>
     <table class="table table-striped table-bordered table-responsive table-hover">
     	<tr id="header_row">
-	    	<th>Scaling Ticket</th>
 	    	<th>Load Date</th>
 	    	<th>Load Comments</th>
 	    	<th>Data</th>

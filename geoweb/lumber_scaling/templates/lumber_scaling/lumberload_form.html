@@ -1,13 +1,15 @@
-{% extends "geoapp/base_inventory.html" %}
-{% block content %} 
-<script>
-$(function() {
-  $( "#id_load_date" ).datepicker();
-});
-</script>
-<p>Add a new lumber load</p>
-<form action="/geoapp/lumber_load/add/" method="post">{% csrf_token %}
-{{ form.as_p }}
-<input type="submit" value="Submit" />
-</form>
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Add New Lumber Load</h1>
+      <hr/>
+      <div class="well">
+        {% crispy form %}
+      </div>
+    </div>
+  </div>
 {% endblock %}
+
