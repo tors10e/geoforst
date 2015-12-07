@@ -8,7 +8,7 @@ $(function() {
 
 {% block content %}
     <h2>Lumber Loads</h2>
-    <button><a href="{% url 'geoapp:lumber-load-add' %}">Add New Load</a></button>
+    <button><a href="{% url 'lumber_scaling:lumber-load-add' %}">Add New Load</a></button>
     <table id="table">
 	    <tr id="header_row">
 	    	<th>ID</th>
@@ -22,18 +22,18 @@ $(function() {
 	    <tr>
 		    <td>{{load.lumberload_id}}</td>
 		   	{% if load.scalingticket %}
-		   		<td><a href={% url 'geoapp:scaling-ticket-list' %}>{{load.scalingticket}}</a></td>
+		   		<td><a href={% url 'lumber_scaling:scaling-ticket-list' %}>{{load.scalingticket}}</a></td>
 		   	{% else %}
-		   		<td><a href={% url 'geoapp:scaling-ticket-add' %}>Add new ticket</a></td>
+		   		<td><a href={% url 'lumber_scaling:scaling-ticket-add' %}>Add new ticket</a></td>
 		   	{% endif %}
 		   	<td>{{load.load_date}}</td>
 		   	<td>{{load.load_comments}}</td>
 		   	<td>
-		  		<a href="{% url 'geoapp:lumber-load-detail' load.lumberload_id %}">Load {{ load.lumberload_id }} Data</a>
+		  		<a href="{% url 'lumber_scaling:lumber-load-detail' load.lumberload_id %}">Load {{ load.lumberload_id }} Data</a>
 		   	</td>
 			<td>
-				<button><a href="{% url 'geoapp:lumber-load-edit' load.lumberload_id %}">Edit</a> </button>				
-				<button><a href="{% url 'geoapp:lumber-load-delete' load.lumberload_id %}">Delete</a></button>
+				<button><a href="{% url 'lumber_scaling:lumber-load-edit' load.lumberload_id %}">Edit</a> </button>				
+				<button><a href="{% url 'lumber_scaling:lumber-load-delete' load.lumberload_id %}">Delete</a></button>
 			</td>
 	    </tr>
     	{% endfor %}  
