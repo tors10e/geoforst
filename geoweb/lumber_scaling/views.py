@@ -67,7 +67,7 @@ class LumberLoadDetail(DetailView):
 class LumberLoadUpdate(UpdateView):
     model = LumberLoad
     form_class = LumberLoadForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
@@ -109,7 +109,7 @@ class LogDataList(ListView):
 class LogDataUpdate(UpdateView):
     model = LogData
     form_class = LogDataForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
     
     # Return to the load list when done creating a plot.
     def get_success_url(self):
@@ -127,7 +127,7 @@ class LogDataDelete(DeleteView):
         logID = self.kwargs['pk']  # Get the log id.
         log = LogData.objects.get(logdata_id=logID)  # Then get the log object.
         loadID = log.lumberload_id  # Finally get lumberload id from the object to redirect after save.
-        return reverse('lumber_scaling:lumber-load-detail', kwargs={'pk':loadID})
+        return reverse('lumber_scaling:lumber-load-detail', kwargs={'pk':logId})
 
 
 class ScalingTicketCreate(CreateView):
@@ -150,7 +150,7 @@ def ScalingTicketList(request):
 class ScalingTicketUpdate(UpdateView):
     model = ScalingTicket
     form_class = ScalingTicketForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
     
     def get_success_url(self):
         return reverse('lumber_scaling:scaling-ticket-list')
@@ -191,7 +191,7 @@ class SawmillDelete(DeleteView):
 class SawmillUpdate(UpdateView):
     model = Sawmill
     form_class = SawmillForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
     
     def get_success_url(self):
         return reverse('lumber_scaling:sawmill-list')

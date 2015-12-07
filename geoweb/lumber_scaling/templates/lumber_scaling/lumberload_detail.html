@@ -4,12 +4,12 @@ $(function() {
 });
 </script>
 
-{% extends "geoapp/base_inventory.html" %}
+{% extends "base_listview.html" %}
 
 {% block content %}    
 		<h2>Load {{ lumber_load_detail.lumberload_id }}</h2>
 		{% if lumber_load_detail.logdata_set.all %}
-				<table>
+				<table class="table table-striped table-bordered table-responsive table-hover">
 					<tr>
 						<th>Log ID</th>
 						<th>Butt Diameter</th>
