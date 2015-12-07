@@ -38,6 +38,21 @@ class LumberLoadForm(ModelForm):
         exclude = ('created_by',)
         
 class LogDataForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(LogDataForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.form_id = "id-LogdataForm"
+        self.helper.form_method = 'post'
+        self.helper.field_class = "col-lg-8"
+        self.helper.form_class = "form-horizontal"
+        self.helper.label_class = "col-lg-2"
+        
+        self.helper.layout.append(
+            FormActions(
+                HTML("""<a role="button" class="btn btn-default"
+                        href="{% url "lumber_scaling:lumber-load-list" %}">Cancel</a>"""),
+                Submit('save', 'Submit'),
+        ))  
     class Meta:
         model = LogData
         exclude = ('created_by',)
