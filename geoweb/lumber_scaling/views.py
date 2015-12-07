@@ -50,12 +50,10 @@ class LumberLoadCreate(CreateView):
         """Return the lumber load list."""
         return reverse('lumber_scaling:lumber-load-list')
 
-class LumberLoadList(ListView):
-    context_object_name = 'lumber_load'
-    template_name_suffix = '_list'
-    
-    def get_queryset(self):
-        return LumberLoad.objects.filter(created_by=self.request.user)
+def LumberLoadList(request):
+    user = request.user
+    f = LumberListFilter(request.GET, queryset=LumberLoad.objects.all(), current_user = user)
+    return render(request, 'lumber_scaling/lumber_list.html',{'filter', f})
     
 class LumberLoadDetail(DetailView):
     queryset = LumberLoad.objects.all()
