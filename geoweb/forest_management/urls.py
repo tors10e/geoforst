@@ -6,9 +6,9 @@ from forest_management.filters import PlannedActivityFilter
 
 urlpatterns = patterns(
     '',
-    url(r'^$', views.PlannedActivityFilterList, name='planned-activity-list'),
+    url(r'^$', views.PlannedActivityList, name='planned-activity-list'),
     url(r'^planned_activity/add/$', views.PlannedActivityCreate.as_view(), name='planned-activity-add'),
     url(r'^planned_activity/(?P<pk>\d+)/edit/$', views.PlannedActivityUpdate.as_view(), name='planned-activity-edit'),
     url(r'^planned_activity/(?P<pk>\d+)/delete/$', views.PlannedActivityDelete.as_view(), name='planned-activity-delete'),
-    url(r'^planned_activity/$', views.PlannedActivityFilterList, name='planned-activity-list'),
+    url(r'^planned_activity/$', views.PlannedActivityList, name='planned-activity-list'),
   )
