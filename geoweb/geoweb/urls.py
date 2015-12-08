@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^forest_management/', include('forest_management.urls', namespace='forest_management')),
     url(r'^lumber_scaling/', include('lumber_scaling.urls', namespace='lumber_scaling')),
     url(r'^$', 'geoweb.views.Home', name = 'home'),
+    url('^', include('django.contrib.auth.urls')),
 )
