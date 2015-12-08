@@ -2,9 +2,6 @@ from django.conf.urls import patterns, url
 from geoapp import views
 
 urlpatterns = patterns('',
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
-    url(r'^accounts/logout/$', views.logout_view, name='logout'),
-    url(r'^accounts/register/$', views.register, name='register'),
     url(r'^map/$', views.Map, name = 'map'),
     url(r'^maps/$', views.Maps, name = 'maps'),
     url(r'^mobilemap/$', views.MobileMap, name = 'mobile-map'),
