@@ -10,14 +10,22 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	        	<a class="dropdown-toggle" data-toggle="dropdown" role="button">REGISTRATION<span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		        	<li><a href="/login">Login</a></li>
+		        	<li><a href="/logout">Logout</a></li>
+		        	<li><a href={% url "registration_register" %}>Register</a></li>
+		        </ul>
+	        </li>
 	        <li><a href="/forest_management/planned_activity">FOREST MANAGEMENT</a></li>
 	        <li class="dropdown">
-          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
-          	<ul class="dropdown-menu">
-            	<li><a href="/lumber_scaling/lumber_load">Lumber Loads</a></li>
-            	<li><a href="/lumber_scaling/scaling_ticket">Scaling Tickets</a></li>
-            	<li><a href="/lumber_scaling/sawmill">Sawmills</a></li>
-          	</ul>
+          		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+            		<li><a href="/lumber_scaling/lumber_load">Lumber Loads</a></li>
+            		<li><a href="/lumber_scaling/scaling_ticket">Scaling Tickets</a></li>
+            		<li><a href="/lumber_scaling/sawmill">Sawmills</a></li>
+          		</ul>
         	</li>
       	</ul>
 	    </div>

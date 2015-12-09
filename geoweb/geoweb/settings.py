@@ -68,9 +68,9 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/geoapp/home/'
+LOGIN_REDIRECT_URL = '/login/'
 
-LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
+LOGOUT_REDIRECT_URL = '/home/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
