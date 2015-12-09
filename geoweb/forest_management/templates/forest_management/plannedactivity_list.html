@@ -3,15 +3,16 @@
 {% load utility_tags %}
 
 
-<h2>Planned Activities Filter</h2>\
+<h2>Planned Activities Filter</h2>
+   <div class="row row-offcanvas row-offcanvas-left">
 {% block sidebar %}
      <form role="form" action="" method="get">
 		{% for field in filter.form %}
-    		<div class="form-group">
-        		{{ field.errors }}
-        		{{ field.label_tag }} 
-        		{{ field|htmlattributes:"class : form-control"  }}
-    		</div>
+    <div class="form-group">
+        {{ field.errors }}
+        {{ field.label_tag }} 
+        {{ field|htmlattributes:"class : form-control"  }}
+    </div>
 	{% endfor %}
          <button type="submit" class="btn btn-default">Filter Results</button>
     </form>
@@ -23,7 +24,7 @@
     	<tr id="header_row">
     		<th>Activity Type</th>
     		<th>Planned Year</th>
-    		<th>Planned Month</th>
+    		<th>Planned Season</th>
     		<th>Description</th>
     		<th>Stand Number</th>
     		<th>Action</th>
@@ -32,7 +33,7 @@
     	<tr>
 	    	<td>{{activity.acttype}}</td>
 	    	<td>{{activity.planned_year}}</td>
-	    	<td>{{activity.planned_month}}</td>
+	    	<td>{{activity.seasontype}}</td>
     		<td>{{activity.description}}</td>
     		<td>{{activity.stand_no}}</td>
     		<td>	
@@ -42,5 +43,6 @@
     	</tr>
     	{% endfor %}
     </table>
-	{% paginate %}
+{% paginate %}
+</div>
 {% endblock %}
