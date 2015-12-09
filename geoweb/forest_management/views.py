@@ -14,6 +14,7 @@ from django import forms
 from django.core import serializers
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django_filters.views import FilterView
+from django.contrib.auth.decorators import login_required
 
 # Django apps
 from models import PlannedActivity
@@ -25,6 +26,7 @@ from filters import PlannedActivityFilter
 #************************************************************
 # Activity classes.
 #************************************************************
+
 
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
@@ -45,12 +47,12 @@ class PlannedActivityCreate(CreateView):
     def get_initial(self):
         if self.request.method == 'GET':
             return {'revenue':0, 'taskstatus':1, 'acttype':8}
-    
+  
 class PlannedActivityDelete(DeleteView):
     model = PlannedActivity
     template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('forest_management:planned-activity-list')
-    
+   
 class PlannedActivityUpdate(UpdateView):
     model = PlannedActivity
     form_class = PlannedActivityForm
@@ -59,6 +61,7 @@ class PlannedActivityUpdate(UpdateView):
     def get_success_url(self):
         return reverse('forest_management:planned-activity-list')
 
+@login_required
 def PlannedActivityList(request):
     user = request.user
     f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all(), current_user=user)

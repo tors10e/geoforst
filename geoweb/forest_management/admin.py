@@ -10,5 +10,4 @@ class ActivityTypeAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(ActivityType, ActivityTypeAdmin)
-
 admin.site.register(PlannedActivity)

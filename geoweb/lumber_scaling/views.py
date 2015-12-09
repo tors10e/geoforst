@@ -14,6 +14,7 @@ from django import forms
 from django.core import serializers
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django_filters.views import FilterView
+from django.contrib.auth.decorators import login_required
 
 # Django apps
 from lumber_scaling.models import *
@@ -32,6 +33,7 @@ def LumberScaling(request):
 #************************************************************
 # Lumber scaling classes.
 #************************************************************
+
 class LumberLoadCreate(CreateView):
     """Return a list of lumber loads."""
     
@@ -50,12 +52,14 @@ class LumberLoadCreate(CreateView):
         """Return the lumber load list."""
         return reverse('lumber_scaling:lumber-load-list')
 
+@login_required
 def LumberLoadList(request):
     """ Generate a list of lumber loads. """
     user = request.user
-    f = LumberListFilter(request.GET, queryset=LumberLoad.objects.all(), current_user = user)
-    return render(request, 'lumber_scaling/lumber_list.html',{'filter', f})
-    
+    f = LumberLoadFilter(request.GET, queryset=LumberLoad.objects.all(), current_user=user)
+    return render(request, 'lumber_scaling/lumberload_list.html', {'filter': f})
+
+   
 class LumberLoadDetail(DetailView):
     queryset = LumberLoad.objects.all()
     template_name_suffix = '_detail'
@@ -63,7 +67,7 @@ class LumberLoadDetail(DetailView):
     
     def get_queryset(self):
         return LumberLoad.objects.filter(created_by=self.request.user)
-    
+
 class LumberLoadUpdate(UpdateView):
     model = LumberLoad
     form_class = LumberLoadForm
@@ -72,13 +76,12 @@ class LumberLoadUpdate(UpdateView):
     # Return to the load list when done creating a plot.
     def get_success_url(self):
         return reverse('lumber_scaling:lumber-load-list') 
-    
+  
 class LumberLoadDelete(DeleteView):
     model = LumberLoad
     template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('lumber_scaling:lumber-load-list')
-    
-    
+       
 class LogDataCreate(CreateView):
     form_class = LogDataForm
     model = LogData
@@ -98,7 +101,7 @@ class LogDataCreate(CreateView):
     def get_success_url(self):
         lumberLoadID = self.kwargs['pk']
         return reverse('lumber_scaling:lumber-load-detail', kwargs={'pk': lumberLoadID})
-   
+
 class LogDataList(ListView):
     context_object_name = 'log_data'
     template_name_suffix = '_list'
@@ -117,7 +120,7 @@ class LogDataUpdate(UpdateView):
         log = get_object_or_404(LogData, logdata_id=logID)  # Then get the log object.
         loadID = log.lumberload_id  # Finally get lumberload id from the object to redirect after save.
         return reverse('lumber_scaling:lumber-load-detail', kwargs={'pk':loadID})
-     
+ 
 class LogDataDelete(DeleteView):
     model = LogData
     template_name_suffix = '_confirm_delete'
@@ -128,7 +131,6 @@ class LogDataDelete(DeleteView):
         log = LogData.objects.get(logdata_id=logID)  # Then get the log object.
         loadID = log.lumberload_id  # Finally get lumberload id from the object to redirect after save.
         return reverse('lumber_scaling:lumber-load-detail', kwargs={'pk':logId})
-
 
 class ScalingTicketCreate(CreateView):
     model = ScalingTicket
@@ -141,7 +143,8 @@ class ScalingTicketCreate(CreateView):
 
     def get_success_url(self):
         return reverse('lumber_scaling:scaling-ticket-list')
-    
+ 
+@login_required   
 def ScalingTicketList(request):
     user = request.user
     f = ScalingTicketFilter(request.GET, queryset=ScalingTicket.objects.all(), current_user=user)
@@ -159,7 +162,7 @@ class ScalingTicketDelete(DeleteView):
     model = ScalingTicket
     template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('lumber_scaling:scaling-ticket-list')
-    
+  
 class SawmillCreate(CreateView):
     model = Sawmill
     form_class = SawmillForm
@@ -174,20 +177,12 @@ class SawmillCreate(CreateView):
     
     def get_success_url(self):
         return reverse('lumber_scaling:sawmill-list')
-    
-class SawmillList(ListView):
-    model = Sawmill
-    context_object_name = 'sawmills'
-    template_name_suffix = '_list'
-    
-    def get_queryset(self):
-        return Sawmill.objects.filter(created_by=self.request.user)
 
 class SawmillDelete(DeleteView):
     model = Sawmill
     template_name_suffix = '_confirm_delete'
     success_url = reverse_lazy('lumber_scaling:sawmill-list')
-    
+   
 class SawmillUpdate(UpdateView):
     model = Sawmill
     form_class = SawmillForm
@@ -196,19 +191,12 @@ class SawmillUpdate(UpdateView):
     def get_success_url(self):
         return reverse('lumber_scaling:sawmill-list')
 
-
-def SawmillFilterList(request):
+@login_required
+def SawmillList(request):
     user = request.user
     f = SawmillFilter(request.GET, queryset=Sawmill.objects.all(), current_user=user)
-    #for table in f.filters:
-     #       f.filters[table]._field.help_text = ''
     return render(request, 'lumber_scaling/sawmill_list.html', {'filter': f})
 
-def LumberLoadFilterList(request):
-    user = request.user
-    f = LumberLoadFilter(request.GET, queryset=LumberLoad.objects.all(), current_user=user)
-    #for table in f.filters:
-     #       f.filters[table]._field.help_text = ''
-    return render(request, 'lumber_scaling/lumberload_list.html', {'filter': f})
+
 
     
