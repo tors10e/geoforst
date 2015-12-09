@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default background-color="grey">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" style="color:darkblue" href={% url 'home' %}>GeoForst <small>Land Management Tool</small></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="/forest_management/planned_activity">FOREST MANAGEMENT</a></li>
+	        <li class="dropdown">
+          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
+          	<ul class="dropdown-menu">
+            	<li><a href="/lumber_scaling/lumber_load">Lumber Loads</a></li>
+            	<li><a href="/lumber_scaling/scaling_ticket">Scaling Tickets</a></li>
+            	<li><a href="/lumber_scaling/sawmill">Sawmills</a></li>
+          	</ul>
+        	</li>
+      	</ul>
+	    </div>
+	  </div>
+	</nav>
