@@ -17,9 +17,9 @@ from django_filters.views import FilterView
 from django.contrib.auth.decorators import login_required
 
 # Django apps
-from models import PlannedActivity
-from forms import PlannedActivityForm
-from filters import PlannedActivityFilter
+from .models import PlannedActivity
+from .forms import PlannedActivityForm
+from .filters import PlannedActivityFilter
 
 # Current app modules
 

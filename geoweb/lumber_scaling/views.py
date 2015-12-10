@@ -17,9 +17,9 @@ from django_filters.views import FilterView
 from django.contrib.auth.decorators import login_required
 
 # Django apps
-from lumber_scaling.models import *
-from lumber_scaling.forms import *
-from lumber_scaling.filters import *
+from .models import *
+from .forms import *
+from .filters import *
 
 # Current app modules
 
@@ -55,7 +55,6 @@ class LumberLoadCreate(CreateView):
 @login_required
 def LumberLoadList(request):
     """ Generate a list of lumber loads. """
-    user = request.user
     f = LumberLoadFilter(request.GET, queryset=LumberLoad.objects.filter(created_by=request.user))
     return render(request, 'lumber_scaling/lumberload_list.html', {'filter': f})
 
