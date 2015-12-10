@@ -51,7 +51,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/var/www/geoweb/geoapp/media/'
+MEDIA_ROOT = '/var/www/geoweb/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -62,6 +62,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 STATIC_ROOT = '/var/www/static/'
 
 # URL prefix for static files.
@@ -74,7 +75,7 @@ LOGOUT_REDIRECT_URL = '/home/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-   "/var/www/geoweb/geoweb/static",
+   "/var/www/geoweb/static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -119,7 +120,9 @@ WSGI_APPLICATION = 'geoweb.wsgi.application'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+                 os.path.join(BASE_DIR, 'templates'),
+           ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,7 +130,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+                "django.core.context_processors.request",
+                "django.core.context_processors.media",
+                "django.core.context_processors.static", 
+                "django.core.context_processors.i18n",
+           ],
         },
     },
 ]
@@ -150,7 +157,10 @@ INSTALLED_APPS = (
     'forest_inventory',
 )
 
-# Django registration setings.
+# Crispy forms settings.
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# Django registration settings.
 ACCOUNT_ACTIVATION_DAYS = 7
 
 # A sample logging configuration. The only tangible logging
