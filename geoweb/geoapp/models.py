@@ -204,19 +204,19 @@ class LandAreaHistory(models.Model):
     class Meta:
         db_table = 'land_area_history'
 
-class Person(models.Model):
-    person_id = models.AutoField(primary_key=True)
-    name_last = models.CharField(max_length=30)
-    name_first = models.CharField(max_length=30)
-    address = models.CharField(max_length=50, blank=True)
-    address_ext = models.CharField(max_length=50, blank=True)
-    city = models.CharField(max_length=30, blank=True)
-    state = models.CharField(max_length=2, blank=True)
-    zip_code = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
-    phone = models.CharField(max_length=12, blank=True)
-    created_by = models.ForeignKey(User)
-    class Meta:
-        db_table = 'person'
+# class Person(models.Model):
+#     person_id = models.AutoField(primary_key=True)
+#     name_last = models.CharField(max_length=30)
+#     name_first = models.CharField(max_length=30)
+#     address = models.CharField(max_length=50, blank=True)
+#     address_ext = models.CharField(max_length=50, blank=True)
+#     city = models.CharField(max_length=30, blank=True)
+#     state = models.CharField(max_length=2, blank=True)
+#     zip_code = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
+#     phone = models.CharField(max_length=12, blank=True)
+#     created_by = models.ForeignKey(User)
+#     class Meta:
+#         db_table = 'person'
 
 class RecreationPoint(models.Model):
     recpt_id = models.AutoField(primary_key=True)
@@ -298,13 +298,15 @@ class SeverityType(models.Model):
 
 class StandArea(models.Model):
     standarea_id = models.AutoField(primary_key=True)
+    standarea_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+    standarea_uuid_id = models.UUIDField(default=uuid.uuid4, unique=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateTimeField(null=True, blank=True)
     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
     transaction_start_date = models.DateTimeField(null=True, blank=True)
-    standdescription = models.ForeignKey('StandDescription', null=True, blank=True)
+    #standdescription = models.ForeignKey('StandDescription', null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:
@@ -324,24 +326,24 @@ class StandAreaHistory(models.Model):
     foresttype_id = models.IntegerField(null=True, blank=True)
     transaction_start_date = models.DateTimeField(null=True, blank=True)
     transaction_end_date = models.DateTimeField(null=True, blank=True)
-    created_by = models.ForeignKey(User)
+    created_by = models.IntegerField(null=True, blank=True)
     objects = models.GeoManager()
     class Meta:
         db_table = 'stand_area_history'
     def __unicode__(self):
         return unicode(self.standareahist_id)
 
-class StandDescription(models.Model):
-    standdescription_id = models.AutoField(primary_key=True)
-    stockingtype = models.ForeignKey('StockingType', null=True, blank=True)
-    forestagetype = models.ForeignKey(ForestAgeType, null=True, blank=True)
-    stand_description = models.CharField(max_length=255, blank=True)
-    foresttype = models.ForeignKey(ForestType, null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    class Meta:
-        db_table = 'stand_description'
-    def __unicode__(self):
-        return unicode(self.stand_description)
+# class StandDescription(models.Model):
+#     standdescription_id = models.AutoField(primary_key=True)
+#     stockingtype = models.ForeignKey('StockingType', null=True, blank=True)
+#     forestagetype = models.ForeignKey(ForestAgeType, null=True, blank=True)
+#     stand_description = models.CharField(max_length=255, blank=True)
+#     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
+#     created_by = models.ForeignKey(User)
+#     class Meta:
+#         db_table = 'stand_description'
+#     def __unicode__(self):
+#         return unicode(self.stand_description)
 
 class StandStatus(models.Model):
     standstatus_id = models.AutoField(primary_key=True)
@@ -349,8 +351,11 @@ class StandStatus(models.Model):
     recommended_treatment = models.CharField(max_length=255, blank=True)
     notes = models.CharField(max_length=255, blank=True)
     damage_severity = models.ForeignKey(SeverityType, null=True, db_column='damage_severity', blank=True)
-    stand = models.ForeignKey(StandDescription, null=True, blank=True)
+    #stand = models.ForeignKey(StandDescription, null=True, blank=True)
     created_by = models.ForeignKey(User)
+    standarea_uuid = models.ForeignKey('StandArea',to_field='standarea_uuid')
+    standstatus_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+    stand_no = models.IntegerField(null=True, blank=True)
     class Meta:
         db_table = 'stand_status'
         verbose_name_plural = "stand_statuses"

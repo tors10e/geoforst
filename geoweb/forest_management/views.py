@@ -63,8 +63,7 @@ class PlannedActivityUpdate(UpdateView):
 
 @login_required
 def PlannedActivityList(request):
-    user = request.user
-    f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.all(), current_user=user)
+    f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.filter(created_by=request.user))
     return render(request, 'forest_management/plannedactivity_list.html', {'filter': f})
 
     

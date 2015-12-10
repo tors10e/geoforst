@@ -16,8 +16,7 @@ class PlannedActivityFilter(django_filters.FilterSet):
                   'stand_no':['exact'],
                   }
 
-    def __init__(self, *args, **kwargs):
-         self.user = kwargs.pop('current_user')        
+    def __init__(self, *args, **kwargs):       
          super(PlannedActivityFilter, self).__init__(*args, **kwargs)
 
 
