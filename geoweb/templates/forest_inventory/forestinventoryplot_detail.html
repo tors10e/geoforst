@@ -1,0 +1,50 @@
+<script>
+$(function() {
+  $( "#id_form_date_field" ).datepicker();
+});
+</script>
+
+{% extends "base.html" %}
+
+{% block content %}    
+		<h2>Plot {{ plot_detail.forestinventoryplot_id }}</h2>
+		<button>
+			<a href="{% url 'forest_inventory:inventory-data-add' plot_detail.forestinventoryplot_id %}">Add New Data Point</a>
+		</button>
+		{% if plot_detail.forestinventorydata_set.all %}
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Tree ID</th>
+						<th>Species</th>
+						<th>Collection Date</th>
+						<th>Diameter</th> 
+						<th>Diameter Units</th>
+						<th>Height</th>
+						<th>Height Units</th>
+						<th>Age</th>
+						<th>Actions</th>
+					</tr>
+					{% for data in plot_detail.forestinventorydata_set.all %}
+					<tr>
+						<td> {{ data.forestinventorydata_id}} </td>
+						<td> {{ data.tree }} </td>
+						<td> {{ data.speciestreetype }}</td>
+						<td> {{ data.collection_date }} </td>
+						<td> {{ data.dbh }}</td> 
+						<td> {{ data.dbh_unit }}</td> 
+						<td> {{ data.height }} </td>
+						<td> {{ data.height_unit }}</td> 
+						<td> {{ data.age}}</td>
+						<td>
+							<button><a href="/forest_inventory/inventory_data/{{data.forestinventorydata_id}}/edit">Edit</a></button>
+							<button><a href="/forest_inventory/inventory_data/{{data.forestinventorydata_id}}/delete">Delete</a></button>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+		{% else %}
+			<p>No data has been entered for this plot.</p>
+		{% endif %}
+		<a href="{% url 'forest_inventory:inventory-plot-list' %}">Return to plot overview</a>
+{% endblock %}
