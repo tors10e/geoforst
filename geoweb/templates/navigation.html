@@ -18,13 +18,14 @@
 		        	<li><a href={% url "registration_register" %}>Register</a></li>
 		        </ul>
 	        </li>
-	        <li><a href="/forest_management/planned_activity">FOREST MANAGEMENT</a></li>
+	        <li><a href={% url 'forest_management:planned-activity-list' %}>FOREST MANAGEMENT</a></li>
+	        <li><a href={% url 'forest_inventory:inventory-plot-list' %}>FOREST INVENTORY</a></li>
 	        <li class="dropdown">
           		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
           		<ul class="dropdown-menu">
-            		<li><a href="/lumber_scaling/lumber_load">Lumber Loads</a></li>
-            		<li><a href="/lumber_scaling/scaling_ticket">Scaling Tickets</a></li>
-            		<li><a href="/lumber_scaling/sawmill">Sawmills</a></li>
+            		<li><a href={% url 'lumber_scaling:lumber-load-list' %}>Lumber Loads</a></li>
+            		<li><a href={% url 'lumber_scaling:scaling-ticket-list' %}>Scaling Tickets</a></li>
+            		<li><a href={% url 'lumber_scaling:sawmill-list' %}>Sawmills</a></li>
           		</ul>
         	</li>
       	</ul>

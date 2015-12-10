@@ -1,8 +1,8 @@
 from django.conf.urls import patterns, url
 from forest_management import views
-from django_filters.views import FilterView
-from forest_management.models import PlannedActivity
-from forest_management.filters import PlannedActivityFilter
+#from django_filters.views import FilterView
+#from forest_management.models import PlannedActivity
+#from forest_management.filters import PlannedActivityFilter
 
 urlpatterns = patterns(
     '',

@@ -156,6 +156,7 @@ INSTALLED_APPS = (
     'django_filters',
     'pagination_bootstrap',
     'lumber_scaling',
+    'forest_inventory',
 )
 
 # Crispy forms settings.
