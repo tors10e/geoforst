@@ -14,8 +14,7 @@ class LumberLoadFilter(django_filters.FilterSet):
                   'load_date':['exact'],
                   }
 
-    def __init__(self, *args, **kwargs):
-         self.user = kwargs.pop('current_user')        
+    def __init__(self, *args, **kwargs):      
          super(LumberLoadFilter, self).__init__(*args, **kwargs)
          
 class SawmillFilter(django_filters.FilterSet):
@@ -26,8 +25,7 @@ class SawmillFilter(django_filters.FilterSet):
                   'name':['exact'],
                   }
 
-    def __init__(self, *args, **kwargs):
-         self.user = kwargs.pop('current_user')        
+    def __init__(self, *args, **kwargs):       
          super(SawmillFilter, self).__init__(*args, **kwargs)
          
 class ScalingTicketFilter(django_filters.FilterSet):
@@ -38,8 +36,7 @@ class ScalingTicketFilter(django_filters.FilterSet):
                   'sawmill':['exact'],
                   }
 
-    def __init__(self, *args, **kwargs):
-         self.user = kwargs.pop('current_user')        
+    def __init__(self, *args, **kwargs):     
          super(ScalingTicketFilter, self).__init__(*args, **kwargs)
 
 

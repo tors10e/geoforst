@@ -56,7 +56,7 @@ class LumberLoadCreate(CreateView):
 def LumberLoadList(request):
     """ Generate a list of lumber loads. """
     user = request.user
-    f = LumberLoadFilter(request.GET, queryset=LumberLoad.objects.all(), current_user=user)
+    f = LumberLoadFilter(request.GET, queryset=LumberLoad.objects.filter(created_by=request.user))
     return render(request, 'lumber_scaling/lumberload_list.html', {'filter': f})
 
    
@@ -146,8 +146,7 @@ class ScalingTicketCreate(CreateView):
  
 @login_required   
 def ScalingTicketList(request):
-    user = request.user
-    f = ScalingTicketFilter(request.GET, queryset=ScalingTicket.objects.all(), current_user=user)
+    f = ScalingTicketFilter(request.GET, queryset=ScalingTicket.objects.filter(created_by=request.user))
     return render(request, 'lumber_scaling/scalingticket_list.html', {'filter': f})
 
 class ScalingTicketUpdate(UpdateView):
@@ -193,8 +192,7 @@ class SawmillUpdate(UpdateView):
 
 @login_required
 def SawmillList(request):
-    user = request.user
-    f = SawmillFilter(request.GET, queryset=Sawmill.objects.all(), current_user=user)
+    f = SawmillFilter(request.GET, queryset=Sawmill.objects.filter(created_by=request.user))
     return render(request, 'lumber_scaling/sawmill_list.html', {'filter': f})
 
 
