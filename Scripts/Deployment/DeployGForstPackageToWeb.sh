@@ -44,7 +44,7 @@ zip -ru $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION/GForst_Lite_v$PACKA
   
 # Update date on web page.
 CURR_DATE=$(date +"%m-%d-%Y")
-sed -i 's/\[DATE\]/'$CURR_DATE/g  $STAGING_DIR/gf_deployment/index.html
+sed -i 's/\[DATE\]/'$CURR_DATE/g  $SOURCE_DIR/geoweb/index.html
  
 # Copy files to web directory.
 rm -rf $WEB_DIR/geoweb
@@ -59,6 +59,6 @@ python $WEB_DIR/geoweb/manage.py collectstatic
 # Change ownership to the appropriate user/group.
 sudo chown -R ubuntu:www-data /var/www
 
-sudo service apache2 stop
-sudo service apache2 start
+sudo service apache2 restart
+
  

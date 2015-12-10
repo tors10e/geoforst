@@ -68,13 +68,13 @@ STATIC_ROOT = '/var/www/static/'
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/geoapp/home/'
+LOGIN_REDIRECT_URL = '/login/'
 
-LOGOUT_REDIRECT_URL = '/geoapp/accounts/login/'
+LOGOUT_REDIRECT_URL = '/home/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-                    "/var/www/geoweb/geoapp/static",
+   "/var/www/geoweb/geoweb/static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -102,13 +102,13 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'pagination_bootstrap.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'geoweb.urls'
@@ -137,11 +137,17 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'geoapp',
+    'utilities',
+    'crispy_forms',
+    'forest_management',
+    'django_filters',
+    'pagination_bootstrap',
+    'lumber_scaling',
+    'forest_inventory',
 )
 
 # Django registration setings.
