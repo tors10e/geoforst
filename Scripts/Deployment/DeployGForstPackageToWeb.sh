@@ -47,18 +47,19 @@ CURR_DATE=$(date +"%m-%d-%Y")
 sed -i 's/\[DATE\]/'$CURR_DATE/g  $SOURCE_DIR/geoweb/index.html
  
 # Copy files to web directory.
-rm -rf $WEB_DIR/geoweb
+rm -rf $WEB_DIR/*
 cp -rf $STAGING_DIR/gf_deployment/* $WEB_DIR
 
 echo "Deploying Django"
 cp -fr $SOURCE_DIR/geoweb/ $WEB_DIR
-rm -f $WEB_DIR/geoweb/geoweb/settings.py
-cp $WEB_DIR/geoweb/geoweb/settings_prod.py $WEB_DIR/geoweb/geoweb/settings.py 
-python $WEB_DIR/geoweb/manage.py collectstatic
+rm -f $WEB_DIR/geoweb/settings.py
+cp $WEB_DIR/geoweb/settings_prod.py $WEB_DIR/geoweb/settings.py 
+
+python $WEB_DIR/manage.py collectstatic
 
 # Change ownership to the appropriate user/group.
 sudo chown -R ubuntu:www-data /var/www
 
 sudo service apache2 restart
-
+sudo service lightpd restart
  

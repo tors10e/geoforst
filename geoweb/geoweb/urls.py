@@ -9,7 +9,6 @@ from forest_management.filters import PlannedActivityFilter
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^geoapp/', include('geoapp.urls', namespace='geoapp')),
-    #url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^forest_management/', include('forest_management.urls', namespace='forest_management')),
     url(r'^forest_inventory/', include('forest_inventory.urls', namespace='forest_inventory')),
     url(r'^lumber_scaling/', include('lumber_scaling.urls', namespace='lumber_scaling')),

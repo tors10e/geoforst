@@ -14,7 +14,7 @@ from django import forms
 from django.core import serializers
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django_filters.views import FilterView
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_exempt
 
 # Django apps
@@ -49,7 +49,7 @@ class InventoryPlotCreate(CreateView):
         if self.request.method == 'GET':
             return {'plot_geometry':1}
 
-
+@permission_required('forest_inventory.change_forestinventoryplot', raise_exception=True)
 @login_required
 def InventoryPlotList(request):
     f = InventoryPlotFilter(request.GET, queryset=ForestInventoryPlot.objects.filter(created_by=request.user))
