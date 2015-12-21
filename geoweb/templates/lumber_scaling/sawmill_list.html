@@ -2,35 +2,27 @@
 
 {% block sidebar %}
 	{% include "sidebar_filter.html" %}
-{% endblock sidebar %}
+{% endblock %}
+
 {% block main %}
-    <h2>Sawmills</h2>
-        <button><a href="{% url 'lumber_scaling:sawmill-add' %}">Add New Sawmill</a></button>
-    <table id="table">
-    <tr id="header_row">
-    	<th>Name</th>
-    	<th>Address</th>
-    	<th>City</th>
-    	<th>State</th>
-    	<th>Zip Code</th>
-    	<th>Phone Number</th>
-    	<th>Email Address</th>
-    	<th>Website</th>
-    	<th>Action</th>
+  	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Sawmill</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+	    	<th>Name</th>
+	    	<th>Phone Number</th>
+	    	<th>Email Address</th>
+	    	<th>Website</th>
+	    	<th>Action</th>
     	</tr>
-    	{% for mill in sawmills %}
+    	{% for mill in filter %}
     	<tr>
 	    	<td>{{mill.name}}</td>
-	    	<td>{{mill.address}}</td>
-	    	<td>{{mill.city|cut:" "|default:"Unknown"}}</td>
-	    	<td>{{mill.state|cut:" "|default:"Unknown"}}</td>
-	    	<td>{{mill.zip|cut:" "|default:"Unknown"}}</td>
 	    	<td>{{mill.phone}}</td>
 	    	<td>{{mill.email|cut:" "|default:"Unknown"}}</td>
 	    	<td>{{mill.website|default:"Unknown"}}</td>
 			<td>
-				<button><a href="{% url 'lumber_scaling:sawmill-edit' mill.sawmill_id %}">Edit</a></button> 
-				<button><a href="{% url 'lumber_scaling:sawmill-delete' mill.sawmill_id %}">Delete</a></button>
+				<a class="btn btn-warning btn-xs" href="{% url 'lumber_scaling:sawmill-edit' mill.sawmill_id %}">Details</a>
+				<a class="btn btn-danger btn-xs" href="{% url 'lumber_scaling:sawmill-delete' mill.sawmill_id %}">Delete</a></button>
 			</td>
     	</tr>
     	{% endfor %}
