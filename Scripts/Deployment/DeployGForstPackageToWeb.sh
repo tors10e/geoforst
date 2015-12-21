@@ -10,7 +10,7 @@
 PACKAGE_VERSION=0.1
 SOURCE_DIR=~/downloads/fsp
 STAGING_DIR=~/temp
-WEB_DIR=/var/www/
+WEB_DIR=/var/www
 
 # Get latest source code.
 echo "Deleting " $SOURCE_DIR
@@ -51,7 +51,7 @@ rm -rf $WEB_DIR/*
 cp -rf $STAGING_DIR/gf_deployment/* $WEB_DIR
 
 echo "Deploying Django"
-cp -fr $SOURCE_DIR/geoweb/ $WEB_DIR
+cp -fr $SOURCE_DIR/geoweb/* $WEB_DIR
 rm -f $WEB_DIR/geoweb/settings.py
 cp $WEB_DIR/geoweb/settings_prod.py $WEB_DIR/geoweb/settings.py 
 
@@ -63,3 +63,4 @@ sudo chown -R ubuntu:www-data /var/www
 sudo service apache2 restart
 sudo service lightpd restart
  
+
