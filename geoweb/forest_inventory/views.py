@@ -111,7 +111,7 @@ class InventoryDataCreate(CreateView):
 class InventoryDataUpdate(UpdateView):
     model = ForestInventoryData
     form_class = InventoryDataForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
 
     def get_success_url(self):
         plotID = self.object.forestinventoryplot

@@ -12,6 +12,6 @@ urlpatterns = patterns('',
     url(r'^inventory_plot/json/$', InventoryPlotJson),
        
     url(r'^inventory_data/add/$', InventoryDataCreate.as_view(), name='inventory-data-add'),
-    url(r'^inventory_data/(?P<pk>\d+)/edit/$', InventoryDataUpdate.as_view(), name='inventory_data_edit'),
-    url(r'^inventory_data/(?P<pk>\d+)/delete/$', InventoryDataDelete.as_view(), name='inventory_data_delete'),
+    url(r'^inventory_data/(?P<pk>\d+)/edit/$', InventoryDataUpdate.as_view(), name='inventory-data-edit'),
+    url(r'^inventory_data/(?P<pk>\d+)/delete/$', InventoryDataDelete.as_view(), name='inventory-data-delete'),
 )
