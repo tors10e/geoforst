@@ -234,14 +234,12 @@ class SeverityType(models.Model):
 class StandArea(models.Model):
     standarea_id = models.AutoField(primary_key=True)
     standarea_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
-    standarea_uuid_id = models.UUIDField(default=uuid.uuid4, unique=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
     start_date = models.DateTimeField(null=True, blank=True)
     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
     transaction_start_date = models.DateTimeField(null=True, blank=True)
-    #standdescription = models.ForeignKey('StandDescription', null=True, blank=True)
     created_by = models.ForeignKey(User)
     objects = models.GeoManager()
     class Meta:

@@ -49,11 +49,11 @@ class InventoryPlotCreate(CreateView):
         if self.request.method == 'GET':
             return {'plot_geometry':1}
 
-@permission_required('forest_inventory.change_forestinventoryplot', raise_exception=True)
+#@permission_required('forest_inventory.change_forestinventoryplot', raise_exception=True)
 @login_required
 def InventoryPlotList(request):
     f = InventoryPlotFilter(request.GET, queryset=ForestInventoryPlot.objects.filter(created_by=request.user))
-    return render(request, 'forest_inventory/forestinventoryplot_list.html', {filter: f})
+    return render(request, 'forest_inventory/forestinventoryplot_list.html', {'filter': f})
     
 class InventoryPlotDetail(DetailView):
     queryset = ForestInventoryPlot.objects.all()
@@ -66,7 +66,7 @@ class InventoryPlotDetail(DetailView):
 class InventoryPlotUpdate(UpdateView):
     model = ForestInventoryPlot
     form_class = InventoryPlotForm
-    template_name_suffix = '_update_form'
+    template_name_suffix = '_form'
     
    # Return to the load list when done creating a plot.
     def get_success_url(self):
