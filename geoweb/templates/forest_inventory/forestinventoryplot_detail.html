@@ -5,23 +5,21 @@ $(function() {
 </script>
 
 {% extends "base.html" %}
+{% load pagination_tags %}
 
 {% block content %}    
+{% autopaginate plot_detail.forestinventorydata_set.all 10 %}
 		<h2>Plot {{ plot_detail.forestinventoryplot_id }}</h2>
-		<button>
-			<a href="{% url 'forest_inventory:inventory-data-add' plot_detail.forestinventoryplot_id %}">Add New Data Point</a>
-		</button>
+			<a class="btn btn-primary" href="{% url 'forest_inventory:inventory-data-add' plot_detail.forestinventoryplot_id %}">Add New Data Point</a>
 		{% if plot_detail.forestinventorydata_set.all %}
-				<table>
-					<tr>
+				<table class = "table table-striped table-bordered table-responsive table-hover">
+					<tr id="header_row">
 						<th>ID</th>
 						<th>Tree ID</th>
 						<th>Species</th>
 						<th>Collection Date</th>
-						<th>Diameter</th> 
-						<th>Diameter Units</th>
+						<th>Diameter (in)</th> 
 						<th>Height</th>
-						<th>Height Units</th>
 						<th>Age</th>
 						<th>Actions</th>
 					</tr>
@@ -32,13 +30,11 @@ $(function() {
 						<td> {{ data.speciestreetype }}</td>
 						<td> {{ data.collection_date }} </td>
 						<td> {{ data.dbh }}</td> 
-						<td> {{ data.dbh_unit }}</td> 
 						<td> {{ data.height }} </td>
-						<td> {{ data.height_unit }}</td> 
 						<td> {{ data.age}}</td>
 						<td>
-							<button><a href="/forest_inventory/inventory_data/{{data.forestinventorydata_id}}/edit">Edit</a></button>
-							<button><a href="/forest_inventory/inventory_data/{{data.forestinventorydata_id}}/delete">Delete</a></button>
+							<a class="btn btn-warning btn-xs" href="{% url 'forest_inventory:inventory-data-edit' data.forestinventorydata_id %}">Edit</a>
+							<a class="btn btn-danger btn-xs" href="{% url 'forest_inventory:inventory-data-delete' data.forestinventorydata_id %}">Delete</a></button>
 						</td>
 					</tr>
 					{% endfor %}
@@ -47,4 +43,5 @@ $(function() {
 			<p>No data has been entered for this plot.</p>
 		{% endif %}
 		<a href="{% url 'forest_inventory:inventory-plot-list' %}">Return to plot overview</a>
+{% paginate %}
 {% endblock %}
