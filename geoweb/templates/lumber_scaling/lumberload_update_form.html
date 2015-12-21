@@ -1,0 +1,13 @@
+{% extends "geoapp/base_inventory.html" %}
+{% block content %} 
+<script>
+$(function() {
+  $( "#id_load_date" ).datepicker();
+});
+</script>
+<p>Edit a lumber load</p>
+<form action="" method="post">{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="Update" />
+</form>
+{% endblock %}

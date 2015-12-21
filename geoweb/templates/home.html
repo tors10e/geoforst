@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Welcome to GeoForst!</h1>
+  <p>
+  	<a class="btn btn-primary btn-lg" href={% url 'login' %}?next=/ role="button">Login here</a>
+  	<p>... or if you haven't registered yet then 
+  	<a class="btn btn-primary btn-lg" href={% url 'registration_register' %} role="button">Register here</a>
+  </p>
+</div>
+ <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover" id="about">
+            <h1 class="cover-heading">GeoForst land management.</h1>
+            <p class="lead">Land management software for small scale forestry.</p>
+          </div>
+          <div class="mastfoot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}

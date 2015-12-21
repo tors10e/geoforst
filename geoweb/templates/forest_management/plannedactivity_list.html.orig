@@ -1,0 +1,48 @@
+{% extends "base_listview.html" %}
+{% load pagination_tags %}
+{% load utility_tags %}
+
+
+<h2>Planned Activities Filter</h2>
+   <div class="row row-offcanvas row-offcanvas-left">
+{% block sidebar %}
+     <form role="form" action="" method="get">
+		{% for field in filter.form %}
+    <div class="form-group">
+        {{ field.errors }}
+        {{ field.label_tag }} 
+        {{ field|htmlattributes:"class : form-control"  }}
+    </div>
+	{% endfor %}
+         <button type="submit" class="btn btn-default">Filter Results</button>
+    </form>
+{% endblock %}
+{% block main %}
+    {% autopaginate filter 10 %}
+  	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>Activity Type</th>
+    		<th>Planned Year</th>
+    		<th>Planned Season</th>
+    		<th>Description</th>
+    		<th>Stand Number</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for activity in filter %}
+    	<tr>
+	    	<td>{{activity.acttype}}</td>
+	    	<td>{{activity.planned_year}}</td>
+	    	<td>{{activity.seasontype}}</td>
+    		<td>{{activity.description}}</td>
+    		<td>{{activity.stand_no}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'forest_management:planned-activity-edit' activity.plannedact_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'forest_management:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% paginate %}
+</div>
+{% endblock %}

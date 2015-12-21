@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+
+{% load utility_tags %} 
+{% block content %}
+<!-- sidebar -->
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+		{% block sidebar%}{% endblock %}
+</div>
+<!-- main table -->
+<div class="col-xs-12 col-sm-9">{% block main %}{% endblock %}</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+<script>
+$(function() {
+  $( "#id_form_date_field" ).datepicker();
+});
+</script>
+
+{% extends "base_listview.html" %}
+
+{% block content %}
+    <h2>Sawmills</h2>
+        <button><a href="{% url 'lumber_scaling:sawmill-add' %}">Add New Sawmill</a></button>
+    <table id="table">
+    <tr id="header_row">
+    	<th>Name</th>
+    	<th>Address</th>
+    	<th>City</th>
+    	<th>State</th>
+    	<th>Zip Code</th>
+    	<th>Phone Number</th>
+    	<th>Email Address</th>
+    	<th>Website</th>
+    	<th>Action</th>
+    	</tr>
+    	{% for mill in sawmills %}
+    	<tr>
+	    	<td>{{mill.name}}</td>
+	    	<td>{{mill.address}}</td>
+	    	<td>{{mill.city|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.state|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.zip|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.phone}}</td>
+	    	<td>{{mill.email|cut:" "|default:"Unknown"}}</td>
+	    	<td>{{mill.website|default:"Unknown"}}</td>
+			<td>
+				<button><a href="{% url 'lumber_scaling:sawmill-edit' mill.sawmill_id %}">Edit</a></button> 
+				<button><a href="{% url 'lumber_scaling:sawmill-delete' mill.sawmill_id %}">Delete</a></button>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

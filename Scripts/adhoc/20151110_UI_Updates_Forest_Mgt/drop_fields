@@ -1,0 +1,1 @@
+﻿alter table planned_activity drop planned_date;
