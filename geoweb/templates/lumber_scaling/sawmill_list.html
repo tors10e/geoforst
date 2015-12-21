@@ -1,12 +1,9 @@
-<script>
-$(function() {
-  $( "#id_form_date_field" ).datepicker();
-});
-</script>
-
 {% extends "base_listview.html" %}
 
-{% block content %}
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock sidebar %}
+{% block main %}
     <h2>Sawmills</h2>
         <button><a href="{% url 'lumber_scaling:sawmill-add' %}">Add New Sawmill</a></button>
     <table id="table">
