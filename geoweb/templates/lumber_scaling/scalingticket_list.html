@@ -2,19 +2,8 @@
 {% load pagination_tags %}
 {% load utility_tags %}
 
-
-<h2>Scaling Tickets</h2>\
 {% block sidebar %}
-     <form role="form" action="" method="get">
-		{% for field in filter.form %}
-    		<div class="form-group">
-        		{{ field.errors }}
-        		{{ field.label_tag }} 
-        		{{ field|htmlattributes:"class : form-control"  }}
-    		</div>
-	{% endfor %}
-         <button type="submit" class="btn btn-default">Filter Results</button>
-    </form>
+     {% include "sidebar_filter.html" %}
 {% endblock %}
 {% block main %}
     {% autopaginate filter 10 %}
