@@ -1,11 +1,18 @@
 {% extends "base.html" %} 
 
 {% load utility_tags %} 
+{% load pagination_tags %}
+
+<div class="row row-offcanvas row-offcanvas-left">
 {% block content %}
 <!-- sidebar -->
 <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
 		{% block sidebar%}{% endblock %}
 </div>
 <!-- main table -->
-<div class="col-xs-12 col-sm-9">{% block main %}{% endblock %}</div>
+<div class="col-xs-12 col-sm-9">
+	{% autopaginate filter 10 %}
+		{% block main %}{% endblock %}
+	{% paginate %}
+</div>
 {% endblock %}
