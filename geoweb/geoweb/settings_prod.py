@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis', 
-        'NAME': 'geoforst',                      
+        'NAME': 'fsp',                      
         'USER': 'django',
         'PASSWORD': '1_cornBread',
         'HOST': 'geodb.c2h2tdeag68s.us-west-2.rds.amazonaws.com',
