@@ -1,0 +1,99 @@
+# replacements for table and field renaming following move to PG.
+# Examples of forms in .qgs:
+# name="stockingtype" -- table name
+# key='stockingtypeid' -- key id
+# table="stockingtype" --table name
+
+# table name changes:
+s/"treepoint"/"tree"/g
+s/"activitytype"/"activity_type"/g
+s/"controlpoint"/"control_point"/g
+s/"culturalpoint"/"cultural_point"/g
+s/"firebreakline"/"firebreak_line"/g
+s/"habitatenhancementarea"/"habitat_enhancement_area"/g
+s/"habitatenhancementpoint"/"habitat_enhancement_point"/g
+s/"habitatenhancementtype"/"habitat_enhancement_type"/g
+s/"harvestarea"/"harvest_area"/g
+s/"harvesttype"/"harvest_type"/g
+s/"landarea"/"land_area"/g
+s/"recreationpoint"/"recreation_point"/g
+s/"recreationtype"/"recreation_type"/g
+s/"roadline"/"road_line"/g
+s/"roadtype"/"road_type"/g
+s/"standactivity"/"stand_activity"/g
+s/"standarea"/"stand_area"/g
+s/"stockingtype"/"stocking_type"/g
+s/"streams"/"stream"/g
+s/"smz"/"streamside_management_zone"/g
+s/"treepoint"/"tree"/g
+s/"waterpoint"/"water_point"/g
+s/"watertype"/"water_type"/g
+
+# replacements for ID fields renaming following move to PG.
+# Examples of forms in .qgs:
+# name="stockingtype" -- table name
+# key='stockingtypeid' -- key id
+# table="stockingtype" --table name
+
+s/'acttypeid'/'acttype_id'/g
+s/'actareaid'/'actarea_id'/g
+s/'cultptid'/'cultpt_id'/g
+s/'CultPtID'/'cultpt_id'/g
+s/'firebreaklineid'/'fbkln_id'/g
+s/'FireBreakLineID'/'fbkln_id'/g
+s/'habenhareaid'/'habenharea_id'/g
+s/'HabEnhAreaID'/'habenharea_id'/g
+s/'habenhptid'/'habenhpt_id'/g
+s/'HabEnhPtID'/'habenhpt_id'/g
+s/'habenhtypeid'/'habenhtype_id'/g
+s/'harvestareaid'/'harvestarea_id'/g
+s/'HarvestAreaID'/'harvestarea_id'/g
+s/'havesttypeid'/'harvesttype_id'/g
+s/'landareaid'/'landarea_id'/g
+s/'LandAreaID'/'landarea_id'/g
+s/'recptid'/'recpt_id'/g
+s/'RecPtID'/'recpt_id'/g
+s/'rectypeid'/'rectype_id'/g
+s/'roadlnid'/'roadln_id'/g
+s/'RoadLnId'/'roadln_id'/g
+s/'roadtypeid'/'roadtype_id'/g
+s/'standactid'/'standact_id'/g
+s/'StandAreaID'/'standarea_id'/g
+s/'standareaid'/'standarea_id'/g
+s/'stockingtypeid'/'stockingtype_id'/g
+s/'treeptid'/'tree_id'/g
+s/'TreePtID'/'tree_id'/g
+s/'waterptid'/'waterpoint_id'/g
+s/'WaterPtID'/'waterpoint_id'/g
+s/'watertypeid'/'watertype_id'/g
+
+# Replacement of non-ID fields
+s/landareadesc/landarea_dsc/g
+s/roadtypedesc/roadtype_dsc/g
+s/\(Geometry\)/\(geometry\)/g
+
+# Rename layers
+s/\>ActivityArea\</\>Activity Areas\</g
+s/\>FireBreakLine\</\>Firebreaks\</g
+s/\>activitytype\</\>Activity Types\</g
+s/\>culturalpoint\</\>Cultural Features\</g
+s/\>habitatenhancementarea\</\>Habitat Enhancement Areas\</g
+s/\>habitatenhancementpoint\</\>Habitat Enhancement Points\</g
+s/\>habitatenhancementtype\</\>Habitat Enhancement Types\</g
+s/\>harvestarea\</\>Harvest Areas\</g
+s/\>harvesttype\</\>Harvest Types\</g
+s/\>firebreakline\</\>Firebreaks\</g
+s/\>landarea\</\>Land Areas\</g
+s/\>recreationpoint\</\>Recreation\</g
+s/\>recreationtype\</\>Recreation Types\</g
+s/\>roadline\</\>Roads\</g
+s/\>roadtype\</\>Road Types\</g
+s/\>standactivity\</\>Stand Activities\</g
+s/\>standarea\</\>Stands\</g
+s/\>stockingtype\</\>Stocking Types\</g
+s/\>streams\</\>Streams\</g
+s/\>treepoint\</\>Trees\</g
+s/\>waterpoint\</\>Water Point Features\</g
+s/\>watertype\</\>Water Feature Types\</g
+
+
