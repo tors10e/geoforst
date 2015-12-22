@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     url(r'^lumber_load/add/$', views.LumberLoadCreate.as_view(), name='lumber-load-add'),
     url(r'^lumber_load/(?P<pk>\d+)/edit/$', views.LumberLoadUpdate.as_view(), name='lumber-load-edit'),
     url(r'^lumber_load/(?P<pk>\d+)/delete/$', views.LumberLoadDelete.as_view(), name='lumber-load-delete'),
-    url(r'^lumber_load/(?P<pk>\d+)/detail/$', views.LumberLoadDetail, name='lumber-load-detail'),
+    url(r'^lumber_load/(?P<pk>\d+)/detail/$', views.LumberLoadDetail.as_view(), name='lumber-load-detail'),
     url(r'^lumber_load/(?P<pk>\d+)/addlog/$', views.LogDataCreate.as_view(), name='log-data-add'),
     
     url(r'^log_data/(?P<pk>\d+)/edit/$', views.LogDataUpdate.as_view(), name='log-data-edit'),

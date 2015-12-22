@@ -61,6 +61,6 @@ python $WEB_DIR/manage.py collectstatic
 sudo chown -R ubuntu:www-data /var/www
 
 sudo service apache2 restart
-sudo service lightpd restart
+sudo service lighttpd restart
  
 

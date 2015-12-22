@@ -1,16 +1,14 @@
 {% extends "base_listview.html" %}
-{% load pagination_tags %}
-{% load utility_tags %}
 
 {% block sidebar %}
-     {% include "sidebar_filter.html" %}
+	{% include "sidebar_filter.html" %}
 {% endblock %}
+
 {% block main %}
-    {% autopaginate filter 10 %}
   	<a class="btn btn-primary" href="{% url 'lumber_scaling:scaling-ticket-add' %}">Add New Ticket</a>
     <table class="table table-striped table-bordered table-responsive table-hover">
     	<tr id="header_row">
-    	<th>Mill</th>
+    	<th>Sawmill</th>
     	<th>Ticket Date</th>
     	<th>Species</th>
     	<th>Weight (tons)</th>
@@ -35,11 +33,10 @@
 	    	<td>{{object.price_mfbm|default:"N/A"}}</td>
 	    	<td>{{object.revenue}}</td>
 			<td>
-				<button><a href="{% url 'lumber_scaling:scaling-ticket-edit' object.scalingticket_id %}">Edit</a></button> 
-				<button><a href="{% url 'lumber_scaling:scaling-ticket-delete' object.scalingticket_id %}">Delete</a></button>
+				<a class="btn btn-warning btn-xs" href="{% url 'lumber_scaling:scaling-ticket-edit' object.scalingticket_id %}">Edit</a> 
+				<a class="btn btn-danger btn-xs" href="{% url 'lumber_scaling:scaling-ticket-delete' object.scalingticket_id %}">Delete</a>
 			</td>
     	</tr>
     	{% endfor %}
     </table>
-	{% paginate %}
 {% endblock %}
