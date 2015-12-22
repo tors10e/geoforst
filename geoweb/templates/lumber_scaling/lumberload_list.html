@@ -1,25 +1,14 @@
 {% extends "base_listview.html" %}
-{% load pagination_tags %}
-{% load utility_tags %}
 
-<h2>Scaling Tickets</h2>
 {% block sidebar %}
-     <form role="form" action="" method="get">
-		{% for field in filter.form %}
-    		<div class="form-group">
-        		{{ field.errors }}
-        		{{ field.label_tag }} 
-        		{{ field|htmlattributes:"class : form-control"  }}
-    		</div>
-	{% endfor %}
-         <button type="submit" class="btn btn-default">Filter Results</button>
-    </form>
+	{% include "sidebar_filter.html" %}
 {% endblock %}
+
 {% block main %}
-    {% autopaginate filter 10 %}
   	<a class="btn btn-primary" href="{% url 'lumber_scaling:lumber-load-add' %}">Add New Load</a>
     <table class="table table-striped table-bordered table-responsive table-hover">
     	<tr id="header_row">
+	    	<th>Scaling Ticket</th>
 	    	<th>Load Date</th>
 	    	<th>Load Comments</th>
 	    	<th>Data</th>
@@ -38,12 +27,12 @@
 		  		<a href="{% url 'lumber_scaling:lumber-load-detail' object.lumberload_id %}">Load {{ object.lumberload_id }} Data</a>
 		   	</td>
 			<td>
-				<button><a href="{% url 'lumber_scaling:lumber-load-edit' object.lumberload_id %}">Edit</a> </button>				
-				<button><a href="{% url 'lumber_scaling:lumber-load-delete' object.lumberload_id %}">Delete</a></button>
+				<a class="btn btn-warning btn-xs" href="{% url 'lumber_scaling:lumber-load-edit' object.lumberload_id %}">Edit</a>				
+				<a class="btn btn-danger btn-xs" href="{% url 'lumber_scaling:lumber-load-delete' object.lumberload_id %}">Delete</a>
 			</td>
     	</tr>
     	{% endfor %}
     </table>
-	{% paginate %}
+
 {% endblock %}
 

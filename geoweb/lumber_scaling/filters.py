@@ -31,7 +31,6 @@ class SawmillFilter(django_filters.FilterSet):
 
     
 class ScalingTicketFilter(django_filters.FilterSet):
-           
     class Meta:
         model = ScalingTicket
         fields = {
