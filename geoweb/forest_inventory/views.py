@@ -1,6 +1,8 @@
 # _*_ coding: UTF-8 _*_
 # System libraries
 
+# Create your views here.
+
 # Third-party libraries
 
 # Django modules
