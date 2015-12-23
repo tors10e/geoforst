@@ -1,0 +1,4 @@
+# Update form paths to relative references from the map directory.
+
+sed -i .bak -E s@/home/torsten/Documents@..@g Maps/FSP_PGLocal.qgs 
+sed -i .bak -E s@/Users/torsten/Workspace/FSP@..@g Maps/FSP_PGLocal.qgs 

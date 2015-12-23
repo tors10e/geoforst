@@ -1,0 +1,28 @@
+# Make necessary changes to .qgs file to move from .
+
+# Change database from postgres to sqlite file.
+s/dbname=\'fsp\'/dbname=\'..\/Data\/FSP2.sqlite\' /g 
+
+# Remove host tag.
+s/ host=geo.torstenernst.com //g
+
+# Remove port tag.
+s/ port=5432 / /g
+
+# Remove sslmode tag.
+s/ sslmode=disable / /g
+
+# Remove user tag.
+s/ user=\'ternst\' / /g
+
+# Remove key tag.
+s/ key=\'[a-z]+_id\' / /g
+
+# Remmove srid tag.
+s/ srid=[0-9]+ / /g
+
+# Remove type tag.
+s/ type=[a-zA-Z]+ / /g
+
+# Change provider from postgres to spatialite.
+s/postgres/spatialite/g  

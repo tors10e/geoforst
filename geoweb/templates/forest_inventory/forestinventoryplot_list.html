@@ -1,0 +1,40 @@
+{% extends "base_listview.html" %}
+{% load pagination_tags %}
+{% load utility_tags %}
+
+
+<h2>Forest Inventory Plots</h2>
+   <div class="row row-offcanvas row-offcanvas-left">
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+{% block main %}
+    {% autopaginate filter 10 %}
+  	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Plot</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    	<th>Plot Number</th>
+    	<th>Position Description</th>
+    	<th>Elevation</th>
+    	<th>Create Date</th>
+    	<th>Data</th>
+    	<th>Actions</th>
+    	</tr>
+    	{% for plot in filter %}
+    	<tr>
+	    	<td>{{plot.plot_number}}</td>
+	    	<td>{{plot.position_description}}</td>
+	    	<td>{{plot.elevation}} {{plot.elevation_unit}}</td>
+	    	<td>{{plot.plot_create_date}}</td>
+			<td><a href="{{plot.forestinventoryplot_id }}/detail/">Plot {{plot.plot_number}} Data</a></td>
+			<td>
+				<a class="btn btn-warning btn-xs" href="{% url 'forest_inventory:inventory-plot-edit' plot.forestinventoryplot_id %}">Edit</a>
+				<a class="btn btn-danger btn-xs" href="{% url 'forest_inventory:inventory-plot-delete' plot.forestinventoryplot_id %}">Delete</a>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% paginate %}
+</div>
+{% endblock %}
+

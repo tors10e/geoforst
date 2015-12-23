@@ -1,0 +1,37 @@
+Design Standards.
+
+Title:
+- 18pt 
+
+Field Lengths:
+ -Ids 40x27
+ - Text box 250x27
+ - Text box, multiline 250x60
+
+Date Fields:
+- mm/dd/yyyy
+
+
+Icon Standards
+
+Size: 6.5” on longest side.
+Colors:
+	Cultural - Blue, Chart 1 on white
+	Recreation - Black on white
+	Habitat - Green 5 on white
+	Analytical - Brown on white
+
+Corner Rounding: 0.5”
+
+Font:
+	size: 500 pt
+	family: arial
+
+Background: 
+	Size: 6.8” on longest side
+	Color:
+		Area: white
+		Outline: gray
+Lines:
+	Thickness: 0.4 pt
+Format: SVG
