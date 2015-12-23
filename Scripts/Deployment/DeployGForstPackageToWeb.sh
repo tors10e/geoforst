@@ -44,7 +44,7 @@ zip -ru $STAGING_DIR/gf_deployment/packages/$PACKAGE_VERSION/GForst_Lite_v$PACKA
   
 # Update date on web page.
 CURR_DATE=$(date +"%m-%d-%Y")
-sed -i 's/\[DATE\]/'$CURR_DATE/g  $SOURCE_DIR/geoweb/index.html
+sed -i 's/\[DATE\]/'$CURR_DATE/g  $SOURCE_DIR/geoweb/templates/home.html
  
 # Copy files to web directory.
 rm -rf $WEB_DIR/*
