@@ -36,7 +36,7 @@ class ForestInventoryPlot(models.Model):
     plot_radius = models.IntegerField(blank=True, null=True)
     plot_xlength = models.IntegerField(blank=True, null=True)
     plot_ylength = models.IntegerField(blank=True, null=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True)
+    geometry = models.PointField(srid=4269, null=True, blank=True)
     latitude = models.FloatField(verbose_name='Latitude') # Not persisted, used to populate geometry.
     longitude = models.FloatField(verbose_name='Longitude') 
     elevation = models.IntegerField(null=True, blank=True)
