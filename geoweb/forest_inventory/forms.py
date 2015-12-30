@@ -1,9 +1,9 @@
-from django.contrib.gis import forms 
 from django.forms import ModelForm,Textarea, Select
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit, Layout, HTML, Fieldset
 from crispy_forms.bootstrap import FormActions
 from utilities.crispy_forms.bootstrap import SubmitCancelFormActions
+from mapping import widgets
 
 from .models import *
 
@@ -26,7 +26,8 @@ class InventoryDataForm(ModelForm):
     
     class Meta:
         model = ForestInventoryData
-        exclude = ('created_by','forestinventorydata_id', 'forestinventorydata_uuid')      
+        exclude = ('created_by','forestinventorydata_id', 'forestinventorydata_uuid') 
+        
         
 class InventoryPlotForm(ModelForm):
     def __init__(self, *args, **kwargs):
@@ -48,3 +49,4 @@ class InventoryPlotForm(ModelForm):
     class Meta:
         model = ForestInventoryPlot
         exclude = ('created_by','forestinventoryplot_id', 'forestinventoryplot_uuid')  
+        widgets =  {'geometry':widgets.GeowebOpenLayersWidget}   
