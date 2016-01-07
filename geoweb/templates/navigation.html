@@ -18,7 +18,13 @@
 		        	<li><a href={% url "registration_register" %}>Register</a></li>
 		        </ul>
 	        </li>
-	        <li><a href={% url 'forest_management:planned-activity-list' %}>FOREST MANAGEMENT</a></li>
+	        <li class="dropdown">
+	        	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FOREST MANAGEMENT<span class="caret"></span></a>
+	        	<ul class = "dropdown-menu">
+	        		<li><a href={% url 'forest_management:planned-activity-list' %}>Management Activities</a></li>
+	        		<li><a href={% url 'forest_management:land-area-list' %}>Land Areas</a></li>
+	        	</ul>
+	        </li>
 	        <li><a href={% url 'forest_inventory:inventory-plot-list' %}>FOREST INVENTORY</a></li>
 	        <li class="dropdown">
           		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
