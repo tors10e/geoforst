@@ -10,4 +10,5 @@ class ActivityTypeAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(ActivityType, ActivityTypeAdmin)
+admin.site.register(LandArea)
 admin.site.register(PlannedActivity)

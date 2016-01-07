@@ -15,7 +15,6 @@ admin.site.register(HabitatEnhancementArea)
 admin.site.register(HabitatEnhancementPoint)
 admin.site.register(HabitatEnhancementType)
 admin.site.register(HarvestType)
-admin.site.register(LandArea)
 
 admin.site.register(RecreationPoint)
 admin.site.register(RecreationType)

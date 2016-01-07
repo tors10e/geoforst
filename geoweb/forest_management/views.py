@@ -17,9 +17,9 @@ from django_filters.views import FilterView
 from django.contrib.auth.decorators import login_required
 
 # Django apps
-from .models import PlannedActivity
-from .forms import PlannedActivityForm
-from .filters import PlannedActivityFilter
+from .models import *
+from .forms import *
+from .filters import *
 
 # Current app modules
 
@@ -27,7 +27,40 @@ from .filters import PlannedActivityFilter
 # Activity classes.
 #************************************************************
 
+class LandAreaCreate(CreateView):
+    """ Model for property area delineations.
+    """
+    model = LandArea
+    form_class = LandAreaForm
+    
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super(PlannedActivityCreate, self).form_valid(form)
+    
+    def get_queryset(self):
+        return LandArea.objects.filter(created_by=self.request.user)
+    
+    def get_success_url(self):
+        return reverse_lazy('forest_management:land-area-list')
+    
+class LandAreaUpdate(UpdateView):
+    model = LandArea 
+    form_class = LandAreaForm
+    
+    def get_success_url(self):
+        return reverse_lazy('forest_management:land-area-list')
 
+def LandAreaList(request):
+    """ List view for land areas."""
+    f = LandAreaFilter(request.GET, queryset=LandArea.objects.filter(created_by=request.user))
+    return render(request, 'forest_management/landarea_list.html', {'filter': f})
+
+class LandAreaDelete(DeleteView):
+    model = LandArea
+
+    def get_success_url(self):
+        return reverse_lazy('forest_management:land-area-list')
+        
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
     form_class = PlannedActivityForm
