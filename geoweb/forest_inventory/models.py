@@ -53,9 +53,9 @@ class ForestInventoryPlot(models.Model):
     def __unicode__(self):
         return unicode(self.plot_number)
     
-    def save(self,*args, **kwargs):
-        self.geometry = Point(self.longitude, self.latitude)
-        super(ForestInventoryPlot, self).save(*args,**kwargs)
+    #def save(self,*args, **kwargs):
+    #    self.geometry = Point(self.longitude, self.latitude)
+    #    super(ForestInventoryPlot, self).save(*args,**kwargs)
 
 class PlotGeometryType(models.Model):
     plotgeomtype_id = models.IntegerField(primary_key=True)
