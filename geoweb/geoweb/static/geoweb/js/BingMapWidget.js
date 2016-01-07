@@ -15,6 +15,40 @@ OpenLayers.Util.properFeatures = function(features, geom_type) {
     return features;
 }
 
+function updateFeatureFromTextbox(longitude, latitude) {
+    var new_point = projectCoordinates(longitude, latitude, false);
+	var layer_geometry = geodjango_geometry.map.getLayersByName(" geometry")[0].features[0].geometry;
+	var map = geodjango_geometry.map;
+	layer_geometry.x = new_point.lon;
+	layer_geometry.y = new_point.lat;
+    map.setCenter(new_point);
+    map.getLayersByName(" geometry")[0].redraw();
+}
+
+function projectCoordinates(y, x, to_geodetic) {
+	// Using 4326 instead of 4269 because openlayers has limited projections by default.
+	var projection_4326 = new OpenLayers.Projection("EPSG:4326");
+    var projection_900913 = new OpenLayers.Projection("EPSG:900913");
+	var point = new OpenLayers.LonLat(y,x)
+	if (to_geodetic == true) {
+		point.transform(projection_900913, projection_4326);
+	}
+	else{
+		point.transform(projection_4326, projection_900913);
+	}
+	return point;
+}
+
+function updateGeometryFromTextBox() {
+	var new_x = document.getElementById("tb_longitude").value;
+	var new_y = document.getElementById("tb_latitude").value;
+	var projected_lonlat = projectCoordinates(new_x, new_y, false);
+	geodjango_geometry.map.layers[1].features[0].geometry.x = projected_lonlat.x;
+	geodjango_geometry.map.layers[1].features[0].geometry.y = projected_lonlat.y;
+	geodjango_geometry.map.layers[1].redraw();
+}
+
+
 /**
  * @requires OpenLayers/Format/WKT.js
  */
@@ -35,22 +69,12 @@ OpenLayers.Format.DjangoWKT = OpenLayers.Class(OpenLayers.Format.WKT, {
     },
 
     parse: {
-        'point': function(str) {
-            /* This was done to project lat/long to spherical mercator for use in
-             * bing imagery base layers. It should probably be redone and made into it's 
-             * own function. Also it might make sense to expand to other geometry types,
-             * right now it only works with point data.
-             */
-        	
-        	var coords = OpenLayers.String.trim(str).split(this.regExes.spaces);
-            var point = new OpenLayers.LonLat(coords[0], coords[1]);
-            var point_projection = new OpenLayers.Projection("EPSG:4326");
-            var map_projection = new OpenLayers.Projection("EPSG:900913");
-            point.transform(point_projection,  map_projection);
-            var projected_point = new OpenLayers.Geometry.Point(point.lon, point.lat)
-            return new OpenLayers.Feature.Vector(projected_point);
-            
-        },
+    	 'point': function(str) {
+             var coords = OpenLayers.String.trim(str).split(this.regExes.spaces);
+             return new OpenLayers.Feature.Vector(
+                 new OpenLayers.Geometry.Point(coords[0], coords[1])
+             );
+         },
 
         'multipoint': function(str) {
             var point;
@@ -193,7 +217,7 @@ function MapWidget(options) {
         is_collection: new options['geom_type']() instanceof OpenLayers.Geometry.Collection,
         layerswitcher: false,
         map_options: {},
-        map_srid: 3857,
+        map_srid: 3857, // Web mercator.
         modifiable: true,
         mouse_position: false,
         opacity: 0.4,
@@ -224,6 +248,8 @@ function MapWidget(options) {
     if (this.options.geom_name == 'LineString') {
         defaults_style['strokeWidth'] = 3;
     }
+    
+    // Adding vector layer.
     var styleMap = new OpenLayers.StyleMap({'default': OpenLayers.Util.applyDefaults(defaults_style, OpenLayers.Feature.Vector.style['default'])});
     this.layers.vector = new OpenLayers.Layer.Vector(" " + this.options.name, {styleMap: styleMap});
     this.map.addLayer(this.layers.vector);
@@ -246,6 +272,8 @@ function MapWidget(options) {
         this.map.setCenter(this.defaultCenter(), this.options.default_zoom);
     }
     this.layers.vector.events.on({'featuremodified': this.modify_wkt, scope: this});
+    // Update lat/long text boxes when feature is moved.
+    this.layers.vector.events.on({'featuremodified': this.updateTextBoxes, scope: this});
     this.layers.vector.events.on({'featureadded': this.add_wkt, scope: this});
 
     this.getControls(this.layers.vector);
@@ -272,6 +300,28 @@ function MapWidget(options) {
     } else {
         this.enableDrawing();
     }
+    
+    //Project coordinates back to lat/long from spherical mercator.
+    point_geometry =  this.map.getLayersByName(" geometry")[0].features[0].geometry;
+    var lat_long = projectCoordinates(point_geometry.x, point_geometry.y, true);
+    
+    // Populate the lat/long fields rounding  cutting to 6 digits.
+    // ToDo: Round instead of cut or confirm values are being rounded.
+    document.getElementById("tb_latitude").value=lat_long.lat.toFixed(6);
+    document.getElementById("tb_longitude").value=lat_long.lon.toFixed(6);
+    
+    // Listen for change in textbox values and then update feature location.
+    $( "#tb_longitude" ).change(function( event ) {
+    	longitude = event.target.value;
+    	latitude = document.getElementById("tb_latitude").value;
+    	updateFeatureFromTextbox(longitude, latitude);
+    });
+    
+    $( "#tb_latitude" ).change(function( event ) {
+    	longitude = document.getElementById("tb_longitude").value; 
+    	latitude = event.target.value;
+    	updateFeatureFromTextbox(longitude, latitude);
+    });
 }
 
 MapWidget.prototype.create_map = function() {
@@ -336,6 +386,14 @@ MapWidget.prototype.modify_wkt = function(event) {
     } else {
         this.write_wkt(event.feature);
     }
+};
+
+MapWidget.prototype.updateTextBoxes = function(event) {
+	var y = this.map.getLayersByName(" geometry")[0].features[0].geometry.y;
+	var x = this.map.getLayersByName(" geometry")[0].features[0].geometry.x;
+	var latLong = projectCoordinates(x, y, true);
+	document.getElementById("tb_latitude").value = latLong.lat.toFixed(6);
+	document.getElementById("tb_longitude").value = latLong.lon.toFixed(6);
 };
 
 MapWidget.prototype.deleteFeatures = function() {

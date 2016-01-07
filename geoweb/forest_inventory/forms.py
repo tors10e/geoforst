@@ -48,5 +48,5 @@ class InventoryPlotForm(ModelForm):
     
     class Meta:
         model = ForestInventoryPlot
-        exclude = ('created_by','forestinventoryplot_id', 'forestinventoryplot_uuid')  
+        exclude = ('created_by','forestinventoryplot_id', 'forestinventoryplot_uuid', 'latitude', 'longitude' )  
         widgets =  {'geometry':widgets.GeowebOpenLayersWidget}   

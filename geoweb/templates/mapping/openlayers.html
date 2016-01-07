@@ -15,7 +15,11 @@
 
 <div id="{{ id }}_div_map">
     <div id="{{ id }}_map"></div>
-    <span class="clear_features"><a href="javascript:{{ module }}.clearFeatures()">{% trans "Delete all Features" %}</a></span>
+    <div id = "{{ id }}_textbox">
+    	Longitude: <input type="text" id="tb_longitude"> 
+    	Latitude: <input type="text" id="tb_latitude"> 
+	</div>
+
     {% if display_raw %}<p>{% trans "Debugging window (serialized value)" %}</p>{% endif %}
     <textarea id="{{ id }}" class="vSerializedField required" cols="150" rows="10" name="{{ name }}">{{ serialized }}</textarea>
     <script type="text/javascript">
@@ -25,7 +29,7 @@
             id: '{{ id }}',
             map_id: '{{ id }}_map',
             map_options: map_options,
-            map_srid: {{ map_srid }},
+            map_srid: 900913, //{{ map_srid }},
             name: '{{ name }}'
         };
         {% endblock %}
