@@ -1,6 +1,6 @@
 import uuid
 from django.contrib.gis.db import models
-from geoapp.models import User, TaskStatusType, LandArea, MonthType, SeasonType
+from geoapp.models import User, TaskStatusType, MonthType, SeasonType
 from utilities import lookups
 
 class ActivityArea(models.Model):
@@ -26,6 +26,21 @@ class ActivityType(models.Model):
         db_table = 'activity_type'
     def __unicode__(self):
         return unicode(self.acttype_dsc)
+    
+class LandArea(models.Model):
+    landarea_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=30, null=True, blank=True)
+    geometry = models.PolygonField(srid=2163, null=True, blank=True)
+    description = models.CharField(max_length=255, blank=True)
+    start_date = models.DateField(null=True, blank=True)
+    transaction_start_date = models.DateField(null=True, blank=True)
+    created_by = models.ForeignKey(User)
+    objects = models.GeoManager()
+    class Meta:
+        db_table = 'land_area'
+    
+    def __unicode__(self):
+        return unicode(self.name)
 
 class PlannedActivity(models.Model):
     plannedact_id = models.AutoField(primary_key=True)

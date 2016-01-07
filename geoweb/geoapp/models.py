@@ -110,35 +110,6 @@ class HarvestType(models.Model):
     def __unicode__(self):
         return unicode(self.harvesttype_dsc)
 
-class LandArea(models.Model):
-    landarea_id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=30, null=True, blank=True)
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    start_date = models.DateField(null=True, blank=True)
-    transaction_start_date = models.DateField(null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'land_area'
-    
-    def __unicode__(self):
-        return unicode(self.name)
-
-class LandAreaHistory(models.Model):
-    landareahist_id = models.AutoField(primary_key=True)
-    landarea_id = models.IntegerField(null=True, blank=True)
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    start_date = models.DateField(null=True, blank=True)
-    end_date = models.DateField(null=True, blank=True)
-    transaction_start_date = models.DateField(null=True, blank=True)
-    transaction_end_date = models.DateField(null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'land_area_history'
-
 # class Person(models.Model):
 #     person_id = models.AutoField(primary_key=True)
 #     name_last = models.CharField(max_length=30)
