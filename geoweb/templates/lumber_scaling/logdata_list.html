@@ -1,0 +1,38 @@
+<script>
+$(function() {
+  $( "#id_recorded_date" ).datepicker();
+});
+</script>
+
+{% extends "geoapp/base_inventory.html" %}
+
+{% block content %}
+    <h2>Log Data</h2>
+    <button> <a href="add/">Add new log</a> </button>
+    <table id="table">
+	    <tr id="header_row">
+	    	<th>ID</th>
+	    	<th>Lumber Load</th>
+	    	<th>Butt Diameter</th>
+	    	<th>Length</th>
+	    	<th>Species</th>
+	    	<th>Recorded Date</th>
+	    	<th>Actions</th>
+	    </tr>
+	    {% for log in log_data %}
+	    <tr>
+	    	<td>{{ log.logdata_id }} </td>
+	    	<td>{{ log.lumberload_id }}</td>
+	    	<td>{{ log.butt_diameter }} </td>
+	    	<td>{{ log.length }} </td>
+	    	<td>{{ log.speciestreetype }} </td>
+	    	<td>{{ log.recorded_date }} </td>
+			<td>
+				<button><a href="{{ log.logdata_id }}/edit/">Edit</a></button>					
+				<button><a href="{{ log.logdata_id }}/delete/">Delete</a></button>
+			</td>
+	    </tr>
+    	{% endfor %}  
+    </table>
+    <a href="/geoapp/log_data">Return to load overview</a>   
+{% endblock %}

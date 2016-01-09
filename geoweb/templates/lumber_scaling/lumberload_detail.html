@@ -1,0 +1,33 @@
+{% extends "base_listview.html" %}
+
+{% block content %}    
+		<a class="btn btn-primary" href="{% url 'lumber_scaling:log-data-add' lumber_load_detail.lumberload_id %}"> Add Log</a>
+		{% if lumber_load_detail.logdata_set.all %}
+				<table class="table table-striped table-bordered table-responsive table-hover">
+					<tr>
+						<th>Log ID</th>
+						<th>Butt Diameter</th>
+						<th>Log Length</th>
+						<th>Species</th> 
+						<th>Recorded Date</th>
+						<th>Actions</th>
+					</tr>
+					{% for log in lumber_load_detail.logdata_set.all %}
+					<tr>
+						<td>{{ log.logdata_id }} </td>
+		    			<td>{{ log.butt_diameter }} {{ log.diameter_unit }}</td>
+		    			<td>{{ log.log_length }} {{ log.length_unit }}</td>
+		    			<td>{{ log.speciestreetype }} </td>
+		    			<td>{{ log.recorded_date }} </td>
+						<td>
+							<a class="btn btn-warning btn-xs" href="{% url 'lumber_scaling:log-data-edit' log.logdata_id %}">Edit Log</a></button> 					
+							<a class="btn btn-danger btn-xs" href="{% url 'lumber_scaling:log-data-delete' log.logdata_id %}">Delete Log</a></button>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+		{% else %}
+			<p>No data has been entered for this plot.</p>
+		{% endif %}
+		<a href="{% url 'lumber_scaling:lumber-load-list' %}">Return to load overview</a>
+{% endblock %}
