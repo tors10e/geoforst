@@ -157,6 +157,7 @@ INSTALLED_APPS = (
     'pagination_bootstrap',
     'lumber_scaling',
     'forest_inventory',
+    'infrastructure',
 )
 
 # Crispy forms settings.
