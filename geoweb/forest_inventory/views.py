@@ -1,9 +1,4 @@
 # _*_ coding: UTF-8 _*_
-# System libraries
-
-# Create your views here.
-
-# Third-party libraries
 
 # Django modules
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
@@ -19,14 +14,10 @@ from django_filters.views import FilterView
 from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.csrf import csrf_exempt
 
-# Django apps
+# Current app modules
 from .models import *
 from .forms import *
 from .filters import *
-
-# Current app modules
-
-
 
 #************************************************************
 # Forest inventory classes.

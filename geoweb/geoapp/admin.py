@@ -18,10 +18,6 @@ admin.site.register(HarvestType)
 
 admin.site.register(RecreationPoint)
 admin.site.register(RecreationType)
-admin.site.register(RoadAccessStatusType)
-admin.site.register(RoadLine)
-admin.site.register(RoadSurfaceType)
-admin.site.register(RoadType)
 admin.site.register(SeverityType)
 
 admin.site.register(StandStatus)
