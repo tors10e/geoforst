@@ -24,25 +24,7 @@ class ControlPoint(models.Model):
     class Meta:
         db_table = 'control_point'
 
-class CulturalPoint(models.Model):
-    cultpt_id = models.AutoField(primary_key=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True)
-    culttype = models.ForeignKey('CulturalType', null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'cultural_point'
 
-class CulturalType(models.Model):
-    culttype_id = models.IntegerField(primary_key=True)
-    culttype_cd = models.CharField(max_length=3, blank=True)
-    culttype_dsc = models.CharField(max_length=50, blank=True)
-    class Meta:
-        db_table = 'cultural_type'
-    def __unicode__(self):
-        return unicode(self.culttype_dsc)
-        
 class FirebreakLine(models.Model):
     fbkln_id = models.AutoField(primary_key=True)
     geometry = models.LineStringField(srid=2163, null=True, blank=True)
@@ -110,40 +92,8 @@ class HarvestType(models.Model):
     def __unicode__(self):
         return unicode(self.harvesttype_dsc)
 
-# class Person(models.Model):
-#     person_id = models.AutoField(primary_key=True)
-#     name_last = models.CharField(max_length=30)
-#     name_first = models.CharField(max_length=30)
-#     address = models.CharField(max_length=50, blank=True)
-#     address_ext = models.CharField(max_length=50, blank=True)
-#     city = models.CharField(max_length=30, blank=True)
-#     state = models.CharField(max_length=2, blank=True)
-#     zip_code = models.DecimalField(null=True, max_digits=5, decimal_places=0, blank=True)
-#     phone = models.CharField(max_length=12, blank=True)
-#     created_by = models.ForeignKey(User)
-#     class Meta:
-#         db_table = 'person'
 
-class RecreationPoint(models.Model):
-    recpt_id = models.AutoField(primary_key=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True)
-    rectype = models.ForeignKey('RecreationType', null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'recreation_point'
-    def __unicode__(self):
-        return unicode(self.description)
 
-class RecreationType(models.Model):
-    rectype_id = models.IntegerField(primary_key=True)
-    rectype_cd = models.CharField(max_length=3, blank=True)
-    rectype_dsc = models.CharField(max_length=50, blank=True)
-    class Meta:
-        db_table = 'recreation_type'
-    def __unicode__(self):
-        return unicode(self.rectype_dsc)
     
 class SeasonType(models.Model):
     seasontype_id = models.IntegerField(primary_key=True)
@@ -196,18 +146,6 @@ class StandAreaHistory(models.Model):
         db_table = 'stand_area_history'
     def __unicode__(self):
         return unicode(self.standareahist_id)
-
-# class StandDescription(models.Model):
-#     standdescription_id = models.AutoField(primary_key=True)
-#     stockingtype = models.ForeignKey('StockingType', null=True, blank=True)
-#     forestagetype = models.ForeignKey(ForestAgeType, null=True, blank=True)
-#     stand_description = models.CharField(max_length=255, blank=True)
-#     foresttype = models.ForeignKey(ForestType, null=True, blank=True)
-#     created_by = models.ForeignKey(User)
-#     class Meta:
-#         db_table = 'stand_description'
-#     def __unicode__(self):
-#         return unicode(self.stand_description)
 
 class StandStatus(models.Model):
     standstatus_id = models.AutoField(primary_key=True)
