@@ -6,8 +6,6 @@ from atexit import register
 admin.site.register(StandArea, admin.GeoModelAdmin)
 
 admin.site.register(BurnCompartment)
-admin.site.register(CulturalPoint)
-admin.site.register(CulturalType)
 admin.site.register(FirebreakLine)
 admin.site.register(ForestAgeType)
 admin.site.register(ForestType)
@@ -16,8 +14,6 @@ admin.site.register(HabitatEnhancementPoint)
 admin.site.register(HabitatEnhancementType)
 admin.site.register(HarvestType)
 
-admin.site.register(RecreationPoint)
-admin.site.register(RecreationType)
 admin.site.register(SeverityType)
 
 admin.site.register(StandStatus)

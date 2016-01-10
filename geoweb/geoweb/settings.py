@@ -158,6 +158,7 @@ INSTALLED_APPS = (
     'lumber_scaling',
     'forest_inventory',
     'infrastructure',
+    'recreation',
 )
 
 # Crispy forms settings.
