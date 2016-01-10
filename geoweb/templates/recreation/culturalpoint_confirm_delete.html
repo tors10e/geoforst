@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="" method="post">{% csrf_token %}
+    <p>Are you sure you want to delete <b>"{{ object.description }}"</b>?</p>
+    <a role="button" class="btn btn-default" href="{% url "recreation:cultural-point-list" %}">Cancel</a>
+    <input type="submit" value="Confirm" />
+</form>
+{% endblock %}
+
