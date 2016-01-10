@@ -48,12 +48,15 @@ class RecreationType(models.Model):
 class Trail(models.Model):
     trail_id = models.AutoField(primary_key = True)
     geometry = models.LineStringField(srid=2163, null=False, blank=False)
-    trailtype = models.ForeignKey('TrailType', null=True, blank=True)
-    trailstatus = models.ForeignKey('TrailStatusType', null=True, blank=True)
-    trail_name = models.CharField(max_length=30, null=True, blank=True)
+    trailtype = models.ForeignKey('TrailType', null=True, blank=True, verbose_name = 'Type')
+    trailstatus = models.ForeignKey('TrailStatusType', null=True, blank=True, verbose_name = 'Status')
+    trail_name = models.CharField(max_length=30, null=True, blank=True, verbose_name = 'Name')
     description = models.CharField(max_length=255, null=True, blank=True)
     trail_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     created_by = models.ForeignKey(User)
+     
+    class Meta:
+         db_table = 'trail'
        
     def __unicode__(self):
         return unicode(self.trail_name)

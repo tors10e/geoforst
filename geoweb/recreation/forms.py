@@ -26,7 +26,7 @@ class TrailForm(ModelForm):
     
     class Meta:
         model = Trail
-        exclude = ('created_by','trail_id')  
+        exclude = ('created_by','trail_id', 'trail_uuid')  
         widgets =  {'geometry':widgets.GeowebOpenLayersWidget}  
         
 class CulturalPointForm(ModelForm):
@@ -47,7 +47,7 @@ class CulturalPointForm(ModelForm):
         ))     
     
     class Meta:
-        model = Trail
+        model = CulturalPoint
         exclude = ('created_by','culturalpt_id')  
         widgets =  {'geometry':widgets.GeowebOpenLayersWidget}  
         
@@ -69,6 +69,6 @@ class RecreationPointForm(ModelForm):
         ))     
     
     class Meta:
-        model = Trail
+        model = RecreationPoint
         exclude = ('created_by','recreationpt_id')  
         widgets =  {'geometry':widgets.GeowebOpenLayersWidget}  
