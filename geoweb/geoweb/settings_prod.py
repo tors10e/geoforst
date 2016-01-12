@@ -155,6 +155,8 @@ INSTALLED_APPS = (
     'pagination_bootstrap',
     'lumber_scaling',
     'forest_inventory',
+    'infrastructure',
+    'recreation',
 )
 
 # Crispy forms settings.
@@ -191,3 +193,11 @@ LOGGING = {
         },
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'torstenaernst@gmail.com'
+EMAIL_HOST_PASSWORD = 'Black1ce'
+DEFAULT_FROM_EMAIL = 'noreply@geoforst.com'
