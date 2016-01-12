@@ -5,14 +5,6 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.contrib.gis.geos import Point
 import uuid
 
-class BurnCompartment(models.Model):
-    burncompartment_id = models.AutoField(primary_key=True)
-    geometry = models.TextField(blank=True) # This field type is a guess.
-    compartment_set = models.IntegerField(null=True, blank=True)
-    created_by = models.ForeignKey(User)
-    class Meta:
-        db_table = 'burn_compartment'
-
 class ControlPoint(models.Model):
     controlpt_id = models.AutoField(primary_key=True)
     geometry = models.PointField(srid=2163, null=True, blank=True)
@@ -23,17 +15,6 @@ class ControlPoint(models.Model):
     objects = models.GeoManager()
     class Meta:
         db_table = 'control_point'
-
-
-class FirebreakLine(models.Model):
-    fbkln_id = models.AutoField(primary_key=True)
-    geometry = models.LineStringField(srid=2163, null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    created_by = models.ForeignKey(User)
-    length_meters = models.FloatField(null=True, blank=True)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'firebreak_line'
 
 class ForestAgeType(models.Model):
     forestagetype_id = models.IntegerField(primary_key=True)
@@ -54,34 +35,6 @@ class ForestType(models.Model):
     def __unicode__(self):
         return unicode(self.foresttype_dsc)
 
-class HabitatEnhancementArea(models.Model):
-    habenharea_id = models.AutoField(primary_key=True)
-    geometry = models.PolygonField(srid=2163, null=True, blank=True)
-    habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'habitat_enhancement_area'
-
-class HabitatEnhancementPoint(models.Model):
-    habenhpt_id =models.AutoField(primary_key=True)
-    geometry = models.PointField(srid=2163, null=True, blank=True)
-    habenhtype = models.ForeignKey('HabitatEnhancementType', null=True, blank=True)
-    description = models.CharField(max_length=255, blank=True)
-    created_by = models.ForeignKey(User)
-    objects = models.GeoManager()
-    class Meta:
-        db_table = 'habitat_enhancement_point'
-
-class HabitatEnhancementType(models.Model):
-    habenhtype_id = models.IntegerField(primary_key=True)
-    habenhtype_cd = models.CharField(max_length=3, blank=True)
-    habenhtype_dsc = models.CharField(max_length=50, blank=True)
-    class Meta:
-        db_table = 'habitat_enhancement_type'
-    def __unicode__(self):
-        return unicode(self.habenhtype_dsc)
 
 class HarvestType(models.Model):
     harvesttype_id = models.IntegerField(primary_key=True)
@@ -92,9 +45,6 @@ class HarvestType(models.Model):
     def __unicode__(self):
         return unicode(self.harvesttype_dsc)
 
-
-
-    
 class SeasonType(models.Model):
     seasontype_id = models.IntegerField(primary_key=True)
     seasontype_dsc = models.CharField(max_length=6)
@@ -249,8 +199,6 @@ class WaterType(models.Model):
         db_table = 'water_type'
     def __unicode__(self):
         return unicode(self.watertype_dsc)
-
-
 
 class MonthType(models.Model):
     monthtype_id = models.IntegerField(primary_key=True)

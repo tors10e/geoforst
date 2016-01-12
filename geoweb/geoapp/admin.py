@@ -4,14 +4,8 @@ from django.contrib.gis.admin import site
 from atexit import register
 
 admin.site.register(StandArea)
-
-admin.site.register(BurnCompartment)
-admin.site.register(FirebreakLine)
 admin.site.register(ForestAgeType)
 admin.site.register(ForestType)
-admin.site.register(HabitatEnhancementArea)
-admin.site.register(HabitatEnhancementPoint)
-admin.site.register(HabitatEnhancementType)
 admin.site.register(HarvestType)
 
 admin.site.register(SeverityType)

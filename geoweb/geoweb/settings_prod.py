@@ -157,6 +157,7 @@ INSTALLED_APPS = (
     'forest_inventory',
     'infrastructure',
     'recreation',
+    'habitat_management',
 )
 
 # Crispy forms settings.
