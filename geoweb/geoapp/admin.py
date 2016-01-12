@@ -3,7 +3,7 @@ from geoapp.models import *
 from django.contrib.gis.admin import site
 from atexit import register
 
-admin.site.register(StandArea, admin.GeoModelAdmin)
+admin.site.register(StandArea)
 
 admin.site.register(BurnCompartment)
 admin.site.register(FirebreakLine)
@@ -15,7 +15,6 @@ admin.site.register(HabitatEnhancementType)
 admin.site.register(HarvestType)
 
 admin.site.register(SeverityType)
-
 admin.site.register(StandStatus)
 admin.site.register(StandType)
 admin.site.register(StockingType)
