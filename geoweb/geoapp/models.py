@@ -114,7 +114,7 @@ class SeverityType(models.Model):
 
 class StandArea(models.Model):
     standarea_id = models.AutoField(primary_key=True)
-    standarea_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
+    standarea_uuid_id = models.UUIDField(default=uuid.uuid4, unique=True)
     geometry = models.PolygonField(srid=2163, null=True, blank=True)
     stand_no = models.IntegerField(null=True, blank=True)
     description = models.CharField(max_length=255, blank=True)
@@ -126,7 +126,7 @@ class StandArea(models.Model):
     class Meta:
         db_table = 'stand_area'
     def __unicode__(self):
-        return unicode(self.standdescription)
+        return unicode(str(self.standarea_id)+"-"+str(self.description))
 
 
 class StandAreaHistory(models.Model):
@@ -155,7 +155,7 @@ class StandStatus(models.Model):
     damage_severity = models.ForeignKey(SeverityType, null=True, db_column='damage_severity', blank=True)
     #stand = models.ForeignKey(StandDescription, null=True, blank=True)
     created_by = models.ForeignKey(User)
-    standarea_uuid = models.ForeignKey('StandArea',to_field='standarea_uuid')
+    standarea_uuid = models.ForeignKey('StandArea',to_field='standarea_uuid_id')
     standstatus_uuid = models.UUIDField(default=uuid.uuid4, unique=True)
     stand_no = models.IntegerField(null=True, blank=True)
     class Meta:
