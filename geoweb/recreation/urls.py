@@ -5,7 +5,7 @@ urlpatterns = patterns('',
     url(r'^trail/add/$', TrailCreate.as_view(), name='trail-add'),
     url(r'^trail/(?P<pk>\d+)/edit/$', TrailUpdate.as_view(), name='trail-edit'),
     url(r'^trail/(?P<pk>\d+)/delete/$', TrailDelete.as_view(), name='trail-delete'),
-    url(r'^trail/$', TrailList, name='trail-list'),
+    url(r'^trails/$', TrailList, name='trail-list'),
     
     url(r'^cultural_site/add/$', CulturalPointCreate.as_view(), name='cultural-point-add'),
     url(r'^cultural_site/(?P<pk>\d+)/edit/$', CulturalPointUpdate.as_view(), name='cultural-point-edit'),
