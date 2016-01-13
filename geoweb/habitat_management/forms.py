@@ -5,7 +5,7 @@ from crispy_forms.bootstrap import FormActions
 from utilities.crispy_forms.bootstrap import SubmitCancelFormActions
 from mapping import widgets
 
-from .models import BurnCompartment
+from .models import BurnCompartment, FirebreakLine
 
 class BurnCompartmentForm(ModelForm):
     def __init__(self, *args, **kwargs):
@@ -29,3 +29,25 @@ class BurnCompartmentForm(ModelForm):
         exclude = ('created_by', 'burncompartment_id')  
         widgets =  {'geometry':widgets.GeowebOpenLayersWidget}  
         
+
+class FirebreakForm(ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(FirebreakForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.form_id = 'id-FirebreakForm'
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = 'col-lg-2'
+        self.helper.field_class = 'col-lg-8'
+        self.helper.form_method = 'post'
+ 
+        self.helper.layout.append(
+            FormActions(
+                HTML("""<a role="button" class="btn btn-default"
+                        href="{% url "habitat_management:firebreak-list" %}">Cancel</a>"""),
+                Submit('save', 'Submit'),
+        ))     
+    
+    class Meta:
+        model = FirebreakLine
+        exclude = ('created_by', 'firebreakln_id')  
+        widgets =  {'geometry':widgets.GeowebOpenLayersWidget} 
