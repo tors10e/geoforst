@@ -28,13 +28,13 @@ function updateFeatureFromTextbox(longitude, latitude) {
 function projectCoordinates(y, x, to_geodetic) {
 	// Using 4326 instead of 4269 because openlayers has limited projections by default.
 	var projection_4326 = new OpenLayers.Projection("EPSG:4326");
-    var projection_900913 = new OpenLayers.Projection("EPSG:900913");
+    var projection_3857 = new OpenLayers.Projection("EPSG:3857");
 	var point = new OpenLayers.LonLat(y,x)
 	if (to_geodetic == true) {
-		point.transform(projection_900913, projection_4326);
+		point.transform(projection_3857, projection_4326);
 	}
 	else{
-		point.transform(projection_4326, projection_900913);
+		point.transform(projection_4326, projection_3857);
 	}
 	return point;
 }
