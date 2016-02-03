@@ -2,6 +2,7 @@ import uuid
 from django.contrib.gis.db import models
 from geoapp.models import User, TaskStatusType, MonthType, SeasonType
 from utilities import lookups
+from datetime import datetime
 
 class ActivityArea(models.Model):
     activityarea_id = models.AutoField(primary_key=True)
@@ -46,7 +47,7 @@ class PlannedActivity(models.Model):
     plannedact_id = models.AutoField(primary_key=True)
     plannedact_uuid = models.UUIDField(default=uuid.uuid4, verbose_name="Planned Activity", unique=True)
     acttype = models.ForeignKey(ActivityType, verbose_name="Activity Type", help_text='Type of activity', null=True, blank=True)
-    planned_year = models.IntegerField(help_text='Year work is to be started', null=True, blank=True, choices=lookups.get_years_list(10,10))
+    planned_year = models.IntegerField(help_text='Year work is to be started', default=datetime.now().year, null=True, blank=True, choices=lookups.get_years_list(10,10))
     monthtype = models.ForeignKey(MonthType, verbose_name="Planned Month", blank=True, null=True)
     seasontype = models.ForeignKey(SeasonType, verbose_name="Planned Season", help_text='Season work is to be started',  blank=True, null=True)
     completed_date = models.CharField(max_length=25, help_text='Date work was completed', blank=True, null=True)
