@@ -48,7 +48,7 @@ def FirebreakList(request):
 class FirebreakUpdate(UpdateView):
     model = FirebreakLine
     form_class = FirebreakForm
-    success_url = reverse_lazy('habitat_management/Firebereak_list.html')
+    success_url = reverse_lazy('habitat_management/Firebreak_list.html')
     
 class FirebreakDelete(DeleteView):
     model = FirebreakLine
