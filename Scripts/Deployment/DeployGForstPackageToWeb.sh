@@ -10,7 +10,7 @@
 PACKAGE_VERSION=0.1
 SOURCE_DIR=~/downloads/fsp
 STAGING_DIR=~/temp
-WEB_DIR=/var/www
+WEB_DIR=/home/geoforst
 
 # Get latest source code.
 echo "Deleting " $SOURCE_DIR
