@@ -1,30 +1,25 @@
 # Django settings for geoweb project.
 import os
+import environ
+root = environ.Path(__file__) - 3 # three folder back (/a/b/c/ - 3 = /)
+env = environ.Env(DEBUG=(bool, False),) # set default values and casting
+environ.Env.read_env('/etc/django/geoforst/.env') # reading .env file
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DEBUG = True
+DEBUG = env('DEBUG')
 
-ADMINS = (
-    ('Torsten Ernst', 'torstenaernst@gmail.com'),
-)
+ADMINS = env('ADMINS')
 
 MANAGERS = ADMINS
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'geoforst',                      # Or path to database file if using sqlite3.
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '5432',                         # Set to empty string for default.
-    }
+    'default': env.db_url(),
 }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [ 'localhost', 'www.torstenernst.com', 'geo.torstenernst.com', '127.0.0.1']
+ALLOWED_HOSTS = env('ALLOWED_HOSTS')
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -56,7 +51,7 @@ MEDIA_ROOT = ''
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -74,8 +69,7 @@ LOGOUT_REDIRECT_URL = '/home/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-                     os.path.join(os.path.dirname(__file__),'static',),
-                    # os.path.join(BASE_DIR, "static"),
+                    os.path.join(BASE_DIR, "static"),
                     '/var/www/static/',
                     
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
@@ -93,7 +87,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'k)}hM]"M_#Vc'
+SECRET_KEY = env('SECRET_KEY')
 
 # List of callables that know how to import templates from various sources.
 #TEMPLATE_LOADERS = (
@@ -160,6 +154,7 @@ INSTALLED_APPS = (
     'infrastructure',
     'recreation',
     'habitat_management',
+    'tastypie',
 )
 
 # Crispy forms settings.
@@ -197,4 +192,11 @@ LOGGING = {
     }
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_PORT = env('EMAIL_PORT')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+
