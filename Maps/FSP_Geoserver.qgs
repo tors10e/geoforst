@@ -1,0 +1,2094 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="1.8.0-Lisboa">
+    <title></title>
+    <mapcanvas>
+        <units>meters</units>
+        <extent>
+            <xmin>-9313243.220985</xmin>
+            <ymin>4090429.008907</ymin>
+            <xmax>-9309824.008151</xmax>
+            <ymax>4091918.464800</ymax>
+        </extent>
+        <projections>1</projections>
+        <destinationsrs>
+            <spatialrefsys>
+                <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
+                <srsid>3857</srsid>
+                <srid>3857</srid>
+                <authid>EPSG:3857</authid>
+                <description>WGS 84 / Pseudo Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>WGS84</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+            </spatialrefsys>
+        </destinationsrs>
+    </mapcanvas>
+    <legend updateDrawingOrder="true">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Water Point Features" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Water Point Features20121204131510425" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Recreation" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Recreation20121204131623145" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Habitat Enhancement Points" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Points20121204131751561" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Cultural Features" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Cultural Features20121204131751585" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Trees" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Trees20121204131751596" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Roads" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="road_line20130101154010851" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Firebreaks" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Firebreaks20121204132835298" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Land Areas" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Land Areas20121204131751632" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Habitat Enhancement Areas" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Areas20121204131751547" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="activity_area20130101231920603" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Stands" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Stands20121204133323889" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="stand_type" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="stand_type20130317153822193" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Activity Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Activity Types20121204111631394" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cultural Types" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="cultural_type20121216225244192" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Forest Types" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="forest_type20130118212645702" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Habitat Enhancement Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Habitat Enhancement Types20121204111631376" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Planned Activities" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="planned_activity20130101231922171" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Recreation Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Recreation Types20121204111631341" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Road Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Road Types20121204111443350" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Stand Status" showFeatureCount="0">
+            <filegroup open="false" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="stand_status20121215085843270" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Stocking Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Stocking Types20121204111631323" visible="0"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Water Feature Types" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Water Feature Types20121204111631302" visible="0"/>
+            </filegroup>
+        </legendlayer>
+    </legend>
+    <projectlayers layercount="22">
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Activity Types20121204111631394</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='acttype_id' table="activity_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Activity Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Cultural Features20121204131751585</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='cultpt_id' srid=26917 type=POINT table="cultural_point" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Cultural Features</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="cultural_type20121216225244192"/>
+            </vectorjoins>
+            <classificationattribute>culttype_id</classificationattribute>
+            <uniquevalue>
+                <classificationfield>culttype_id</classificationfield>
+                <symbol>
+                    <lowervalue>1</lowervalue>
+                    <uppervalue>1</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/amenity/amenity_fountain.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="229" blue="156" green="15"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>2</lowervalue>
+                    <uppervalue>2</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/accommodation/accommodation_bed_and_breakfast.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="139" blue="55" green="150"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>3</lowervalue>
+                    <uppervalue>3</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/accommodation/accommodation_youth_hostel.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="138" blue="198" green="246"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="CultPtDesc"/>
+                <edittype type="0" name="CultPtID"/>
+                <edittype type="3" name="CultTypeID">
+                    <valuepair key="Abandoned Well" value="1"/>
+                    <valuepair key="Old Homesite" value="2"/>
+                </edittype>
+                <edittype type="0" name="cultpt_id"/>
+                <edittype type="0" name="culttype_cd"/>
+                <edittype type="0" name="culttype_dsc"/>
+                <edittype allowNull="false" orderByValue="false" key="culttype_id" layer="cultural_type20121216225244192" type="15" value="culttype_dsc" name="culttype_id"/>
+                <edittype type="0" name="description"/>
+            </edittypes>
+            <editform>../Forms/CulturalPoint.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Firebreaks20121204132835298</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='fbkln_id' srid=26917 type=LINESTRING table="firebreak_line" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Firebreaks</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="199" blue="0" green="0"/>
+                    <outlinestyle>DotLine</outlinestyle>
+                    <outlinewidth>1</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="FireBreakLnID"/>
+                <edittype type="0" name="FireBreakTypeDesc"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="fbkln_id"/>
+                <edittype type="0" name="length_meters"/>
+            </edittypes>
+            <editform>../Forms/firebreak_line.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Habitat Enhancement Areas20121204131751547</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenharea_id' srid=26917 type=POLYGON table="habitat_enhancement_area" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Habitat Enhancement Areas</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Habitat Enhancement Types20121204111631376"/>
+            </vectorjoins>
+            <classificationattribute>habenharea_id</classificationattribute>
+            <uniquevalue>
+                <classificationfield>habenharea_id</classificationfield>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Brush Pile</lowervalue>
+                    <uppervalue>Brush Pile</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="190" blue="132" green="155"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Fallow Field</lowervalue>
+                    <uppervalue>Fallow Field</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="231" blue="244" green="231"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Oak Early Successional</lowervalue>
+                    <uppervalue>Oak Early Successional</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="123" blue="140" green="141"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Planting</lowervalue>
+                    <uppervalue>Planting</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="170" blue="229" green="178"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Shrub Thicket</lowervalue>
+                    <uppervalue>Shrub Thicket</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="83" blue="57" green="96"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Soft Edge</lowervalue>
+                    <uppervalue>Soft Edge</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="14" blue="17" green="13"/>
+                    <fillpattern>BDiagPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on="1"/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="ActAge"/>
+                <edittype type="0" name="ActAreaID"/>
+                <edittype type="0" name="ActDate"/>
+                <edittype type="0" name="ActDesc"/>
+                <edittype type="0" name="ActTypeID"/>
+                <edittype type="0" name="HabEnhAreaDesc"/>
+                <edittype type="0" name="HabEnhAreaID"/>
+                <edittype type="3" name="HabEnhTypeID">
+                    <valuepair key="Brush Pile" value="1"/>
+                    <valuepair key="Fallow Field" value="5"/>
+                    <valuepair key="Oak Early Successional" value="2"/>
+                    <valuepair key="Planting" value="3"/>
+                    <valuepair key="Shrub Thicket" value="6"/>
+                    <valuepair key="Soft Edge" value="4"/>
+                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                </edittype>
+                <edittype type="0" name="Revenue"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="habenharea_id"/>
+                <edittype type="0" name="habenhareadesc"/>
+                <edittype type="0" name="habenhtype_dsc"/>
+                <edittype type="3" name="habenhtype_id">
+                    <valuepair key="Brush Pile" value="1"/>
+                    <valuepair key="Fallow Field" value="5"/>
+                    <valuepair key="Oak Early Successional" value="2"/>
+                    <valuepair key="Planting" value="3"/>
+                    <valuepair key="Shrub Thicket" value="6"/>
+                    <valuepair key="Soft Edge" value="4"/>
+                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                </edittype>
+                <edittype type="0" name="habenhtypedesc"/>
+                <edittype type="3" name="habenhtypeid">
+                    <valuepair key="Brush Pile" value="1"/>
+                    <valuepair key="Fallow Field" value="5"/>
+                    <valuepair key="Oak Early Successional" value="2"/>
+                    <valuepair key="Planting" value="3"/>
+                    <valuepair key="Shrub Thicket" value="6"/>
+                    <valuepair key="Soft Edge" value="4"/>
+                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                </edittype>
+            </edittypes>
+            <editform>../Forms/HabitatEnhancementsArea.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Habitat Enhancement Points20121204131751561</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhpt_id' srid=26917 type=POINT table="habitat_enhancement_point" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Habitat Enhancement Points</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Habitat Enhancement Types20121204111631376"/>
+            </vectorjoins>
+            <classificationattribute>habenhpt_id</classificationattribute>
+            <uniquevalue>
+                <classificationfield>habenhpt_id</classificationfield>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="8" blue="107" green="48"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Brush Pile</lowervalue>
+                    <uppervalue>Brush Pile</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/tourist/tourist_castle.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Planting</lowervalue>
+                    <uppervalue>Planting</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/symbol/poi_embassy2.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Shrub Thicket</lowervalue>
+                    <uppervalue>Shrub Thicket</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/tourist/tourist_view_point.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Wood Duck Nest Box</lowervalue>
+                    <uppervalue>Wood Duck Nest Box</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/religion/place_of_worship_unknown3.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text=""/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="HabEnhPtDesc"/>
+                <edittype type="0" name="HabEnhPtID"/>
+                <edittype type="3" name="HabEnhTypeID">
+                    <valuepair key="Brush Pile" value="1"/>
+                    <valuepair key="Fallow Field" value="5"/>
+                    <valuepair key="Oak Early Successional" value="2"/>
+                    <valuepair key="Planting" value="3"/>
+                    <valuepair key="Shrub Thicket" value="6"/>
+                    <valuepair key="Soft Edge" value="4"/>
+                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                </edittype>
+                <edittype type="0" name="descripition"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="habenhpt_id"/>
+                <edittype type="0" name="habenhptdesc"/>
+                <edittype type="0" name="habenhtype_dsc"/>
+                <edittype allowNull="false" orderByValue="false" key="habenhtype_id" layer="Habitat Enhancement Types20121204111631376" type="15" value="habenhtype_dsc" name="habenhtype_id"/>
+                <edittype type="0" name="habenhtypedesc"/>
+                <edittype type="3" name="habenhtypeid">
+                    <valuepair key="Brush Pile" value="1"/>
+                    <valuepair key="Fallow Field" value="5"/>
+                    <valuepair key="Oak Early Successional" value="2"/>
+                    <valuepair key="Planting" value="3"/>
+                    <valuepair key="Shrub Thicket" value="6"/>
+                    <valuepair key="Soft Edge" value="4"/>
+                    <valuepair key="Wood Duck Nest Box" value="7"/>
+                </edittype>
+                <edittype type="0" name="ogc_fid"/>
+            </edittypes>
+            <editform>../Forms/HabitatEnhancements.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Habitat Enhancement Types20121204111631376</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='habenhtype_id' table="habitat_enhancement_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Habitat Enhancement Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Land Areas20121204131751632</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='landarea_id' srid=26917 type=POLYGON table="land_area" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Land Areas</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>DashDotDotLine</outlinestyle>
+                    <outlinewidth>1</outlinewidth>
+                    <fillcolor red="175" blue="121" green="164"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="LandAreaDesc"/>
+                <edittype type="0" name="LandAreaID"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="landarea_id"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Recreation Types20121204111631341</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='rectype_id' table="recreation_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Recreation Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Recreation20121204131623145</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='recpt_id' srid=26917 type=POINT table="recreation_point" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Recreation</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Recreation Types20121204111631341"/>
+            </vectorjoins>
+            <classificationattribute>recpt_id</classificationattribute>
+            <uniquevalue>
+                <classificationfield>recpt_id</classificationfield>
+                <symbol>
+                    <lowervalue>Camp Site</lowervalue>
+                    <uppervalue>Camp Site</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/accommodation/accommodation_camping.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>Fire Ring</lowervalue>
+                    <uppervalue>Fire Ring</uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/amenity/amenity_firestation.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="RecPtDesc"/>
+                <edittype type="0" name="RecPtID"/>
+                <edittype type="3" name="RecTypeID">
+                    <valuepair key="Camp Site" value="2"/>
+                    <valuepair key="Fire Ring" value="1"/>
+                </edittype>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="recpt_id"/>
+                <edittype type="0" name="recptdesc"/>
+                <edittype type="0" name="rectype_dsc"/>
+                <edittype allowNull="false" orderByValue="false" key="rectype_id" layer="Recreation Types20121204111631341" type="15" value="rectype_dsc" name="rectype_id"/>
+                <edittype type="3" name="rectypeid">
+                    <valuepair key="Camp Site" value="Camp Site"/>
+                    <valuepair key="Fire Ring" value="Fire Ring"/>
+                </edittype>
+            </edittypes>
+            <editform>../Forms/Recreation.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Road Types20121204111443350</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='roadtype_id' table="road_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Road Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Stands20121204133323889</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standarea_id' srid=26917 type=POLYGON table="stand_area" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Stands</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>60</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <classificationattribute>stand_no</classificationattribute>
+            <uniquevalue>
+                <classificationfield>stand_no</classificationfield>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="50" blue="189" green="136"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>1</lowervalue>
+                    <uppervalue>1</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="213" blue="79" green="62"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>10</lowervalue>
+                    <uppervalue>0</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="79" blue="116" green="233"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>2</lowervalue>
+                    <uppervalue>2</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="244" blue="67" green="109"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>3</lowervalue>
+                    <uppervalue>3</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="253" blue="97" green="174"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>4</lowervalue>
+                    <uppervalue>4</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="254" blue="139" green="224"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>5</lowervalue>
+                    <uppervalue>5</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="255" blue="191" green="255"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>6</lowervalue>
+                    <uppervalue>6</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="230" blue="152" green="245"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>7</lowervalue>
+                    <uppervalue>7</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="171" blue="164" green="221"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>8</lowervalue>
+                    <uppervalue>8</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="102" blue="165" green="194"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>9</lowervalue>
+                    <uppervalue>9</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="50" blue="189" green="136"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>1</label>
+            <labelfield>standarea_id</labelfield>
+            <labelattributes>
+                <label fieldname="standarea_id" text=""/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on="1"/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="Age"/>
+                <edittype type="0" name="Beetle_Dam"/>
+                <edittype type="0" name="Description"/>
+                <edittype type="0" name="ForestryOperation"/>
+                <edittype type="0" name="Shape_Area"/>
+                <edittype type="0" name="Shape_Leng"/>
+                <edittype type="0" name="StandAreaID"/>
+                <edittype type="0" name="StandDesc"/>
+                <edittype type="0" name="Stand_No"/>
+                <edittype type="0" name="Stocking"/>
+                <edittype type="0" name="age"/>
+                <edittype type="0" name="damaged"/>
+                <edittype type="0" name="description"/>
+                <edittype type="3" name="foresttype_id">
+                    <valuepair key="Lowland Hardwood" value="5"/>
+                    <valuepair key="Mixed-Oak Pine" value="3"/>
+                    <valuepair key="Natural Pine" value="2"/>
+                    <valuepair key="Non-Forested" value="6"/>
+                    <valuepair key="Planted Pine" value="1"/>
+                    <valuepair key="Upland Hardwood" value="4"/>
+                </edittype>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="ogc_fid"/>
+                <edittype type="0" name="recommended_treatment"/>
+                <edittype type="0" name="stand_no"/>
+                <edittype type="0" name="standarea_id"/>
+                <edittype type="0" name="standno"/>
+                <edittype type="0" name="standstatus_id"/>
+                <edittype type="0" name="start_date"/>
+                <edittype type="0" name="stocking"/>
+                <edittype type="0" name="stockingtype_id"/>
+                <edittype type="0" name="transaction_start_date"/>
+                <edittype type="0" name="year"/>
+            </edittypes>
+            <editform>../Forms/StandArea.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Stocking Types20121204111631323</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='stockingtype_id' table="stocking_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Stocking Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Trees20121204131751596</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='tree_id' srid=26917 type=POINT table="tree" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Trees</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/biology/Coniferous.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="90" blue="71" green="218"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>tree_id</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="Species"/>
+                <edittype type="0" name="StartYear"/>
+                <edittype type="0" name="TreePtID"/>
+                <edittype type="0" name="specie"/>
+                <edittype type="0" name="start_year"/>
+                <edittype type="0" name="tree_id"/>
+            </edittypes>
+            <editform>../Forms/Tree.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>Water Feature Types20121204111631302</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='watertype_id' table="water_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Water Feature Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>Water Point Features20121204131510425</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='waterpoint_id' srid=26917 type=POINT table="water_point" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Water Point Features</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="0" joinLayerId="Water Feature Types20121204111631302"/>
+            </vectorjoins>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>svg:/north_arrows/NorthArrow16.svg</pointsymbol>
+                    <pointsize>4</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="3" name="Water Feature Typesid">
+                    <valuepair key="Seep" value="2"/>
+                    <valuepair key="Spring" value="1"/>
+                </edittype>
+                <edittype type="0" name="WaterPtID"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="ogc_fid"/>
+                <edittype type="0" name="waterpoint_id"/>
+                <edittype type="0" name="waterptdesc"/>
+                <edittype type="0" name="watertype_dsc"/>
+                <edittype allowNull="false" orderByValue="false" key="watertype_id" layer="Water Feature Types20121204111631302" type="15" value="watertype_dsc" name="watertype_id"/>
+            </edittypes>
+            <editform>../Forms/WaterPoint.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>activity_area20130101231920603</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='activityarea_id' srid=26917 type=MULTIPOLYGON table="activity_area" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Activities</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="255" green="0"/>
+                    <fillpattern>Dense7Pattern</fillpattern>
+                    <texturepath>.</texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="13" name="activity_date"/>
+                <edittype type="0" name="activityarea_id"/>
+                <edittype type="0" name="acttype_dsc"/>
+                <edittype type="3" name="acttype_id">
+                    <valuepair key="Complete Harvest" value="4"/>
+                    <valuepair key="Controlled Burn" value="5"/>
+                    <valuepair key="Crop Tree Release" value="3"/>
+                    <valuepair key="Not Defined" value="8"/>
+                    <valuepair key="Planting" value="2"/>
+                    <valuepair key="Pruning" value="7"/>
+                    <valuepair key="Stump Shoot Thinning" value="6"/>
+                    <valuepair key="Thinning" value="1"/>
+                </edittype>
+                <edittype type="0" name="completed_date"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="planned_date"/>
+                <edittype type="3" name="plannedact_id">
+                    <valuepair key=" Install nest/brood structures, evaluate fuel loading in interface, initiate fuel reduction burning if necessary" value="24"/>
+                    <valuepair key="At low water levels, install regulation structure(s), raise level in dormant season, evaluate" value="25"/>
+                    <valuepair key="Burn in Feb-March, retreat sod-grass if necessary, establish interior food plots, divide into 3 sections" value="23"/>
+                    <valuepair key="Burn section 1 in late&#xa;Feb., maintain food&#xa;plots, control remaining&#xa;sod grasses, seed in&#xa;wildflower mix" value="45"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, continue&#xa;thinning" value="77"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, maintain&#xa;foodplot" value="76"/>
+                    <valuepair key="Burn section 2&#xa;companion&#xa;compartments, maintain&#xa;foodplots" value="84"/>
+                    <valuepair key="Burn section 2 in late&#xa;Feb., maintain food&#xa;plots, evaluate species&#xa;mix, maintain&#xa;wildflowers" value="66"/>
+                    <valuepair key="Burn section 3&#xa;companion&#xa;compartments" value="106"/>
+                    <valuepair key="Burn section 3&#xa;companion&#xa;compartments, exclude&#xa;brush patch" value="98"/>
+                    <valuepair key="Burn section 3 in late&#xa;Feb., maintain food&#xa;plots, evaluate species&#xa;mix, maintain&#xa;wildflowers" value="88"/>
+                    <valuepair key="Burned" value="116"/>
+                    <valuepair key="Conduct harvest, establish fallow clearings, foodplot, brush patch, maintain/reroute trails" value="35"/>
+                    <valuepair key="Conduct harvest, establish oak/ec areas, fallow openings, foodplot (1)" value="41"/>
+                    <valuepair key="Conduct harvest, plant oak seedlings, reinforce or reroute trails sections with erosion problems" value="44"/>
+                    <valuepair key="Continue enhancement,&#xa;water regulation, refine&#xa;seasonal manipulation&#xa;of water levels" value="68"/>
+                    <valuepair key="Continue oak release,&#xa;maintain recreation&#xa;features" value="92"/>
+                    <valuepair key="Continue thinning if&#xa;necessary, maintain&#xa;recreation features" value="99"/>
+                    <valuepair key="Continue trail work, disk&#xa;section 1 companion&#xa;compartment, maintain&#xa;foodplots" value="56"/>
+                    <valuepair key="Develop trail and/or campsite, access from north highway," value="55"/>
+                    <valuepair key="Disk or burn (if possible)&#xa;section 1 companion&#xa;compartments, continue&#xa;oak crown release,&#xa;maintain foodplot" value="54"/>
+                    <valuepair key="Disk section 1&#xa;companion&#xa;compartments, maintain&#xa;foodplot, improve or&#xa;reroute trails sections" value="62"/>
+                    <valuepair key="Establish opening, continue non-comm thinning," value="34"/>
+                    <valuepair key="Establish openings (during harvest if possible) divide each into sections, delineate brush/foodplot inclusions" value="33"/>
+                    <valuepair key="Evaluate and Monitor&#xa;planting, control&#xa;herbivory, continue trail&#xa;work" value="87"/>
+                    <valuepair key="Evaluate fuel loading,&#xa;conduct prescribed burn&#xa;if necessary" value="67"/>
+                    <valuepair key="Evaluate harvest roads&#xa;for trail development,&#xa;decks for campsite,&#xa;continue oak release, pile&#xa;+ burn debris if feasible" value="48"/>
+                    <valuepair key="Evaluate residual pine for harvest, hardwood regeneration for hard mast potential, mark harvest/release areas in early fall" value="5"/>
+                    <valuepair key="Evaluate residual pine for harvest, mast trees for crown release, delineate fallow openings" value="9"/>
+                    <valuepair key="Identify cull and crop species, mark for selective thinning, delineate fallow field opening" value="12"/>
+                    <valuepair key="Identify potential interface point source hazards, mitigate as necessary" value="2"/>
+                    <valuepair key="Install habitat&#xa;enhancements (duck&#xa;boxes, etc.) control&#xa;beaver activity, clear&#xa;viewing/shooting lanes if&#xa;desired, evaluate water&#xa;regulation" value="46"/>
+                    <valuepair key="Monitor (no activity)" value="109"/>
+                    <valuepair key="Monitor and evaluate&#xa;water level&#xa;manipulation, control&#xa;beaver activity" value="90"/>
+                    <valuepair key="Monitor water levels and access through growing season" value="3"/>
+                    <valuepair key="Mow in July-August, treat sod grasses September" value="1"/>
+                    <valuepair key="No activity" value="89"/>
+                    <valuepair key="Plan and schedule harvest if feasible, release oak regeneration in selected areas, identify viewshed features" value="27"/>
+                    <valuepair key="Plan for commercial harvest and reforestation with oak species, identify erosion sites" value="22"/>
+                    <valuepair key="Plan for commercial harvest of mature pine and selected hardwoods, delineate fallow opening areas (4)" value="13"/>
+                    <valuepair key="Plan for commercial harvest of mature pine and selected hardwoods, delineate oak/early succession areas (7), fallow openings (3)" value="19"/>
+                    <valuepair key="Planted wheat 50, crimson clover 10 in interior of wildlife openings." value="110"/>
+                    <valuepair key="Planted wheat 50, white dutch 3, and white ladino 6 on firebreaks." value="111"/>
+                    <valuepair key="Pruned poplar and black cherry stump sprouts to single stem." value="112"/>
+                    <valuepair key="Reduced stump shoot stems to one per stump of poplar and black cherry." value="113"/>
+                    <valuepair key="Thinned poplar and black cherry root sprouts." value="114"/>
+                </edittype>
+                <edittype type="0" name="revenue"/>
+                <edittype type="0" name="standact_id"/>
+                <edittype type="3" name="standarea_id">
+                    <valuepair key="Fallow field opening." value="25"/>
+                    <valuepair key="Forested wetland" value="11"/>
+                    <valuepair key="Improved forage grass field" value="12"/>
+                    <valuepair key="Logging deck turned  into wildlife opening." value="26"/>
+                    <valuepair key="Mesic hardwood, yng. age, overstocked" value="15"/>
+                    <valuepair key="Mixed yellow pine, early mature, overstocked" value="8"/>
+                    <valuepair key="Pine/Hardwood, med. age, mildly overstocked" value="7"/>
+                    <valuepair key="Pine/Hardwood, mxd. age, (beetle damage)" value="1"/>
+                    <valuepair key="Residential area" value="16"/>
+                    <valuepair key="Upland hardwood/pine (beetle damage)" value="21"/>
+                    <valuepair key="Upland hardwood/pine, med. age, fully stocked" value="6"/>
+                </edittype>
+            </edittypes>
+            <editform>../Forms/ActivityArea.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>cultural_type20121216225244192</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='culttype_id' table="cultural_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Cultural Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <edittypes>
+                <edittype type="0" name="culttype_cd"/>
+                <edittype type="0" name="culttype_dsc"/>
+                <edittype type="0" name="culttype_id"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>forest_type20130118212645702</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='postgres' sslmode=disable key='foresttype_id' table="forest_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Forest Types</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <edittypes>
+                <edittype type="0" name="foresttype_dsc"/>
+                <edittype type="0" name="foresttype_id"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>planned_activity20130101231922171</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='plannedact_id' table="planned_activity" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Planned Activities</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <edittypes>
+                <edittype type="0" name="acttype_id"/>
+                <edittype type="0" name="completed_date"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="planned_date"/>
+                <edittype type="0" name="plannedact_id"/>
+                <edittype type="0" name="revenue"/>
+                <edittype type="0" name="standarea_id"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="1" maxLabelScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>road_line20130101154010851</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='roadln_id' srid=26917 table="road_line" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Roads</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=17 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2294</srsid>
+                    <srid>26917</srid>
+                    <authid>EPSG:26917</authid>
+                    <description>NAD83 / UTM zone 17N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="2" joinField="0" memoryCache="1" joinLayerId="Road Types20121204111443350"/>
+            </vectorjoins>
+            <classificationattribute>roadtype_id</classificationattribute>
+            <uniquevalue>
+                <classificationfield>roadtype_id</classificationfield>
+                <symbol>
+                    <lowervalue>1</lowervalue>
+                    <uppervalue>1</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="237" blue="86" green="225"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>2</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>2</lowervalue>
+                    <uppervalue>2</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="171" blue="171" green="171"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>1.5</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>3</lowervalue>
+                    <uppervalue>3</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="134" blue="0" green="67"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>1</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>4</lowervalue>
+                    <uppervalue>4</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="191" blue="191" green="191"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>1</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>5</lowervalue>
+                    <uppervalue>5</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="192" blue="255" green="223"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>1</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+                <symbol>
+                    <lowervalue>6</lowervalue>
+                    <uppervalue>6</uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="149" blue="112" green="149"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.26</outlinewidth>
+                    <fillcolor red="0" blue="0" green="0"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </uniquevalue>
+            <customproperties/>
+            <displayfield>description</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="access_status"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="road_name"/>
+                <edittype type="0" name="roadln_id"/>
+                <edittype type="0" name="roadtype_dsc"/>
+                <edittype type="3" name="roadtype_id">
+                    <valuepair key="ATV Track" value="4"/>
+                    <valuepair key="Abandoned" value="5"/>
+                    <valuepair key="Obliterated" value="6"/>
+                    <valuepair key="Primary" value="1"/>
+                    <valuepair key="Secondary" value="2"/>
+                    <valuepair key="Two Track" value="3"/>
+                </edittype>
+                <edittype type="0" name="surface"/>
+            </edittypes>
+            <editform>../Forms/Road.ui</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>stand_status20121215085843270</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 sslmode=disable key='standstatus_id' table="stand_status" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>Stand Status</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins>
+                <join targetField="1" joinField="0" memoryCache="1" joinLayerId="Stands20121204133323889"/>
+            </vectorjoins>
+            <edittypes>
+                <edittype type="0" name="age"/>
+                <edittype type="0" name="damaged"/>
+                <edittype type="0" name="description"/>
+                <edittype type="0" name="notes"/>
+                <edittype type="0" name="recommended_treatment"/>
+                <edittype type="0" name="stand_no"/>
+                <edittype type="0" name="standarea_id"/>
+                <edittype type="0" name="standstatus_id"/>
+                <edittype type="0" name="stocking"/>
+                <edittype type="0" name="stockingtype_id"/>
+                <edittype type="0" name="year"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>stand_type20130317153822193</id>
+            <datasource>dbname='fsp' host=geo.torstenernst.com port=5432 user='ternst' sslmode=disable key='standtype_id' table="stand_type" sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>stand_type</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">postgres</provider>
+            <vectorjoins/>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+    </projectlayers>
+    <properties>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <WMSContactPhone type="QString"></WMSContactPhone>
+        <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs</ProjectCRSProj4String>
+            <ProjectCRSID type="int">3857</ProjectCRSID>
+            <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+        </SpatialRefSys>
+        <Gui>
+            <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+            <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+            <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+            <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+            <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+            <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+            <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+        </Gui>
+        <Paths>
+            <Absolute type="bool">false</Absolute>
+        </Paths>
+        <WMSContactMail type="QString"></WMSContactMail>
+        <WFSLayers type="QStringList"/>
+        <Digitizing>
+            <LayerSnappingList type="QStringList">
+                <value>Cultural Features20121204131751585</value>
+                <value>Firebreaks20121204132835298</value>
+                <value>Habitat Enhancement Areas20121204131751547</value>
+                <value>Habitat Enhancement Points20121204131751561</value>
+                <value>Land Areas20121204131751632</value>
+                <value>Recreation20121204131623145</value>
+                <value>Stands20121204133323889</value>
+                <value>Trees20121204131751596</value>
+                <value>Water Point Features20121204131510425</value>
+                <value>activity_area20130101231920603</value>
+                <value>road_line20130101154010851</value>
+            </LayerSnappingList>
+            <LayerSnappingEnabledList type="QStringList">
+                <value>disabled</value>
+                <value>enabled</value>
+                <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>enabled</value>
+                <value>disabled</value>
+                <value>disabled</value>
+                <value>enabled</value>
+                <value>enabled</value>
+            </LayerSnappingEnabledList>
+            <AvoidIntersectionsList type="QStringList"/>
+            <LayerSnappingToleranceUnitList type="QStringList">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+            </LayerSnappingToleranceUnitList>
+            <LayerSnapToList type="QStringList">
+                <value>to_vertex</value>
+                <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex</value>
+                <value>to_vertex</value>
+                <value>to_vertex_and_segment</value>
+                <value>to_vertex_and_segment</value>
+            </LayerSnapToList>
+            <TopologicalEditing type="int">1</TopologicalEditing>
+            <LayerSnappingToleranceList type="QStringList">
+                <value>0.000000</value>
+                <value>5.000000</value>
+                <value>5.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>5.000000</value>
+                <value>0.000000</value>
+                <value>0.000000</value>
+                <value>5.000000</value>
+                <value>5.000000</value>
+            </LayerSnappingToleranceList>
+        </Digitizing>
+        <PositionPrecision>
+            <DecimalPlaces type="int">2</DecimalPlaces>
+            <Automatic type="bool">true</Automatic>
+        </PositionPrecision>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
+    </properties>
+</qgis>

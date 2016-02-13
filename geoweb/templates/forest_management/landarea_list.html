@@ -1,0 +1,26 @@
+{% extends "base_listview.html" %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'forest_management:land-area-add' %}">Add New Land Area</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>Name</th>
+    		<th>Description</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for area in filter %}
+    	<tr>
+	    	<td>{{area.name}}</td>
+	    	<td>{{area.description}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'forest_management:land-area-edit' area.landarea_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'forest_management:land-area-delete' area.landarea_id %}">Delete</a></button>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

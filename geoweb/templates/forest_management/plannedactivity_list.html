@@ -1,0 +1,38 @@
+{% extends "base_listview.html" %}
+{% load staticfiles i18n %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block javascript %}
+	{{ block.super }}
+	<script src="{% static 'geoweb/js/PlannedActivity.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Activity</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>Activity Type</th>
+    		<th>Planned Year</th>
+    		<th>Planned Season</th>
+    		<th>Description</th>
+    		<th>Stand Number</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for activity in filter %}
+    	<tr>
+	    	<td>{{activity.acttype}}</td>
+	    	<td>{{activity.planned_year}}</td>
+	    	<td>{{activity.seasontype}}</td>
+    		<td>{{activity.description}}</td>
+    		<td>{{activity.stand_no}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'forest_management:planned-activity-edit' activity.plannedact_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'forest_management:planned-activity-delete' activity.plannedact_id %}">Delete</a></button>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

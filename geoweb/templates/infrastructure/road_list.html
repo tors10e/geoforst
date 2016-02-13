@@ -1,0 +1,28 @@
+{% extends "base_listview.html" %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'infrastructure:road-add' %}">Add New Road</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>Surface Type</th>
+    		<th>Name</th>
+    		<th>Description</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for road in filter %}
+    	<tr>
+	    	<td>{{road.roadsurface}}</td>
+	    	<td>{{road.road_name}}</td>
+	    	<td>{{road.description}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'infrastructure:road-edit' road.roadln_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'infrastructure:road-delete' road.roadln_id %}">Delete</a></button>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="jumbotron" id="jumbotron">
+	<h1>Welcome to GeoForst</h1>
+	<p>
+		<a class="btn btn-primary btn-lg" href={% url 'login' %}?next=/ role="button">Login
+			here</a> ... or if you haven't registered yet then <a
+			class="btn btn-primary btn-md" href={%
+			url 'registration_register' %} role="button">Register here</a>
+	</p>
+</div>
+<div class="site-wrapper">
+	<div class="site-wrapper-inner">
+		<div class="cover-container">
+			<div class="inner cover" id="about">
+				<h2>Small Acreage Land Management Software</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>GeoForst is designed to provide land owners with a tool for
+							managing data associated with land management activities to
+							support information-based decisions. It provides a method for
+							tracking treatments, activities, and measurements of features
+							that are important to land owners such as timber, soil, and
+							wildlife habitat improvements.</p>
+					</div>
+				</div>
+
+				<p>Two versions are available, a "lite" version and a multi-user
+					version:</p>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="./packages/0.1/GForst_Lite_v0.1.zip">GeoForst Lite
+								Edition</a>
+						</div>
+						<div class="panel-body">
+							<p>
+								<b>Basic package for stand alone installs</b></br> <a
+									href="./packages/0.1/GForst_Lite_v0.1.zip">361 KB zip file</a>
+							</p>
+							Packaged QGIS Map with Spatialite database. This solution can be
+							run on any any platform and data will be stored locally.
+							<ul>
+								<li>Data is stored on your personal computer</li>
+								<li>No internet connection is needed once installed</li>
+								<li>Tracks much of the same data as full version</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="http://geoforst.com">GeoForst Web Edition</a>
+						</div>
+						<div class="panel-body">
+							<p>
+								<b>Beta only</b>
+							</p>
+							<ul>
+								<li>Tracks stand composition change over time</li>
+								<li>Reporting interface available</li>
+								<li>Web interface, no software installation needed</li>
+								<li>Data is backed up daily</li>
+								<li>Multiple users can work on the same project</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p>
+					<i>*Last time updated [DATE]</i>
+				</p>
+				</br>
+				<h2>Software Requirements:</h2>
+				<ul>
+					<li>Linux, OSX, or Windows operating system</li>
+					<li><a href="http://qgis.org">QGIS Long Term Support (LTS)
+							version</a></li>
+				</ul>
+				<h2>Tutorials:</h2>
+				<ul>
+					<li><a href="http://torstenernst.com/blog/?p=331">Getting
+							Started with GeoForst Lite</a></li>
+				</ul>
+				<h2>Source Code:</h2>
+				<ul>
+					<li><a href="https://bitbucket.org/torstenernst/fsp">Bitbucket
+							Repository</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+{% endblock %}

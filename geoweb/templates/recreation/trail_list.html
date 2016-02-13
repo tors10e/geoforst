@@ -1,0 +1,26 @@
+{% extends "base_listview.html" %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'recreation:trail-add' %}">Add New Road</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>Trail Name</th>
+    		<th>Description</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for trail in filter %}
+    	<tr>
+	    	<td>{{trail.trail_name}}</td>
+	    	<td>{{trail.description}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'recreation:trail-edit' trail.trail_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'recreation:trail-delete' trail.trail_id %}">Delete</a>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

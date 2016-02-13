@@ -1,0 +1,26 @@
+{% extends "base_listview.html" %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'habitat_management:habitat-area-add' %}">Add New Habitat Enhancement Area</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>ID</th>
+    		<th>Description</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for area in filter %}
+    	<tr>
+	    	<td>{{area.habenharea_id}}</td>
+	    	<td>{{area.description}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'habitat_management:habitat-area-edit' area.habenharea_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'habitat_management:habitat-area-delete' area.habenharea_id %}">Delete</a>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base_listview.html" %}
+
+{% block sidebar %}
+	{% include "sidebar_filter.html" %}
+{% endblock %}
+
+{% block main %}
+  	<a class="btn btn-primary" href="{% url 'habitat_management:burn-compartment-add' %}">Add New Burn Compartment</a>
+    <table class="table table-striped table-bordered table-responsive table-hover">
+    	<tr id="header_row">
+    		<th>ID</th>
+    		<th>Compartment Set</th>
+    		<th>Action</th>
+    	</tr>
+    	{% for compartment in filter %}
+    	<tr>
+	    	<td>{{compartment.burncompartment_id}}</td>
+	    	<td>{{compartment.compartment_set}}</td>
+    		<td>	
+				<a class="btn btn-warning btn-xs" href="{% url 'habitat_management:burn-compartment-edit' compartment.burncompartment_id %}">Details</a> 					
+				<a class="btn btn-danger btn-xs" href="{% url 'habitat_management:burn-compartment-delete' compartment.burncompartment_id %}">Delete</a>
+			</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+{% endblock %}

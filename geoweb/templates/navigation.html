@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default background-color="grey">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" style="color:darkblue" href={% url 'home' %}>GeoForst <small>Land Management Tool</small></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	        	<a class="dropdown-toggle" data-toggle="dropdown" role="button">REGISTRATION<span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		        	<li><a href="/login/?next=/">Login</a></li>
+		        	<li><a href="/logout">Logout</a></li>
+		        	<li><a href={% url "registration_register" %}>Register</a></li>
+		        </ul>
+	        </li>
+	        <li class="dropdown">
+	        	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FOREST MANAGEMENT<span class="caret"></span></a>
+	        	<ul class = "dropdown-menu">
+	        		<li><a href={% url 'forest_management:planned-activity-list' %}>Management Activities</a></li>
+	        		<li><a href={% url 'forest_management:land-area-list' %}>Land Areas</a></li>
+	        		<li class="divider"></li>
+      				<li class="dropdown-header">Infrastructure</li>
+      				<li><a href={% url 'infrastructure:road-list' %}>Roads</a></li>
+      				<li class="divider"></li>
+      				<li class="dropdown-header">Habitat Management</li>
+      				<li><a href={% url 'habitat_management:firebreak-list' %}>Firebreaks</a></li>
+      				<li><a href={% url 'habitat_management:burn-compartment-list' %}>Burn Compartments</a></li>
+      				<li><a href={% url 'habitat_management:habitat-site-list' %}>Habitat Enhancement Sites</a></li>
+      				<li><a href={% url 'habitat_management:habitat-area-list' %}>Habitat Enhancement Areas</a></li>
+      				<li class="divider"></li>
+      				<li class="dropdown-header">Recreation</li>
+      				<li><a href={% url 'recreation:trail-list' %}>Trails</a></li>
+      				<li><a href={% url 'recreation:cultural-point-list' %}>Cultural Sites</a></li>
+      				<li><a href={% url 'recreation:recreation-point-list' %}>Recreation Sites</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href={% url 'forest_inventory:inventory-plot-list' %}>FOREST INVENTORY</a></li>
+	        <li class="dropdown">
+          		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LUMBER SCALING <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+            		<li><a href={% url 'lumber_scaling:lumber-load-list' %}>Lumber Loads</a></li>
+            		<li><a href={% url 'lumber_scaling:scaling-ticket-list' %}>Scaling Tickets</a></li>
+            		<li><a href={% url 'lumber_scaling:sawmill-list' %}>Sawmills</a></li>
+          		</ul>
+        	</li>
+      	</ul>
+	    </div>
+	  </div>
+	</nav>

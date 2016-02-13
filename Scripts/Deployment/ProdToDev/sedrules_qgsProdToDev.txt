@@ -1,0 +1,10 @@
+# Make necessary changes to .qgs file to move from dev to prod.
+
+# Blank out user so that others can login with an alternate account.
+s/user\=\'postgres\'//g 
+s/user\=\'ternst\'//g 
+s/user\=\'cernst\'//g 
+
+# Change database from localhost to geo.
+s/geo.torstenernst.com/localhost/g 
+

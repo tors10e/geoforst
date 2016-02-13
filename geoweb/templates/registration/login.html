@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{% static "geoweb/css/signin.css" %}" type="text/css" />
+	{{ block.super }}
+{% endblock %}
+{% block content %}
+	{% if form.errors %}
+		<p>Your username and password didn't match. Please try again.</p>
+	{% endif %}
+		<form class="form-signin" method="post" action="{% url 'django.contrib.auth.views.login' %}">
+			<h2 class="form-signin-heading">Sign In</h2>
+		{% csrf_token %}
+			
+		   		<p id="login">{{ form.username.label_tag }} {{ form.username }}</p>
+				<p id="login">{{ form.password.label_tag }} {{ form.password }}</p>
+			</br>
+		<div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+         	</label>
+        </div>
+			 <button class="btn btn-lg btn-primary btn-block" type="submit">Log me in!</button>
+			<input type="hidden" name="next" value="{% url 'forest_management:planned-activity-list' %}" />
+		</form>
+{% endblock %}
