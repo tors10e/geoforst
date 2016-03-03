@@ -5,6 +5,11 @@ from forest_management import views
 admin.autodiscover()
 from django_filters.views import FilterView
 from forest_management.filters import PlannedActivityFilter
+from tastypie.api import Api
+from forest_management.api import LandAreaResource
+
+v1_api = Api(api_name='v1')
+v1_api.register(LandAreaResource())
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
@@ -18,4 +23,5 @@ urlpatterns = patterns('',
     url(r'^$', 'geoweb.views.Home', name = 'home'),
     url('^', include('django.contrib.auth.urls')),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^api/', include(v1_api.urls)),
 )
