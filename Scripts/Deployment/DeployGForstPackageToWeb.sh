@@ -11,6 +11,7 @@ PACKAGE_VERSION=0.1
 SOURCE_DIR=~/downloads/fsp
 STAGING_DIR=~/temp
 WEB_DIR=/var/www
+APP_DIR=/home/ubuntu/geoforst
 
 # Get latest source code.
 echo "Deleting " $SOURCE_DIR
@@ -51,11 +52,11 @@ rm -rf $WEB_DIR/*
 cp -rf $STAGING_DIR/gf_deployment/* $WEB_DIR
 
 echo "Deploying Django"
-cp -fr $SOURCE_DIR/geoweb/* $WEB_DIR
-rm -f $WEB_DIR/geoweb/settings.py
-cp $WEB_DIR/geoweb/settings_prod.py $WEB_DIR/geoweb/settings.py 
+cp -fr $SOURCE_DIR/geoweb/* $APP_DIR
+rm -f $APP_DIR/geoweb/settings.py
+cp $APP_DIR/geoweb/settings_prod.py $APP_DIR/geoweb/settings.py 
 
-python $WEB_DIR/manage.py collectstatic
+python $APP_DIR/manage.py collectstatic
 
 # Change ownership to the appropriate user/group.
 sudo chown -R ubuntu:www-data /var/www

@@ -160,6 +160,7 @@ INSTALLED_APPS = (
     'infrastructure',
     'recreation',
     'habitat_management',
+    'tastypie',
 )
 
 # Crispy forms settings.
