@@ -3,6 +3,7 @@
 
 # Third-party libraries
 
+
 # Django modules
 from django.shortcuts import get_object_or_404, render, render_to_response, redirect
 from django.http import HttpResponseRedirect, HttpResponse
@@ -60,6 +61,7 @@ class LandAreaDelete(DeleteView):
 
     def get_success_url(self):
         return reverse_lazy('forest_management:land-area-list')
+  
         
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
