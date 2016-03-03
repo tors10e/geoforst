@@ -1,0 +1,6 @@
+﻿DELETE FROM planned_activity
+WHERE plannedact_id IN (SELECT plannedact_id
+              FROM (SELECT plannedact_id,
+                             ROW_NUMBER() OVER (partition BY landarea_id, description, planned_year, seasontype_id ORDER BY plannedact_id) AS rnum
+                     FROM planned_activity) t
+              WHERE t.rnum > 1);
