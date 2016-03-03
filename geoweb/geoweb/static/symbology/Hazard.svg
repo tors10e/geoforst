@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" width="215.9mm" height="279.4mm" viewBox="0 0 21590 27940" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+ <defs>
+  <font id="EmbeddedFont_1" horiz-adv-x="2048">
+   <font-face font-family="Trebuchet MS embedded" units-per-em="2048" font-weight="bold" font-style="normal" ascent="1919" descent="459"/>
+   <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
+   <glyph unicode="!" horiz-adv-x="325" d="M 426,382 L 322,382 C 270,715 244,948 244,1081 L 244,1491 504,1491 504,1082 C 504,949 478,715 426,382 Z M 382,308 C 427,308 466,292 498,260 529,228 545,189 545,144 545,99 529,60 498,28 466,-4 427,-20 382,-20 337,-20 298,-4 266,28 234,60 218,99 218,144 218,189 234,228 266,260 298,292 337,308 382,308 Z"/>
+  </font>
+ </defs>
+ <g visibility="visible" id="MasterSlide_1_Default">
+  <desc>Master slide
+  </desc>
+  <rect fill="none" stroke="none" x="0" y="0" width="21590" height="27940"/>
+ </g>
+ <g visibility="visible" id="Slide_1_page1">
+  <g>
+   <path fill="rgb(255,255,255)" stroke="none" d="M 10763,22411 L 18129,22411 C 18830,22411 19399,21842 19399,21141 L 19399,6409 C 19399,5708 18830,5139 18129,5139 L 3397,5139 C 2696,5139 2127,5708 2127,6409 L 2127,21141 C 2127,21842 2696,22411 3397,22411 L 10763,22411 Z"/>
+   <path fill="none" stroke="rgb(128,128,128)" id="Drawing_1_0" stroke-linejoin="round" d="M 10763,22411 L 18129,22411 C 18830,22411 19399,21842 19399,21141 L 19399,6409 C 19399,5708 18830,5139 18129,5139 L 3397,5139 C 2696,5139 2127,5708 2127,6409 L 2127,21141 C 2127,21842 2696,22411 3397,22411 L 10763,22411 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(255,153,0)" stroke="none" d="M 10782,22049 L 17767,22049 C 18468,22049 19037,21480 19037,20779 L 19037,6809 C 19037,6108 18468,5539 17767,5539 L 3797,5539 C 3096,5539 2527,6108 2527,6809 L 2527,20779 C 2527,21480 3096,22049 3797,22049 L 10782,22049 Z"/>
+   <path fill="none" stroke="rgb(128,128,128)" id="Drawing_2_0" stroke-linejoin="round" d="M 10782,22049 L 17767,22049 C 18468,22049 19037,21480 19037,20779 L 19037,6809 C 19037,6108 18468,5539 17767,5539 L 3797,5539 C 3096,5539 2527,6108 2527,6809 L 2527,20779 C 2527,21480 3096,22049 3797,22049 L 10782,22049 Z"/>
+  </g>
+  <g id="Drawing_3">
+   <rect fill="none" stroke="none" x="8505" y="4704" width="5369" height="18591"/>
+   <g fill="rgb(0,0,0)" stroke="none" font-family="Trebuchet MS embedded" font-size="14111" font-style="normal" font-weight="700">
+    <g transform="translate(8797,18095) rotate(-0.1) translate(-8797,-18095)">
+     <text x="8797" y="18095">!</text>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
