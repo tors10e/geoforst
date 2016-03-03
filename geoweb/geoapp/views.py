@@ -19,7 +19,7 @@ def Map(request):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/geoapp/accounts/login')
     else:
-        return render_to_response('geoapp/map.html', {})
+        return render_to_response('geoapp/.html', {})
 
 def Maps(request):
     if not request.user.is_authenticated():
@@ -32,6 +32,12 @@ def MobileMap(request):
         return HttpResponseRedirect('/geoapp/accounts/login')
     else:
         return render_to_response('geoapp/map_mobile.html', {})
+    
+def LeafletMap(request):
+    if not request.user.is_authenticated():
+        return HttpResponseRedirect('/geoapp/accounts/login')
+    else:
+        return render_to_response('gis/leaflet.html', {})
 
 def Home(request):
     if not request.user.is_authenticated():
