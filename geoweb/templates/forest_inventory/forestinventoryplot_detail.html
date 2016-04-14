@@ -7,7 +7,6 @@ $(function() {
 {% extends "base.html" %}
 
 {% block content %}    
-{% autopaginate plot_detail.forestinventorydata_set.all 10 %}
 		<h2>Plot {{ plot_detail.forestinventoryplot_id }}</h2>
 			<a class="btn btn-primary" href="{% url 'forest_inventory:inventory-data-add' plot_detail.forestinventoryplot_id %}">Add New Data Point</a>
 		{% if plot_detail.forestinventorydata_set.all %}
@@ -42,5 +41,4 @@ $(function() {
 			<p>No data has been entered for this plot.</p>
 		{% endif %}
 		<a href="{% url 'forest_inventory:inventory-plot-list' %}">Return to plot overview</a>
-{% paginate %}
 {% endblock %}
