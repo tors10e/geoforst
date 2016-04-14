@@ -1,7 +1,6 @@
 {% extends "base.html" %} 
 
 {% load utility_tags %} 
-{% load pagination_tags %}
 
 <div class="row row-offcanvas row-offcanvas-left">
 {% block content %}
@@ -11,8 +10,21 @@
 </div>
 <!-- main table -->
 <div class="col-xs-12 col-sm-9">
-	{% autopaginate filter 10 %}
-		{% block main %}{% endblock %}
-	{% paginate %}
+	{% block main %}{% endblock %}
+	<div class="pagination">
+	    <span class="step-links">
+	        {% if filter.has_previous %}
+	            <a href="?page={{ contacts.previous_page_number }}">previous</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            Page {{ filter.number }} of {{ filter.paginator.num_pages }}
+	        </span>
+	
+	        {% if filter.has_next %}
+	            <a href="?page={{ filter.next_page_number }}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
 </div>
 {% endblock %}
