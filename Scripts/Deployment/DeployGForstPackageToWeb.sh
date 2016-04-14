@@ -13,12 +13,15 @@ STAGING_DIR=~/temp
 APP_DIR=/home/geoforst
 
 # Get latest source code.
-echo "Deleting " $SOURCE_DIR
-rm -rf $SOURCE_DIR
+#echo "Deleting " $SOURCE_DIR
+#rm -rf $SOURCE_DIR
 echo "Deleting " $STAGING_DIR
 rm -rf $STAGING_DIR/*
 echo "Cloning geoforst"
-hg clone -r tip https://torstenernst@bitbucket.org/torstenernst/fsp $SOURCE_DIR
+cd $SOURCE_DIR
+#hg clone -r tip https://torstenernst@bitbucket.org/torstenernst/fsp $SOURCE_DIR
+hg pull
+hg update stable
 
 # Create directory structure.
 
