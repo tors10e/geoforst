@@ -61,7 +61,7 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = '/static/'
+STATIC_URL = env('STATIC_URL')
 
 LOGIN_REDIRECT_URL = '/login/'
 
