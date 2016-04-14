@@ -104,7 +104,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'pagination_bootstrap.middleware.PaginationMiddleware',
 )
 
 ROOT_URLCONF = 'geoweb.urls'
@@ -147,7 +146,6 @@ INSTALLED_APPS = (
     'crispy_forms',
     'forest_management',
     'django_filters',
-    'pagination_bootstrap',
     'lumber_scaling',
     'forest_inventory',
     'infrastructure',

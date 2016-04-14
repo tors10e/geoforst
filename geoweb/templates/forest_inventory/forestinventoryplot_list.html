@@ -1,5 +1,4 @@
 {% extends "base_listview.html" %}
-{% load pagination_tags %}
 {% load utility_tags %}
 
 
@@ -9,7 +8,6 @@
 	{% include "sidebar_filter.html" %}
 {% endblock %}
 {% block main %}
-    {% autopaginate filter 10 %}
   	<a class="btn btn-primary" href="{% url 'forest_management:planned-activity-add' %}">Add New Plot</a>
     <table class="table table-striped table-bordered table-responsive table-hover">
     	<tr id="header_row">
@@ -34,7 +32,6 @@
     	</tr>
     	{% endfor %}
     </table>
-{% paginate %}
 </div>
 {% endblock %}
 

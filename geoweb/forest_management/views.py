@@ -16,6 +16,7 @@ from django.core import serializers
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django_filters.views import FilterView
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Django apps
 from .models import *
@@ -53,8 +54,16 @@ class LandAreaUpdate(UpdateView):
 
 def LandAreaList(request):
     """ List view for land areas."""
-    f = LandAreaFilter(request.GET, queryset=LandArea.objects.filter(created_by=request.user))
-    return render(request, 'forest_management/landarea_list.html', {'filter': f})
+    filter = LandAreaFilter(request.GET, queryset=LandArea.objects.filter(created_by=request.user))
+    paginator = Paginator(filter, 10)
+    page = request.GET.get('page')
+    try:
+        lands = paginator.page(page)
+    except PageNotAnInteger:
+        lands = paginator.page(1)
+    except EmptyPage:
+        lands = paginator.page(paginator.num_pages)
+    return render(request, 'forest_management/landarea_list.html', {'filter': lands})
 
 class LandAreaDelete(DeleteView):
     model = LandArea

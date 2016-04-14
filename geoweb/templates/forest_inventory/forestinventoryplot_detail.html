@@ -5,7 +5,6 @@ $(function() {
 </script>
 
 {% extends "base.html" %}
-{% load pagination_tags %}
 
 {% block content %}    
 {% autopaginate plot_detail.forestinventorydata_set.all 10 %}
