@@ -57,11 +57,11 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
+STATIC_ROOT = env('STATIC_ROOT')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = env('STATIC_URL')
+STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/login/'
 
@@ -70,7 +70,6 @@ LOGOUT_REDIRECT_URL = '/home/'
 # Additional locations of static files
 STATICFILES_DIRS = (
                     os.path.join(BASE_DIR, "static"),
-                    '/var/www/static/',
                     
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
