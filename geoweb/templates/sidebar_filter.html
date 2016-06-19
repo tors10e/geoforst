@@ -1,7 +1,7 @@
 {% load utility_tags %}
 
 <form role="form" action="" method="get">
-	{% for field in filter.form %}
+	{% for field in filter.paginator.object_list.form %}
 	<div class="form-group">{{ field.errors }} {{ field.label_tag }}
 		{{ field|htmlattributes:"class : form-control" }}</div>
 	{% endfor %}

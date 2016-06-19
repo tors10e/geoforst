@@ -71,6 +71,8 @@ class LandAreaDelete(DeleteView):
     def get_success_url(self):
         return reverse_lazy('forest_management:land-area-list')
   
+def LandAreaMap(request):
+    return render(request, 'forest_management/landarea_map.html')  
         
 class PlannedActivityCreate(CreateView):
     model = PlannedActivity
@@ -108,6 +110,15 @@ class PlannedActivityUpdate(UpdateView):
 @login_required
 def PlannedActivityList(request):
     f = PlannedActivityFilter(request.GET, queryset=PlannedActivity.objects.filter(created_by=request.user))
-    return render(request, 'forest_management/plannedactivity_list.html', {'filter': f})
+    paginator = Paginator(f, 10)
+    page = request.GET.get('page')
+    try:
+        activities = paginator.page(page)
+    except PageNotAnInteger:
+        activities = paginator.page(1)
+    except EmptyPage:
+        activities = paginator.page(paginator.num_pages)
+    return render(request, 'forest_management/plannedactivity_list.html', {'filter': activities})
 
-    
+
+
