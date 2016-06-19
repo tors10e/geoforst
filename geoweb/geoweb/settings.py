@@ -152,6 +152,7 @@ INSTALLED_APPS = (
     'recreation',
     'habitat_management',
     'tastypie',
+    'leaflet'
 )
 
 # Crispy forms settings.
@@ -196,4 +197,13 @@ EMAIL_PORT = env('EMAIL_PORT')
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL')
+
+LEAFLET_CONFIG = {
+   'DEFAULT_CENTER': (34.0, -84.0),
+   'DEFAULT_ZOOM': 10,
+   'MIN_ZOOM': 3,
+   'MAX_ZOOM': 18,
+   'TILES': 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+
+}
 

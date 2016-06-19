@@ -1,9 +1,7 @@
-import django_filters
-from django_filters import ChoiceFilter, DateFilter, IsoDateTimeFilter
+from django_filters import ChoiceFilter, DateFilter, IsoDateTimeFilter, FilterSet
 from .models import *
-from django.db.models.query import QuerySet
 
-class PlannedActivityFilter(django_filters.FilterSet):
+class PlannedActivityFilter(FilterSet):
            
     class Meta:
         model = PlannedActivity
@@ -19,7 +17,7 @@ class PlannedActivityFilter(django_filters.FilterSet):
     def __init__(self, *args, **kwargs):       
          super(PlannedActivityFilter, self).__init__(*args, **kwargs)
 
-class LandAreaFilter(django_filters.FilterSet):
+class LandAreaFilter(FilterSet):
     """ Filter object for land areas."""
     
     class Meta:

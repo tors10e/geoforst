@@ -13,6 +13,5 @@ urlpatterns = patterns(
     url(r'^land_area/add/$', LandAreaCreate.as_view(), name = 'land-area-add'),
     url(r'^land_area/(?P<pk>\d+)/edit/$', LandAreaUpdate.as_view(), name = 'land-area-edit'),
     url(r'^land_area/(?P<pk>\d+)/delete/$', LandAreaDelete.as_view(), name = 'land-area-delete'),
-
-   
+    url(r'^land_area_map', LandAreaMap, name = 'land-area-map')   
   )
